@@ -1,0 +1,2233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="matematica_somando2" version="0.1.3">
+ <settings>
+  <title>Somando2</title>
+  <revision description="created" date="8/27/13" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="Miguel" navButtons="none" />
+  <item id="start" name="Somar" delay="1" />
+  <item name="Somar_24" delay="1" />
+  <item name="Somar_23" delay="1" />
+  <item name="Somar_22" delay="1" />
+  <item name="Somar_21" delay="1" />
+  <item name="Somar_20" delay="1" />
+  <item name="Somar_19" delay="1" />
+  <item name="Somar_18" delay="1" />
+  <item name="Somar_17" delay="1" />
+  <item name="Somar_16" delay="1" />
+  <item name="Somar_15" delay="1" />
+  <item name="Somar_14" delay="1" />
+  <item name="Somar_13" delay="1" />
+  <item name="Somar_12" delay="1" />
+  <item name="Somar_11" delay="1" />
+  <item name="Somar_10" delay="1" />
+  <item name="Somar_9" delay="1" />
+  <item name="Somar_8" delay="1" />
+  <item name="Somar_7" delay="1" />
+  <item name="Somar_6" delay="1" />
+  <item name="Somar_5" delay="1" />
+  <item name="Somar_4" delay="1" />
+  <item name="Somar_3" delay="1" />
+  <item name="Somar_2" delay="1" />
+  <item name="Miguel" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="Miguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="tela_jclick_iniciarMIGUEL.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.368567,0.281481,0.251739,0.075926</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Somar" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Some e arraste o resultado.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="2" />
+    <cell id="1" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_10">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="8" />
+    <cell id="7" />
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_11">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="5" />
+    <cell id="8" />
+    <cell />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_12">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="9" />
+    <cell id="6" />
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_13">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="7" />
+    <cell id="8" />
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_14">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="6" />
+    <cell id="3" />
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_15">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="8" />
+    <cell id="9" />
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_16">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="6" />
+    <cell id="9" />
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_17">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="4" />
+    <cell id="7" />
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_18">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="6" />
+    <cell id="8" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_19">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="8" />
+    <cell id="6" />
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_2">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="2" />
+    <cell id="1" />
+    <cell />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_20">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="8" />
+    <cell id="7" />
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_21">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="1" />
+    <cell id="8" />
+    <cell />
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_22">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="2" />
+    <cell id="6" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_23">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="9" />
+    <cell id="5" />
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_24">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="5" />
+    <cell id="5" />
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_3">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="5" />
+    <cell id="4" />
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_4">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="7" />
+    <cell id="3" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_5">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="3" />
+    <cell id="8" />
+    <cell />
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_6">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="8" />
+    <cell id="4" />
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_7">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="6" />
+    <cell id="2" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_8">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="2" />
+    <cell id="7" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Somar_9">
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x050000">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Somando.png" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xF26B10" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.351816,0.702174,0.311663,0.28913</shape>
+     <shape comment="1">rectangle:0.67304,0.697826,0.307839,0.293478</shape>
+     <shape comment="2">rectangle:0.355641,0.4,0.302103,0.293478</shape>
+     <shape comment="3">rectangle:0.678776,0.4,0.302103,0.293478</shape>
+     <shape comment="4">rectangle:0.357553,0.104348,0.298279,0.293478</shape>
+     <shape comment="5">rectangle:0.676864,0.102174,0.302103,0.293478</shape>
+    </shaper>
+    <cell id="4" />
+    <cell id="4" />
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="120.0" cellHeight="120.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" />
+     <color foreground="0xFEFEFE" border="0xE08352" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="tela_jclick_iniciarMIGUEL.jpg" file="tela_jclick_iniciarmiguel.jpg" />
+  <media name="Somando.png" file="somando.png" />
+ </mediaBag>
+</JClicProject>
+

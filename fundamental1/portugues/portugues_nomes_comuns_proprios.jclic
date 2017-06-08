@@ -1,0 +1,1551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="portugues_nomes_comuns_proprios" version="0.1.3">
+ <settings>
+  <title>nomes_comuns_próprios</title>
+  <revision description="created" date="5/11/12" />
+  <author name="Miguel dos Santos Silva" rol="Articulador de Educação Tecnológica" />
+  <description>
+   <p>Jogo de assciação dos substantivos próprios e comuns.</p>
+  </description>
+  <descriptors area="Português" />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="TelaInicialMiguel" navButtons="none" />
+  <item id="start" name="AbordagemSubstantivos" />
+  <item name="AbordagemComumProprio_2" />
+  <item name="Ativid_comuns_proprios" delay="1" />
+  <item name="AbordagemPrimitivoDerivado" />
+  <item name="Ativid_Subst_PrimitivoDerivado" delay="1" />
+  <item name="AbordagemColetivos" />
+  <item name="Ativid_Subst_Coletivo_1" delay="1" />
+  <item name="Ativid_Subst_Coletivo_2" delay="1" />
+  <item name="Ativid_Subst_Coletivo_3" delay="1" />
+  <item name="Ativid_Subst_Coletivo_4" delay="1" />
+  <item name="Ativid_Subst_Coletivo_5" delay="1" />
+  <item name="Ativid_Subst_Coletivo_6" delay="1" />
+  <item name="Ativid_Subst_Coletivo_7" delay="1" />
+  <item name="Ativid_Subst_Coletivo_9" delay="1" />
+  <item name="Ativid_Substantivos" />
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="AbordagemColetivos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Substantivos - 1.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="1">rectangle:0.044524,0.061713,0.416741,0.256927</shape>
+     <shape comment="2">M:0.172752,0.484887|L:0.171861,0.593199|L:0.26358,0.550378|L:0.238647,0.61461|L:0.341941,0.513854|L:0.240428,0.419395|L:0.262689,0.484887|L:0.172752,0.457179|L:0.172752,0.484887</shape>
+    </shaper>
+    <cell txtAlign="left,top" border="false">
+     <style transparent="true">
+      <font family="Times New Roman" size="28" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Substantivos Coletivos:</p>
+     <p>Quando </p>
+     <p>se referem a um conjunto de seres da mesma espécie. </p>
+     <p>Ex: álbum (fotografias, selos), biblioteca (livros), código (leis)…</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="2.9" markerStroke="2.7">
+      <font family="Times New Roman" size="20" />
+      <color background="0xCCCCCC" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ativid_Subst_Coletivo_1" />
+     <p>ATIVIDADE</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="AbordagemComumProprio_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Substantivos - 1.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="1">rectangle:0.044524,0.061713,0.416741,0.256927</shape>
+     <shape comment="2">rectangle:0.044524,0.336272,0.416741,0.256927</shape>
+     <shape comment="2">M:0.16919,0.68262|L:0.168299,0.790932|L:0.260018,0.748111|L:0.235085,0.812343|L:0.338379,0.711587|L:0.236866,0.617128|L:0.259127,0.68262|L:0.16919,0.654912|L:0.16919,0.68262</shape>
+    </shaper>
+    <cell txtAlign="left,top" border="false">
+     <style transparent="true">
+      <font family="Times New Roman" size="28" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Substantivos Comuns  e Próprios</p>
+     <p>Comuns: Quando se referem a seres da mesma espécie, sem especificá-los.</p>
+     <p>	Ex: país, cidade, pessoa…</p>
+    </cell>
+    <cell txtAlign="left,top" border="false">
+     <style>
+      <font family="Times New Roman" size="28" />
+      <color background="0xCCCCCC" />
+     </style>
+     <p>Próprios: Quando se referem a seres, pessoas, entidades determinados. São escritos sempre com inicial maiúscula.</p>
+     <p>	Ex: Brasil, Santos, João, Deus…</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.4" markerStroke="2.7">
+      <color background="0xFF0033" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ativid_comuns_proprios" />
+     <p>ATIVIDADE</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="AbordagemPrimitivoDerivado" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Substantivos - 1.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="1">rectangle:0.044524,0.061713,0.416741,0.256927</shape>
+     <shape comment="2">rectangle:0.044524,0.336272,0.416741,0.256927</shape>
+     <shape comment="2">M:0.16919,0.68262|L:0.168299,0.790932|L:0.260018,0.748111|L:0.235085,0.812343|L:0.338379,0.711587|L:0.236866,0.617128|L:0.259127,0.68262|L:0.16919,0.654912|L:0.16919,0.68262</shape>
+    </shaper>
+    <cell txtAlign="left,top" border="false">
+     <style transparent="true">
+      <font family="Times New Roman" size="28" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Substantivos Primitivos:</p>
+     <p>Quando não derivam de outra palavra da língua portuguesa. Ex: </p>
+     <p>pedra, ferro, porta…</p>
+    </cell>
+    <cell txtAlign="left,top" border="false">
+     <style>
+      <font family="Times New Roman" size="28" />
+      <color background="0xCCCCCC" />
+     </style>
+     <p>Substantivos Derivados:</p>
+     <p>Quando derivam de outra palavra da língua portuguesa.</p>
+     <p> Ex: pedreira, pedreiro, ferreiro, portaria…</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.3" markerStroke="2.7">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFF0033" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ativid_Subst_PrimitivoDerivado" />
+     <p>ATIVIDADE</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="AbordagemSubstantivos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Substantivos - 1.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="1">rectangle:0.044524,0.061713,0.416741,0.256927</shape>
+     <shape comment="2">rectangle:0.044524,0.336272,0.416741,0.256927</shape>
+     <shape comment="2">M:0.16919,0.68262|L:0.168299,0.790932|L:0.260018,0.748111|L:0.235085,0.812343|L:0.338379,0.711587|L:0.236866,0.617128|L:0.259127,0.68262|L:0.16919,0.654912|L:0.16919,0.68262</shape>
+    </shaper>
+    <cell txtAlign="left,top" border="false">
+     <style transparent="true">
+      <font family="Times New Roman" size="28" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Os substantivos são palavras que usamos para nomear os seres e as coisas. Possuem classificação e flexionam-se em gênero, número e grau.</p>
+    </cell>
+    <cell txtAlign="left,top" border="false">
+     <style>
+      <font family="Times New Roman" size="28" />
+      <color background="0xCCCCCC" />
+     </style>
+     <p>Quanto à classificação podem ser:</p>
+     <p>Comuns, próprios, simples, composto, primitivos,   coletivos, masculinos, femininos, entre outros...</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.3" markerStroke="2.7">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFF0033" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="AbordagemComumProprio_2" />
+     <p>CONTINUE</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Ativid_Subst_Coletivo_1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relacione os substantivos coletivos.</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="24" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>acervo</p>
+    </cell>
+    <cell>
+     <p>álbum</p>
+    </cell>
+    <cell>
+     <p>alcateia</p>
+    </cell>
+    <cell>
+     <p>armada</p>
+    </cell>
+    <cell>
+     <p>arquipélago</p>
+    </cell>
+    <cell>
+     <p>arsenal</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="180.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>obras de arte</p>
+    </cell>
+    <cell>
+     <p>retratos, autógrafos, selos</p>
+    </cell>
+    <cell>
+     <p>lobos</p>
+    </cell>
+    <cell>
+     <p>navios de guerra</p>
+    </cell>
+    <cell>
+     <p>ilhas</p>
+    </cell>
+    <cell>
+     <p>armas</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Ativid_Subst_Coletivo_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relacione os substantivos coletivos.</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="24" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>assembleia</p>
+    </cell>
+    <cell>
+     <p>atlas</p>
+    </cell>
+    <cell>
+     <p>banca</p>
+    </cell>
+    <cell>
+     <p>banda</p>
+    </cell>
+    <cell>
+     <p>bando</p>
+    </cell>
+    <cell>
+     <p>biblioteca</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="180.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>de parlamentares, de membros de qualquer associação</p>
+    </cell>
+    <cell>
+     <p>mapas</p>
+    </cell>
+    <cell>
+     <p>examinadores</p>
+    </cell>
+    <cell>
+     <p>músicos</p>
+    </cell>
+    <cell>
+     <p>pessoas, aves, malfeitores</p>
+    </cell>
+    <cell>
+     <p>livros</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Ativid_Subst_Coletivo_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relacione os substantivos coletivos.</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="24" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>bosque</p>
+    </cell>
+    <cell>
+     <p>cambada</p>
+    </cell>
+    <cell>
+     <p>buquê</p>
+    </cell>
+    <cell>
+     <p>cancioneiro</p>
+    </cell>
+    <cell>
+     <p>cacho</p>
+    </cell>
+    <cell>
+     <p>caravana</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="180.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>árvores</p>
+    </cell>
+    <cell>
+     <p>desordeiros, malfeitores</p>
+    </cell>
+    <cell>
+     <p>flores</p>
+    </cell>
+    <cell>
+     <p>canções, poemas</p>
+    </cell>
+    <cell>
+     <p>bananas, uvas</p>
+    </cell>
+    <cell>
+     <p>viajantes, peregrinos</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Ativid_Subst_Coletivo_4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relacione os substantivos coletivos.</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="24" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>cardume</p>
+    </cell>
+    <cell>
+     <p>clero</p>
+    </cell>
+    <cell>
+     <p>cavalgada</p>
+    </cell>
+    <cell>
+     <p>colégio</p>
+    </cell>
+    <cell>
+     <p>cinemateca</p>
+    </cell>
+    <cell>
+     <p>coletânea</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="180.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>peixes</p>
+    </cell>
+    <cell>
+     <p>sacerdotes</p>
+    </cell>
+    <cell>
+     <p>cavaleiros</p>
+    </cell>
+    <cell>
+     <p>eleitores, cardeais</p>
+    </cell>
+    <cell>
+     <p>filmes</p>
+    </cell>
+    <cell>
+     <p>textos, canções</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Ativid_Subst_Coletivo_5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relacione os substantivos coletivos.</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="24" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>colmeia</p>
+    </cell>
+    <cell>
+     <p>comunidade</p>
+    </cell>
+    <cell>
+     <p>colônia</p>
+    </cell>
+    <cell>
+     <p>congresso</p>
+    </cell>
+    <cell>
+     <p>comitiva</p>
+    </cell>
+    <cell>
+     <p>constelação</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="180.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>abelhas</p>
+    </cell>
+    <cell>
+     <p>cidadãos</p>
+    </cell>
+    <cell>
+     <p>imigrantes, bactérias, insetos, pescadores</p>
+    </cell>
+    <cell>
+     <p>parlamentares, doutores</p>
+    </cell>
+    <cell>
+     <p>acompanhantes</p>
+    </cell>
+    <cell>
+     <p>estrelas</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Ativid_Subst_Coletivo_6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relacione os substantivos coletivos.</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="24" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>corja</p>
+    </cell>
+    <cell>
+     <p>elenco</p>
+    </cell>
+    <cell>
+     <p>coro</p>
+    </cell>
+    <cell>
+     <p>enxame</p>
+    </cell>
+    <cell>
+     <p>discoteca</p>
+    </cell>
+    <cell>
+     <p>enxoval</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="180.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>ladrões, desordeiros</p>
+    </cell>
+    <cell>
+     <p>atores</p>
+    </cell>
+    <cell>
+     <p>anjos, cantores</p>
+    </cell>
+    <cell>
+     <p>abelhas, marimbondos, vespas</p>
+    </cell>
+    <cell>
+     <p>discos</p>
+    </cell>
+    <cell>
+     <p>roupas</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Ativid_Subst_Coletivo_7" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relacione os substantivos coletivos.</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="24" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>esquadra</p>
+    </cell>
+    <cell>
+     <p>fardo</p>
+    </cell>
+    <cell>
+     <p>esquadrilha</p>
+    </cell>
+    <cell>
+     <p>fauna</p>
+    </cell>
+    <cell>
+     <p>exército</p>
+    </cell>
+    <cell>
+     <p>feixe</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="180.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>navios de guerra</p>
+    </cell>
+    <cell>
+     <p>tecidos, papeis, palha, feno</p>
+    </cell>
+    <cell>
+     <p>aviões</p>
+    </cell>
+    <cell>
+     <p>animais</p>
+    </cell>
+    <cell>
+     <p>soldados</p>
+    </cell>
+    <cell>
+     <p>lenha</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Ativid_Subst_Coletivo_9" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relacione os substantivos coletivos.</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="24" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>flora</p>
+    </cell>
+    <cell>
+     <p>galeria</p>
+    </cell>
+    <cell>
+     <p>floresta</p>
+    </cell>
+    <cell>
+     <p>grupo</p>
+    </cell>
+    <cell>
+     <p>frota</p>
+    </cell>
+    <cell>
+     <p>legião</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="2" cellWidth="400.0" cellHeight="180.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>plantas ou vegetais</p>
+    </cell>
+    <cell>
+     <p>objetos de arte</p>
+    </cell>
+    <cell>
+     <p>árvores</p>
+    </cell>
+    <cell>
+     <p>pessoas ou coisas</p>
+    </cell>
+    <cell>
+     <p>navios e veículos</p>
+    </cell>
+    <cell>
+     <p>anjos, soldados, demônios</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Ativid_Subst_PrimitivoDerivado" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Escreva o substantivos primitivo de cada palavra.</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xA19C9C" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="10" cols="5" cellWidth="400.0" cellHeight="80.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0xCC6600" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="10" />
+    <cell id="0">
+     <p>casarão</p>
+    </cell>
+    <cell id="1">
+     <p>floricultura</p>
+    </cell>
+    <cell id="2">
+     <p>pedreira</p>
+    </cell>
+    <cell id="3">
+     <p>gramado</p>
+    </cell>
+    <cell id="4">
+     <p>leiteiro</p>
+    </cell>
+    <cell id="5">
+     <p>mulherio</p>
+    </cell>
+    <cell id="6">
+     <p>terreno</p>
+    </cell>
+    <cell id="7">
+     <p>ferreiro</p>
+    </cell>
+    <cell id="8">
+     <p>luzeiro</p>
+    </cell>
+    <cell id="9">
+     <p>carteiro</p>
+    </cell>
+    <cell id="10">
+     <p>vidraçaria</p>
+    </cell>
+    <cell id="11">
+     <p>livraria</p>
+    </cell>
+    <cell id="12">
+     <p>chaveiro</p>
+    </cell>
+    <cell id="13">
+     <p>feijoada</p>
+    </cell>
+    <cell id="14">
+     <p>jogatina</p>
+    </cell>
+    <cell id="15">
+     <p>padeiro</p>
+    </cell>
+    <cell id="16">
+     <p>cristalino</p>
+    </cell>
+    <cell id="17">
+     <p>bananada</p>
+    </cell>
+    <cell id="18">
+     <p>antenado</p>
+    </cell>
+    <cell id="19">
+     <p>cadeirante</p>
+    </cell>
+    <cell id="20">
+     <p>relojoaria</p>
+    </cell>
+    <cell id="21">
+     <p>telefonada</p>
+    </cell>
+    <cell id="22">
+     <p>caixote</p>
+    </cell>
+    <cell id="23">
+     <p>drogaria</p>
+    </cell>
+    <cell id="24">
+     <p>olheiro</p>
+    </cell>
+    <cell id="25">
+     <p>porteiro</p>
+    </cell>
+    <cell id="26">
+     <p>sacolão</p>
+    </cell>
+    <cell id="27">
+     <p>aguaceiro</p>
+    </cell>
+    <cell id="28">
+     <p>arvoredo</p>
+    </cell>
+    <cell id="29">
+     <p>emparedado</p>
+    </cell>
+    <cell id="30">
+     <p>telhado</p>
+    </cell>
+    <cell id="31">
+     <p>serrano</p>
+    </cell>
+    <cell id="32">
+     <p>tinteiro</p>
+    </cell>
+    <cell id="33">
+     <p>prataria</p>
+    </cell>
+    <cell id="34">
+     <p>escolar</p>
+    </cell>
+    <cell id="35">
+     <p>plantação</p>
+    </cell>
+    <cell id="36">
+     <p>salgado</p>
+    </cell>
+    <cell id="37">
+     <p>paulada</p>
+    </cell>
+    <cell id="38">
+     <p>fogareiro</p>
+    </cell>
+    <cell id="39">
+     <p>gelado</p>
+    </cell>
+    <cell id="40">
+     <p>sapateado</p>
+    </cell>
+    <cell id="41">
+     <p>tapeçaria</p>
+    </cell>
+    <cell id="42">
+     <p>ventilador</p>
+    </cell>
+    <cell id="43">
+     <p>maciera</p>
+    </cell>
+    <cell id="44">
+     <p>escadaria</p>
+    </cell>
+    <cell id="45">
+     <p>formigueiro</p>
+    </cell>
+    <cell id="46">
+     <p>violonista</p>
+    </cell>
+    <cell id="47">
+     <p>macarronada</p>
+    </cell>
+    <cell id="48">
+     <p>folhagem</p>
+    </cell>
+    <cell id="49">
+     <p>agulhada</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="5" cellWidth="400.0" cellHeight="100.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="36" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="10" />
+    <cell>
+     <p>casa</p>
+    </cell>
+    <cell>
+     <p>flor</p>
+    </cell>
+    <cell>
+     <p>pedra</p>
+    </cell>
+    <cell>
+     <p>grama</p>
+    </cell>
+    <cell>
+     <p>leite</p>
+    </cell>
+    <cell>
+     <p>mulher</p>
+    </cell>
+    <cell>
+     <p>terra</p>
+    </cell>
+    <cell>
+     <p>ferro</p>
+    </cell>
+    <cell>
+     <p>luz</p>
+    </cell>
+    <cell>
+     <p>carta</p>
+    </cell>
+    <cell>
+     <p>vidro</p>
+    </cell>
+    <cell>
+     <p>livro</p>
+    </cell>
+    <cell>
+     <p>chave</p>
+    </cell>
+    <cell>
+     <p>feijão</p>
+    </cell>
+    <cell>
+     <p>jogo</p>
+    </cell>
+    <cell>
+     <p>pão</p>
+    </cell>
+    <cell>
+     <p>cristal</p>
+    </cell>
+    <cell>
+     <p>banana</p>
+    </cell>
+    <cell>
+     <p>antena</p>
+    </cell>
+    <cell>
+     <p>cadeira</p>
+    </cell>
+    <cell>
+     <p>relógio</p>
+    </cell>
+    <cell>
+     <p>telefone</p>
+    </cell>
+    <cell>
+     <p>caixa</p>
+    </cell>
+    <cell>
+     <p>droga</p>
+    </cell>
+    <cell>
+     <p>olho</p>
+    </cell>
+    <cell>
+     <p>porta</p>
+    </cell>
+    <cell>
+     <p>sacola</p>
+    </cell>
+    <cell>
+     <p>água</p>
+    </cell>
+    <cell>
+     <p>árvore</p>
+    </cell>
+    <cell>
+     <p>parede</p>
+    </cell>
+    <cell>
+     <p>telha</p>
+    </cell>
+    <cell>
+     <p>serra</p>
+    </cell>
+    <cell>
+     <p>tinta</p>
+    </cell>
+    <cell>
+     <p>prata</p>
+    </cell>
+    <cell>
+     <p>escola</p>
+    </cell>
+    <cell>
+     <p>planta</p>
+    </cell>
+    <cell>
+     <p>sal</p>
+    </cell>
+    <cell>
+     <p>pau</p>
+    </cell>
+    <cell>
+     <p>fogo</p>
+    </cell>
+    <cell>
+     <p>gelo</p>
+    </cell>
+    <cell>
+     <p>sapato</p>
+    </cell>
+    <cell>
+     <p>tapete</p>
+    </cell>
+    <cell>
+     <p>vento</p>
+    </cell>
+    <cell>
+     <p>maçã</p>
+    </cell>
+    <cell>
+     <p>escada</p>
+    </cell>
+    <cell>
+     <p>formiga</p>
+    </cell>
+    <cell>
+     <p>violão</p>
+    </cell>
+    <cell>
+     <p>macarrão</p>
+    </cell>
+    <cell>
+     <p>folha</p>
+    </cell>
+    <cell>
+     <p>agulha</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Ativid_Substantivos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Coloque cada substantivos em suas categorias</p>
+    </cell>
+   </messages>
+   <settings margin="15" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+   </settings>
+   <cells rows="12" cols="5" cellWidth="600.0" cellHeight="150.0" border="false" id="primary">
+    <style transparent="true">
+     <font family="Times New Roman" size="26" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="12" />
+    <cell id="2">
+     <p>casarão</p>
+    </cell>
+    <cell id="2">
+     <p>pedreira</p>
+    </cell>
+    <cell id="2">
+     <p>gramado</p>
+    </cell>
+    <cell id="2">
+     <p>leiteiro</p>
+    </cell>
+    <cell id="2">
+     <p>ferreiro</p>
+    </cell>
+    <cell id="2">
+     <p>carteiro</p>
+    </cell>
+    <cell id="2">
+     <p>vidraçaria</p>
+    </cell>
+    <cell id="2">
+     <p>feijoada</p>
+    </cell>
+    <cell id="2">
+     <p>cadeirante</p>
+    </cell>
+    <cell id="2">
+     <p>drogaria</p>
+    </cell>
+    <cell id="2">
+     <p>jogatina</p>
+    </cell>
+    <cell id="2">
+     <p>telhado</p>
+    </cell>
+    <cell id="2">
+     <p>fogareiro</p>
+    </cell>
+    <cell id="2">
+     <p>gelado</p>
+    </cell>
+    <cell id="2">
+     <p>maciera</p>
+    </cell>
+    <cell id="3">
+     <p>legião</p>
+    </cell>
+    <cell id="3">
+     <p>manada</p>
+    </cell>
+    <cell id="3">
+     <p>plateia</p>
+    </cell>
+    <cell id="3">
+     <p>prole</p>
+    </cell>
+    <cell id="3">
+     <p>quadrilha</p>
+    </cell>
+    <cell id="3">
+     <p>acervo</p>
+    </cell>
+    <cell id="3">
+     <p>alcateia</p>
+    </cell>
+    <cell id="3">
+     <p>armada</p>
+    </cell>
+    <cell id="3">
+     <p>assembleia</p>
+    </cell>
+    <cell id="3">
+     <p>banca</p>
+    </cell>
+    <cell id="3">
+     <p>arsenal</p>
+    </cell>
+    <cell id="3">
+     <p>buquê</p>
+    </cell>
+    <cell id="3">
+     <p>cacho</p>
+    </cell>
+    <cell id="3">
+     <p>cambada</p>
+    </cell>
+    <cell id="3">
+     <p>cardume</p>
+    </cell>
+    <cell id="0">
+     <p>casa</p>
+    </cell>
+    <cell id="0">
+     <p>flor</p>
+    </cell>
+    <cell id="0">
+     <p>pedra</p>
+    </cell>
+    <cell id="0">
+     <p>grama</p>
+    </cell>
+    <cell id="0">
+     <p>mulher</p>
+    </cell>
+    <cell id="0">
+     <p>terra</p>
+    </cell>
+    <cell id="0">
+     <p>luz</p>
+    </cell>
+    <cell id="0">
+     <p>chave</p>
+    </cell>
+    <cell id="0">
+     <p>pão</p>
+    </cell>
+    <cell id="0">
+     <p>relógio</p>
+    </cell>
+    <cell id="0">
+     <p>carta</p>
+    </cell>
+    <cell id="0">
+     <p>gelo</p>
+    </cell>
+    <cell id="0">
+     <p>tapete</p>
+    </cell>
+    <cell id="0">
+     <p>folha</p>
+    </cell>
+    <cell id="0">
+     <p>violão</p>
+    </cell>
+    <cell id="1">
+     <p>Chile</p>
+    </cell>
+    <cell id="1">
+     <p>Uruguai</p>
+    </cell>
+    <cell id="1">
+     <p>Ronaldo</p>
+    </cell>
+    <cell id="1">
+     <p>Neymar</p>
+    </cell>
+    <cell id="1">
+     <p>Ipiranga</p>
+    </cell>
+    <cell id="1">
+     <p>Flamengo</p>
+    </cell>
+    <cell id="1">
+     <p>Brasil</p>
+    </cell>
+    <cell id="1">
+     <p>João</p>
+    </cell>
+    <cell id="1">
+     <p>São Paulo</p>
+    </cell>
+    <cell id="1">
+     <p>Salvador</p>
+    </cell>
+    <cell id="1">
+     <p>Juazeiro</p>
+    </cell>
+    <cell id="1">
+     <p>Bahia</p>
+    </cell>
+    <cell id="1">
+     <p>José de Araújo</p>
+    </cell>
+    <cell id="1">
+     <p>Jesus</p>
+    </cell>
+    <cell id="1">
+     <p>Miguel</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="500.0" cellHeight="450.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>Comuns</p>
+    </cell>
+    <cell>
+     <p>Próprios</p>
+    </cell>
+    <cell>
+     <p>Derivados</p>
+    </cell>
+    <cell>
+     <p>Coletivos</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Ativid_comuns_proprios" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x261ADF" background="0xFFFFFF" />
+     </style>
+     <p>Clique nos substantivos e arraste para a categoria correta.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x262FDC" background="0xFFFFFF" />
+     </style>
+     <p>Parabéns! você conseguiu!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="Fundo.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xA19C9C" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="8" cols="5" cellWidth="200.0" cellHeight="100.0" border="false" id="primary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="18" bold="true" />
+     <color background="0xD3D3D3" inactive="0xE4DBDB" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="8" />
+    <cell id="1">
+     <p>Brasil</p>
+    </cell>
+    <cell id="0">
+     <p>sacola</p>
+    </cell>
+    <cell id="1">
+     <p>Camila</p>
+    </cell>
+    <cell id="1">
+     <p>João</p>
+    </cell>
+    <cell id="0">
+     <p>sapo</p>
+    </cell>
+    <cell id="0">
+     <p>sapato</p>
+    </cell>
+    <cell id="0">
+     <p>lata</p>
+    </cell>
+    <cell id="1">
+     <p>São Paulo</p>
+    </cell>
+    <cell id="1">
+     <p>Bahia</p>
+    </cell>
+    <cell id="1">
+     <p>Juazeiro</p>
+    </cell>
+    <cell id="1">
+     <p>São Pedro</p>
+    </cell>
+    <cell id="0">
+     <p>vestido</p>
+    </cell>
+    <cell id="0">
+     <p>senha</p>
+    </cell>
+    <cell id="1">
+     <p>Jesus</p>
+    </cell>
+    <cell id="1">
+     <p>Paulo</p>
+    </cell>
+    <cell id="1">
+     <p>Pedro</p>
+    </cell>
+    <cell id="1">
+     <p>Rex</p>
+    </cell>
+    <cell id="0">
+     <p>peixe</p>
+    </cell>
+    <cell id="0">
+     <p>maçã</p>
+    </cell>
+    <cell id="0">
+     <p>televisão</p>
+    </cell>
+    <cell id="0">
+     <p>casa</p>
+    </cell>
+    <cell id="1">
+     <p>Brasília</p>
+    </cell>
+    <cell id="1">
+     <p>Chile</p>
+    </cell>
+    <cell id="1">
+     <p>Uruguai</p>
+    </cell>
+    <cell id="1">
+     <p>Ronaldo</p>
+    </cell>
+    <cell id="1">
+     <p>Neymar</p>
+    </cell>
+    <cell id="1">
+     <p>Túlio</p>
+    </cell>
+    <cell id="1">
+     <p>Botafogo</p>
+    </cell>
+    <cell id="1">
+     <p>Flamengo</p>
+    </cell>
+    <cell id="1">
+     <p>Vasco</p>
+    </cell>
+    <cell id="1">
+     <p>Ipiranga</p>
+    </cell>
+    <cell id="1">
+     <p>Jośe de Araújo</p>
+    </cell>
+    <cell id="0">
+     <p>pedra</p>
+    </cell>
+    <cell id="0">
+     <p>areia</p>
+    </cell>
+    <cell id="0">
+     <p>pombo</p>
+    </cell>
+    <cell id="0">
+     <p>goiaba</p>
+    </cell>
+    <cell id="0">
+     <p>mamão</p>
+    </cell>
+    <cell id="0">
+     <p>mãe</p>
+    </cell>
+    <cell id="0">
+     <p>pai</p>
+    </cell>
+    <cell id="1">
+     <p>Salvador</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="250.0" cellHeight="300.0" border="true" id="secondary">
+    <style transparent="true" />
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell border="false" image="CAIXA.png" />
+    <cell border="false" image="CAIXA2.png" />
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="AbordagemSubstantivos" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="Fundo.jpg" file="fundo.jpg" />
+  <media name="Substantivos - 1.jpg" file="substantivos___1.jpg" />
+  <media name="CAIXA.png" file="caixa.png" />
+  <media name="CAIXA2.png" file="caixa2.png" />
+  <media name="TelaJclic2.png" file="i020_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="Portugues_AlfabetoFiguras" version="0.1.3">
+ <settings>
+  <title>modelo</title>
+  <revision description="created" date="5/3/13" />
+  <descriptors />
+  <eventSounds>
+   <sound id="start" file="/home/professor/JClic/projects/sonsJclic/inicio.mp3" />
+   <sound id="click" file="/home/professor/JClic/projects/sonsJclic/click.mp3" />
+   <sound id="actionError" file="/home/professor/JClic/projects/sonsJclic/açãoErro.mp3" />
+   <sound id="actionOk" file="/home/professor/JClic/projects/sonsJclic/ação_OK.mp3" />
+   <sound id="finishedError" file="/home/professor/JClic/projects/sonsJclic/fim_erro.mp3" />
+   <sound id="finishedOk" enabled="false" file="/home/professor/JClic/projects/sonsJclic/fimOK.mp3" />
+  </eventSounds>
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="TelaInicialMiguel" navButtons="none" />
+  <item id="start" name="memoria" delay="1" />
+  <item name="LetraInicialA" delay="3" navButtons="back" />
+  <item name="LetraInicialB" delay="3" navButtons="back" />
+  <item name="LetraInicialC" delay="3" navButtons="back" />
+  <item name="LetraInicialD" delay="3" navButtons="back" />
+  <item name="LetraInicialE" delay="3" navButtons="back" />
+  <item name="LetraInicialF" delay="3" navButtons="back" />
+  <item name="LetraInicialG" delay="3" navButtons="back" />
+  <item name="LetraInicialH" delay="3" navButtons="back" />
+  <item name="LetraInicialI" delay="3" navButtons="back" />
+  <item name="LetraInicialJ" delay="3" navButtons="back" />
+  <item name="LetraInicialK" delay="3" navButtons="back" />
+  <item name="LetraInicialL" delay="3" navButtons="back" />
+  <item name="LetraInicialM" delay="3" navButtons="back" />
+  <item name="LetraInicialN" delay="3" navButtons="back" />
+  <item name="LetraInicialO" delay="3" navButtons="back" />
+  <item name="LetraInicialP" delay="3" navButtons="back" />
+  <item name="LetraInicialQ" delay="3" navButtons="back" />
+  <item name="LetraInicialR" delay="3" navButtons="back" />
+  <item name="LetraInicialS" delay="3" navButtons="back" />
+  <item name="LetraInicialT" delay="3" navButtons="back" />
+  <item name="LetraInicialU" delay="3" navButtons="back" />
+  <item name="LetraInicialV" delay="3" navButtons="back" />
+  <item name="LetraInicialX" delay="3" navButtons="back" />
+  <item name="LetraInicialZ" delay="3" navButtons="back" />
+ </sequence>
+ <activities>
+  <activity class="@panels.Identify" name="LetraInicialA" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "A"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraA.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.3,0.066993|L:0.270677,0.147059|L:0.275188,0.160131|L:0.22406,0.232843|L:0.22406,0.319444|L:0.245865,0.329248|L:0.309774,0.328431|L:0.341353,0.238562|L:0.342105,0.209967|L:0.354887,0.209967|L:0.373684,0.207516|L:0.368421,0.19281|L:0.392481,0.179739|L:0.4,0.159314|L:0.373684,0.13317|L:0.398496,0.103758|L:0.372932,0.105392|L:0.356391,0.094771|L:0.332331,0.060458|L:0.32406,0.087418|L:0.3,0.066993</shape>
+     <shape comment="1">M:0.581203,0.080065|L:0.637594,0.222222|L:0.622556,0.252451|L:0.631579,0.290033|L:0.647368,0.316993|L:0.7,0.328431|L:0.723308,0.283497|L:0.728571,0.30719|L:0.741353,0.285131|L:0.762406,0.31781|L:0.8,0.323529|L:0.843609,0.256536|L:0.82406,0.220588|L:0.842105,0.183007|L:0.848872,0.148693|L:0.86391,0.093137|L:0.83985,0.075163|L:0.762406,0.138072|L:0.760902,0.114379|L:0.748872,0.119281|L:0.733083,0.164216|L:0.71203,0.11683|L:0.698496,0.117647|L:0.696992,0.134804|L:0.645113,0.086601|L:0.604511,0.07598|L:0.593233,0.107026|L:0.584962,0.078431|L:0.581203,0.080065</shape>
+     <shape comment="2">M:0.028571,0.520425|L:0.070677,0.511438|L:0.119549,0.522876|L:0.156391,0.515523|L:0.208271,0.487745|L:0.224812,0.48366|L:0.254887,0.468954|L:0.263158,0.473856|L:0.25188,0.497549|L:0.26391,0.512255|L:0.266917,0.526961|L:0.280451,0.552288|L:0.277444,0.585784|L:0.245113,0.571895|L:0.229323,0.561275|L:0.204511,0.572712|L:0.193985,0.60049|L:0.168421,0.66585|L:0.177444,0.70098|L:0.149624,0.703431|L:0.138346,0.647059|L:0.143609,0.613562|L:0.096241,0.615196|L:0.080451,0.648693|L:0.103008,0.710784|L:0.019549,0.705065|L:0.017293,0.632353|L:0.030827,0.603758|L:0.015789,0.556373|L:0.028571,0.520425</shape>
+     <shape comment="3">M:0.390977,0.705065|L:0.393233,0.745098|L:0.382707,0.808007|L:0.389474,0.887255|L:0.416541,0.924837|L:0.48797,0.94281|L:0.507519,0.918301|L:0.538346,0.947712|L:0.542857,0.925654|L:0.520301,0.898693|L:0.551128,0.894608|L:0.547368,0.821078|L:0.525564,0.770425|L:0.491729,0.743464|L:0.446617,0.720588|L:0.424812,0.713235|L:0.399248,0.693627|L:0.390977,0.705065</shape>
+     <shape comment="4">M:0.763158,0.522876|L:0.74812,0.552288|L:0.749624,0.569444|L:0.742857,0.607843|L:0.754135,0.658497|L:0.753383,0.688725|L:0.758647,0.70915|L:0.755639,0.747549|L:0.845113,0.741013|L:0.841353,0.703431|L:0.857143,0.754902|L:0.895489,0.75|L:0.938346,0.757353|L:0.957143,0.693627|L:0.932331,0.619281|L:0.971429,0.598856|L:1.000752,0.580065|L:1.002256,0.515523|L:0.97218,0.503268|L:0.899248,0.506536|L:0.846617,0.504902|L:0.763158,0.522876</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="abacaxi.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialB" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "B"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraB.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.666667,0.558685|L:0.699055,0.677621|L:0.709852,0.688576|L:0.693657,0.723005|L:0.726046,0.785603|L:0.746289,0.788732|L:0.778677,0.782473|L:0.784076,0.757433|L:0.79892,0.776213|L:0.802969,0.760563|L:0.82861,0.805947|L:0.91363,0.7277|L:0.883941,0.687011|L:0.928475,0.555556|L:0.879892,0.541471|L:0.82726,0.596244|L:0.815115,0.571205|L:0.793522,0.621283|L:0.767881,0.56651|L:0.759784,0.589984|L:0.680162,0.549296|L:0.666667,0.558685</shape>
+     <shape comment="1">rectangle:0.008097,0.059468,0.255061,0.244131</shape>
+     <shape comment="2">M:0.164642,0.649452|L:0.157895,0.785603|L:0.17274,0.837246|L:0.224022,0.877934|L:0.244265,0.876369|L:0.261808,0.8482|L:0.282051,0.871674|L:0.268556,0.837246|L:0.295547,0.838811|L:0.292848,0.804382|L:0.290148,0.752739|L:0.261808,0.70579|L:0.213225,0.674491|L:0.183536,0.672926|L:0.164642,0.649452</shape>
+     <shape comment="3">M:0.612686,0.007825|L:0.607287,0.061033|L:0.65587,0.084507|L:0.712551,0.164319|L:0.704453,0.170579|L:0.682861,0.170579|L:0.678812,0.192488|L:0.678812,0.215962|L:0.663968,0.212833|L:0.651822,0.212833|L:0.646424,0.225352|L:0.636977,0.206573|L:0.605938,0.222222|L:0.619433,0.258216|L:0.641026,0.300469|L:0.670715,0.316119|L:0.680162,0.295775|L:0.670715,0.273865|L:0.7139,0.261346|L:0.80027,0.276995|L:0.844804,0.245696|L:0.877193,0.276995|L:0.900135,0.197183|L:0.878542,0.140845|L:0.854251,0.150235|L:0.88529,0.112676|L:0.933873,0.111111|L:0.909582,0.029734|L:0.875843,0.042254|L:0.711201,0.051643|L:0.711201,0.089202|L:0.682861,0.050078|L:0.704453,0.032864|L:0.678812,0.00626|L:0.612686,0.007825</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="borboleta.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.666667,0.558685|L:0.699055,0.677621|L:0.709852,0.688576|L:0.693657,0.723005|L:0.726046,0.785603|L:0.746289,0.788732|L:0.778677,0.782473|L:0.784076,0.757433|L:0.79892,0.776213|L:0.802969,0.760563|L:0.82861,0.805947|L:0.91363,0.7277|L:0.883941,0.687011|L:0.928475,0.555556|L:0.879892,0.541471|L:0.82726,0.596244|L:0.815115,0.571205|L:0.793522,0.621283|L:0.767881,0.56651|L:0.759784,0.589984|L:0.680162,0.549296|L:0.666667,0.558685</shape>
+     <shape comment="1">rectangle:0.008097,0.059468,0.255061,0.244131</shape>
+     <shape comment="2">M:0.164642,0.649452|L:0.157895,0.785603|L:0.17274,0.837246|L:0.224022,0.877934|L:0.244265,0.876369|L:0.261808,0.8482|L:0.282051,0.871674|L:0.268556,0.837246|L:0.295547,0.838811|L:0.292848,0.804382|L:0.290148,0.752739|L:0.261808,0.70579|L:0.213225,0.674491|L:0.183536,0.672926|L:0.164642,0.649452</shape>
+     <shape comment="3">M:0.612686,0.007825|L:0.607287,0.061033|L:0.65587,0.084507|L:0.712551,0.164319|L:0.704453,0.170579|L:0.682861,0.170579|L:0.678812,0.192488|L:0.678812,0.215962|L:0.663968,0.212833|L:0.651822,0.212833|L:0.646424,0.225352|L:0.636977,0.206573|L:0.605938,0.222222|L:0.619433,0.258216|L:0.641026,0.300469|L:0.670715,0.316119|L:0.680162,0.295775|L:0.670715,0.273865|L:0.7139,0.261346|L:0.80027,0.276995|L:0.844804,0.245696|L:0.877193,0.276995|L:0.900135,0.197183|L:0.878542,0.140845|L:0.854251,0.150235|L:0.88529,0.112676|L:0.933873,0.111111|L:0.909582,0.029734|L:0.875843,0.042254|L:0.711201,0.051643|L:0.711201,0.089202|L:0.682861,0.050078|L:0.704453,0.032864|L:0.678812,0.00626|L:0.612686,0.007825</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialC" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "C"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraC.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.794872,0.589491|L:0.717949,0.512315|L:0.693657,0.536946|L:0.717949,0.6289|L:0.747638,0.658457|L:0.680162,0.696223|L:0.626181,0.781609|L:0.62888,0.840723|L:0.631579,0.972085|L:0.88529,0.967159|L:0.88529,0.699507|L:0.860999,0.63711|L:0.881242,0.489327|L:0.794872,0.589491</shape>
+     <shape comment="1">rectangle:0.107962,0.013136,0.174089,0.387521</shape>
+     <shape comment="2">M:0.087719,0.684729|L:0.026991,0.684729|L:0.02834,0.817734|L:0.006748,0.83087|L:0.009447,0.893268|L:0.329285,0.891626|L:0.319838,0.819376|L:0.2861,0.811166|L:0.309042,0.694581|L:0.267206,0.661741|L:0.238866,0.679803|L:0.187584,0.602627|L:0.122807,0.600985|L:0.087719,0.684729</shape>
+     <shape comment="3">M:0.801619,0.036125|L:0.71525,0.10509|L:0.700405,0.157635|L:0.730094,0.215107|L:0.808367,0.292282|L:0.80027,0.399015|L:0.910931,0.400657|L:0.879892,0.270936|L:0.960864,0.190476|L:0.927126,0.049261|L:0.801619,0.036125</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="coelho.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.794872,0.589491|L:0.717949,0.512315|L:0.693657,0.536946|L:0.717949,0.6289|L:0.747638,0.658457|L:0.680162,0.696223|L:0.626181,0.781609|L:0.62888,0.840723|L:0.631579,0.972085|L:0.88529,0.967159|L:0.88529,0.699507|L:0.860999,0.63711|L:0.881242,0.489327|L:0.794872,0.589491</shape>
+     <shape comment="1">rectangle:0.107962,0.013136,0.174089,0.387521</shape>
+     <shape comment="2">M:0.087719,0.684729|L:0.026991,0.684729|L:0.02834,0.817734|L:0.006748,0.83087|L:0.009447,0.893268|L:0.329285,0.891626|L:0.319838,0.819376|L:0.2861,0.811166|L:0.309042,0.694581|L:0.267206,0.661741|L:0.238866,0.679803|L:0.187584,0.602627|L:0.122807,0.600985|L:0.087719,0.684729</shape>
+     <shape comment="3">M:0.801619,0.036125|L:0.71525,0.10509|L:0.700405,0.157635|L:0.730094,0.215107|L:0.808367,0.292282|L:0.80027,0.399015|L:0.910931,0.400657|L:0.879892,0.270936|L:0.960864,0.190476|L:0.927126,0.049261|L:0.801619,0.036125</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialD" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "D"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraD.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.051451,0.047308|L:0.05409,0.226754|L:0.150396,0.319739|L:0.273087,0.241436|L:0.278364,0.065253|L:0.193931,0.014682|L:0.051451,0.047308</shape>
+     <shape comment="1">rectangle:0.687335,0.03752,0.244063,0.261011</shape>
+     <shape comment="2">M:0.651715,0.610114|L:0.634565,0.647635|L:0.668865,0.745514|L:0.66095,0.791191|L:0.672823,0.840131|L:0.728232,0.854812|L:0.746702,0.805873|L:0.754617,0.846656|L:0.762533,0.810767|L:0.78496,0.866232|L:0.856201,0.809135|L:0.833773,0.748776|L:0.883905,0.619902|L:0.831135,0.60522|L:0.781003,0.660685|L:0.773087,0.641109|L:0.753298,0.694943|L:0.725594,0.631321|L:0.726913,0.672104|L:0.6781,0.613377|L:0.651715,0.610114</shape>
+     <shape comment="3">M:0.007916,0.556281|L:0.059367,0.502447|L:0.101583,0.616639|L:0.145119,0.5677|L:0.204485,0.569331|L:0.296834,0.562806|L:0.325858,0.652529|L:0.224274,0.694943|L:0.291557,0.683524|L:0.290237,0.814029|L:0.245383,0.835237|L:0.238786,0.817292|L:0.075198,0.822186|L:0.083113,0.849918|L:0.034301,0.8646|L:0.003958,0.787928|L:0.013193,0.730832|L:0.069921,0.734095|L:0.079156,0.673736|L:0.038259,0.616639|L:0.009235,0.59217|L:0.007916,0.556281</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="dado.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.051451,0.047308|L:0.05409,0.226754|L:0.150396,0.319739|L:0.273087,0.241436|L:0.278364,0.065253|L:0.193931,0.014682|L:0.051451,0.047308</shape>
+     <shape comment="1">rectangle:0.687335,0.03752,0.244063,0.261011</shape>
+     <shape comment="2">M:0.651715,0.610114|L:0.634565,0.647635|L:0.668865,0.745514|L:0.66095,0.791191|L:0.672823,0.840131|L:0.728232,0.854812|L:0.746702,0.805873|L:0.754617,0.846656|L:0.762533,0.810767|L:0.78496,0.866232|L:0.856201,0.809135|L:0.833773,0.748776|L:0.883905,0.619902|L:0.831135,0.60522|L:0.781003,0.660685|L:0.773087,0.641109|L:0.753298,0.694943|L:0.725594,0.631321|L:0.726913,0.672104|L:0.6781,0.613377|L:0.651715,0.610114</shape>
+     <shape comment="3">M:0.007916,0.556281|L:0.059367,0.502447|L:0.101583,0.616639|L:0.145119,0.5677|L:0.204485,0.569331|L:0.296834,0.562806|L:0.325858,0.652529|L:0.224274,0.694943|L:0.291557,0.683524|L:0.290237,0.814029|L:0.245383,0.835237|L:0.238786,0.817292|L:0.075198,0.822186|L:0.083113,0.849918|L:0.034301,0.8646|L:0.003958,0.787928|L:0.013193,0.730832|L:0.069921,0.734095|L:0.079156,0.673736|L:0.038259,0.616639|L:0.009235,0.59217|L:0.007916,0.556281</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialE" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "E"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraE.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.623244,0.722137|L:0.623244,0.963359|L:0.868455,0.960305|L:0.864623,0.719084|L:0.623244,0.722137</shape>
+     <shape comment="2">M:0.090677,0.526718|L:0.148148,0.483969|L:0.192848,0.491603|L:0.227331,0.529771|L:0.243934,0.61374|L:0.266922,0.630534|L:0.307791,0.725191|L:0.296296,0.748092|L:0.257982,0.751145|L:0.234994,0.774046|L:0.127714,0.767939|L:0.088123,0.720611|L:0.093231,0.633588|L:0.076628,0.58626|L:0.090677,0.526718</shape>
+     <shape comment="3">M:0.687101,0.129771|L:0.688378,0.28855|L:0.708812,0.335878|L:0.715198,0.392366|L:0.689655,0.450382|L:0.864623,0.435115|L:0.900383,0.468702|L:0.945083,0.436641|L:0.93742,0.407634|L:0.863346,0.380153|L:0.850575,0.282443|L:0.818646,0.233588|L:0.780332,0.212214|L:0.784163,0.172519|L:0.743295,0.131298|L:0.724138,0.148092|L:0.693487,0.126718|L:0.687101,0.129771</shape>
+     <shape comment="3">M:0.0894,0.053435|L:0.094508,0.201527|L:0.176245,0.299237|L:0.298851,0.229008|L:0.300128,0.067176|L:0.203065,0.010687|L:0.0894,0.053435</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="elefante.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.623244,0.722137|L:0.623244,0.963359|L:0.868455,0.960305|L:0.864623,0.719084|L:0.623244,0.722137</shape>
+     <shape comment="2">M:0.090677,0.526718|L:0.148148,0.483969|L:0.192848,0.491603|L:0.227331,0.529771|L:0.243934,0.61374|L:0.266922,0.630534|L:0.307791,0.725191|L:0.296296,0.748092|L:0.257982,0.751145|L:0.234994,0.774046|L:0.127714,0.767939|L:0.088123,0.720611|L:0.093231,0.633588|L:0.076628,0.58626|L:0.090677,0.526718</shape>
+     <shape comment="3">M:0.687101,0.129771|L:0.688378,0.28855|L:0.708812,0.335878|L:0.715198,0.392366|L:0.689655,0.450382|L:0.864623,0.435115|L:0.900383,0.468702|L:0.945083,0.436641|L:0.93742,0.407634|L:0.863346,0.380153|L:0.850575,0.282443|L:0.818646,0.233588|L:0.780332,0.212214|L:0.784163,0.172519|L:0.743295,0.131298|L:0.724138,0.148092|L:0.693487,0.126718|L:0.687101,0.129771</shape>
+     <shape comment="3">M:0.0894,0.053435|L:0.094508,0.201527|L:0.176245,0.299237|L:0.298851,0.229008|L:0.300128,0.067176|L:0.203065,0.010687|L:0.0894,0.053435</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialF" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "F"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraF.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.088591,0.004484|L:0.068456,0.150972|L:0.071141,0.2287|L:0.136913,0.295964|L:0.210738,0.304933|L:0.225503,0.270553|L:0.263087,0.301943|L:0.244295,0.251121|L:0.275168,0.242152|L:0.271141,0.122571|L:0.202685,0.047833|L:0.12349,0.022422|L:0.088591,0.004484</shape>
+     <shape comment="1">rectangle:0.655034,0.189836,0.32349,0.321375</shape>
+     <shape comment="2">M:0.014765,0.445441|L:0.026846,0.506726|L:0.022819,0.591928|L:0.044295,0.665172|L:0.048322,0.707025|L:0.034899,0.754858|L:0.193289,0.741405|L:0.220134,0.741405|L:0.230872,0.775785|L:0.292617,0.73991|L:0.25906,0.705531|L:0.201342,0.693573|L:0.197315,0.641256|L:0.185235,0.590433|L:0.158389,0.55157|L:0.118121,0.527653|L:0.120805,0.487294|L:0.103356,0.458894|L:0.095302,0.423019|L:0.071141,0.463378|L:0.060403,0.463378|L:0.014765,0.445441</shape>
+     <shape comment="3">M:0.606711,0.666667|L:0.543624,0.724963|L:0.539597,0.778774|L:0.57047,0.828102|L:0.562416,0.889387|L:0.561074,0.926756|L:0.621477,0.940209|L:0.726174,0.935725|L:0.730201,0.926756|L:0.781208,0.917788|L:0.790604,0.892377|L:0.758389,0.865471|L:0.747651,0.80867|L:0.704698,0.793722|L:0.719463,0.778774|L:0.697987,0.710015|L:0.673826,0.68012|L:0.606711,0.666667</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="folha.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.088591,0.004484|L:0.068456,0.150972|L:0.071141,0.2287|L:0.136913,0.295964|L:0.210738,0.304933|L:0.225503,0.270553|L:0.263087,0.301943|L:0.244295,0.251121|L:0.275168,0.242152|L:0.271141,0.122571|L:0.202685,0.047833|L:0.12349,0.022422|L:0.088591,0.004484</shape>
+     <shape comment="1">rectangle:0.655034,0.189836,0.32349,0.321375</shape>
+     <shape comment="2">M:0.014765,0.445441|L:0.026846,0.506726|L:0.022819,0.591928|L:0.044295,0.665172|L:0.048322,0.707025|L:0.034899,0.754858|L:0.193289,0.741405|L:0.220134,0.741405|L:0.230872,0.775785|L:0.292617,0.73991|L:0.25906,0.705531|L:0.201342,0.693573|L:0.197315,0.641256|L:0.185235,0.590433|L:0.158389,0.55157|L:0.118121,0.527653|L:0.120805,0.487294|L:0.103356,0.458894|L:0.095302,0.423019|L:0.071141,0.463378|L:0.060403,0.463378|L:0.014765,0.445441</shape>
+     <shape comment="3">M:0.606711,0.666667|L:0.543624,0.724963|L:0.539597,0.778774|L:0.57047,0.828102|L:0.562416,0.889387|L:0.561074,0.926756|L:0.621477,0.940209|L:0.726174,0.935725|L:0.730201,0.926756|L:0.781208,0.917788|L:0.790604,0.892377|L:0.758389,0.865471|L:0.747651,0.80867|L:0.704698,0.793722|L:0.719463,0.778774|L:0.697987,0.710015|L:0.673826,0.68012|L:0.606711,0.666667</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialG" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "G"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="gato.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.046095,0.531842|L:0.049936,0.640275|L:0.046095,0.728055|L:0.072983,0.814114|L:0.076825,0.891566|L:0.055058,0.94148|L:0.081946,0.958692|L:0.245839,0.932874|L:0.267606,0.936317|L:0.263764,0.967298|L:0.314981,0.960413|L:0.308579,0.877797|L:0.239437,0.872633|L:0.239437,0.810671|L:0.230474,0.740103|L:0.201024,0.679862|L:0.153649,0.655766|L:0.15621,0.605852|L:0.138284,0.580034|L:0.12548,0.523236|L:0.099872,0.557659|L:0.087068,0.557659|L:0.046095,0.531842</shape>
+     <shape comment="1">M:0.081946,0.036145|L:0.026889,0.096386|L:0.014085,0.158348|L:0.058899,0.237522|L:0.108835,0.29432|L:0.1242,0.325301|L:0.12548,0.447504|L:0.183099,0.438898|L:0.229193,0.395869|L:0.209987,0.375215|L:0.22023,0.347676|L:0.192061,0.313253|L:0.203585,0.280551|L:0.276569,0.194492|L:0.28169,0.130809|L:0.25096,0.051635|L:0.204866,0.010327|L:0.081946,0.036145</shape>
+     <shape comment="2">M:0.804097,0.550775|L:0.8758,0.550775|L:0.914213,0.60241|L:0.90525,0.688468|L:0.873239,0.702238|L:0.897567,0.729776|L:0.902689,0.803787|L:0.893726,0.831325|L:0.956466,0.86747|L:0.877081,0.907057|L:0.919334,0.972461|L:0.903969,0.996558|L:0.783611,0.996558|L:0.777209,0.953528|L:0.806658,0.929432|L:0.809219,0.888124|L:0.740077,0.862306|L:0.674776,0.72117|L:0.708067,0.72117|L:0.78105,0.771084|L:0.790013,0.736661|L:0.792574,0.700516|L:0.765685,0.629948|L:0.804097,0.550775</shape>
+     <shape comment="3">M:0.690141,0.034423|L:0.699104,0.106713|L:0.729834,0.2358|L:0.742638,0.246127|L:0.723432,0.282272|L:0.727273,0.337349|L:0.751601,0.390706|L:0.805378,0.418244|L:0.829705,0.337349|L:0.84507,0.378657|L:0.854033,0.339071|L:0.878361,0.414802|L:0.950064,0.387263|L:0.965429,0.27883|L:0.942382,0.242685|L:0.952625,0.242685|L:0.991037,0.053356|L:0.959027,0.022375|L:0.877081,0.129088|L:0.877081,0.084337|L:0.866837,0.086059|L:0.84251,0.158348|L:0.809219,0.080895|L:0.807939,0.129088|L:0.75032,0.051635|L:0.690141,0.034423</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="gato.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.046095,0.531842|L:0.049936,0.640275|L:0.046095,0.728055|L:0.072983,0.814114|L:0.076825,0.891566|L:0.055058,0.94148|L:0.081946,0.958692|L:0.245839,0.932874|L:0.267606,0.936317|L:0.263764,0.967298|L:0.314981,0.960413|L:0.308579,0.877797|L:0.239437,0.872633|L:0.239437,0.810671|L:0.230474,0.740103|L:0.201024,0.679862|L:0.153649,0.655766|L:0.15621,0.605852|L:0.138284,0.580034|L:0.12548,0.523236|L:0.099872,0.557659|L:0.087068,0.557659|L:0.046095,0.531842</shape>
+     <shape comment="1">M:0.081946,0.036145|L:0.026889,0.096386|L:0.014085,0.158348|L:0.058899,0.237522|L:0.108835,0.29432|L:0.1242,0.325301|L:0.12548,0.447504|L:0.183099,0.438898|L:0.229193,0.395869|L:0.209987,0.375215|L:0.22023,0.347676|L:0.192061,0.313253|L:0.203585,0.280551|L:0.276569,0.194492|L:0.28169,0.130809|L:0.25096,0.051635|L:0.204866,0.010327|L:0.081946,0.036145</shape>
+     <shape comment="2">M:0.804097,0.550775|L:0.8758,0.550775|L:0.914213,0.60241|L:0.90525,0.688468|L:0.873239,0.702238|L:0.897567,0.729776|L:0.902689,0.803787|L:0.893726,0.831325|L:0.956466,0.86747|L:0.877081,0.907057|L:0.919334,0.972461|L:0.903969,0.996558|L:0.783611,0.996558|L:0.777209,0.953528|L:0.806658,0.929432|L:0.809219,0.888124|L:0.740077,0.862306|L:0.674776,0.72117|L:0.708067,0.72117|L:0.78105,0.771084|L:0.790013,0.736661|L:0.792574,0.700516|L:0.765685,0.629948|L:0.804097,0.550775</shape>
+     <shape comment="3">M:0.690141,0.034423|L:0.699104,0.106713|L:0.729834,0.2358|L:0.742638,0.246127|L:0.723432,0.282272|L:0.727273,0.337349|L:0.751601,0.390706|L:0.805378,0.418244|L:0.829705,0.337349|L:0.84507,0.378657|L:0.854033,0.339071|L:0.878361,0.414802|L:0.950064,0.387263|L:0.965429,0.27883|L:0.942382,0.242685|L:0.952625,0.242685|L:0.991037,0.053356|L:0.959027,0.022375|L:0.877081,0.129088|L:0.877081,0.084337|L:0.866837,0.086059|L:0.84251,0.158348|L:0.809219,0.080895|L:0.807939,0.129088|L:0.75032,0.051635|L:0.690141,0.034423</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialH" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "H"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraH.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.031646,0.001435|L:0.032911,0.263989|L:0.402532,0.259684|L:0.4,0.002869|L:0.031646,0.001435</shape>
+     <shape comment="1">rectangle:0.022785,0.550933,0.218987,0.242468</shape>
+     <shape comment="2">rectangle:0.667089,0.088953,0.332911,0.288379</shape>
+     <shape comment="3">M:0.55443,0.684362|L:0.518987,0.707317|L:0.507595,0.74462|L:0.574684,0.812052|L:0.582278,0.830703|L:0.563291,0.886657|L:0.502532,0.885222|L:0.508861,0.942611|L:0.553165,0.979914|L:0.572152,0.962697|L:0.570886,0.942611|L:0.617721,0.935438|L:0.772152,0.949785|L:0.789873,0.859397</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="hipopotamo.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.031646,0.001435|L:0.032911,0.263989|L:0.402532,0.259684|L:0.4,0.002869|L:0.031646,0.001435</shape>
+     <shape comment="1">rectangle:0.022785,0.550933,0.218987,0.242468</shape>
+     <shape comment="2">rectangle:0.667089,0.088953,0.332911,0.288379</shape>
+     <shape comment="3">M:0.55443,0.684362|L:0.518987,0.707317|L:0.507595,0.74462|L:0.574684,0.812052|L:0.582278,0.830703|L:0.563291,0.886657|L:0.502532,0.885222|L:0.508861,0.942611|L:0.553165,0.979914|L:0.572152,0.962697|L:0.570886,0.942611|L:0.617721,0.935438|L:0.772152,0.949785|L:0.789873,0.859397</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialI" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "I"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraI.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="1">M:0.791367,0.989565|L:0.978417,1.001739|L:0.917986,0.932174|L:0.998561,0.890435|L:0.942446,0.866087|L:0.952518,0.833043|L:0.923741,0.761739|L:0.978417,0.697391|L:0.909353,0.636522|L:0.846043,0.645217|L:0.795683,0.702609|L:0.828777,0.765217|L:0.817266,0.808696|L:0.705036,0.766957|L:0.729496,0.845217|L:0.778417,0.888696|L:0.848921,0.921739|L:0.843165,0.933913|L:0.791367,0.989565</shape>
+     <shape comment="1">M:0.161151,0|L:0.146763,0.046957|L:0.120863,0.085217|L:0.057554,0.074783|L:0.046043,0.168696|L:0.069065,0.22087|L:0.015827,0.250435|L:0.05036,0.321739|L:0.113669,0.264348|L:0.16259,0.32|L:0.198561,0.292174|L:0.233094,0.330435|L:0.277698,0.262609|L:0.348201,0.302609|L:0.382734,0.245217|L:0.329496,0.215652|L:0.355396,0.102609|L:0.326619,0.064348|L:0.273381,0.086957|L:0.248921,0.041739|L:0.241727,0|L:0.161151,0</shape>
+     <shape comment="2">M:0.772662,0.12|L:0.732374,0.163478|L:0.657554,0.182609|L:0.673381,0.24|L:0.722302,0.274783|L:0.722302,0.293913|L:0.771223,0.332174|L:0.810072,0.316522|L:0.834532,0.33913|L:0.903597,0.356522|L:0.943885,0.342609|L:0.929496,0.36|L:0.814389,0.377391|L:0.764029,0.393043|L:0.730935,0.426087|L:0.722302,0.455652|L:0.797122,0.422609|L:0.858993,0.413913|L:0.964029,0.4|L:0.991367,0.351304|L:0.98705,0.186087|L:0.928058,0.135652|L:0.860432,0.113043|L:0.820144,0.146087|L:0.772662,0.153043|L:0.78705,0.133913|L:0.772662,0.12</shape>
+     <shape comment="3">M:0.214388,0.62087|L:0.169784,0.714783|L:0.046043,0.725217|L:0,0.744348|L:0.001439,0.942609|L:0.089209,0.970435|L:0.233094,0.951304|L:0.256115,0.893913|L:0.25036,0.834783|L:0.254676,0.806957|L:0.302158,0.773913|L:0.306475,0.648696|L:0.214388,0.62087</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="indio.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="1">M:0.791367,0.989565|L:0.978417,1.001739|L:0.917986,0.932174|L:0.998561,0.890435|L:0.942446,0.866087|L:0.952518,0.833043|L:0.923741,0.761739|L:0.978417,0.697391|L:0.909353,0.636522|L:0.846043,0.645217|L:0.795683,0.702609|L:0.828777,0.765217|L:0.817266,0.808696|L:0.705036,0.766957|L:0.729496,0.845217|L:0.778417,0.888696|L:0.848921,0.921739|L:0.843165,0.933913|L:0.791367,0.989565</shape>
+     <shape comment="1">M:0.161151,0|L:0.146763,0.046957|L:0.120863,0.085217|L:0.057554,0.074783|L:0.046043,0.168696|L:0.069065,0.22087|L:0.015827,0.250435|L:0.05036,0.321739|L:0.113669,0.264348|L:0.16259,0.32|L:0.198561,0.292174|L:0.233094,0.330435|L:0.277698,0.262609|L:0.348201,0.302609|L:0.382734,0.245217|L:0.329496,0.215652|L:0.355396,0.102609|L:0.326619,0.064348|L:0.273381,0.086957|L:0.248921,0.041739|L:0.241727,0|L:0.161151,0</shape>
+     <shape comment="2">M:0.772662,0.12|L:0.732374,0.163478|L:0.657554,0.182609|L:0.673381,0.24|L:0.722302,0.274783|L:0.722302,0.293913|L:0.771223,0.332174|L:0.810072,0.316522|L:0.834532,0.33913|L:0.903597,0.356522|L:0.943885,0.342609|L:0.929496,0.36|L:0.814389,0.377391|L:0.764029,0.393043|L:0.730935,0.426087|L:0.722302,0.455652|L:0.797122,0.422609|L:0.858993,0.413913|L:0.964029,0.4|L:0.991367,0.351304|L:0.98705,0.186087|L:0.928058,0.135652|L:0.860432,0.113043|L:0.820144,0.146087|L:0.772662,0.153043|L:0.78705,0.133913|L:0.772662,0.12</shape>
+     <shape comment="3">M:0.214388,0.62087|L:0.169784,0.714783|L:0.046043,0.725217|L:0,0.744348|L:0.001439,0.942609|L:0.089209,0.970435|L:0.233094,0.951304|L:0.256115,0.893913|L:0.25036,0.834783|L:0.254676,0.806957|L:0.302158,0.773913|L:0.306475,0.648696|L:0.214388,0.62087</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialJ" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "J"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="jaula.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.169746,0.005944|L:0.096872,0.059435|L:0.099571,0.267459|L:0.142756,0.309064|L:0.296602,0.286776|L:0.288505,0.060921|L:0.210232,0.023774|L:0.206184,0.007429|L:0.169746,0.005944</shape>
+     <shape comment="1">M:0.053676,0.503243|L:0.072345,0.542153|L:0.073512,0.56939|L:0.094516,0.599222|L:0.114352,0.55642|L:0.170362,0.538262|L:0.194866,0.549935|L:0.21937,0.549935|L:0.23804,0.561608|L:0.263711,0.540856|L:0.28238,0.540856|L:0.298716,0.55642|L:0.306884,0.614786|L:0.268378,0.621271|L:0.201867,0.661479|L:0.192532,0.695201|L:0.183197,0.714656|L:0.229872,0.705577|L:0.236873,0.670558|L:0.242707,0.652399|L:0.271879,0.651102|L:0.290548,0.700389|L:0.268378,0.762646|L:0.235706,0.769131|L:0.231039,0.750973|L:0.183197,0.774319|L:0.105018,0.763943|L:0.065344,0.776913|L:0.070012,0.788586|L:0.045508,0.810636|L:0.002334,0.79118|L:0.001167,0.700389|L:0.060677,0.709468|L:0.077013,0.654994|L:0.050175,0.607004|L:0.016336,0.574578|L:0,0.570687|L:0.009335,0.520104|L:0.053676,0.503243</shape>
+     <shape comment="2">M:0.719953,0.063554|L:0.668611,0.038911|L:0.644107,0.049287|L:0.63944,0.07393|L:0.687281,0.075227|L:0.719953,0.095979|L:0.729288,0.12192|L:0.709452,0.133593|L:0.700117,0.156939|L:0.68028,0.188067|L:0.690782,0.216602|L:0.68028,0.243839|L:0.745624,0.294423|L:0.822637,0.342412|L:0.885648,0.359274|L:0.927655,0.332036|L:0.920653,0.303502|L:0.898483,0.176394|L:0.948658,0.177691|L:0.938156,0.081712|L:0.956826,0.058366|L:0.882147,0.014267|L:0.866978,0.006485|L:0.792299,0.032425|L:0.785298,0.058366|L:0.744457,0.051881|L:0.719953,0.063554</shape>
+     <shape comment="3">M:0.730455,0.525292|L:0.695449,0.518807|L:0.691949,0.544747|L:0.668611,0.55642|L:0.670945,0.582361|L:0.689615,0.584955|L:0.648775,0.635538|L:0.672112,0.670558|L:0.688448,0.649805|L:0.72112,0.64332|L:0.718786,0.674449|L:0.726955,0.728923|L:0.718786,0.747082|L:0.670945,0.779507|L:0.652275,0.861219|L:0.956826,0.857328|L:0.955659,0.521401|L:0.730455,0.525292</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="jaula.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialK" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "K"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraK.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.043185,0.014641|L:0.013495,0.122987|L:0.02834,0.216691|L:0.099865,0.238653|L:0.163293,0.298682|L:0.233468,0.295754|L:0.352227,0.131772|L:0.317139,0.06735|L:0.230769,0.039531|L:0.183536,0.04978|L:0.159244,0.004392|L:0.043185,0.014641</shape>
+     <shape comment="1">M:0.611336,0.060029|L:0.677463,0.089312|L:0.701754,0.125915|L:0.677463,0.133236|L:0.669366,0.161054|L:0.651822,0.18448|L:0.653171,0.260615|L:0.807018,0.352855|L:0.893387,0.348463|L:0.897436,0.29429|L:0.871795,0.17716|L:0.933873,0.174231|L:0.91363,0.087848|L:0.936572,0.055637|L:0.843455,0.004392|L:0.762483,0.030747|L:0.754386,0.052709|L:0.696356,0.061493|L:0.630229,0.039531|L:0.611336,0.060029</shape>
+     <shape comment="2">M:0.021592,0.584187|L:0.032389,0.704246|L:0.070175,0.771596|L:0.202429,0.765739|L:0.224022,0.732064|L:0.291498,0.673499|L:0.298246,0.609078|L:0.261808,0.591508|L:0.238866,0.600293|L:0.238866,0.581259|L:0.021592,0.584187</shape>
+     <shape comment="3">M:0.676113,0.535871|L:0.681511,0.573938|L:0.643725,0.677892|L:0.682861,0.702782|L:0.717949,0.666179|L:0.736842,0.688141|L:0.761134,0.75549|L:0.758435,0.811127|L:0.739541,0.859444|L:0.782726,0.862372|L:0.778677,0.837482|L:0.789474,0.825769|L:0.793522,0.764275|L:0.812416,0.816984|L:0.807018,0.860908|L:0.844804,0.863836|L:0.844804,0.806735|L:0.82996,0.739385|L:0.904184,0.718887|L:0.920378,0.767204|L:0.912281,0.806735|L:0.894737,0.863836|L:0.956815,0.855051|L:0.97031,0.793558|L:0.987854,0.7306|L:0.983806,0.672035|L:0.977058,0.606149|L:0.924426,0.581259|L:0.792173,0.600293|L:0.74359,0.56369|L:0.711201,0.560761|L:0.676113,0.535871</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="kiwi.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.043185,0.014641|L:0.013495,0.122987|L:0.02834,0.216691|L:0.099865,0.238653|L:0.163293,0.298682|L:0.233468,0.295754|L:0.352227,0.131772|L:0.317139,0.06735|L:0.230769,0.039531|L:0.183536,0.04978|L:0.159244,0.004392|L:0.043185,0.014641</shape>
+     <shape comment="1">M:0.611336,0.060029|L:0.677463,0.089312|L:0.701754,0.125915|L:0.677463,0.133236|L:0.669366,0.161054|L:0.651822,0.18448|L:0.653171,0.260615|L:0.807018,0.352855|L:0.893387,0.348463|L:0.897436,0.29429|L:0.871795,0.17716|L:0.933873,0.174231|L:0.91363,0.087848|L:0.936572,0.055637|L:0.843455,0.004392|L:0.762483,0.030747|L:0.754386,0.052709|L:0.696356,0.061493|L:0.630229,0.039531|L:0.611336,0.060029</shape>
+     <shape comment="2">M:0.021592,0.584187|L:0.032389,0.704246|L:0.070175,0.771596|L:0.202429,0.765739|L:0.224022,0.732064|L:0.291498,0.673499|L:0.298246,0.609078|L:0.261808,0.591508|L:0.238866,0.600293|L:0.238866,0.581259|L:0.021592,0.584187</shape>
+     <shape comment="3">M:0.676113,0.535871|L:0.681511,0.573938|L:0.643725,0.677892|L:0.682861,0.702782|L:0.717949,0.666179|L:0.736842,0.688141|L:0.761134,0.75549|L:0.758435,0.811127|L:0.739541,0.859444|L:0.782726,0.862372|L:0.778677,0.837482|L:0.789474,0.825769|L:0.793522,0.764275|L:0.812416,0.816984|L:0.807018,0.860908|L:0.844804,0.863836|L:0.844804,0.806735|L:0.82996,0.739385|L:0.904184,0.718887|L:0.920378,0.767204|L:0.912281,0.806735|L:0.894737,0.863836|L:0.956815,0.855051|L:0.97031,0.793558|L:0.987854,0.7306|L:0.983806,0.672035|L:0.977058,0.606149|L:0.924426,0.581259|L:0.792173,0.600293|L:0.74359,0.56369|L:0.711201,0.560761|L:0.676113,0.535871</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialL" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "L"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraL.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.631001,0.07131|L:0.62963,0.351575|L:0.956104,0.353234|L:0.954733,0.064677|L:0.631001,0.07131</shape>
+     <shape comment="1">rectangle:0.001372,0.011609,0.368999,0.300166</shape>
+     <shape comment="2">rectangle:0,0.651741,0.329218,0.348259</shape>
+     <shape comment="3">M:0.714678,0.643449|L:0.72428,0.711443|L:0.716049,0.781095|L:0.744856,0.860696|L:0.747599,0.91874|L:0.73251,0.968491|L:0.806584,0.975124|L:0.897119,0.950249|L:0.927298,0.956882|L:0.928669,0.980099|L:0.980796,0.971808|L:0.97668,0.932007|L:0.894376,0.912106|L:0.898491,0.878939|L:0.883402,0.807629|L:0.862826,0.757877|L:0.835391,0.737977|L:0.814815,0.731343|L:0.812071,0.718076|L:0.8107,0.684909|L:0.794239,0.669983|L:0.790123,0.615257|L:0.769547,0.655058|L:0.750343,0.651741|L:0.72428,0.630182|L:0.714678,0.643449</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="leao.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.631001,0.07131|L:0.62963,0.351575|L:0.956104,0.353234|L:0.954733,0.064677|L:0.631001,0.07131</shape>
+     <shape comment="1">rectangle:0.001372,0.011609,0.368999,0.300166</shape>
+     <shape comment="2">rectangle:0,0.651741,0.329218,0.348259</shape>
+     <shape comment="3">M:0.714678,0.643449|L:0.72428,0.711443|L:0.716049,0.781095|L:0.744856,0.860696|L:0.747599,0.91874|L:0.73251,0.968491|L:0.806584,0.975124|L:0.897119,0.950249|L:0.927298,0.956882|L:0.928669,0.980099|L:0.980796,0.971808|L:0.97668,0.932007|L:0.894376,0.912106|L:0.898491,0.878939|L:0.883402,0.807629|L:0.862826,0.757877|L:0.835391,0.737977|L:0.814815,0.731343|L:0.812071,0.718076|L:0.8107,0.684909|L:0.794239,0.669983|L:0.790123,0.615257|L:0.769547,0.655058|L:0.750343,0.651741|L:0.72428,0.630182|L:0.714678,0.643449</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialM" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "M"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraM.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.729008,0.728198|L:0.656489,0.767442|L:0.63486,0.796512|L:0.625954,0.877907|L:0.645038,0.928779|L:0.695929,0.986919|L:0.715013,0.994186|L:0.833333,0.992733|L:0.87659,0.938953|L:0.903308,0.861919|L:0.898219,0.792151|L:0.871501,0.75436|L:0.801527,0.735465|L:0.819338,0.707849|L:0.78117,0.696221|L:0.76972,0.729651|L:0.729008,0.728198</shape>
+     <shape comment="1">ellipse:0.129771,0.109012,0,0</shape>
+     <shape comment="2">M:0.128499,0.106105|L:0.101781,0.15407|L:0.094148,0.199128|L:0.101781,0.24564|L:0.133588,0.303779|L:0.173028,0.318314|L:0.239186,0.319767|L:0.277354,0.300872|L:0.307888,0.261628|L:0.316794,0.226744|L:0.321883,0.193314|L:0.316794,0.15843|L:0.302799,0.126453|L:0.283715,0.098837|L:0.255725,0.079942|L:0.244275,0.075581|L:0.255725,0.065407|L:0.23028,0.052326|L:0.215013,0.071221|L:0.185751,0.074128|L:0.1743,0.079942|L:0.159033,0.079942|L:0.139949,0.082849|L:0.128499,0.09157|L:0.128499,0.106105</shape>
+     <shape comment="3">rectangle:0.711196,0.002907,0.288804,0.319767</shape>
+     <shape comment="4">M:0.001272,0.606105|L:0.001272,0.649709|L:0.017812,0.65407|L:0.044529,0.655523|L:0.071247,0.680233|L:0.069975,0.699128|L:0.044529,0.712209|L:0.048346,0.732558|L:0.022901,0.757267|L:0.031807,0.787791|L:0.026718,0.815407|L:0.038168,0.832849|L:0.057252,0.837209|L:0.076336,0.861919|L:0.091603,0.866279|L:0.113232,0.886628|L:0.13486,0.888081|L:0.159033,0.911337|L:0.1743,0.90843|L:0.198473,0.928779|L:0.215013,0.920058|L:0.253181,0.918605|L:0.260814,0.898256|L:0.251908,0.875|L:0.256997,0.848837|L:0.246819,0.832849|L:0.250636,0.811047|L:0.237913,0.796512|L:0.240458,0.768895|L:0.23028,0.757267|L:0.232824,0.747093|L:0.283715,0.739826|L:0.274809,0.675872|L:0.267176,0.655523|L:0.292621,0.62936|L:0.192112,0.569767|L:0.127226,0.609012|L:0.12341,0.630814|L:0.082697,0.630814|L:0.071247,0.636628|L:0.033079,0.613372|L:0.001272,0.606105</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="maça.mp3" />
+    </cell>
+    <cell id="0" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.729008,0.728198|L:0.656489,0.767442|L:0.63486,0.796512|L:0.625954,0.877907|L:0.645038,0.928779|L:0.695929,0.986919|L:0.715013,0.994186|L:0.833333,0.992733|L:0.87659,0.938953|L:0.903308,0.861919|L:0.898219,0.792151|L:0.871501,0.75436|L:0.801527,0.735465|L:0.819338,0.707849|L:0.78117,0.696221|L:0.76972,0.729651|L:0.729008,0.728198</shape>
+     <shape comment="1">ellipse:0.129771,0.109012,0,0</shape>
+     <shape comment="2">M:0.128499,0.106105|L:0.101781,0.15407|L:0.094148,0.199128|L:0.101781,0.24564|L:0.133588,0.303779|L:0.173028,0.318314|L:0.239186,0.319767|L:0.277354,0.300872|L:0.307888,0.261628|L:0.316794,0.226744|L:0.321883,0.193314|L:0.316794,0.15843|L:0.302799,0.126453|L:0.283715,0.098837|L:0.255725,0.079942|L:0.244275,0.075581|L:0.255725,0.065407|L:0.23028,0.052326|L:0.215013,0.071221|L:0.185751,0.074128|L:0.1743,0.079942|L:0.159033,0.079942|L:0.139949,0.082849|L:0.128499,0.09157|L:0.128499,0.106105</shape>
+     <shape comment="3">rectangle:0.711196,0.002907,0.288804,0.319767</shape>
+     <shape comment="4">M:0.001272,0.606105|L:0.001272,0.649709|L:0.017812,0.65407|L:0.044529,0.655523|L:0.071247,0.680233|L:0.069975,0.699128|L:0.044529,0.712209|L:0.048346,0.732558|L:0.022901,0.757267|L:0.031807,0.787791|L:0.026718,0.815407|L:0.038168,0.832849|L:0.057252,0.837209|L:0.076336,0.861919|L:0.091603,0.866279|L:0.113232,0.886628|L:0.13486,0.888081|L:0.159033,0.911337|L:0.1743,0.90843|L:0.198473,0.928779|L:0.215013,0.920058|L:0.253181,0.918605|L:0.260814,0.898256|L:0.251908,0.875|L:0.256997,0.848837|L:0.246819,0.832849|L:0.250636,0.811047|L:0.237913,0.796512|L:0.240458,0.768895|L:0.23028,0.757267|L:0.232824,0.747093|L:0.283715,0.739826|L:0.274809,0.675872|L:0.267176,0.655523|L:0.292621,0.62936|L:0.192112,0.569767|L:0.127226,0.609012|L:0.12341,0.630814|L:0.082697,0.630814|L:0.071247,0.636628|L:0.033079,0.613372|L:0.001272,0.606105</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialN" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "N"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraN.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.651217,0.090323|L:0.652375,0.367742|L:0.996524,0.365161|L:0.997683,0.087742|L:0.651217,0.090323</shape>
+     <shape comment="1">M:0.169177,0.009032|L:0.178447,0.070968|L:0.21321,0.12|L:0.161066,0.134194|L:0.12978,0.179355|L:0.107764,0.232258|L:0.110081,0.356129|L:0.325608,0.356129|L:0.323291,0.287742|L:0.283893,0.286452|L:0.318656,0.19871|L:0.331402,0.16129|L:0.301275,0.094194|L:0.31518,0.005161|L:0.286211,0.007742|L:0.25956,0.055484|L:0.252607,0.070968|L:0.232908,0.03871|L:0.20394,0.015484|L:0.169177,0.009032</shape>
+     <shape comment="2">M:0.059096,0.611613|L:0.044032,0.63871|L:0.047509,0.686452|L:0.052144,0.731613|L:0.059096,0.762581|L:0.117034,0.814194|L:0.170336,0.807742|L:0.234067,0.76129|L:0.242178,0.627097|L:0.159907,0.583226|L:0.059096,0.611613</shape>
+     <shape comment="3">rectangle:0.582851,0.769032,0,0</shape>
+     <shape comment="4">rectangle:0.582851,0.769032,0.326767,0.230968</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="nuvem.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.651217,0.090323|L:0.652375,0.367742|L:0.996524,0.365161|L:0.997683,0.087742|L:0.651217,0.090323</shape>
+     <shape comment="1">M:0.169177,0.009032|L:0.178447,0.070968|L:0.21321,0.12|L:0.161066,0.134194|L:0.12978,0.179355|L:0.107764,0.232258|L:0.110081,0.356129|L:0.325608,0.356129|L:0.323291,0.287742|L:0.283893,0.286452|L:0.318656,0.19871|L:0.331402,0.16129|L:0.301275,0.094194|L:0.31518,0.005161|L:0.286211,0.007742|L:0.25956,0.055484|L:0.252607,0.070968|L:0.232908,0.03871|L:0.20394,0.015484|L:0.169177,0.009032</shape>
+     <shape comment="2">M:0.059096,0.611613|L:0.044032,0.63871|L:0.047509,0.686452|L:0.052144,0.731613|L:0.059096,0.762581|L:0.117034,0.814194|L:0.170336,0.807742|L:0.234067,0.76129|L:0.242178,0.627097|L:0.159907,0.583226|L:0.059096,0.611613</shape>
+     <shape comment="3">rectangle:0.582851,0.769032,0,0</shape>
+     <shape comment="4">rectangle:0.582851,0.769032,0.326767,0.230968</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialO" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "O"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraO.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.632911,0.703148,0.367089,0.296852</shape>
+     <shape comment="1">rectangle:0.16737,0.007496,0.21097,0.341829</shape>
+     <shape comment="2">M:0.679325,0.238381|L:0.670886,0.287856|L:0.714487,0.335832|L:0.759494,0.377811|L:0.776371,0.410795|L:0.769339,0.431784|L:0.781997,0.497751|L:0.879044,0.467766|L:0.862166,0.445277|L:0.866385,0.428786|L:0.852321,0.418291|L:0.857947,0.407796|L:0.843882,0.398801|L:0.846695,0.386807|L:0.85654,0.370315|L:0.915612,0.313343|L:0.931083,0.248876|L:0.894515,0.187406|L:0.819972,0.167916|L:0.745429,0.185907|L:0.679325,0.238381</shape>
+     <shape comment="3">M:0.099859,0.577211|L:0.091421,0.637181|L:0.007032,0.590705|L:0.007032,0.647676|L:0.063291,0.715142|L:0.074543,0.733133|L:0.11955,0.74063|L:0.118143,0.775112|L:0.088608,0.802099|L:0.106892,0.847076|L:0.153305,0.815592|L:0.199719,0.851574|L:0.220816,0.791604|L:0.184248,0.769115|L:0.181435,0.748126|L:0.264416,0.725637|L:0.247539,0.709145|L:0.203938,0.686657|L:0.21097,0.652174|L:0.192686,0.581709|L:0.178622,0.581709|L:0.196906,0.566717|L:0.216596,0.556222|L:0.212377,0.535232|L:0.219409,0.514243|L:0.203938,0.473763|L:0.175809,0.449775|L:0.133615,0.449775|L:0.099859,0.473763|L:0.082982,0.52024|L:0.087201,0.536732|L:0.091421,0.557721|L:0.099859,0.577211</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="olho.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.632911,0.703148,0.367089,0.296852</shape>
+     <shape comment="1">rectangle:0.16737,0.007496,0.21097,0.341829</shape>
+     <shape comment="2">M:0.679325,0.238381|L:0.670886,0.287856|L:0.714487,0.335832|L:0.759494,0.377811|L:0.776371,0.410795|L:0.769339,0.431784|L:0.781997,0.497751|L:0.879044,0.467766|L:0.862166,0.445277|L:0.866385,0.428786|L:0.852321,0.418291|L:0.857947,0.407796|L:0.843882,0.398801|L:0.846695,0.386807|L:0.85654,0.370315|L:0.915612,0.313343|L:0.931083,0.248876|L:0.894515,0.187406|L:0.819972,0.167916|L:0.745429,0.185907|L:0.679325,0.238381</shape>
+     <shape comment="3">M:0.099859,0.577211|L:0.091421,0.637181|L:0.007032,0.590705|L:0.007032,0.647676|L:0.063291,0.715142|L:0.074543,0.733133|L:0.11955,0.74063|L:0.118143,0.775112|L:0.088608,0.802099|L:0.106892,0.847076|L:0.153305,0.815592|L:0.199719,0.851574|L:0.220816,0.791604|L:0.184248,0.769115|L:0.181435,0.748126|L:0.264416,0.725637|L:0.247539,0.709145|L:0.203938,0.686657|L:0.21097,0.652174|L:0.192686,0.581709|L:0.178622,0.581709|L:0.196906,0.566717|L:0.216596,0.556222|L:0.212377,0.535232|L:0.219409,0.514243|L:0.203938,0.473763|L:0.175809,0.449775|L:0.133615,0.449775|L:0.099859,0.473763|L:0.082982,0.52024|L:0.087201,0.536732|L:0.091421,0.557721|L:0.099859,0.577211</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialP" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "P"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraP.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.770863,0.741176|L:0.755304,0.709244|L:0.769448,0.685714|L:0.718529,0.635294|L:0.663366,0.682353|L:0.663366,0.715966|L:0.748232,0.788235|L:0.755304,0.821849|L:0.731259,0.878992|L:0.685997,0.872269|L:0.664781,0.909244|L:0.711457,0.996639|L:0.734088,0.998319|L:0.760962,0.947899|L:0.786421,0.942857|L:0.919378,0.944538|L:0.920792,0.927731|L:0.954738,0.956303|L:0.991513,0.862185|L:0.973126,0.798319|L:0.975955,0.773109|L:0.995757,0.77479|L:0.995757,0.67395|L:0.920792,0.687395|L:0.80198,0.689076|L:0.770863,0.741176</shape>
+     <shape comment="1">rectangle:0.011315,0.008403,0.318246,0.282353</shape>
+     <shape comment="2">rectangle:0.004243,0.631933,0.360679,0.327731</shape>
+     <shape comment="3">M:0.844413,0.005042|L:0.837341,0.035294|L:0.74116,0.053782|L:0.684583,0.105882|L:0.678925,0.193277|L:0.694484,0.247059|L:0.72843,0.304202|L:0.773692,0.334454|L:0.818953,0.341176|L:0.872702,0.337815|L:0.93918,0.278992|L:0.97454,0.193277|L:0.968883,0.114286|L:0.936351,0.072269|L:0.88826,0.048739|L:0.859972,0.043697|L:0.879774,0.011765|L:0.844413,0.005042</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="palhaço.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.770863,0.741176|L:0.755304,0.709244|L:0.769448,0.685714|L:0.718529,0.635294|L:0.663366,0.682353|L:0.663366,0.715966|L:0.748232,0.788235|L:0.755304,0.821849|L:0.731259,0.878992|L:0.685997,0.872269|L:0.664781,0.909244|L:0.711457,0.996639|L:0.734088,0.998319|L:0.760962,0.947899|L:0.786421,0.942857|L:0.919378,0.944538|L:0.920792,0.927731|L:0.954738,0.956303|L:0.991513,0.862185|L:0.973126,0.798319|L:0.975955,0.773109|L:0.995757,0.77479|L:0.995757,0.67395|L:0.920792,0.687395|L:0.80198,0.689076|L:0.770863,0.741176</shape>
+     <shape comment="1">rectangle:0.011315,0.008403,0.318246,0.282353</shape>
+     <shape comment="2">rectangle:0.004243,0.631933,0.360679,0.327731</shape>
+     <shape comment="3">M:0.844413,0.005042|L:0.837341,0.035294|L:0.74116,0.053782|L:0.684583,0.105882|L:0.678925,0.193277|L:0.694484,0.247059|L:0.72843,0.304202|L:0.773692,0.334454|L:0.818953,0.341176|L:0.872702,0.337815|L:0.93918,0.278992|L:0.97454,0.193277|L:0.968883,0.114286|L:0.936351,0.072269|L:0.88826,0.048739|L:0.859972,0.043697|L:0.879774,0.011765|L:0.844413,0.005042</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialQ" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "Q"</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraQ.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.038158,0.13141|L:0.036842,0.286859|L:0.063158,0.315705|L:0.164474,0.342949|L:0.228947,0.333333|L:0.234211,0.317308|L:0.25,0.326923|L:0.302632,0.286859|L:0.309211,0.264423|L:0.305263,0.222756|L:0.293421,0.209936|L:0.310526,0.190705|L:0.309211,0.169872|L:0.357895,0.139423|L:0.361842,0.025641|L:0.325,0|L:0.264474,0|L:0.217105,0.099359|L:0.203947,0.088141|L:0.123684,0.089744|L:0.119737,0.100962|L:0.106579,0.094551|L:0.043421,0.13141|L:0.038158,0.13141</shape>
+     <shape comment="1">M:0.665789,0.088141|L:0.660526,0.168269|L:0.681579,0.217949|L:0.630263,0.241987|L:0.664474,0.299679|L:0.688158,0.267628|L:0.722368,0.25641|L:0.764474,0.3125|L:0.789474,0.282051|L:0.822368,0.307692|L:0.857895,0.270833|L:0.855263,0.258013|L:0.889474,0.267628|L:0.925,0.294872|L:0.956579,0.241987|L:0.909211,0.216346|L:0.934211,0.142628|L:0.921053,0.073718|L:0.868421,0.089744|L:0.840789,0.05609|L:0.818421,0.001603|L:0.793421,0.009615|L:0.760526,0.004808|L:0.747368,0.049679|L:0.717105,0.088141|L:0.665789,0.088141</shape>
+     <shape comment="2">rectangle:0.701316,0.713141,0.298684,0.251603</shape>
+     <shape comment="3">M:0.005263,0.753205|L:0.118421,0.690705|L:0.105263,0.727564|L:0.144737,0.730769|L:0.198684,0.700321|L:0.247368,0.708333|L:0.288158,0.75641|L:0.301316,0.822115|L:0.297368,0.849359|L:0.305263,0.907051|L:0.257895,0.961538|L:0.135526,0.963141|L:0.061842,0.996795|L:0.065789,0.966346|L:0.142105,0.929487|L:0.244737,0.926282|L:0.277632,0.887821|L:0.268421,0.878205|L:0.257895,0.897436|L:0.168421,0.897436|L:0.169737,0.883013|L:0.080263,0.875|L:0.052632,0.844551|L:0.057895,0.830128|L:0.006579,0.791667|L:0.005263,0.753205</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="queijo.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialR" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "R"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraR.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.004049,0.788961|L:0.044534,0.844156|L:0.08502,0.883117|L:0.261808,0.907468|L:0.124157,0.925325|L:0.082321,0.949675|L:0.051282,0.993506|L:0.093117,0.99513|L:0.116059,0.980519|L:0.176788,0.969156|L:0.278003,0.956169|L:0.321188,0.909091|L:0.311741,0.850649|L:0.310391,0.762987|L:0.269906,0.704545|L:0.198381,0.686688|L:0.14305,0.720779|L:0.112011,0.720779|L:0.128205,0.696429|L:0.103914,0.689935|L:0.039136,0.737013|L:0.010796,0.733766|L:0.004049,0.788961</shape>
+     <shape comment="1">M:0.012146,0.136364|L:0.009447,0.295455|L:0.094467,0.344156|L:0.192982,0.340909|L:0.269906,0.313312|L:0.295547,0.269481|L:0.291498,0.222403|L:0.278003,0.209416|L:0.292848,0.189935|L:0.292848,0.175325|L:0.340081,0.142857|L:0.345479,0.029221|L:0.311741,0.006494|L:0.244265,0.001623|L:0.197031,0.090909|L:0.11336,0.087662|L:0.098516,0.099026|L:0.079622,0.092532|L:0.012146,0.136364</shape>
+     <shape comment="2">M:0.755736,0.012987|L:0.711201,0.097403|L:0.65587,0.087662|L:0.647773,0.147727|L:0.668016,0.222403|L:0.622132,0.243506|L:0.647773,0.303571|L:0.712551,0.261364|L:0.754386,0.316558|L:0.785425,0.284091|L:0.820513,0.313312|L:0.852901,0.266234|L:0.867746,0.262987|L:0.892038,0.269481|L:0.932524,0.308442|L:0.952767,0.24026|L:0.904184,0.220779|L:0.931174,0.155844|L:0.916329,0.082792|L:0.859649,0.089286|L:0.834008,0.055195|L:0.817814,0.011364|L:0.785425,0.017857|L:0.755736,0.012987</shape>
+     <shape comment="3">rectangle:0.695007,0.724026,0.302294,0.251623</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="rato.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.004049,0.788961|L:0.044534,0.844156|L:0.08502,0.883117|L:0.261808,0.907468|L:0.124157,0.925325|L:0.082321,0.949675|L:0.051282,0.993506|L:0.093117,0.99513|L:0.116059,0.980519|L:0.176788,0.969156|L:0.278003,0.956169|L:0.321188,0.909091|L:0.311741,0.850649|L:0.310391,0.762987|L:0.269906,0.704545|L:0.198381,0.686688|L:0.14305,0.720779|L:0.112011,0.720779|L:0.128205,0.696429|L:0.103914,0.689935|L:0.039136,0.737013|L:0.010796,0.733766|L:0.004049,0.788961</shape>
+     <shape comment="1">M:0.012146,0.136364|L:0.009447,0.295455|L:0.094467,0.344156|L:0.192982,0.340909|L:0.269906,0.313312|L:0.295547,0.269481|L:0.291498,0.222403|L:0.278003,0.209416|L:0.292848,0.189935|L:0.292848,0.175325|L:0.340081,0.142857|L:0.345479,0.029221|L:0.311741,0.006494|L:0.244265,0.001623|L:0.197031,0.090909|L:0.11336,0.087662|L:0.098516,0.099026|L:0.079622,0.092532|L:0.012146,0.136364</shape>
+     <shape comment="2">M:0.755736,0.012987|L:0.711201,0.097403|L:0.65587,0.087662|L:0.647773,0.147727|L:0.668016,0.222403|L:0.622132,0.243506|L:0.647773,0.303571|L:0.712551,0.261364|L:0.754386,0.316558|L:0.785425,0.284091|L:0.820513,0.313312|L:0.852901,0.266234|L:0.867746,0.262987|L:0.892038,0.269481|L:0.932524,0.308442|L:0.952767,0.24026|L:0.904184,0.220779|L:0.931174,0.155844|L:0.916329,0.082792|L:0.859649,0.089286|L:0.834008,0.055195|L:0.817814,0.011364|L:0.785425,0.017857|L:0.755736,0.012987</shape>
+     <shape comment="3">rectangle:0.695007,0.724026,0.302294,0.251623</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialS" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "S"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraS.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.751687,0.008117|L:0.823212,0.008117|L:0.866397,0.094156|L:0.917679,0.073052|L:0.933873,0.136364|L:0.916329,0.217532|L:0.962213,0.246753|L:0.91363,0.306818|L:0.862348,0.26461|L:0.815115,0.323052|L:0.782726,0.288961|L:0.74359,0.318182|L:0.707152,0.267857|L:0.638327,0.310065|L:0.609986,0.237013|L:0.669366,0.215909|L:0.638327,0.142857|L:0.661269,0.076299|L:0.7139,0.090909|L:0.740891,0.048701|L:0.751687,0.008117</shape>
+     <shape comment="1">M:0.013495,0.126623|L:0.010796,0.292208|L:0.071525,0.339286|L:0.175439,0.344156|L:0.211876,0.339286|L:0.214575,0.323052|L:0.230769,0.332792|L:0.2861,0.287338|L:0.287449,0.220779|L:0.276653,0.212662|L:0.291498,0.199675|L:0.294197,0.176948|L:0.345479,0.137987|L:0.348178,0.025974|L:0.31444,0.00487|L:0.237517,0.001623|L:0.197031,0.092532|L:0.152497,0.084416|L:0.106613,0.089286|L:0.097166,0.100649|L:0.078273,0.092532|L:0.013495,0.126623</shape>
+     <shape comment="2">M:0.006748,0.75487|L:0.109312,0.699675|L:0.110661,0.724026|L:0.144399,0.728896|L:0.207827,0.694805|L:0.25641,0.704545|L:0.298246,0.753247|L:0.310391,0.831169|L:0.304993,0.849026|L:0.304993,0.915584|L:0.272605,0.952922|L:0.145749,0.961039|L:0.05803,0.99513|L:0.071525,0.964286|L:0.099865,0.939935|L:0.253711,0.920455|L:0.279352,0.883117|L:0.202429,0.900974|L:0.144399,0.883117|L:0.08637,0.871753|L:0.051282,0.837662|L:0.055331,0.821429|L:0.002699,0.792208|L:0.006748,0.75487</shape>
+     <shape comment="3">rectangle:0.695007,0.722403,0,0</shape>
+     <shape comment="4">rectangle:0.695007,0.722403,0.304993,0.25487</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="sapo.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.751687,0.008117|L:0.823212,0.008117|L:0.866397,0.094156|L:0.917679,0.073052|L:0.933873,0.136364|L:0.916329,0.217532|L:0.962213,0.246753|L:0.91363,0.306818|L:0.862348,0.26461|L:0.815115,0.323052|L:0.782726,0.288961|L:0.74359,0.318182|L:0.707152,0.267857|L:0.638327,0.310065|L:0.609986,0.237013|L:0.669366,0.215909|L:0.638327,0.142857|L:0.661269,0.076299|L:0.7139,0.090909|L:0.740891,0.048701|L:0.751687,0.008117</shape>
+     <shape comment="1">M:0.013495,0.126623|L:0.010796,0.292208|L:0.071525,0.339286|L:0.175439,0.344156|L:0.211876,0.339286|L:0.214575,0.323052|L:0.230769,0.332792|L:0.2861,0.287338|L:0.287449,0.220779|L:0.276653,0.212662|L:0.291498,0.199675|L:0.294197,0.176948|L:0.345479,0.137987|L:0.348178,0.025974|L:0.31444,0.00487|L:0.237517,0.001623|L:0.197031,0.092532|L:0.152497,0.084416|L:0.106613,0.089286|L:0.097166,0.100649|L:0.078273,0.092532|L:0.013495,0.126623</shape>
+     <shape comment="2">M:0.006748,0.75487|L:0.109312,0.699675|L:0.110661,0.724026|L:0.144399,0.728896|L:0.207827,0.694805|L:0.25641,0.704545|L:0.298246,0.753247|L:0.310391,0.831169|L:0.304993,0.849026|L:0.304993,0.915584|L:0.272605,0.952922|L:0.145749,0.961039|L:0.05803,0.99513|L:0.071525,0.964286|L:0.099865,0.939935|L:0.253711,0.920455|L:0.279352,0.883117|L:0.202429,0.900974|L:0.144399,0.883117|L:0.08637,0.871753|L:0.051282,0.837662|L:0.055331,0.821429|L:0.002699,0.792208|L:0.006748,0.75487</shape>
+     <shape comment="3">rectangle:0.695007,0.722403,0,0</shape>
+     <shape comment="4">rectangle:0.695007,0.722403,0.304993,0.25487</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialT" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "T"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraT.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.171468,0.032423|L:0.15775,0.049488|L:0.11797,0.06314|L:0.068587,0.06314|L:0.065844,0.085324|L:0.067215,0.105802|L:0.035665,0.170648|L:0.035665,0.21843|L:0.050754,0.293515|L:0.108368,0.353242|L:0.201646,0.351536|L:0.251029,0.317406|L:0.286694,0.238908|L:0.288066,0.167235|L:0.260631,0.100683|L:0.209877,0.056314|L:0.208505,0.032423|L:0.171468,0.032423</shape>
+     <shape comment="1">rectangle:0.688615,0,0.308642,0.37884</shape>
+     <shape comment="2">M:0.034294,0.646758|L:0.032922,0.677474|L:0.085048,0.687713|L:0.120713,0.738908|L:0.08642,0.755973|L:0.089163,0.788396|L:0.064472,0.805461|L:0.078189,0.84471|L:0.071331,0.887372|L:0.106996,0.899317|L:0.119342,0.921502|L:0.141289,0.930034|L:0.15775,0.957338|L:0.183813,0.957338|L:0.197531,0.981229|L:0.230453,0.981229|L:0.241427,0.998294|L:0.271605,0.994881|L:0.305898,0.994881|L:0.316872,0.969283|L:0.311385,0.945392|L:0.319616,0.918089|L:0.301783,0.895904|L:0.312757,0.870307|L:0.297668,0.849829|L:0.303155,0.824232|L:0.283951,0.807167|L:0.294925,0.791809|L:0.347051,0.790102|L:0.341564,0.71843|L:0.331962,0.691126|L:0.353909,0.662116|L:0.278464,0.610922|L:0.270233,0.59727|L:0.1893,0.622867|L:0.178326,0.653584|L:0.115226,0.665529|L:0.068587,0.641638|L:0.034294,0.646758</shape>
+     <shape comment="3">M:0.876543,0.634812|L:0.828532,0.737201|L:0.737997,0.737201|L:0.721536,0.750853|L:0.696845,0.744027|L:0.635117,0.786689|L:0.626886,0.831058|L:0.631001,0.950512|L:0.670782,0.993174|L:0.862826,0.996587|L:0.923182,0.93686|L:0.920439,0.872014|L:0.909465,0.865188|L:0.923182,0.827645|L:0.979424,0.783276|L:0.975309,0.670648|L:0.876543,0.634812</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="tomate.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.171468,0.032423|L:0.15775,0.049488|L:0.11797,0.06314|L:0.068587,0.06314|L:0.065844,0.085324|L:0.067215,0.105802|L:0.035665,0.170648|L:0.035665,0.21843|L:0.050754,0.293515|L:0.108368,0.353242|L:0.201646,0.351536|L:0.251029,0.317406|L:0.286694,0.238908|L:0.288066,0.167235|L:0.260631,0.100683|L:0.209877,0.056314|L:0.208505,0.032423|L:0.171468,0.032423</shape>
+     <shape comment="1">rectangle:0.688615,0,0.308642,0.37884</shape>
+     <shape comment="2">M:0.034294,0.646758|L:0.032922,0.677474|L:0.085048,0.687713|L:0.120713,0.738908|L:0.08642,0.755973|L:0.089163,0.788396|L:0.064472,0.805461|L:0.078189,0.84471|L:0.071331,0.887372|L:0.106996,0.899317|L:0.119342,0.921502|L:0.141289,0.930034|L:0.15775,0.957338|L:0.183813,0.957338|L:0.197531,0.981229|L:0.230453,0.981229|L:0.241427,0.998294|L:0.271605,0.994881|L:0.305898,0.994881|L:0.316872,0.969283|L:0.311385,0.945392|L:0.319616,0.918089|L:0.301783,0.895904|L:0.312757,0.870307|L:0.297668,0.849829|L:0.303155,0.824232|L:0.283951,0.807167|L:0.294925,0.791809|L:0.347051,0.790102|L:0.341564,0.71843|L:0.331962,0.691126|L:0.353909,0.662116|L:0.278464,0.610922|L:0.270233,0.59727|L:0.1893,0.622867|L:0.178326,0.653584|L:0.115226,0.665529|L:0.068587,0.641638|L:0.034294,0.646758</shape>
+     <shape comment="3">M:0.876543,0.634812|L:0.828532,0.737201|L:0.737997,0.737201|L:0.721536,0.750853|L:0.696845,0.744027|L:0.635117,0.786689|L:0.626886,0.831058|L:0.631001,0.950512|L:0.670782,0.993174|L:0.862826,0.996587|L:0.923182,0.93686|L:0.920439,0.872014|L:0.909465,0.865188|L:0.923182,0.827645|L:0.979424,0.783276|L:0.975309,0.670648|L:0.876543,0.634812</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialU" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "U"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraU.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.012346,0.634812|L:0.016461,0.692833|L:0.046639,0.696246|L:0.075446,0.706485|L:0.100137,0.737201|L:0.075446,0.744027|L:0.045267,0.817406|L:0.052126,0.895904|L:0.1893,0.991468|L:0.213992,0.993174|L:0.285322,0.996587|L:0.308642,0.955631|L:0.274348,0.800341|L:0.336077,0.796928|L:0.322359,0.696246|L:0.344307,0.667235|L:0.237311,0.587031|L:0.153635,0.62628|L:0.152263,0.650171|L:0.112483,0.651877|L:0.100137,0.66041|L:0.012346,0.634812</shape>
+     <shape comment="1">ellipse:0.038409,0.032423,0.242798,0.3157</shape>
+     <shape comment="2">rectangle:0.688615,0.005119,0.30727,0.375427</shape>
+     <shape comment="3">M:0.633745,0.791809|L:0.632373,0.945392|L:0.665295,0.991468|L:0.853224,0.996587|L:0.920439,0.930034|L:0.919067,0.829352|L:0.979424,0.786689|L:0.979424,0.656997|L:0.876543,0.633106|L:0.824417,0.740614|L:0.722908,0.740614|L:0.633745,0.791809</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="uva.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.012346,0.634812|L:0.016461,0.692833|L:0.046639,0.696246|L:0.075446,0.706485|L:0.100137,0.737201|L:0.075446,0.744027|L:0.045267,0.817406|L:0.052126,0.895904|L:0.1893,0.991468|L:0.213992,0.993174|L:0.285322,0.996587|L:0.308642,0.955631|L:0.274348,0.800341|L:0.336077,0.796928|L:0.322359,0.696246|L:0.344307,0.667235|L:0.237311,0.587031|L:0.153635,0.62628|L:0.152263,0.650171|L:0.112483,0.651877|L:0.100137,0.66041|L:0.012346,0.634812</shape>
+     <shape comment="1">ellipse:0.038409,0.032423,0.242798,0.3157</shape>
+     <shape comment="2">rectangle:0.688615,0.005119,0.30727,0.375427</shape>
+     <shape comment="3">M:0.633745,0.791809|L:0.632373,0.945392|L:0.665295,0.991468|L:0.853224,0.996587|L:0.920439,0.930034|L:0.919067,0.829352|L:0.979424,0.786689|L:0.979424,0.656997|L:0.876543,0.633106|L:0.824417,0.740614|L:0.722908,0.740614|L:0.633745,0.791809</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialV" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "V"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraV.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001364,0.001815,0.309686,0.410163</shape>
+     <shape comment="1">M:0.720327,0.010889|L:0.723056,0.108893|L:0.718963,0.190563|L:0.74352,0.279492|L:0.74352,0.330309|L:0.731241,0.388385|L:0.899045,0.366606|L:0.927694,0.375681|L:0.929059,0.402904|L:0.986357,0.370236|L:0.960437,0.333938|L:0.892224,0.317604|L:0.900409,0.272232|L:0.873124,0.137931|L:0.819918,0.116152|L:0.821282,0.079855|L:0.799454,0.038113|L:0.787176,0.001815|L:0.765348,0.030853|L:0.754434,0.036298|L:0.720327,0.010889</shape>
+     <shape comment="2">M:0.738063,0.660617|L:0.687585,0.725953|L:0.680764,0.787659|L:0.699864,0.833031|L:0.699864,0.952813|L:0.75307,0.989111|L:0.863574,0.990926|L:0.879945,0.950998|L:0.930423,0.947368|L:0.929059,0.920145|L:0.903138,0.896552|L:0.882674,0.811252|L:0.847203,0.805808|L:0.86221,0.789474|L:0.833561,0.68784|L:0.774898,0.649728|L:0.738063,0.660617</shape>
+     <shape comment="3">M:0.023192,0.629764|L:0.024557,0.671506|L:0.072306,0.680581|L:0.105048,0.727768|L:0.070941,0.742287|L:0.070941,0.77677|L:0.047749,0.802178|L:0.06412,0.842105|L:0.053206,0.871143|L:0.065484,0.905626|L:0.085948,0.901996|L:0.111869,0.934664|L:0.126876,0.936479|L:0.158254,0.976407|L:0.169168,0.970962|L:0.204638,0.99274|L:0.300136,0.99274|L:0.300136,0.950998|L:0.306958,0.92559|L:0.297408,0.894737|L:0.286494,0.84392|L:0.27558,0.798548|L:0.27558,0.784029|L:0.334243,0.785844|L:0.319236,0.673321|L:0.3397,0.642468|L:0.225102,0.577132|L:0.162347,0.61343|L:0.162347,0.638838|L:0.100955,0.646098|L:0.023192,0.629764</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="vaca.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001364,0.001815,0.309686,0.410163</shape>
+     <shape comment="1">M:0.720327,0.010889|L:0.723056,0.108893|L:0.718963,0.190563|L:0.74352,0.279492|L:0.74352,0.330309|L:0.731241,0.388385|L:0.899045,0.366606|L:0.927694,0.375681|L:0.929059,0.402904|L:0.986357,0.370236|L:0.960437,0.333938|L:0.892224,0.317604|L:0.900409,0.272232|L:0.873124,0.137931|L:0.819918,0.116152|L:0.821282,0.079855|L:0.799454,0.038113|L:0.787176,0.001815|L:0.765348,0.030853|L:0.754434,0.036298|L:0.720327,0.010889</shape>
+     <shape comment="2">M:0.738063,0.660617|L:0.687585,0.725953|L:0.680764,0.787659|L:0.699864,0.833031|L:0.699864,0.952813|L:0.75307,0.989111|L:0.863574,0.990926|L:0.879945,0.950998|L:0.930423,0.947368|L:0.929059,0.920145|L:0.903138,0.896552|L:0.882674,0.811252|L:0.847203,0.805808|L:0.86221,0.789474|L:0.833561,0.68784|L:0.774898,0.649728|L:0.738063,0.660617</shape>
+     <shape comment="3">M:0.023192,0.629764|L:0.024557,0.671506|L:0.072306,0.680581|L:0.105048,0.727768|L:0.070941,0.742287|L:0.070941,0.77677|L:0.047749,0.802178|L:0.06412,0.842105|L:0.053206,0.871143|L:0.065484,0.905626|L:0.085948,0.901996|L:0.111869,0.934664|L:0.126876,0.936479|L:0.158254,0.976407|L:0.169168,0.970962|L:0.204638,0.99274|L:0.300136,0.99274|L:0.300136,0.950998|L:0.306958,0.92559|L:0.297408,0.894737|L:0.286494,0.84392|L:0.27558,0.798548|L:0.27558,0.784029|L:0.334243,0.785844|L:0.319236,0.673321|L:0.3397,0.642468|L:0.225102,0.577132|L:0.162347,0.61343|L:0.162347,0.638838|L:0.100955,0.646098|L:0.023192,0.629764</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialX" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "X"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraX.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.703412,0.696918|L:0.917323,0.695205|L:0.917323,0.717466|L:0.944882,0.708904|L:0.969816,0.75|L:0.967192,0.80137|L:0.863517,0.919521|L:0.753281,0.917808|L:0.713911,0.859589|L:0.703412,0.696918</shape>
+     <shape comment="1">M:0.019685,0.138699|L:0.024934,0.308219|L:0.103675,0.359589|L:0.242782,0.354452|L:0.301837,0.292808|L:0.296588,0.183219|L:0.354331,0.138699|L:0.347769,0.023973|L:0.249344,0.006849|L:0.207349,0.092466|L:0.098425,0.09589|L:0.019685,0.138699</shape>
+     <shape comment="2">M:0.010499,0.72774|L:0.104987,0.67637|L:0.143045,0.693493|L:0.203412,0.672945|L:0.259843,0.681507|L:0.301837,0.791096|L:0.296588,0.844178|L:0.301837,0.900685|L:0.223097,0.953767|L:0.141732,0.94863|L:0.055118,0.982877|L:0.112861,0.916096|L:0.240157,0.916096|L:0.276903,0.866438|L:0.221785,0.886986|L:0.156168,0.866438|L:0.07874,0.847603|L:0.043307,0.806507|L:0.009186,0.768836|L:0.010499,0.72774</shape>
+     <shape comment="3">M:0.713911,0.172945|L:0.709974,0.267123|L:0.727034,0.318493|L:0.686352,0.349315|L:0.709974,0.400685|L:0.772966,0.354452|L:0.821522,0.421233|L:0.846457,0.385274|L:0.884514,0.412671|L:0.910761,0.351027|L:0.952756,0.369863|L:0.980315,0.392123|L:1,0.335616|L:0.956693,0.315068|L:0.979003,0.244863|L:0.969816,0.155822|L:0.912073,0.181507|L:0.887139,0.136986|L:0.866142,0.082192|L:0.843832,0.092466|L:0.817585,0.083904|L:0.796588,0.133562|L:0.770341,0.178082|L:0.71916,0.172945|L:0.713911,0.172945</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="xicara.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.703412,0.696918|L:0.917323,0.695205|L:0.917323,0.717466|L:0.944882,0.708904|L:0.969816,0.75|L:0.967192,0.80137|L:0.863517,0.919521|L:0.753281,0.917808|L:0.713911,0.859589|L:0.703412,0.696918</shape>
+     <shape comment="1">M:0.019685,0.138699|L:0.024934,0.308219|L:0.103675,0.359589|L:0.242782,0.354452|L:0.301837,0.292808|L:0.296588,0.183219|L:0.354331,0.138699|L:0.347769,0.023973|L:0.249344,0.006849|L:0.207349,0.092466|L:0.098425,0.09589|L:0.019685,0.138699</shape>
+     <shape comment="2">M:0.010499,0.72774|L:0.104987,0.67637|L:0.143045,0.693493|L:0.203412,0.672945|L:0.259843,0.681507|L:0.301837,0.791096|L:0.296588,0.844178|L:0.301837,0.900685|L:0.223097,0.953767|L:0.141732,0.94863|L:0.055118,0.982877|L:0.112861,0.916096|L:0.240157,0.916096|L:0.276903,0.866438|L:0.221785,0.886986|L:0.156168,0.866438|L:0.07874,0.847603|L:0.043307,0.806507|L:0.009186,0.768836|L:0.010499,0.72774</shape>
+     <shape comment="3">M:0.713911,0.172945|L:0.709974,0.267123|L:0.727034,0.318493|L:0.686352,0.349315|L:0.709974,0.400685|L:0.772966,0.354452|L:0.821522,0.421233|L:0.846457,0.385274|L:0.884514,0.412671|L:0.910761,0.351027|L:0.952756,0.369863|L:0.980315,0.392123|L:1,0.335616|L:0.956693,0.315068|L:0.979003,0.244863|L:0.969816,0.155822|L:0.912073,0.181507|L:0.887139,0.136986|L:0.866142,0.082192|L:0.843832,0.092466|L:0.817585,0.083904|L:0.796588,0.133562|L:0.770341,0.178082|L:0.71916,0.172945|L:0.713911,0.172945</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="LetraInicialZ" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique no objeto que começa com letra "Z"</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="letraZ.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.133423,0.082043|L:0.195418,0.078947|L:0.273585,0.072755|L:0.312668,0.091331|L:0.332884,0.136223|L:0.328841,0.174923|L:0.327493,0.243034|L:0.316712,0.297214|L:0.297844,0.343653|L:0.295148,0.360681|L:0.226415,0.369969|L:0.253369,0.315789|L:0.261456,0.267802|L:0.242588,0.219814|L:0.175202,0.227554|L:0.180593,0.281734|L:0.191375,0.331269|L:0.177898,0.377709|L:0.141509,0.366873|L:0.15903,0.321981|L:0.137466,0.26935|L:0.128032,0.335913|L:0.110512,0.366873|L:0.091644,0.365325|L:0.083558,0.346749|L:0.098383,0.304954|L:0.097035,0.244582|L:0.08221,0.193498|L:0.061995,0.157895|L:0.013477,0.195046|L:-0.002695,0.181115|L:0,0.134675|L:0.009434,0.109907|L:0.022911,0.057276|L:0.021563,0.01548|L:0.044474,0.041796|L:0.087601,0.04644|L:0.133423,0.082043</shape>
+     <shape comment="1">ellipse:0.734501,0.024768,0.233154,0.275542</shape>
+     <shape comment="2">ellipse:0.052561,0.623839,0.273585,0.314241</shape>
+     <shape comment="3">M:0.797844,0.712074|L:0.753369,0.801858|L:0.691375,0.798762|L:0.687332,0.869969|L:0.706199,0.919505|L:0.661725,0.944272|L:0.692722,0.996904|L:0.752022,0.964396|L:0.793801,0.998452|L:0.826146,0.98452|L:0.876011,0.996904|L:0.898922,0.958204|L:0.963612,0.993808|L:0.994609,0.94582|L:0.947439,0.922601|L:0.967655,0.863777|L:0.956873,0.787926|L:0.902965,0.80031|L:0.876011,0.764706|L:0.855795,0.712074|L:0.827493,0.729102|L:0.797844,0.712074</shape>
+    </shaper>
+    <cell id="1" border="false">
+     <media type="PLAY_AUDIO" level="1" file="zebra.mp3" />
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.133423,0.082043|L:0.195418,0.078947|L:0.273585,0.072755|L:0.312668,0.091331|L:0.332884,0.136223|L:0.328841,0.174923|L:0.327493,0.243034|L:0.316712,0.297214|L:0.297844,0.343653|L:0.295148,0.360681|L:0.226415,0.369969|L:0.253369,0.315789|L:0.261456,0.267802|L:0.242588,0.219814|L:0.175202,0.227554|L:0.180593,0.281734|L:0.191375,0.331269|L:0.177898,0.377709|L:0.141509,0.366873|L:0.15903,0.321981|L:0.137466,0.26935|L:0.128032,0.335913|L:0.110512,0.366873|L:0.091644,0.365325|L:0.083558,0.346749|L:0.098383,0.304954|L:0.097035,0.244582|L:0.08221,0.193498|L:0.061995,0.157895|L:0.013477,0.195046|L:-0.002695,0.181115|L:0,0.134675|L:0.009434,0.109907|L:0.022911,0.057276|L:0.021563,0.01548|L:0.044474,0.041796|L:0.087601,0.04644|L:0.133423,0.082043</shape>
+     <shape comment="1">ellipse:0.734501,0.024768,0.233154,0.275542</shape>
+     <shape comment="2">ellipse:0.052561,0.623839,0.273585,0.314241</shape>
+     <shape comment="3">M:0.797844,0.712074|L:0.753369,0.801858|L:0.691375,0.798762|L:0.687332,0.869969|L:0.706199,0.919505|L:0.661725,0.944272|L:0.692722,0.996904|L:0.752022,0.964396|L:0.793801,0.998452|L:0.826146,0.98452|L:0.876011,0.996904|L:0.898922,0.958204|L:0.963612,0.993808|L:0.994609,0.94582|L:0.947439,0.922601|L:0.967655,0.863777|L:0.956873,0.787926|L:0.902965,0.80031|L:0.876011,0.764706|L:0.855795,0.712074|L:0.827493,0.729102|L:0.797844,0.712074</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="memoria" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@memory.MemoryGame" name="memoria" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Encontre os pares das figuras.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="start" file="/home/professor/JClic/projects/sonsJclic/inicio.mp3" />
+     <sound id="click" file="/home/professor/JClic/projects/sonsJclic/click.mp3" />
+     <sound id="actionError" file="/home/professor/JClic/projects/sonsJclic/açãoErro.mp3" />
+     <sound id="actionOk" file="/home/professor/JClic/projects/sonsJclic/ação_OK.mp3" />
+     <sound id="finishedError" file="/home/professor/JClic/projects/sonsJclic/fim_erro.mp3" />
+     <sound id="finishedOk" file="/home/professor/JClic/projects/sonsJclic/fimOK.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="5" cols="5" cellWidth="150.0" cellHeight="130.0" border="true" id="primary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="5" />
+    <cell image="/home/professor/Imagens/figuras/320x240/zebra.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="zebra.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/borboletas.jpg">
+     <media type="PLAY_AUDIO" level="1" file="borboleta.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/burro.jpg">
+     <media type="PLAY_AUDIO" level="1" file="burro.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/cachorro.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="cachorro.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/coelho.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="coelho.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/dado.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="dado.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/elefante.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="elefante.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/folha.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="folha.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/gato.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="gato.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/hipopotamo.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="hipopotamo.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/indio.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="indio.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/jaula.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="jaula.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/lampada.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Lampada.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/maca.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="maça.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/nuvem.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="nuvem.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/olho.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="olho.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/palhaco.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="palhaço.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/queijo.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="queijo.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/rato.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="rato.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/sapo.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sapo.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/tomate.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="tomate.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/uva.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="uva.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/vaca.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="vaca.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/320x240/xicara.jpeg.jpg">
+     <media type="PLAY_AUDIO" level="1" file="xicara.mp3" />
+    </cell>
+    <cell image="/home/professor/Imagens/figuras/abacaxi.jpg">
+     <media type="PLAY_AUDIO" level="1" file="abacaxi.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="/home/professor/Imagens/figuras/320x240/borboletas.jpg" file="_home_professor_imagens_figuras_320x240_borboletas.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/burro.jpg" file="_home_professor_imagens_figuras_320x240_burro.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/cachorro.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_cachorro.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/coelho.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_coelho.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/dado.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_dado.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/elefante.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_elefante.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/folha.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_folha.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/gato.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_gato.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/hipopotamo.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_hipopotamo.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/indio.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_indio.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/jaula.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_jaula.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/lampada.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_lampada.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/maca.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_maca.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/nuvem.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_nuvem.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/olho.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_olho.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/palhaco.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_palhaco.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/queijo.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_queijo.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/rato.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_rato.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/sapo.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_sapo.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/tomate.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_tomate.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/uva.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_uva.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/vaca.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_vaca.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/xicara.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_xicara.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/320x240/zebra.jpeg.jpg" file="_home_professor_imagens_figuras_320x240_zebra.jpeg.jpg" />
+  <media name="/home/professor/Imagens/figuras/abacaxi.jpg" file="_home_professor_imagens_figuras_abacaxi.jpg" />
+  <media name="/home/professor/JClic/projects/sonsJclic/ação_OK.mp3" file="_home_professor_jclic_projects_sonsjclic_acao_ok.mp3" />
+  <media name="/home/professor/JClic/projects/sonsJclic/açãoErro.mp3" file="_home_professor_jclic_projects_sonsjclic_acaoerro.mp3" />
+  <media name="/home/professor/JClic/projects/sonsJclic/click.mp3" file="_home_professor_jclic_projects_sonsjclic_click.mp3" />
+  <media name="/home/professor/JClic/projects/sonsJclic/fim_erro.mp3" file="_home_professor_jclic_projects_sonsjclic_fim_erro.mp3" />
+  <media name="/home/professor/JClic/projects/sonsJclic/fimOK.mp3" file="_home_professor_jclic_projects_sonsjclic_fimok.mp3" />
+  <media name="/home/professor/JClic/projects/sonsJclic/inicio.mp3" file="_home_professor_jclic_projects_sonsjclic_inicio.mp3" />
+  <media name="abacaxi.mp3" file="abacaxi.mp3" />
+  <media name="borboleta.mp3" file="borboleta.mp3" />
+  <media name="burro.mp3" file="burro.mp3" />
+  <media name="cachorro.mp3" file="cachorro.mp3" />
+  <media name="coelho.mp3" file="coelho.mp3" />
+  <media name="dado.mp3" file="dado.mp3" />
+  <media name="elefante.mp3" file="elefante.mp3" />
+  <media name="folha.mp3" file="folha.mp3" />
+  <media name="gato.mp3" file="gato.mp3" />
+  <media name="hipopotamo.mp3" file="hipopotamo.mp3" />
+  <media name="indio.mp3" file="indio.mp3" />
+  <media name="jaula.mp3" file="jaula.mp3" />
+  <media name="kiwi.mp3" file="kiwi.mp3" />
+  <media name="Lampada.mp3" file="lampada.mp3" />
+  <media name="leao.mp3" file="leao.mp3" />
+  <media name="maça.mp3" file="maca.mp3" />
+  <media name="nuvem.mp3" file="nuvem.mp3" />
+  <media name="olho.mp3" file="olho.mp3" />
+  <media name="palhaço.mp3" file="palhaco.mp3" />
+  <media name="queijo.mp3" file="queijo.mp3" />
+  <media name="rato.mp3" file="rato.mp3" />
+  <media name="sapo.mp3" file="sapo.mp3" />
+  <media name="tomate.mp3" file="tomate.mp3" />
+  <media name="uva.mp3" file="uva.mp3" />
+  <media name="vaca.mp3" file="vaca.mp3" />
+  <media name="xicara.mp3" file="xicara.mp3" />
+  <media name="zebra.mp3" file="zebra.mp3" />
+  <media name="gato.png" file="gato.png" />
+  <media name="jaula.png" file="jaula.png" />
+  <media name="letraA.png" file="letraa.png" />
+  <media name="letraB.png" file="letrab.png" />
+  <media name="letraC.png" file="letrac.png" />
+  <media name="letraD.png" file="letrad.png" />
+  <media name="letraE.png" file="letrae.png" />
+  <media name="letraF.png" file="letraf.png" />
+  <media name="letraH.png" file="letrah.png" />
+  <media name="letraI.png" file="letrai.png" />
+  <media name="letraK.png" file="letrak.png" />
+  <media name="letraL.png" file="letral.png" />
+  <media name="letraM.png" file="letram.png" />
+  <media name="letraN.png" file="letran.png" />
+  <media name="letraO.png" file="letrao.png" />
+  <media name="letraP.png" file="letrap.png" />
+  <media name="letraQ.png" file="letraq.png" />
+  <media name="letraR.png" file="letrar.png" />
+  <media name="letraS.png" file="letras.png" />
+  <media name="letraT.png" file="letrat.png" />
+  <media name="letraU.png" file="letrau.png" />
+  <media name="letraV.png" file="letrav.png" />
+  <media name="letraX.png" file="letrax.png" />
+  <media name="letraZ.png" file="letraz.png" />
+  <media name="TelaJclic2.png" file="i023_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

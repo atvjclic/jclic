@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="Portugues_aprendendosilabas" version="0.1.3">
+ <settings>
+  <title>AprendendoSílabas</title>
+  <revision description="created" date="5/11/13" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="tela" name="TelaInicial" navButtons="none" />
+  <item id="start" name="AprendendoSilabasB" delay="1" />
+  <item name="AprendendoSilabasD" delay="1" />
+  <item name="AprendendoSilabasF" delay="1" />
+  <item name="AprendendoSilabasJ" delay="1" />
+  <item name="AprendendoSilabasL" delay="1" />
+  <item name="AprendendoSilabasM" delay="1" />
+  <item name="AprendendoSilabasN" delay="1" />
+  <item name="AprendendoSilabasP" delay="1" />
+  <item name="AprendendoSilabasR" delay="1" />
+  <item name="AprendendoSilabasS" delay="1" />
+  <item name="AprendendoSilabasT" delay="1" />
+  <item name="AprendendoSilabasV" delay="1" />
+  <item name="AprendendoSilabasZ" delay="1" />
+  <item id="tela" name="TelaInicial" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasB" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="moldura homem aranha-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x666666" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ba.mp3" />
+     <p>BA</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="be.mp3" />
+     <p>BE</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="bi.mp3" />
+     <p>BI</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="bo.mp3" />
+     <p>BO</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="bu.mp3" />
+     <p>BU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial Black" size="28" />
+     <color foreground="0xF4032A" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>BA</p>
+    </cell>
+    <cell>
+     <p>BE</p>
+    </cell>
+    <cell>
+     <p>BI</p>
+    </cell>
+    <cell>
+     <p>BO</p>
+    </cell>
+    <cell>
+     <p>BU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasD" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="molduras-virtuais-3-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="da.mp3" />
+     <p>DA</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="de.mp3" />
+     <p>DE</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="di.mp3" />
+     <p>DI</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="do.mp3" />
+     <p>DO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="du.mp3" />
+     <p>DU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial Black" size="28" bold="true" />
+     <color foreground="0xFF0029" background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>DA</p>
+    </cell>
+    <cell>
+     <p>DE</p>
+    </cell>
+    <cell>
+     <p>DI</p>
+    </cell>
+    <cell>
+     <p>DO</p>
+    </cell>
+    <cell>
+     <p>DU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasF" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="moldura homem aranha-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="fa.mp3" />
+     <p>FA</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="fe.mp3" />
+     <p>FE</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="fi.mp3" />
+     <p>FI</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="fo.mp3" />
+     <p>FO</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="fu.mp3" />
+     <p>FU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial Black" size="26" bold="true" />
+     <color foreground="0xFF002B" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>FA</p>
+    </cell>
+    <cell>
+     <p>FE</p>
+    </cell>
+    <cell>
+     <p>FI</p>
+    </cell>
+    <cell>
+     <p>FO</p>
+    </cell>
+    <cell>
+     <p>FU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasJ" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="molduras-virtuais-3-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ja.mp3" />
+     <p>JA</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="je.mp3" />
+     <p>JE</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ji.mp3" />
+     <p>JI</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="jo.mp3" />
+     <p>JO</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ju.mp3" />
+     <p>JU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial Black" size="28" bold="true" />
+     <color foreground="0xFF002E" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>JA</p>
+    </cell>
+    <cell>
+     <p>JE</p>
+    </cell>
+    <cell>
+     <p>JI</p>
+    </cell>
+    <cell>
+     <p>JO</p>
+    </cell>
+    <cell>
+     <p>JU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasL" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="moldura homem aranha-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="la.mp3" />
+     <p>LA</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="le.mp3" />
+     <p>LE</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="li.mp3" />
+     <p>LI</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="lo.mp3" />
+     <p>LO</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="lu.mp3" />
+     <p>LU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial Black" size="28" bold="true" />
+     <color foreground="0xFF002A" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>LA</p>
+    </cell>
+    <cell>
+     <p>LE</p>
+    </cell>
+    <cell>
+     <p>LI</p>
+    </cell>
+    <cell>
+     <p>LO</p>
+    </cell>
+    <cell>
+     <p>LU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasM" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="molduras-virtuais-3-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ma.mp3" />
+     <p>MA</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="me.mp3" />
+     <p>ME</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="mi.mp3" />
+     <p>MI</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="mo.mp3" />
+     <p>MO</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="mu.mp3" />
+     <p>MU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial Black" size="28" bold="true" />
+     <color foreground="0xFF0020" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>MA</p>
+    </cell>
+    <cell>
+     <p>ME</p>
+    </cell>
+    <cell>
+     <p>MI</p>
+    </cell>
+    <cell>
+     <p>MO</p>
+    </cell>
+    <cell>
+     <p>MU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasN" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="moldura homem aranha-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="na.mp3" />
+     <p>NA</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ne.mp3" />
+     <p>NE</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ni.mp3" />
+     <p>NI</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="no.mp3" />
+     <p>NO</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="nu.mp3" />
+     <p>NU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial Black" size="28" bold="true" />
+     <color foreground="0xFF0026" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>NA</p>
+    </cell>
+    <cell>
+     <p>NE</p>
+    </cell>
+    <cell>
+     <p>NI</p>
+    </cell>
+    <cell>
+     <p>NO</p>
+    </cell>
+    <cell>
+     <p>NU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasP" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="molduras-virtuais-3-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="pa.mp3" />
+     <p>PA</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="pe.mp3" />
+     <p>PE</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="pi.mp3" />
+     <p>PI</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="po.mp3" />
+     <p>PO</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="pu.mp3" />
+     <p>PU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial Black" size="28" bold="true" />
+     <color foreground="0xFE012E" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>PA</p>
+    </cell>
+    <cell>
+     <p>PE</p>
+    </cell>
+    <cell>
+     <p>PI</p>
+    </cell>
+    <cell>
+     <p>PO</p>
+    </cell>
+    <cell>
+     <p>PU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasR" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="moldura homem aranha-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ra.mp3" />
+     <p>RA</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="re.mp3" />
+     <p>RE</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ri.mp3" />
+     <p>RI</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ro.mp3" />
+     <p>RO</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ru.mp3" />
+     <p>RU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial Black" size="28" bold="true" />
+     <color foreground="0xFF0025" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>RA</p>
+    </cell>
+    <cell>
+     <p>RE</p>
+    </cell>
+    <cell>
+     <p>RI</p>
+    </cell>
+    <cell>
+     <p>RO</p>
+    </cell>
+    <cell>
+     <p>RU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasS" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="molduras-virtuais-3-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="sa.mp3" />
+     <p>SA</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="se.mp3" />
+     <p>SE</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="si.mp3" />
+     <p>SI</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="so.mp3" />
+     <p>SO</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="su.mp3" />
+     <p>SU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial Black" size="26" bold="true" />
+     <color foreground="0xFF0023" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>SA</p>
+    </cell>
+    <cell>
+     <p>SE</p>
+    </cell>
+    <cell>
+     <p>SI</p>
+    </cell>
+    <cell>
+     <p>SO</p>
+    </cell>
+    <cell>
+     <p>SU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasT" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="moldura homem aranha-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ta.mp3" />
+     <p>TA</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="te.mp3" />
+     <p>TE</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ti.mp3" />
+     <p>TI</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="tu.mp3" />
+     <p>TO</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="to.mp3" />
+     <p>TU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial Black" size="28" bold="true" />
+     <color foreground="0xFF0025" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>TA</p>
+    </cell>
+    <cell>
+     <p>TE</p>
+    </cell>
+    <cell>
+     <p>TI</p>
+    </cell>
+    <cell>
+     <p>TO</p>
+    </cell>
+    <cell>
+     <p>TU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasV" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="molduras-virtuais-3-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="va.mp3" />
+     <p>VA</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="ve.mp3" />
+     <p>VE</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="vi.mp3" />
+     <p>VI</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="vo.mp3" />
+     <p>VO</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="vu.mp3" />
+     <p>VU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial Black" size="28" bold="true" />
+     <color foreground="0xFF0029" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>VA</p>
+    </cell>
+    <cell>
+     <p>VE</p>
+    </cell>
+    <cell>
+     <p>VI</p>
+    </cell>
+    <cell>
+     <p>VO</p>
+    </cell>
+    <cell>
+     <p>VU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AprendendoSilabasZ" code="">
+   <description />
+   <messages />
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x656161" dest="0xFFFFFF" angle="0" />
+     <image name="moldura homem aranha-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <gradient source="0x787373" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="28" bold="true" />
+     <color inactive="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ZA.mp3" />
+     <p>ZA</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ZE.mp3" />
+     <p>ZE</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ZI.mp3" />
+     <p>ZI</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ZO.mp3" />
+     <p>ZO</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="ZU.mp3" />
+     <p>ZU</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="124.0" cellHeight="71.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial Black" size="28" bold="true" />
+     <color foreground="0xFF002D" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>ZA</p>
+    </cell>
+    <cell>
+     <p>ZE</p>
+    </cell>
+    <cell>
+     <p>ZI</p>
+    </cell>
+    <cell>
+     <p>ZO</p>
+    </cell>
+    <cell>
+     <p>ZU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicial" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="AprendendoSilabasB" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="moldura homem aranha-resized.jpg" file="moldura_homem_aranha_resized.jpg" />
+  <media name="molduras-virtuais-3-resized.jpg" file="molduras_virtuais_3_resized.jpg" />
+  <media name="ba.mp3" file="ba.mp3" />
+  <media name="be.mp3" file="be.mp3" />
+  <media name="bi.mp3" file="bi.mp3" />
+  <media name="bo.mp3" file="bo.mp3" />
+  <media name="bu.mp3" file="bu.mp3" />
+  <media name="da.mp3" file="da.mp3" />
+  <media name="de.mp3" file="de.mp3" />
+  <media name="di.mp3" file="di.mp3" />
+  <media name="do.mp3" file="do.mp3" />
+  <media name="du.mp3" file="du.mp3" />
+  <media name="fa.mp3" file="fa.mp3" />
+  <media name="fe.mp3" file="fe.mp3" />
+  <media name="fi.mp3" file="fi.mp3" />
+  <media name="fo.mp3" file="fo.mp3" />
+  <media name="fu.mp3" file="fu.mp3" />
+  <media name="ja.mp3" file="ja.mp3" />
+  <media name="je.mp3" file="je.mp3" />
+  <media name="ji.mp3" file="ji.mp3" />
+  <media name="jo.mp3" file="jo.mp3" />
+  <media name="ju.mp3" file="ju.mp3" />
+  <media name="la.mp3" file="la.mp3" />
+  <media name="le.mp3" file="le.mp3" />
+  <media name="li.mp3" file="li.mp3" />
+  <media name="lo.mp3" file="lo.mp3" />
+  <media name="lu.mp3" file="lu.mp3" />
+  <media name="ma.mp3" file="ma.mp3" />
+  <media name="me.mp3" file="me.mp3" />
+  <media name="mi.mp3" file="mi.mp3" />
+  <media name="mo.mp3" file="mo.mp3" />
+  <media name="mu.mp3" file="mu.mp3" />
+  <media name="na.mp3" file="na.mp3" />
+  <media name="ne.mp3" file="ne.mp3" />
+  <media name="ni.mp3" file="ni.mp3" />
+  <media name="no.mp3" file="no.mp3" />
+  <media name="nu.mp3" file="nu.mp3" />
+  <media name="pa.mp3" file="pa.mp3" />
+  <media name="pe.mp3" file="pe.mp3" />
+  <media name="pi.mp3" file="pi.mp3" />
+  <media name="po.mp3" file="po.mp3" />
+  <media name="pu.mp3" file="pu.mp3" />
+  <media name="ra.mp3" file="ra.mp3" />
+  <media name="re.mp3" file="re.mp3" />
+  <media name="ri.mp3" file="ri.mp3" />
+  <media name="ro.mp3" file="ro.mp3" />
+  <media name="ru.mp3" file="ru.mp3" />
+  <media name="sa.mp3" file="sa.mp3" />
+  <media name="se.mp3" file="se.mp3" />
+  <media name="si.mp3" file="si.mp3" />
+  <media name="so.mp3" file="so.mp3" />
+  <media name="su.mp3" file="su.mp3" />
+  <media name="ta.mp3" file="ta.mp3" />
+  <media name="te.mp3" file="te.mp3" />
+  <media name="ti.mp3" file="ti.mp3" />
+  <media name="to.mp3" file="to.mp3" />
+  <media name="tu.mp3" file="tu.mp3" />
+  <media name="va.mp3" file="va.mp3" />
+  <media name="ve.mp3" file="ve.mp3" />
+  <media name="vi.mp3" file="vi.mp3" />
+  <media name="vo.mp3" file="vo.mp3" />
+  <media name="vu.mp3" file="vu.mp3" />
+  <media name="ZA.mp3" file="za.mp3" />
+  <media name="ZE.mp3" file="ze.mp3" />
+  <media name="ZI.mp3" file="zi.mp3" />
+  <media name="ZO.mp3" file="zo.mp3" />
+  <media name="ZU.mp3" file="zu.mp3" />
+  <media name="TelaJclic2.png" file="i03_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

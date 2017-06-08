@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="SemiaridoForteSustentavel" version="0.1.3">
+ <settings>
+  <title>SEMI</title>
+  <revision description="created" date="5/14/14" />
+  <author name="ELIANE DE BARROS" rol="ARTICULADORA TECNOLÓGICA" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="telainicial" navButtons="none" />
+  <item id="start" name="CRUZADINHA" delay="1" navButtons="back" />
+  <item name="CONHECENDoNOSSaFAUNA" delay="1" />
+  <item name="TesteMemoria" delay="1" />
+  <item name="QUEBRACABEcaDoNORDESTE" delay="1" />
+  <item name="FRUTAsDaCAATINGA" delay="1" />
+  <item name="CAcAPALAVRAS" />
+ </sequence>
+ <activities>
+  <activity class="@textGrid.WordSearch" name="CAcAPALAVRAS" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="26" />
+      <color background="0xCCCC00" />
+     </style>
+     <p>PROCURE O NOME DOS ANIMAIS DA NOSSA FAUNA - 10 NOMES</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="72" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>VENCEDOR</p>
+    </cell>
+   </messages>
+   <settings margin="14" maxTime="400" countDownTime="false" maxActions="20" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x33FFCC" dest="0xFFFFFF" angle="43" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFF00" dest="0x00CCCC" angle="41" />
+    </window>
+   </settings>
+   <textGrid rows="15" columns="15" cellWidth="100.0" cellHeight="80.0" border="false">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>*******C*TATU**</row>
+     <row>***J***A*******</row>
+     <row>***A***M*******</row>
+     <row>***B***A****A**</row>
+     <row>***U***L****R*C</row>
+     <row>***T***E****A*A</row>
+     <row>*A*I***Ã****R*P</row>
+     <row>*R*T***O**A*I*I</row>
+     <row>*BBODE***S**N*V</row>
+     <row>*A******O***H*A</row>
+     <row>*C*****P****A*R</row>
+     <row>******A*******A</row>
+     <row>***PERIQUITO***</row>
+     <row>JUMENTO********</row>
+     <row>***************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">JABUTI</clue>
+    <clue id="1">RAPOSA</clue>
+    <clue id="2">BODE</clue>
+    <clue id="3">TATU</clue>
+    <clue id="4">JUMENTO</clue>
+    <clue id="5">CAMALEÃO</clue>
+    <clue id="6">CABRA</clue>
+    <clue id="7">ARARINHA</clue>
+    <clue id="8">CAPIVARA</clue>
+    <clue id="9">PERIQUITO</clue>
+   </clues>
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="CONHECENDoNOSSaFAUNA" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" bold="true" italic="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>ESCOLHA O NOME CERTO DA IMAGEM</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true" borderStroke="2.3" markerStroke="2.7">
+      <font family="Dialog" size="72" bold="true" />
+      <color foreground="0x660066" background="0x00CCCC" />
+     </style>
+     <p>PARABÉNS</p>
+    </cell>
+   </messages>
+   <settings margin="50" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xCCCC00" dest="0x000000" angle="108" cycles="9" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x3300CC" dest="0xFFFFFF" angle="0" cycles="13" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell image="acareja.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0x999999" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+    </cell>
+    <cell image="Baiaodedois.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0x999999" />
+     </style>
+    </cell>
+    <cell image="Bolo de coco e mandioca.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0x999999" />
+     </style>
+    </cell>
+    <cell image="buchada de bode.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0x999999" />
+     </style>
+    </cell>
+    <cell image="canjica.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0x999999" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="200.0" cellHeight="100.0" border="true" id="secondary">
+    <style borderStroke="3.8" markerStroke="2.7" />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>ACARAJÉ</p>
+    </cell>
+    <cell>
+     <p>BAIÃO</p>
+    </cell>
+    <cell>
+     <p>BOLO </p>
+    </cell>
+    <cell>
+     <p>BUCHADA</p>
+    </cell>
+    <cell>
+     <p>CANJICA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@textGrid.CrossWord" name="CRUZADINHA" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xFF3300" background="0xFFCC00" />
+     </style>
+     <p>COMPLETE A CRUZADINHA DA FAUNA DO SEMIÁRIDO - DE ACORDO COM A IMAGEM AO LADO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="48" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF6600" />
+     </style>
+     <p>MUITO BEM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+     </style>
+     <p>TENTE NOVAMENTE</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="50" cycles="23" />
+    </window>
+   </settings>
+   <textGrid rows="9" columns="9" cellWidth="56.0" cellHeight="48.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>*JUMENTO*</row>
+     <row>CABRA****</row>
+     <row>*GAMBÁ***</row>
+     <row>*RAPOSA**</row>
+     <row>*CAPIVARA</row>
+     <row>*ARARINHA</row>
+     <row>*TATU****</row>
+     <row>*********</row>
+     <row>*********</row>
+    </text>
+   </textGrid>
+   <cells rows="1" cols="3" cellWidth="421.0" cellHeight="235.0" border="false" id="acrossClues">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="8" item="0" />
+    <cell id="7" item="0" />
+    <cell id="2" item="1" />
+    <cell id="1" item="1" />
+    <cell id="6" item="1" txtAlign="middle,bottom" imgAlign="middle,top" image="tatu-peba.jpg">
+     <style>
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF6600" />
+     </style>
+     <p>QUAL O NOME DESSE ANIMAL?</p>
+    </cell>
+    <cell id="6" item="0" txtAlign="middle,bottom" imgAlign="middle,top" image="tatu-peba.jpg">
+     <style>
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF6600" />
+     </style>
+     <p>QUAL O NOME DESSE ANIMAL?</p>
+    </cell>
+    <cell id="5" item="1" />
+    <cell id="5" item="0" txtAlign="middle,bottom" imgAlign="middle,bottom" image="ararinha27-620x563.jpg">
+     <style>
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0x0000FF" background="0xFF6600" />
+     </style>
+     <p>QUAL O NOME DESSE ANIMAL?</p>
+    </cell>
+    <cell id="4" item="1" />
+    <cell id="4" item="0" txtAlign="middle,bottom" imgAlign="middle,top" image="capivara.jpg">
+     <style>
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF6600" />
+     </style>
+     <p>QUAL O NOME DESSE ANIMAL?</p>
+    </cell>
+    <cell id="2" item="0" txtAlign="middle,bottom" imgAlign="middle,top" image="GAMBÁ.jpg">
+     <style>
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF6600" />
+     </style>
+     <p>QUAL O NOME DESSE ANIMAL?</p>
+    </cell>
+    <cell id="3" item="1" />
+    <cell id="3" item="0" txtAlign="middle,bottom" imgAlign="middle,top" image="RAPOSA.jpg">
+     <style>
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0x6600CC" background="0xFF6600" />
+     </style>
+     <p>QUAL O NOME DESSE ANIMAL?</p>
+    </cell>
+    <cell id="1" item="0" txtAlign="middle,bottom" imgAlign="middle,top" image="cabras.jpg">
+     <style>
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF6600" />
+     </style>
+     <p>QUAL O NOME DESSE ANIMAL?</p>
+    </cell>
+    <cell id="0" item="0" txtAlign="middle,bottom" imgAlign="middle,top" image="JUMENTO.jpg">
+     <style>
+      <font family="Arial" size="11" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF6600" />
+     </style>
+     <p>QUAL O NOME DESSE ANIMAL?</p>
+    </cell>
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="421.0" cellHeight="235.0" border="true" id="downClues">
+    <style />
+    <cell id="1" item="0" border="false">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF6600" />
+     </style>
+    </cell>
+    <cell id="0" item="0">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="12" />
+      <color foreground="0xFFFF00" background="0xFF6600" />
+     </style>
+    </cell>
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="0" />
+    <cell id="6" />
+    <cell id="5" />
+    <cell id="0" />
+    <cell id="6" />
+    <cell id="5" />
+    <cell id="0" />
+    <cell id="8" />
+    <cell id="8" />
+    <cell id="0" />
+    <cell id="0" />
+    <cell id="7" />
+    <cell id="7" />
+    <cell id="7" />
+    <cell id="6" />
+    <cell id="6" />
+    <cell id="6" />
+    <cell id="5" />
+    <cell id="5" />
+    <cell id="5" />
+    <cell id="4" />
+    <cell id="4" />
+    <cell id="1" />
+    <cell id="2" />
+    <cell id="2" />
+    <cell id="3" />
+    <cell id="3" />
+    <cell id="1" />
+    <cell id="0" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <layout position="BA" wildTransparent="true" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="FRUTAsDaCAATINGA" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xFF0033" background="0xFFFF00" />
+     </style>
+     <p>ENCONTRE AS FRUTAS DA NOSSA REGIÃO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0033" />
+     </style>
+     <p>BELEZA</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0033" border="true">
+     <gradient source="0xFF0033" dest="0xFFFFFF" angle="234" cycles="38" />
+    </window>
+   </settings>
+   <cells rows="2" cols="5" cellWidth="700.0" cellHeight="650.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell image="biriba-800x600.jpg" />
+    <cell image="caju3-resized.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="coco-50.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="manga.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="melancia.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="melao-RN.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="umbu.JPG">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="6-itaobim-manga.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="MAND.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="a gdu cacau (24)-resized.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="QUEBRACABEcaDoNORDESTE" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>QUEBRA-CABEÇA DA FRUTA DO MANDACARU</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="48" />
+      <color foreground="0x009933" />
+     </style>
+     <p>MUITO BEM!</p>
+    </cell>
+   </messages>
+   <settings margin="68" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0x66FFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x009999" dest="0xFFFFFF" angle="50" cycles="22" />
+    </window>
+   </settings>
+   <cells rows="3" cols="4" border="true" image="MAND.jpg">
+    <style>
+     <color background="0xFF0033" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="4" rows="3" baseWidthFactor="0.61" toothHeightFactor="0.595" randomLines="true" />
+   </cells>
+   <scramble times="31" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="TesteMemoria" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial Black" size="28" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>JOGO DA MEMÓRIA</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Dialog" size="48" />
+      <color foreground="0x000099" />
+     </style>
+     <p>PARABÉNS</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x66FFCC" border="true">
+     <gradient source="0x3300CC" dest="0xFFFFFF" angle="0" cycles="13" />
+    </window>
+   </settings>
+   <cells rows="2" cols="6" cellWidth="166.0" cellHeight="157.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="2" />
+    <cell txtAlign="middle,bottom" image="download (1).jpg">
+     <style borderStroke="1.7" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>TUCANO</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="images (1).jpg">
+     <style borderStroke="1.7" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>RAPOSA</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="images (2).jpg">
+     <style borderStroke="1.7" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>PREÁ</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="images (3).jpg">
+     <style borderStroke="1.7" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>LEOPARDO</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="images (4).jpg">
+     <style borderStroke="1.7" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>EMA</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="images.jpg">
+     <style borderStroke="1.7" markerStroke="2.7">
+      <font family="Arial" size="22" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>NICO</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="CAMALEÃO (2).jpg">
+     <style borderStroke="1.7" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>CAMALEÃO</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="LAGARTIXA(2).jpg">
+     <style borderStroke="1.7" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>LAGARTIXA</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="ARARINHA (7).jpg">
+     <style borderStroke="1.7" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>ARARINHA </p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="CAPIVARA.jpg">
+     <style borderStroke="1.7" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>CAPIVARA</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="TUCANO(2).jpg">
+     <style borderStroke="1.7" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>TUCANO BP</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="i01-JAGUAR(7).jpg">
+     <style borderStroke="1.7" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>JAGUAR</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="telainicial" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0D3CF8" background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFEFEFE">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="telaInicial.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.030273,0.536458,0.9375,0.416667</shape>
+     <shape comment="1">rectangle:0.374023,0.292969,0.240234,0.057292</shape>
+    </shaper>
+    <cell txtAlign="left,top" imgAlign="left,middle">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Times New Roman" size="24" bold="true" />
+      <color foreground="0x0044FF" />
+     </style>
+     <p>Articuladora Eliane de Barros</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="CRUZADINHA" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="6-itaobim-manga.jpg" file="6_itaobim_manga.jpg" />
+  <media name="a gdu cacau (24)-resized.jpg" file="a_gdu_cacau__24__resized.jpg" />
+  <media name="acareja.jpg" file="acareja.jpg" />
+  <media name="ARARINHA (7).jpg" file="ararinha__7_.jpg" />
+  <media name="ararinha27-620x563.jpg" file="ararinha27_620x563.jpg" />
+  <media name="Baiaodedois.jpg" file="baiaodedois.jpg" />
+  <media name="biriba-800x600.jpg" file="biriba_800x600.jpg" />
+  <media name="Bolo de coco e mandioca.jpg" file="bolo_de_coco_e_mandioca.jpg" />
+  <media name="buchada de bode.jpg" file="buchada_de_bode.jpg" />
+  <media name="cabras.jpg" file="cabras.jpg" />
+  <media name="caju3-resized.jpg" file="caju3_resized.jpg" />
+  <media name="CAMALEÃO (2).jpg" file="camaleao__2_.jpg" />
+  <media name="canjica.jpg" file="canjica.jpg" />
+  <media name="capivara.jpg" file="capivara.jpg" />
+  <media name="CAPIVARA.jpg" file="i01_capivara.jpg" />
+  <media name="coco-50.jpg" file="coco_50.jpg" />
+  <media name="download (1).jpg" file="download__1_.jpg" />
+  <media name="GAMBÁ.jpg" file="gamba.jpg" />
+  <media name="i01-JAGUAR(7).jpg" file="i01_jaguar_7_.jpg" />
+  <media name="images (1).jpg" file="images__1_.jpg" />
+  <media name="images (2).jpg" file="images__2_.jpg" />
+  <media name="images (3).jpg" file="images__3_.jpg" />
+  <media name="images (4).jpg" file="images__4_.jpg" />
+  <media name="images.jpg" file="images.jpg" />
+  <media name="JUMENTO.jpg" file="jumento.jpg" />
+  <media name="LAGARTIXA(2).jpg" file="lagartixa_2_.jpg" />
+  <media name="MAND.jpg" file="mand.jpg" />
+  <media name="melancia.jpg" file="melancia.jpg" />
+  <media name="melao-RN.jpg" file="melao_rn.jpg" />
+  <media name="RAPOSA.jpg" file="raposa.jpg" />
+  <media name="tatu-peba.jpg" file="tatu_peba.jpg" />
+  <media name="TUCANO(2).jpg" file="tucano_2_.jpg" />
+  <media name="umbu.JPG" file="umbu.jpg" />
+  <media name="manga.png" file="manga.png" />
+  <media name="telaInicial.png" file="i01_telainicial.png" />
+ </mediaBag>
+</JClicProject>
+

@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="portugues_Figurassilabainicial" version="0.1.3">
+ <settings>
+  <title>FiguraSilabaInicial</title>
+  <revision description="created" date="5/28/13" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="TelaInicial" navButtons="none" />
+  <item id="start" name="SilabaInicial_1" delay="1" />
+  <item name="SilabaInicial_4" delay="1" />
+  <item name="SilabaInicial_3" delay="1" />
+  <item name="SilabaInicial_2" delay="1" />
+  <item name="SilabaInicial_5" delay="1" />
+  <item name="SilabaInicial_6" delay="1" />
+  <item name="SilabaInicial_7" delay="1" />
+  <item name="SilabaInicial_8" delay="1" />
+  <item id="start" name="TelaInicial" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="SilabaInicial_1" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Arraste as sílabas iniciais para completar os nomes.</p>
+    </cell>
+   </messages>
+   <settings margin="40" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6600" border="true" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="469.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="vaca.jpg" />
+    <cell id="0">
+     <p>__CA</p>
+    </cell>
+    <cell image="burro.jpg" />
+    <cell id="1">
+     <p>___RO</p>
+    </cell>
+    <cell image="foca.gif" />
+    <cell id="2">
+     <p>__CA</p>
+    </cell>
+    <cell image="cachorro.png" />
+    <cell id="3">
+     <p>__CHORRO</p>
+    </cell>
+    <cell image="boca.jpg" />
+    <cell id="4">
+     <p>__CA</p>
+    </cell>
+    <cell image="macaco.jpg" />
+    <cell id="5">
+     <p>__CACO</p>
+    </cell>
+    <cell image="minhoca.gif" />
+    <cell id="6">
+     <p>__NHOCA</p>
+    </cell>
+    <cell image="lobo.png" />
+    <cell id="7">
+     <p>__BO</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="2" cellWidth="220.0" cellHeight="300.0" border="false" id="secondary">
+    <style transparent="true">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>VA</p>
+    </cell>
+    <cell>
+     <p>BUR</p>
+    </cell>
+    <cell>
+     <p>FO</p>
+    </cell>
+    <cell>
+     <p>CA</p>
+    </cell>
+    <cell>
+     <p>BO</p>
+    </cell>
+    <cell>
+     <p>MA</p>
+    </cell>
+    <cell>
+     <p>MI</p>
+    </cell>
+    <cell>
+     <p>LO</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell />
+    <cell>
+     <p>VACA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>BURRO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>FOCA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>CACHORRO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>BOCA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>MACACO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>MINHOCA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>LOBO</p>
+    </cell>
+   </cells>
+   <scramble times="35" primary="false" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="SilabaInicial_2" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Arraste as sílabas iniciais para completar os nomes.</p>
+    </cell>
+   </messages>
+   <settings margin="40" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6600" border="true" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="400.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="bala.jpg" />
+    <cell id="0">
+     <p>__LA</p>
+    </cell>
+    <cell image="cama.jpg" />
+    <cell id="1">
+     <p>__MA</p>
+    </cell>
+    <cell image="bola.jpg" />
+    <cell id="2">
+     <p>__LA</p>
+    </cell>
+    <cell image="camelo.jpg" />
+    <cell id="3">
+     <p>__MELO</p>
+    </cell>
+    <cell image="fogo.jpg" />
+    <cell id="4">
+     <p>__GO</p>
+    </cell>
+    <cell image="rato.jpg" />
+    <cell id="5">
+     <p>__TO</p>
+    </cell>
+    <cell image="lua.jpg" />
+    <cell id="6">
+     <p>__A</p>
+    </cell>
+    <cell image="pato.jpg" />
+    <cell id="7">
+     <p>__TO</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="2" cellWidth="220.0" cellHeight="300.0" border="false" id="secondary">
+    <style transparent="true">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>BA</p>
+    </cell>
+    <cell>
+     <p>CA</p>
+    </cell>
+    <cell>
+     <p>BO</p>
+    </cell>
+    <cell>
+     <p>CA</p>
+    </cell>
+    <cell>
+     <p>FO</p>
+    </cell>
+    <cell>
+     <p>RA</p>
+    </cell>
+    <cell>
+     <p>LU</p>
+    </cell>
+    <cell>
+     <p>PA</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell />
+    <cell>
+     <p>BALA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>CAMA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>BOLA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>CAMELO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>FOGO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>RATO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>LUA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>PATO</p>
+    </cell>
+   </cells>
+   <scramble times="35" primary="false" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="SilabaInicial_3" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Arraste as sílabas iniciais para completar os nomes.</p>
+    </cell>
+   </messages>
+   <settings margin="40" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6600" border="true" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="400.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="carro.jpg" />
+    <cell id="0">
+     <p>___RO</p>
+    </cell>
+    <cell image="coelho.jpg" />
+    <cell id="1">
+     <p>__ELHO</p>
+    </cell>
+    <cell image="dado.jpg" />
+    <cell id="2">
+     <p>__DO</p>
+    </cell>
+    <cell image="gato.jpg" />
+    <cell id="3">
+     <p>__TO</p>
+    </cell>
+    <cell image="leao.jpg" />
+    <cell id="4">
+     <p>__ÃO</p>
+    </cell>
+    <cell image="rato.jpg" />
+    <cell id="5">
+     <p>__TO</p>
+    </cell>
+    <cell image="tatu.jpg" />
+    <cell id="6">
+     <p>__TU</p>
+    </cell>
+    <cell image="rosa.png" />
+    <cell id="7">
+     <p>__SA</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="2" cellWidth="220.0" cellHeight="300.0" border="false" id="secondary">
+    <style transparent="true">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>CAR</p>
+    </cell>
+    <cell>
+     <p>CO</p>
+    </cell>
+    <cell>
+     <p>DA</p>
+    </cell>
+    <cell>
+     <p>GA</p>
+    </cell>
+    <cell>
+     <p>LE</p>
+    </cell>
+    <cell>
+     <p>RA</p>
+    </cell>
+    <cell>
+     <p>TA</p>
+    </cell>
+    <cell>
+     <p>RO</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell />
+    <cell>
+     <p>CARRO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>COELHO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>DADO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>GATO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>LEÃO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>RATO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>TATU</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>ROSA</p>
+    </cell>
+   </cells>
+   <scramble times="35" primary="false" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="SilabaInicial_4" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Arraste as sílabas iniciais para completar os nomes.</p>
+    </cell>
+   </messages>
+   <settings margin="40" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6600" border="true" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="400.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="casa.jpg" />
+    <cell id="0">
+     <p>__SA</p>
+    </cell>
+    <cell image="copo.jpg" />
+    <cell id="1">
+     <p>__PO</p>
+    </cell>
+    <cell image="cavalo.jpg" />
+    <cell id="2">
+     <p>__VALO</p>
+    </cell>
+    <cell image="cobra.jpg" />
+    <cell id="3">
+     <p>__BRA</p>
+    </cell>
+    <cell image="bola.jpg" />
+    <cell id="4">
+     <p>__LA</p>
+    </cell>
+    <cell image="urso.jpg" />
+    <cell id="5">
+     <p>__SO</p>
+    </cell>
+    <cell image="sapo.jpg" />
+    <cell id="6">
+     <p>__PO</p>
+    </cell>
+    <cell image="jacare.jpg" />
+    <cell id="7">
+     <p>__CARÉ</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="2" cellWidth="220.0" cellHeight="300.0" border="false" id="secondary">
+    <style transparent="true">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>CA</p>
+    </cell>
+    <cell>
+     <p>CO</p>
+    </cell>
+    <cell>
+     <p>CA</p>
+    </cell>
+    <cell>
+     <p>CO</p>
+    </cell>
+    <cell>
+     <p>BO</p>
+    </cell>
+    <cell>
+     <p>UR</p>
+    </cell>
+    <cell>
+     <p>SA</p>
+    </cell>
+    <cell>
+     <p>JA</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell />
+    <cell>
+     <p>CASA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>COPO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>CAVALO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>COBRA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>BOLA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>URSO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>SAPO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>JACARÉ</p>
+    </cell>
+   </cells>
+   <scramble times="35" primary="false" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="SilabaInicial_5" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Escreva a sílaba que falta para completar cada nome.</p>
+    </cell>
+   </messages>
+   <settings margin="40" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6600" border="true" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="469.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="vaca.jpg" />
+    <cell id="0">
+     <p>__CA</p>
+    </cell>
+    <cell image="burro.jpg" />
+    <cell id="1">
+     <p>___RO</p>
+    </cell>
+    <cell image="foca.gif" />
+    <cell id="2">
+     <p>__CA</p>
+    </cell>
+    <cell image="cachorro.png" />
+    <cell id="3">
+     <p>__CHORRO</p>
+    </cell>
+    <cell image="boca.jpg" />
+    <cell id="4">
+     <p>__CA</p>
+    </cell>
+    <cell image="macaco.jpg" />
+    <cell id="5">
+     <p>__CACO</p>
+    </cell>
+    <cell image="minhoca.gif" />
+    <cell id="6">
+     <p>__NHOCA</p>
+    </cell>
+    <cell image="lobo.png" />
+    <cell id="7">
+     <p>__BO</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="2" cellWidth="200.0" cellHeight="100.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>va</p>
+    </cell>
+    <cell>
+     <p>bur</p>
+    </cell>
+    <cell>
+     <p>fo</p>
+    </cell>
+    <cell>
+     <p>ca</p>
+    </cell>
+    <cell>
+     <p>bo</p>
+    </cell>
+    <cell>
+     <p>ma</p>
+    </cell>
+    <cell>
+     <p>mi</p>
+    </cell>
+    <cell>
+     <p>lo</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell />
+    <cell>
+     <p>VACA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>BURRO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>FOCA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>CACHORRO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>BOCA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>MACACO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>MINHOCA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>LOBO</p>
+    </cell>
+   </cells>
+   <scramble times="35" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="SilabaInicial_6" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Escreva a sílaba que falta para completar cada nome.</p>
+    </cell>
+   </messages>
+   <settings margin="40" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6600" border="true" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="400.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="bala.jpg" />
+    <cell id="0">
+     <p>__LA</p>
+    </cell>
+    <cell image="cama.jpg" />
+    <cell id="1">
+     <p>__MA</p>
+    </cell>
+    <cell image="bola.jpg" />
+    <cell id="2">
+     <p>__LA</p>
+    </cell>
+    <cell image="camelo.jpg" />
+    <cell id="3">
+     <p>__MELO</p>
+    </cell>
+    <cell image="fogo.jpg" />
+    <cell id="4">
+     <p>__GO</p>
+    </cell>
+    <cell image="rato.jpg" />
+    <cell id="5">
+     <p>__TO</p>
+    </cell>
+    <cell image="lua.jpg" />
+    <cell id="6">
+     <p>__A</p>
+    </cell>
+    <cell image="pato.jpg" />
+    <cell id="7">
+     <p>__TO</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="2" cellWidth="200.0" cellHeight="101.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>ba</p>
+    </cell>
+    <cell>
+     <p>ca</p>
+    </cell>
+    <cell>
+     <p>bo</p>
+    </cell>
+    <cell>
+     <p>ca</p>
+    </cell>
+    <cell>
+     <p>fo</p>
+    </cell>
+    <cell>
+     <p>ra</p>
+    </cell>
+    <cell>
+     <p>lu</p>
+    </cell>
+    <cell>
+     <p>pa</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell />
+    <cell>
+     <p>BALA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>CAMA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>BOLA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>CAMELO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>FOGO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>RATO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>LUA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>PATO</p>
+    </cell>
+   </cells>
+   <scramble times="35" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="SilabaInicial_7" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Escreva a sílaba que falta para completar cada nome.</p>
+    </cell>
+   </messages>
+   <settings margin="40" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6600" border="true" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="400.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="carro.jpg" />
+    <cell id="0">
+     <p>___RO</p>
+    </cell>
+    <cell image="coelho.jpg" />
+    <cell id="1">
+     <p>__ELHO</p>
+    </cell>
+    <cell image="dado.jpg" />
+    <cell id="2">
+     <p>__DO</p>
+    </cell>
+    <cell image="gato.jpg" />
+    <cell id="3">
+     <p>__TO</p>
+    </cell>
+    <cell image="leao.jpg" />
+    <cell id="4">
+     <p>__ÃO</p>
+    </cell>
+    <cell image="rato.jpg" />
+    <cell id="5">
+     <p>__TO</p>
+    </cell>
+    <cell image="tatu.jpg" />
+    <cell id="6">
+     <p>__TU</p>
+    </cell>
+    <cell image="rosa.png" />
+    <cell id="7">
+     <p>__SA</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="2" cellWidth="200.0" cellHeight="100.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>car</p>
+    </cell>
+    <cell>
+     <p>co</p>
+    </cell>
+    <cell>
+     <p>da</p>
+    </cell>
+    <cell>
+     <p>ga</p>
+    </cell>
+    <cell>
+     <p>le</p>
+    </cell>
+    <cell>
+     <p>ra</p>
+    </cell>
+    <cell>
+     <p>ta</p>
+    </cell>
+    <cell>
+     <p>ro</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell />
+    <cell>
+     <p>CARRO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>COELHO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>DADO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>GATO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>LEÃO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>RATO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>TATU</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>ROSA</p>
+    </cell>
+   </cells>
+   <scramble times="35" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="SilabaInicial_8" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Escreva a sílaba que falta para completar cada nome.</p>
+    </cell>
+   </messages>
+   <settings margin="40" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6600" border="true" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="400.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="casa.jpg" />
+    <cell id="0">
+     <p>__SA</p>
+    </cell>
+    <cell image="copo.jpg" />
+    <cell id="1">
+     <p>__PO</p>
+    </cell>
+    <cell image="cavalo.jpg" />
+    <cell id="2">
+     <p>__VALO</p>
+    </cell>
+    <cell image="cobra.jpg" />
+    <cell id="3">
+     <p>__BRA</p>
+    </cell>
+    <cell image="bola.jpg" />
+    <cell id="4">
+     <p>__LA</p>
+    </cell>
+    <cell image="urso.jpg" />
+    <cell id="5">
+     <p>__SO</p>
+    </cell>
+    <cell image="sapo.jpg" />
+    <cell id="6">
+     <p>__PO</p>
+    </cell>
+    <cell image="jacare.jpg" />
+    <cell id="7">
+     <p>__CARÉ</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="2" cellWidth="200.0" cellHeight="100.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>ca</p>
+    </cell>
+    <cell>
+     <p>co</p>
+    </cell>
+    <cell>
+     <p>ca</p>
+    </cell>
+    <cell>
+     <p>co</p>
+    </cell>
+    <cell>
+     <p>bo</p>
+    </cell>
+    <cell>
+     <p>ur</p>
+    </cell>
+    <cell>
+     <p>sa</p>
+    </cell>
+    <cell>
+     <p>ja</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell />
+    <cell>
+     <p>CASA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>COPO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>CAVALO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>COBRA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>BOLA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>URSO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>SAPO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>JACARÉ</p>
+    </cell>
+   </cells>
+   <scramble times="35" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicial" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="i04-telaInicial.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+     <shape comment="1">rectangle:0.071289,0.529948,0.904297,0.390625</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="SilabaInicial_1" />
+    </cell>
+    <cell txtAlign="left,top">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Times New Roman" size="24" bold="true" />
+      <color foreground="0x2D41EA" />
+     </style>
+     <p>Articulador Miguel dos Santos Silva</p>
+     <p>Articulador Joedson Silva</p>
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="foca.gif" file="foca.gif" />
+  <media name="minhoca.gif" file="minhoca.gif" />
+  <media name="bala.jpg" file="bala.jpg" />
+  <media name="boca.jpg" file="boca.jpg" />
+  <media name="bola.jpg" file="bola.jpg" />
+  <media name="burro.jpg" file="burro.jpg" />
+  <media name="cama.jpg" file="cama.jpg" />
+  <media name="camelo.jpg" file="camelo.jpg" />
+  <media name="carro.jpg" file="carro.jpg" />
+  <media name="casa.jpg" file="casa.jpg" />
+  <media name="cavalo.jpg" file="cavalo.jpg" />
+  <media name="cobra.jpg" file="cobra.jpg" />
+  <media name="coelho.jpg" file="coelho.jpg" />
+  <media name="copo.jpg" file="copo.jpg" />
+  <media name="dado.jpg" file="dado.jpg" />
+  <media name="fogo.jpg" file="fogo.jpg" />
+  <media name="gato.jpg" file="gato.jpg" />
+  <media name="jacare.jpg" file="jacare.jpg" />
+  <media name="leao.jpg" file="leao.jpg" />
+  <media name="lua.jpg" file="lua.jpg" />
+  <media name="macaco.jpg" file="macaco.jpg" />
+  <media name="pato.jpg" file="pato.jpg" />
+  <media name="rato.jpg" file="rato.jpg" />
+  <media name="sapo.jpg" file="sapo.jpg" />
+  <media name="tatu.jpg" file="tatu.jpg" />
+  <media name="urso.jpg" file="urso.jpg" />
+  <media name="vaca.jpg" file="vaca.jpg" />
+  <media name="cachorro.png" file="cachorro.png" />
+  <media name="i04-telaInicial.png" file="i04_telainicial.png" />
+  <media name="lobo.png" file="lobo.png" />
+  <media name="rosa.png" file="rosa.png" />
+ </mediaBag>
+</JClicProject>
+

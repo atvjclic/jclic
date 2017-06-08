@@ -1,0 +1,1912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="Portugues_Alfabeto" version="0.1.3">
+ <settings>
+  <title>ABC</title>
+  <revision description="created" date="2/19/13" />
+  <author name="Alexandre Gonçalves" rol="Articulador de Educação Tecnológica" />
+  <author name="Miguel dos Santos Silva" rol="Articulador de Educação Tecnológica" />
+  <description>
+   <p>Atividades de associação entre as letras do alfabeto, vogais e palavras.</p>
+  </description>
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="TelaInicialMiguel_Alexandre" navButtons="none" />
+  <item id="ALFABETO 2" name="ABC_2" delay="1">
+   <description>
+    <p>Ordenação do alfabeto</p>
+   </description>
+  </item>
+  <item name="ABC_" delay="1" />
+  <item name="ABC_1" delay="1" />
+  <item id="LETRAS E PALAVRAS" name="Palavras" delay="1" />
+  <item name="ABC_3" delay="1" />
+  <item name="SonsABC" delay="1" />
+  <item name="OrdenarABC" delay="1" />
+  <item name="IdentificarConsoantes" delay="1" />
+  <item name="Identificarpalavras_S" delay="1" />
+  <item name="Identificarpalavras_F" delay="1" />
+  <item name="Identificarpalavras_D" delay="1" />
+  <item name="Identificarpalavras_P" delay="1" />
+  <item id="start" name="TelaInicialMiguel_Alexandre" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="ABC_" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>ALFABETO - Encontre os pares das letras.</p>
+    </cell>
+    <cell avoidOverlapping="true" image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Parabéns!!! Você acertou!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="48" bold="true" />
+      <color foreground="0xFF3333" background="0xFFFFFF" />
+     </style>
+     <p>Tente novamente!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+   </settings>
+   <cells rows="2" cols="6" cellWidth="76.0" cellHeight="76.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="45" bold="true" />
+     <color foreground="0xFFFFFF" background="0x9999FF" inactive="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="2" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00O.mp3" />
+     <p>O</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00P.mp3" />
+     <p>P</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Q.mp3" />
+     <p>Q</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00R.mp3" />
+     <p>R</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00S.mp3" />
+     <p>S</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00T.mp3" />
+     <p>T</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00U.mp3" />
+     <p>U</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00V.mp3" />
+     <p>V</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00W.mp3" />
+     <p>W</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00X.mp3" />
+     <p>X</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Y.mp3" />
+     <p>Y</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Z.mp3" />
+     <p>Z</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ABC_1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>ALFABETO - Ligue as Letras iguais.</p>
+    </cell>
+    <cell avoidOverlapping="true" image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Parabéns!!! Você acertou!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="48" bold="true" />
+      <color foreground="0xFF3333" background="0xFFFFFF" />
+     </style>
+     <p>Tente novamente!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+   </settings>
+   <cells rows="2" cols="13" cellWidth="76.0" cellHeight="76.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="45" bold="true" />
+     <color foreground="0xFFCC00" background="0xFFFFFF" inactive="0xFFCC00" />
+    </style>
+    <shaper class="@Rectangular" cols="13" rows="2" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00A.mp3" />
+     <p>A</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00B.mp3" />
+     <p>B</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00C.mp3" />
+     <p>C</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00D.mp3" />
+     <p>D</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00E.mp3" />
+     <p>E</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00F.mp3" />
+     <p>F</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00G.mp3" />
+     <p>G</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00H.mp3" />
+     <p>H</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00I.mp3" />
+     <p>I</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00J.mp3" />
+     <p>J</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00K.mp3" />
+     <p>K</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00L.mp3" />
+     <p>L</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00M.mp3" />
+     <p>M</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00N.mp3" />
+     <p>N</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00O.mp3" />
+     <p>O</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00P.mp3" />
+     <p>P</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Q.mp3" />
+     <p>Q</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00R.mp3" />
+     <p>R</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00S.mp3" />
+     <p>S</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00T.mp3" />
+     <p>T</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00U.mp3" />
+     <p>U</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00V.mp3" />
+     <p>V</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00W.mp3" />
+     <p>W</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00X.mp3" />
+     <p>X</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Y.mp3" />
+     <p>Y</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Z.mp3" />
+     <p>Z</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="13" cellWidth="76.0" cellHeight="76.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="45" bold="true" />
+     <color foreground="0x00CCCC" background="0xFFFFFF" shadow="0xFFCC00" inactive="0x00CCCC" />
+    </style>
+    <shaper class="@Rectangular" cols="13" rows="2" />
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>B</p>
+    </cell>
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>D</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>F</p>
+    </cell>
+    <cell>
+     <p>G</p>
+    </cell>
+    <cell>
+     <p>H</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>J</p>
+    </cell>
+    <cell>
+     <p>K</p>
+    </cell>
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell>
+     <p>M</p>
+    </cell>
+    <cell>
+     <p>N</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>P</p>
+    </cell>
+    <cell>
+     <p>Q</p>
+    </cell>
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>S</p>
+    </cell>
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+    <cell>
+     <p>V</p>
+    </cell>
+    <cell>
+     <p>W</p>
+    </cell>
+    <cell>
+     <p>X</p>
+    </cell>
+    <cell>
+     <p>Y</p>
+    </cell>
+    <cell>
+     <p>Z</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="ABC_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>ALFABETO - Encontre os pares das letras.</p>
+    </cell>
+    <cell avoidOverlapping="true" image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Parabéns!!! Você acertou!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="48" bold="true" />
+      <color foreground="0xFF3333" background="0xFFFFFF" />
+     </style>
+     <p>Tente novamente!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+   </settings>
+   <cells rows="2" cols="7" cellWidth="76.0" cellHeight="76.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="45" bold="true" />
+     <color foreground="0xFFFFFF" background="0x9999FF" inactive="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="7" rows="2" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00A.mp3" />
+     <p>A</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00B.mp3" />
+     <p>B</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00C.mp3" />
+     <p>C</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00D.mp3" />
+     <p>D</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00E.mp3" />
+     <p>E</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00F.mp3" />
+     <p>F</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00G.mp3" />
+     <p>G</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00H.mp3" />
+     <p>H</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00I.mp3" />
+     <p>I</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00J.mp3" />
+     <p>J</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00K.mp3" />
+     <p>K</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00L.mp3" />
+     <p>L</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00M.mp3" />
+     <p>M</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00N.mp3" />
+     <p>N</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@panels.Identify" name="ABC_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique apenas nas letras do alfabeto</p>
+    </cell>
+    <cell avoidOverlapping="true" image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Parabéns!!! Você acertou!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="48" bold="true" />
+      <color foreground="0xFF3333" background="0xFFFFFF" />
+     </style>
+     <p>Tente novamente!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+   </settings>
+   <cells rows="3" cols="13" cellWidth="76.0" cellHeight="76.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="45" bold="true" />
+     <color foreground="0x0018FF" background="0xFFFFFF" inactive="0xFFCC00" alternative="0xE6CB0A" />
+    </style>
+    <shaper class="@Rectangular" cols="13" rows="3" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00A.mp3" />
+     <p>A</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00B.mp3" />
+     <p>B</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00C.mp3" />
+     <p>C</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00D.mp3" />
+     <p>D</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00E.mp3" />
+     <p>E</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00F.mp3" />
+     <p>F</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00G.mp3" />
+     <p>G</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00H.mp3" />
+     <p>H</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00I.mp3" />
+     <p>I</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00J.mp3" />
+     <p>J</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00K.mp3" />
+     <p>K</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00L.mp3" />
+     <p>L</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00M.mp3" />
+     <p>M</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00N.mp3" />
+     <p>N</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00O.mp3" />
+     <p>O</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00P.mp3" />
+     <p>P</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Q.mp3" />
+     <p>Q</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00R.mp3" />
+     <p>R</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00S.mp3" />
+     <p>S</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00T.mp3" />
+     <p>T</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00U.mp3" />
+     <p>U</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00V.mp3" />
+     <p>V</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00W.mp3" />
+     <p>W</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00X.mp3" />
+     <p>X</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Y.mp3" />
+     <p>Y</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Z.mp3" />
+     <p>Z</p>
+    </cell>
+    <cell id="0">
+     <p>0</p>
+    </cell>
+    <cell id="0">
+     <p>1</p>
+    </cell>
+    <cell id="0">
+     <p>2</p>
+    </cell>
+    <cell id="0">
+     <p>3</p>
+    </cell>
+    <cell id="0">
+     <p>4</p>
+    </cell>
+    <cell id="0">
+     <p>5</p>
+    </cell>
+    <cell id="0">
+     <p>6</p>
+    </cell>
+    <cell id="0">
+     <p>7</p>
+    </cell>
+    <cell id="0">
+     <p>8</p>
+    </cell>
+    <cell id="0">
+     <p>9</p>
+    </cell>
+    <cell id="0">
+     <p>10</p>
+    </cell>
+    <cell id="0">
+     <p>11</p>
+    </cell>
+    <cell id="0">
+     <p>12</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="13" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="13" rows="3" />
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>B</p>
+    </cell>
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>D</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>F</p>
+    </cell>
+    <cell>
+     <p>G</p>
+    </cell>
+    <cell>
+     <p>H</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>J</p>
+    </cell>
+    <cell>
+     <p>K</p>
+    </cell>
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell>
+     <p>M</p>
+    </cell>
+    <cell>
+     <p>N</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>P</p>
+    </cell>
+    <cell>
+     <p>Q</p>
+    </cell>
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>S</p>
+    </cell>
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+    <cell>
+     <p>V</p>
+    </cell>
+    <cell>
+     <p>W</p>
+    </cell>
+    <cell>
+     <p>X</p>
+    </cell>
+    <cell>
+     <p>Y</p>
+    </cell>
+    <cell>
+     <p>Z</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="IdentificarConsoantes" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique apenas nas consoantes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="6" cols="4" cellWidth="120.0" cellHeight="80.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0x0009FF" background="0xFFFFFF" alternative="0xF90101" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="6" />
+    <cell id="0">
+     <p>A</p>
+    </cell>
+    <cell id="1">
+     <p>M</p>
+    </cell>
+    <cell id="0">
+     <p>O</p>
+    </cell>
+    <cell id="1">
+     <p>R</p>
+    </cell>
+    <cell id="1">
+     <p>P</p>
+    </cell>
+    <cell id="0">
+     <p>A</p>
+    </cell>
+    <cell id="1">
+     <p>T</p>
+    </cell>
+    <cell id="0">
+     <p>O</p>
+    </cell>
+    <cell id="1">
+     <p>C</p>
+    </cell>
+    <cell id="0">
+     <p>A</p>
+    </cell>
+    <cell id="1">
+     <p>P</p>
+    </cell>
+    <cell id="0">
+     <p>A</p>
+    </cell>
+    <cell id="1">
+     <p>L</p>
+    </cell>
+    <cell id="0">
+     <p>A</p>
+    </cell>
+    <cell id="1">
+     <p>T</p>
+    </cell>
+    <cell id="0">
+     <p>A</p>
+    </cell>
+    <cell id="1">
+     <p>M</p>
+    </cell>
+    <cell id="0">
+     <p>A</p>
+    </cell>
+    <cell id="1">
+     <p>T</p>
+    </cell>
+    <cell id="0">
+     <p>O</p>
+    </cell>
+    <cell id="1">
+     <p>L</p>
+    </cell>
+    <cell id="0">
+     <p>U</p>
+    </cell>
+    <cell id="1">
+     <p>T</p>
+    </cell>
+    <cell id="0">
+     <p>A</p>
+    </cell>
+   </cells>
+   <cells rows="6" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="6" />
+    <cell />
+    <cell>
+     <p>M</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>P</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>P</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>M</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@text.Identify" name="Identificarpalavras_D" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x3366FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique nas palavras que começam com a letra D, Depois clique em verificar</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="default" italic="false" bold="true" family="Arial" size="36" tabWidth="12" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">PARA A GENTE VIVER MUITO</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E SEMPRE FELIZ VIVER,</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>DEVE</target>
+      <text family="Arial" background="0xFFFFFF"> </text>
+      <target>DESPERTAR</target>
+      <text family="Arial" background="0xFFFFFF"> SORRINDO</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF"> E SORRINDO ADORMECER.</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>DEVE</target>
+      <text family="Arial" background="0xFFFFFF"> AMAR AOS SEMELHANTES,</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>DESCONHECER</target>
+      <text family="Arial" background="0xFFFFFF"> A AMBIÇÃO,</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">TER A ALMA SEMPRE FLORIDA,</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">SEMPRE ABERTO O CORAÇÃO.</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">																																																									</text>
+      <cell width="200" height="40">
+       <style>
+        <font family="Arial" size="12" bold="true" />
+        <color foreground="0x3366FF" background="0xFFFFFF" inactive="0xFFFFFF" />
+       </style>
+       <p>Felicidade, de Martins D'Alvarez</p>
+      </cell>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Identify" name="Identificarpalavras_F" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x3366FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique nas palavras que começam com a letra F, Depois clique em verificar</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="default" italic="false" bold="true" family="Arial" size="36" tabWidth="12" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">PARA A GENTE VIVER MUITO</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E SEMPRE </text>
+      <target>FELIZ</target>
+      <text family="Arial" background="0xFFFFFF"> VIVER,</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">DEVE DESPERTAR SORRINDO</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF"> E SORRINDO ADORMECER.</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">DEVE AMAR AOS SEMELHANTES,</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">DESCONHECER A AMBIÇÃO,</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">TER A ALMA SEMPRE </text>
+      <target>FLORIDA,</target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">SEMPRE ABERTO O CORAÇÃO.</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">																																																								</text>
+      <cell width="200" height="40">
+       <style>
+        <font family="Arial" size="12" bold="true" />
+        <color foreground="0x3366FF" background="0xFFFFFF" inactive="0xFFFFFF" />
+       </style>
+       <p>Felicidade, de Martins D'Alvarez</p>
+      </cell>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Identify" name="Identificarpalavras_P" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x3366FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique nas palavras que começam com a letra P, Depois clique em verificar</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="default" italic="false" bold="true" family="Arial" size="36" tabWidth="12" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">DEVE SER BOM E SER JUSTO,</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">AOS AFLITOS CONSOLAR,</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">AJUDAR A QUEM </text>
+      <target>PRECISA,</target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">SEM RECOMPENSA ESPERAR.</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">FORA DISTO A NOSSA VIDA</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">NENHUMA DOÇURA TEM.</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>POIS</target>
+      <text family="Arial" background="0xFFFFFF"> SÓ </text>
+      <target>PODE</target>
+      <text family="Arial" background="0xFFFFFF"> SER FELIZ</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">QUEM AMA E </text>
+      <target>PRATICA</target>
+      <text family="Arial" background="0xFFFFFF"> O BEM.</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">																																																									</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">																																																		</text>
+      <cell width="200" height="40">
+       <style>
+        <font family="Arial" size="12" bold="true" />
+        <color foreground="0x3366FF" background="0xFFFFFF" inactive="0xFFFFFF" />
+       </style>
+       <p>Felicidade, de Martins D'Alvarez</p>
+      </cell>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Identify" name="Identificarpalavras_S" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x3366FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique nas palavras que começam com a letra S, Depois clique em verificar</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="default" italic="false" bold="true" family="Arial" size="36" tabWidth="12" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">PARA A GENTE VIVER MUITO</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E </text>
+      <target>SEMPRE</target>
+      <text family="Arial" background="0xFFFFFF"> FELIZ VIVER,</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">DEVE DESPERTAR </text>
+      <target>SORRINDO</target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF"> E </text>
+      <target>SORRINDO</target>
+      <text family="Arial" background="0xFFFFFF"> ADORMECER.</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">DEVE AMAR AOS </text>
+      <target>SEMELHANTES,</target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">DESCONHECER A AMBIÇÃO,</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">TER A ALMA </text>
+      <target>SEMPRE</target>
+      <text family="Arial" background="0xFFFFFF"> FLORIDA,</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>SEMPRE</target>
+      <text family="Arial" background="0xFFFFFF"> ABERTO O CORAÇÃO.</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">																																																				</text>
+      <cell width="200" height="40">
+       <style>
+        <font family="Arial" size="12" bold="true" />
+        <color foreground="0x3366FF" background="0xFFFFFF" inactive="0xFFFFFF" />
+       </style>
+       <p>Felicidade, de Martins D'Alvarez</p>
+      </cell>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="OrdenarABC" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x3366FF" background="0xFFFFFF" />
+     </style>
+     <p>Arraste as letras para sua posição</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x3366FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" />
+     <p>Parabéns você conseguiu!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+   </settings>
+   <cells rows="2" cols="13" cellWidth="89.0" cellHeight="110.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="48" bold="true" />
+     <color foreground="0x0F39EE" background="0xFEFEFE" inactive="0xDFC112" />
+    </style>
+    <shaper class="@Rectangular" cols="13" rows="2" />
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>B</p>
+    </cell>
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>D</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>F</p>
+    </cell>
+    <cell>
+     <p>G</p>
+    </cell>
+    <cell>
+     <p>H</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>J</p>
+    </cell>
+    <cell>
+     <p>K</p>
+    </cell>
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell>
+     <p>M</p>
+    </cell>
+    <cell>
+     <p>N</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>P</p>
+    </cell>
+    <cell>
+     <p>Q</p>
+    </cell>
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>S</p>
+    </cell>
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+    <cell>
+     <p>V</p>
+    </cell>
+    <cell>
+     <p>W</p>
+    </cell>
+    <cell>
+     <p>X</p>
+    </cell>
+    <cell>
+     <p>Y</p>
+    </cell>
+    <cell>
+     <p>Z</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Palavras">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>ALFABETO - Ligue as palavras com sua letras iniciais.</p>
+    </cell>
+    <cell avoidOverlapping="true" image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Parabéns!!! Você acertou!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="48" bold="true" />
+      <color foreground="0xFF0000" background="0xFFFFFF" />
+     </style>
+     <p>Tente Novamente!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+   </settings>
+   <cells rows="3" cols="6" cellWidth="190.0" cellHeight="108.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="34" bold="true" />
+     <color foreground="0xFF6633" background="0xFFFFFF" inactive="0xFFCC33" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="3" />
+    <cell>
+     <p>Juazeiro</p>
+    </cell>
+    <cell>
+     <p>Manga</p>
+    </cell>
+    <cell>
+     <p>Uva</p>
+    </cell>
+    <cell>
+     <p>Escola</p>
+    </cell>
+    <cell>
+     <p>Vencedor</p>
+    </cell>
+    <cell>
+     <p>Campeão</p>
+    </cell>
+    <cell>
+     <p>Tabuleiro</p>
+    </cell>
+    <cell>
+     <p>Nego D'água</p>
+    </cell>
+    <cell>
+     <p>Livro</p>
+    </cell>
+    <cell>
+     <p>Inteligente</p>
+    </cell>
+    <cell>
+     <p>Obrigado</p>
+    </cell>
+    <cell>
+     <p>Professora</p>
+    </cell>
+    <cell>
+     <p>Doce</p>
+    </cell>
+    <cell>
+     <p>Aprender</p>
+    </cell>
+    <cell>
+     <p>Bahia</p>
+    </cell>
+    <cell>
+     <p>Umbú</p>
+    </cell>
+    <cell>
+     <p>Respeito</p>
+    </cell>
+    <cell>
+     <p>Sabedoria</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="6" cellWidth="190.0" cellHeight="108.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="48" bold="true" />
+     <color foreground="0x66CC00" background="0xFFFFFF" inactive="0x9966FF" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="3" />
+    <cell>
+     <p>J</p>
+    </cell>
+    <cell>
+     <p>M</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>V</p>
+    </cell>
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell>
+     <p>N</p>
+    </cell>
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>P</p>
+    </cell>
+    <cell>
+     <p>D</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>B</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>S</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="SonsABC" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x3366FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique no ícone de som e ligue corretamente</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xEAEAEA">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+   </settings>
+   <cells rows="3" cols="10" cellWidth="91.0" cellHeight="110.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="48" bold="true" />
+     <color background="0xFEFEFE" inactive="0xE50202" alternative="0xFB0000" />
+    </style>
+    <shaper class="@Rectangular" cols="10" rows="3" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00A.mp3" />
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00B.mp3" />
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00C.mp3" />
+    </cell>
+    <cell id="3">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00D.mp3" />
+    </cell>
+    <cell id="4">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00E.mp3" />
+    </cell>
+    <cell id="5">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00F.mp3" />
+    </cell>
+    <cell id="6">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00G.mp3" />
+    </cell>
+    <cell id="7">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00H.mp3" />
+    </cell>
+    <cell id="8">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00I.mp3" />
+    </cell>
+    <cell id="9">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00J.mp3" />
+    </cell>
+    <cell id="10">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00K.mp3" />
+    </cell>
+    <cell id="11">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00L.mp3" />
+    </cell>
+    <cell id="12">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00M.mp3" />
+    </cell>
+    <cell id="13">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00N.mp3" />
+    </cell>
+    <cell id="14">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00O.mp3" />
+    </cell>
+    <cell id="15">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00P.mp3" />
+    </cell>
+    <cell id="16">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Q.mp3" />
+    </cell>
+    <cell id="17">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00R.mp3" />
+    </cell>
+    <cell id="18">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00S.mp3" />
+    </cell>
+    <cell id="19">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00T.mp3" />
+    </cell>
+    <cell id="22">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00U.mp3" />
+    </cell>
+    <cell id="23">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00V.mp3" />
+    </cell>
+    <cell id="24">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00W.mp3" />
+    </cell>
+    <cell id="25">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00X.mp3" />
+    </cell>
+    <cell id="26">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Y.mp3" />
+    </cell>
+    <cell id="27">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Z.mp3" />
+    </cell>
+    <cell id="10">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00K.mp3" />
+    </cell>
+    <cell id="24">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00W.mp3" />
+    </cell>
+    <cell id="25">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00X.mp3" />
+    </cell>
+    <cell id="26">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Y.mp3" />
+    </cell>
+   </cells>
+   <cells rows="3" cols="10" cellWidth="91.0" cellHeight="110.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="48" bold="true" />
+     <color foreground="0x1B65DA" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="10" rows="3" />
+    <cell id="0">
+     <p>A</p>
+    </cell>
+    <cell id="1">
+     <p>B</p>
+    </cell>
+    <cell id="2">
+     <p>C</p>
+    </cell>
+    <cell id="3">
+     <p>D</p>
+    </cell>
+    <cell id="4">
+     <p>E</p>
+    </cell>
+    <cell id="5">
+     <p>F</p>
+    </cell>
+    <cell id="6">
+     <p>G</p>
+    </cell>
+    <cell id="7">
+     <p>H</p>
+    </cell>
+    <cell id="8">
+     <p>I</p>
+    </cell>
+    <cell id="9">
+     <p>J</p>
+    </cell>
+    <cell id="10">
+     <p>K</p>
+    </cell>
+    <cell id="11">
+     <p>L</p>
+    </cell>
+    <cell id="12">
+     <p>M</p>
+    </cell>
+    <cell id="13">
+     <p>N</p>
+    </cell>
+    <cell id="14">
+     <p>O</p>
+    </cell>
+    <cell id="15">
+     <p>P</p>
+    </cell>
+    <cell id="16">
+     <p>Q</p>
+    </cell>
+    <cell id="17">
+     <p>R</p>
+    </cell>
+    <cell id="18">
+     <p>S</p>
+    </cell>
+    <cell id="19">
+     <p>T</p>
+    </cell>
+    <cell id="20">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0" />
+    </cell>
+    <cell id="21">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0" />
+    </cell>
+    <cell id="22">
+     <p>U</p>
+    </cell>
+    <cell id="23">
+     <p>V</p>
+    </cell>
+    <cell id="24">
+     <p>W</p>
+    </cell>
+    <cell id="25">
+     <p>X</p>
+    </cell>
+    <cell id="26" border="true">
+     <p>Y</p>
+    </cell>
+    <cell id="27">
+     <p>Z</p>
+    </cell>
+    <cell id="28">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0" />
+    </cell>
+    <cell id="29">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0" />
+    </cell>
+   </cells>
+   <cells rows="3" cols="10" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="10" rows="3" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>B</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>C</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>D</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>E</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>F</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>G</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>H</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>I</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>J</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>K</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>L</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>M</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>N</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>O</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>P</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>Q</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>R</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>S</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>T</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>U</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>V</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>W</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>X</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>Y</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>Z</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>K</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>W</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>X</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+     </style>
+     <p>Y</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel_Alexandre" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="ABC_2" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="pinguino_contento.gif" file="pinguino_contento.gif" animated="true" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00A.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00a.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00B.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00b.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00C.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00c.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00D.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00d.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00E.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00e.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00F.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00f.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00G.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00g.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00H.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00h.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00I.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00i.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00J.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00j.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00K.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00k.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00L.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00l.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00M.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00m.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00N.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00n.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00O.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00o.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00P.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00p.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Q.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00q.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00R.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00r.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00S.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00s.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00T.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00t.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00U.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00u.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00V.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00v.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00W.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00w.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00X.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00x.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Y.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00y.mp3" />
+  <media name="/home/professor/Área de Trabalho/alphabet/ALFABETO/mp3/U00Z.mp3" file="_home_professor_area_de_trabalho_alphabet_alfabeto_mp3_u00z.mp3" />
+  <media name="applause-1.mp3" file="applause_1.mp3" />
+  <media name="TelaJclic.png" file="i03_telajclic.png" />
+ </mediaBag>
+</JClicProject>
+

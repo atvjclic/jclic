@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="ciencias_ConhecendoAnimais" version="0.1.3">
+ <settings>
+  <title>animais</title>
+  <revision description="created" date="5/14/13" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="TELA" name="TelaInicialMiguel" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="start" name="gato" delay="1" />
+  <item name="pato" delay="1" />
+  <item name="cachorro" delay="1" />
+  <item name="bode" delay="1" />
+  <item name="elefante" delay="1" />
+  <item name="camelo" delay="1" />
+  <item name="canguru" delay="1" />
+  <item name="cavalo" delay="1" />
+  <item name="galinha" delay="1" />
+  <item name="girafa" delay="1" />
+  <item name="hipopotamo" delay="1" />
+  <item name="leao" delay="1" />
+  <item name="morcego" delay="1" />
+  <item name="onca" delay="1" />
+  <item name="ovelha" delay="1" />
+  <item name="tartaruga" delay="1" />
+  <item name="tigre" delay="1" />
+  <item name="zebra" delay="1" />
+  <item name="coelho" delay="1" />
+  <item id="TELA" name="TelaInicialMiguel" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="start" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="bode" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="bode.mp3" autoStart="true" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="bode.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="cachorro" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="cachorro.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="cachorro.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="camelo" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="camelo.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="camelo.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="canguru" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="canguru.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="canguru.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="cavalo" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="cavalo.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="cavalo.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="coelho" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="coelho.mp3" autoStart="true" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="coelho.jpg">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="elefante" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="elefante.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="elefante.jpg">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="galinha" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="galinha.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="galinha.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="gato" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="ArrastePeças.mp3" />
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="gato.mp3" autoStart="true" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="gato.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="girafa" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="girafa.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="girafa.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="hipopotamo" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="hipopotamo.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="hipopotamo.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="leao" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="leao.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="leão.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="morcego" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="morcego.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="morcego.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="onca" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="onça.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="onça.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ovelha" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="ovelha.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="ovelha.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="pato" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="pato.mp3" autoStart="true" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="pato.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="tartaruga" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="tartaruga.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="tartaruga.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="tigre" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="tigre.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="tigre.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="zebra" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="zebra.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Zebra.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.001667,0.001667,0.248333,0.998333</shape>
+     <shape comment="1">rectangle:0.25,0.001667,0.25,0.998333</shape>
+     <shape comment="2">rectangle:0.5,0.001667,0.25,0.996667</shape>
+     <shape comment="3">rectangle:0.75,0.001667,0.25,0.998333</shape>
+    </shaper>
+    <cell txtAlign="middle,top">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="bode.jpg" file="bode.jpg" />
+  <media name="cachorro.jpg" file="cachorro.jpg" />
+  <media name="camelo.jpg" file="camelo.jpg" />
+  <media name="canguru.jpg" file="canguru.jpg" />
+  <media name="cavalo.jpg" file="cavalo.jpg" />
+  <media name="coelho.jpg" file="coelho.jpg" />
+  <media name="elefante.jpg" file="elefante.jpg" />
+  <media name="galinha.jpg" file="galinha.jpg" />
+  <media name="gato.jpg" file="gato.jpg" />
+  <media name="girafa.jpg" file="girafa.jpg" />
+  <media name="hipopotamo.jpg" file="hipopotamo.jpg" />
+  <media name="leão.jpg" file="leao.jpg" />
+  <media name="morcego.jpg" file="morcego.jpg" />
+  <media name="onça.jpg" file="onca.jpg" />
+  <media name="ovelha.jpg" file="ovelha.jpg" />
+  <media name="pato.jpg" file="pato.jpg" />
+  <media name="tartaruga.jpg" file="tartaruga.jpg" />
+  <media name="tigre.jpg" file="tigre.jpg" />
+  <media name="Zebra.jpg" file="zebra.jpg" />
+  <media name="ArrastePeças.mp3" file="arrastepecas.mp3" />
+  <media name="bode.mp3" file="bode.mp3" />
+  <media name="cachorro.mp3" file="cachorro.mp3" />
+  <media name="camelo.mp3" file="camelo.mp3" />
+  <media name="canguru.mp3" file="canguru.mp3" />
+  <media name="cavalo.mp3" file="cavalo.mp3" />
+  <media name="coelho.mp3" file="coelho.mp3" />
+  <media name="elefante.mp3" file="elefante.mp3" />
+  <media name="galinha.mp3" file="galinha.mp3" />
+  <media name="gato.mp3" file="gato.mp3" />
+  <media name="girafa.mp3" file="girafa.mp3" />
+  <media name="hipopotamo.mp3" file="hipopotamo.mp3" />
+  <media name="leao.mp3" file="leao.mp3" />
+  <media name="morcego.mp3" file="morcego.mp3" />
+  <media name="onça.mp3" file="onca.mp3" />
+  <media name="ovelha.mp3" file="ovelha.mp3" />
+  <media name="pato.mp3" file="pato.mp3" />
+  <media name="tartaruga.mp3" file="tartaruga.mp3" />
+  <media name="tigre.mp3" file="tigre.mp3" />
+  <media name="zebra.mp3" file="zebra.mp3" />
+  <media name="TelaJclic2.png" file="i07_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

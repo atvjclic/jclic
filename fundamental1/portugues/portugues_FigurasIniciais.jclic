@@ -1,0 +1,1829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="portugues_FigurasIniciais" version="0.1.3">
+ <settings>
+  <title>FigurasLetraInicial</title>
+  <revision description="created" date="5/27/13" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="TELA" name="TelaInicialMiguel" navButtons="none" />
+  <item id="start" name="NomeAnimal_1" delay="1" />
+  <item name="finalizado_1" />
+  <item name="NomeAnimal_2" delay="1" />
+  <item name="finalizado_2" />
+  <item name="NomeAnimal_3" delay="1" />
+  <item name="finalizado_3" />
+  <item name="NomeAnimal_4" delay="1" />
+  <item name="finalizado_4" />
+  <item name="NomeAnimal_5" delay="1" />
+  <item name="finalizado_5" />
+  <item name="NomeAnimal_6" delay="1" />
+  <item name="finalizado_6" />
+  <item name="NomeAnimal_7" delay="1" />
+  <item name="finalizado_7" />
+  <item name="NomeAnimal_8" delay="1" />
+  <item name="finalizado_8" />
+  <item name="NomeAnimal_9" delay="1" />
+  <item name="finalizado_9" />
+  <item name="NomeAnimal_10" delay="1" />
+  <item name="finalizado_10" />
+  <item name="NomeAnimal_11" delay="1" />
+  <item name="finalizado_11" />
+  <item name="NomeAnimal_12" delay="1" />
+  <item name="finalizado_12" />
+  <item name="NomeAnimal_13" delay="1" />
+  <item name="finalizado_13" />
+  <item name="NomeAnimal_14" delay="1" />
+  <item name="finalizado_14" />
+  <item name="NomeAnimal_15" delay="1" />
+  <item name="finalizado_15" />
+  <item name="finalizado_16" />
+ </sequence>
+ <activities>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_1" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="6" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell id="0" image="gato.jpg" />
+    <cell id="1" image="indio.jpg" />
+    <cell id="2" image="rato.jpg" />
+    <cell id="3" image="abelha.jpg" />
+    <cell id="4" image="flor.jpg" />
+    <cell id="5" image="abelha.jpg" />
+   </cells>
+   <cells rows="1" cols="6" cellWidth="300.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+     <color inactive="0x0066FF" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell>
+     <p>G</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>F</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>G</p>
+    </cell>
+    <cell avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>I</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>R</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>F</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_10" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0" image="tartaruga.jpg" />
+    <cell id="1" image="abelha.jpg" />
+    <cell id="2" image="tartaruga.jpg" />
+    <cell id="3" image="urso.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>T</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>T</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>U</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_11" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0" image="vagalume.gif" />
+    <cell id="1" image="abelha.jpg" />
+    <cell id="2" image="cobra.jpg" />
+    <cell id="3" image="abelha.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>V</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>V</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>C</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_12" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0" image="fogo.jpg" />
+    <cell id="1" image="ovelha.jpg" />
+    <cell id="2" image="cobra.jpg" />
+    <cell id="3" image="abelha.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>F</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>F</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>O</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>C</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_13" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="0" image="elefante.jpg" />
+    <cell id="1" image="macaco.jpg" />
+    <cell id="2" image="abelha.jpg" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>M</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>E</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>M</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_14" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="6" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell id="0" image="minhoca.gif" />
+    <cell id="1" image="abelha.jpg" />
+    <cell id="2" image="cobra.jpg" />
+    <cell id="3" image="abelha.jpg" />
+    <cell id="4" image="cobra.jpg" />
+    <cell id="5" image="ovelha.jpg" />
+   </cells>
+   <cells rows="1" cols="6" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell>
+     <p>M</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>M</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>C</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_15" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="6" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell id="0" image="joaninha.jpg" />
+    <cell id="1" image="abelha.jpg" />
+    <cell id="2" image="cobra.jpg" />
+    <cell id="3" image="abelha.jpg" />
+    <cell id="4" image="rato.jpg" />
+    <cell id="5" image="elefante.jpg" />
+   </cells>
+   <cells rows="1" cols="6" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell>
+     <p>J</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>J</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>C</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>É</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0" image="lua.jpg" />
+    <cell id="1" image="elefante.jpg" />
+    <cell id="2" image="abelha.jpg" />
+    <cell id="3" image="ovelha.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>L</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>E</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>Ã</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>O</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0" image="garfo.jpg" />
+    <cell id="1" image="abelha.jpg" />
+    <cell id="2" image="tatu.jpg" />
+    <cell id="3" image="ovelha.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>G</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>G</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>T</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>O</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0" image="rosa.png" />
+    <cell id="1" image="abelha.jpg" />
+    <cell id="2" image="tatu.jpg" />
+    <cell id="3" image="ovelha.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>R</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>T</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>O</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0" image="sol.jpg" />
+    <cell id="1" image="abelha.jpg" />
+    <cell id="2" image="pato.jpg" />
+    <cell id="3" image="ovelha.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>S</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>P</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>S</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>P</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>O</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="6" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell id="0" image="cobra.jpg" />
+    <cell id="1" image="abelha.jpg" />
+    <cell id="2" image="macaco.jpg" />
+    <cell id="3" image="elefante.jpg" />
+    <cell id="4" image="leao.jpg" />
+    <cell id="5" image="ovelha.jpg" />
+   </cells>
+   <cells rows="1" cols="6" cellWidth="300.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>M</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>C</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>M</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_7" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="6" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell id="0" image="cobra.jpg" />
+    <cell id="1" image="abelha.jpg" />
+    <cell id="2" image="vaca.jpg" />
+    <cell id="3" image="abelha.jpg" />
+    <cell id="4" image="leao.jpg" />
+    <cell id="5" image="ovelha.jpg" />
+   </cells>
+   <cells rows="1" cols="6" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>V</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>C</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>V</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_8" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0" image="porco.jpg" />
+    <cell id="1" image="abelha.jpg" />
+    <cell id="2" image="tatu.jpg" />
+    <cell id="3" image="ovelha.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>P</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>P</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>T</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>O</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="NomeAnimal_9" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique na figura e digite a letra inicial e tecle enter.</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0" image="leao.jpg" />
+    <cell id="1" image="ovelha.jpg" />
+    <cell id="2" image="burro.jpg" />
+    <cell id="3" image="ovelha.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="301.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>B</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>L</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>O</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>B</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>O</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="start" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="girafa.mp3" autoStart="true" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 01.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_2" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_10">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="tatu.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 10.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_11" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_11">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="vaca.mp3" autoStart="true" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 11.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_12" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_12">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="foca.mp3" autoStart="true" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 12.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_13" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_13">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="ema.mp3" autoStart="true" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 13.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_14" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_14">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="macaco.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 14.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_15" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_15">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="jacare.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 15.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="finalizado_16" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_16">
+   <messages />
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="1123.0" cellHeight="794.0" border="true">
+    <style transparent="true">
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0x0066FF" background="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.059819,0.197767,0.899549,0.239234</shape>
+     <shape comment="1">rectangle:0.222348,0.535885,0.586907,0.164274</shape>
+    </shaper>
+    <cell>
+     <style>
+      <font family="Arial" size="48" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="start" />
+     <p>CLIQUE AQUI PARA COMEÇAR NOVAMENTE</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_2">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="leao.mp3" autoStart="true" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 02.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_3" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_3">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="gato.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 03.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_4" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_4">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="rato.mp3" autoStart="true" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 04.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_5" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_5">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="sapo.mp3" autoStart="true" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 05.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_6" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_6">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="camelo.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 06.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_7" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_7">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="cavalo.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 07.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_8" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_8">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="pato.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 08.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_9" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="finalizado_9">
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="lobo.mp3" />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Animais - 09.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">M:0.668744,0.848867|L:0.670525,0.924433|L:0.844167,0.925693|L:0.846839,0.978589|L:0.975067,0.887909|L:0.845058,0.79471|L:0.845948,0.845088|L:0.668744,0.848867</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="NomeAnimal_10" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="minhoca.gif" file="minhoca.gif" />
+  <media name="vagalume.gif" file="vagalume.gif" />
+  <media name="abelha.jpg" file="abelha.jpg" />
+  <media name="Animais - 01.jpg" file="animais___01.jpg" />
+  <media name="Animais - 02.jpg" file="animais___02.jpg" />
+  <media name="Animais - 03.jpg" file="animais___03.jpg" />
+  <media name="Animais - 04.jpg" file="animais___04.jpg" />
+  <media name="Animais - 05.jpg" file="animais___05.jpg" />
+  <media name="Animais - 06.jpg" file="animais___06.jpg" />
+  <media name="Animais - 07.jpg" file="animais___07.jpg" />
+  <media name="Animais - 08.jpg" file="animais___08.jpg" />
+  <media name="Animais - 09.jpg" file="animais___09.jpg" />
+  <media name="Animais - 10.jpg" file="animais___10.jpg" />
+  <media name="Animais - 11.jpg" file="animais___11.jpg" />
+  <media name="Animais - 12.jpg" file="animais___12.jpg" />
+  <media name="Animais - 13.jpg" file="animais___13.jpg" />
+  <media name="Animais - 14.jpg" file="animais___14.jpg" />
+  <media name="Animais - 15.jpg" file="animais___15.jpg" />
+  <media name="burro.jpg" file="burro.jpg" />
+  <media name="cobra.jpg" file="cobra.jpg" />
+  <media name="elefante.jpg" file="elefante.jpg" />
+  <media name="flor.jpg" file="flor.jpg" />
+  <media name="fogo.jpg" file="fogo.jpg" />
+  <media name="garfo.jpg" file="garfo.jpg" />
+  <media name="gato.jpg" file="gato.jpg" />
+  <media name="indio.jpg" file="indio.jpg" />
+  <media name="joaninha.jpg" file="joaninha.jpg" />
+  <media name="leao.jpg" file="leao.jpg" />
+  <media name="lua.jpg" file="lua.jpg" />
+  <media name="macaco.jpg" file="macaco.jpg" />
+  <media name="ovelha.jpg" file="ovelha.jpg" />
+  <media name="pato.jpg" file="pato.jpg" />
+  <media name="porco.jpg" file="porco.jpg" />
+  <media name="rato.jpg" file="rato.jpg" />
+  <media name="sol.jpg" file="sol.jpg" />
+  <media name="tartaruga.jpg" file="tartaruga.jpg" />
+  <media name="tatu.jpg" file="tatu.jpg" />
+  <media name="urso.jpg" file="urso.jpg" />
+  <media name="vaca.jpg" file="vaca.jpg" />
+  <media name="camelo.mp3" file="camelo.mp3" />
+  <media name="cavalo.mp3" file="cavalo.mp3" />
+  <media name="ema.mp3" file="ema.mp3" />
+  <media name="foca.mp3" file="foca.mp3" />
+  <media name="gato.mp3" file="gato.mp3" />
+  <media name="girafa.mp3" file="girafa.mp3" />
+  <media name="jacare.mp3" file="jacare.mp3" />
+  <media name="leao.mp3" file="leao.mp3" />
+  <media name="lobo.mp3" file="lobo.mp3" />
+  <media name="macaco.mp3" file="macaco.mp3" />
+  <media name="pato.mp3" file="pato.mp3" />
+  <media name="rato.mp3" file="rato.mp3" />
+  <media name="sapo.mp3" file="sapo.mp3" />
+  <media name="tatu.mp3" file="tatu.mp3" />
+  <media name="vaca.mp3" file="vaca.mp3" />
+  <media name="rosa.png" file="rosa.png" />
+  <media name="TelaJclic2.png" file="i09_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

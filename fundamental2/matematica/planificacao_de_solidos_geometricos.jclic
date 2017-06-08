@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="planificacao_de_solidos_geometricos" version="0.1.3">
+ <settings>
+  <title>Figuras Geométricas</title>
+  <revision description="created" date="10/18/13" />
+  <author name="Marcos José Chagas Souza" mail="marcoschags@hotmail.com" rol="Articulador de Educação Tecnológica" organization="Escola Municipal Manoel de Souza Bonfim" />
+  <author name="Edna" rol="Professora de Matemática" />
+  <author name="Mariza" rol="Professora de Matemática" />
+  <descriptors area="Geometria" level="Fundamental II" />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="start" navButtons="none" />
+  <item name="Informacoes" />
+  <item name="Informacoes2" />
+  <item name="Informacao3" />
+  <item name="Informacao4" />
+  <item name="Informacao5" />
+  <item name="FigurasNaoPlanas" delay="1" />
+  <item name="FigurasNaoPlanas2" delay="1" />
+  <item name="FigurasPlanas" delay="1" />
+  <item id="start" name="start" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="FigurasNaoPlanas" code="1">
+   <description />
+   <messages>
+    <cell avoidOverlapping="true" type="initial">
+     <style>
+      <font family="Arial" size="18" />
+     </style>
+     <p>Ligue corretamente as figuras, você tem 60 segundos para responder essa atividade.</p>
+    </cell>
+    <cell avoidOverlapping="true" type="final">
+     <style>
+      <font family="Arial" size="36" />
+     </style>
+     <p>Chame a professora!</p>
+    </cell>
+    <cell avoidOverlapping="true" type="finalError">
+     <style>
+      <font family="Arial" size="36" />
+     </style>
+     <p>Preste mais atenção!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="true" maxActions="9" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0x28C5EB">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xD8800A" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="170.0" cellHeight="120.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFEF7F7" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="solidos5.jpg" />
+    <cell avoidOverlapping="true" image="solidos4.jpg" />
+    <cell image="solidos3.jpg" />
+    <cell avoidOverlapping="true" image="solidos2.jpg" />
+    <cell image="solido8.jpg" />
+    <cell avoidOverlapping="true" image="solido6.jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="170.0" cellHeight="120.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFAFA" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+     </style>
+     <p>Pirâmide Quadrangular</p>
+    </cell>
+    <cell avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+     </style>
+     <p>Pirâmide Triangular</p>
+    </cell>
+    <cell avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+     </style>
+     <p>Cubo</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+     </style>
+     <p>Paralelepípedo</p>
+    </cell>
+    <cell avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+     </style>
+     <p>Prisma</p>
+    </cell>
+    <cell avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+     </style>
+     <p>Cone</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="FigurasNaoPlanas2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="18" />
+     </style>
+     <p>Ligue corretamente as figuras, você tem 60 segundos para responder essa atividade.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="36" />
+     </style>
+     <p>Chame a professora!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="36" />
+     </style>
+     <p>Preste mais atenção!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="true" maxActions="9" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0x91B8CA">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xB58F37" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="170.0" cellHeight="120.0" border="true" id="primary">
+    <style>
+     <color background="0xF0F0F5" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="solido6 (outra cópia).jpg" />
+    <cell image="solido7 (cópia).jpg" />
+    <cell image="solido8 (cópia).jpg" />
+    <cell image="solidos2 (cópia).jpg" />
+    <cell image="solidos3 (cópia).jpg" />
+    <cell image="solidos4 (cópia).jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="170.0" cellHeight="120.0" border="true" id="secondary">
+    <style>
+     <color background="0xFBF1F1" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="solido61.jpg" />
+    <cell image="solido7 (outra cópia).jpg" />
+    <cell image="solido8 (outra cópia).jpg" />
+    <cell image="solidos2 (outra cópia).jpg" />
+    <cell image="solidos3 (outra cópia).jpg" />
+    <cell image="solidos4 (outra cópia).jpg" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="FigurasPlanas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="18" />
+     </style>
+     <p>Faça a associação entre a figura plana e sua respectiva fórmula.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="136" />
+     </style>
+     <p>Chame a professora!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="136" />
+     </style>
+     <p>Preste mais atenção!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="90" countDownTime="true" maxActions="9" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0x5987C2">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC37B4E" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="170.0" cellHeight="120.0" border="true" id="primary">
+    <style>
+     <color background="0xE2DDDD" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell avoidOverlapping="true" image="Área do Losango - Cópia.jpg" />
+    <cell image="Área do Paralelogramo - Cópia (2).jpg" />
+    <cell image="Área do Quadrado - Cópia (2).jpg" />
+    <cell image="Área do Retângulo - Cópia (2).jpg" />
+    <cell image="Área do Trapézio - Cópia (2).jpg" />
+    <cell image="Área do Triângulo - Cópia (2).jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="170.0" cellHeight="120.0" border="true" id="secondary">
+    <style>
+     <color background="0xDDDADA" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell avoidOverlapping="true" image="Área do Losango - Cópia (2).jpg" />
+    <cell image="Área do Paralelogramo - Cópia.jpg" />
+    <cell image="Área do Quadrado - Cópia.jpg" />
+    <cell image="Área do Retângulo - Cópia.jpg" />
+    <cell image="Área do Trapézio - Cópia.jpg" />
+    <cell image="Área do Triângulo - Cópia.jpg" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Informacao3" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0x2677F0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC3532F" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="813.0" cellHeight="397.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="left,top" avoidOverlapping="true" border="true" image="formas planas e não planas-resized.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+     </style>
+     <p>Observe que a diferença entre as formas planas e não-planas, é que as não-</p>
+     <p>planas "saem" do "papel".</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Informacao4" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0x45779F">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC57749" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="931.0" cellHeight="414.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="left,top" avoidOverlapping="true" image="poligonos e não poligonos.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+     </style>
+     <p>Observe que os polígonos possuem lados retos e são figuras fechadas, enquanto</p>
+     <p>os não-polígonos possuem formas arredondadas e/ou não possuem formas </p>
+     <p>"fechadas".</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Informacao5" code="">
+   <description />
+   <messages>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="120" />
+     </style>
+     <p>Preste bastante atenção na hora de responder ao exercício</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x4479C8">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xB45B21" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="1051.0" cellHeight="412.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="left,top" avoidOverlapping="true" image="poliedros e não poliedros.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+     </style>
+     <p>A superfície dos poliedros é formada por polígonos. Cada polígono é uma face do</p>
+     <p>poliedro.</p>
+     <p>Como os polígonos têm contornos retos e são figuras planas, os poliedros não têm.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Informacoes" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="18" />
+     </style>
+     <p>Leia com atenção as informações para responder posteriormente a atividade</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x3E99BE">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xAE5C14" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="761.0" cellHeight="196.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell txtAlign="left,top" imgAlign="left,top" avoidOverlapping="true" image="imagem1.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+     </style>
+     <p>Conhecendo os sólidos na forma plana </p>
+     <p>Todos os sólidos são formados pela união de figuras planas, as quais podem ser identificadas por meio da </p>
+     <p>planificação.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Informacoes2" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0x3198BE">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xCA6A25" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="817.0" cellHeight="219.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell txtAlign="left,top" imgAlign="left,top" avoidOverlapping="true" border="true" image="imagem2.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+     </style>
+     <p>Os sólidos geométricos são encontrados nas diferentes formas existentes ao nosso redor. Uma caixa de sapatos,</p>
+     <p>a caixa d’água, uma pirâmide, uma lata de óleo, a casquinha de um sorvete, entre outros, são considerados</p>
+     <p>sólidos geométricos.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="start" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+     </style>
+     <p>Clique em  Iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="tela_jclick_iniciarMarcosJosejpg.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.376731,0.283859,0.240997,0.072356</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Informacoes" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="formas planas e não planas-resized.jpg" file="formas_planas_e_nao_planas_resized.jpg" />
+  <media name="solido6 (outra cópia).jpg" file="solido6__outra_copia_.jpg" />
+  <media name="solido6.jpg" file="solido6.jpg" />
+  <media name="solido61.jpg" file="solido61.jpg" />
+  <media name="solido7 (cópia).jpg" file="solido7__copia_.jpg" />
+  <media name="solido7 (outra cópia).jpg" file="solido7__outra_copia_.jpg" />
+  <media name="solido8 (cópia).jpg" file="solido8__copia_.jpg" />
+  <media name="solido8 (outra cópia).jpg" file="solido8__outra_copia_.jpg" />
+  <media name="solido8.jpg" file="solido8.jpg" />
+  <media name="solidos2 (cópia).jpg" file="solidos2__copia_.jpg" />
+  <media name="solidos2 (outra cópia).jpg" file="solidos2__outra_copia_.jpg" />
+  <media name="solidos2.jpg" file="solidos2.jpg" />
+  <media name="solidos3 (cópia).jpg" file="solidos3__copia_.jpg" />
+  <media name="solidos3 (outra cópia).jpg" file="solidos3__outra_copia_.jpg" />
+  <media name="solidos3.jpg" file="solidos3.jpg" />
+  <media name="solidos4 (cópia).jpg" file="solidos4__copia_.jpg" />
+  <media name="solidos4 (outra cópia).jpg" file="solidos4__outra_copia_.jpg" />
+  <media name="solidos4.jpg" file="solidos4.jpg" />
+  <media name="solidos5.jpg" file="solidos5.jpg" />
+  <media name="tela_jclick_iniciarMarcosJosejpg.jpg" file="tela_jclick_iniciarmarcosjosejpg.jpg" />
+  <media name="Área do Losango - Cópia (2).jpg" file="area_do_losango___copia__2_.jpg" />
+  <media name="Área do Losango - Cópia.jpg" file="area_do_losango___copia.jpg" />
+  <media name="Área do Paralelogramo - Cópia (2).jpg" file="area_do_paralelogramo___copia__2_.jpg" />
+  <media name="Área do Paralelogramo - Cópia.jpg" file="area_do_paralelogramo___copia.jpg" />
+  <media name="Área do Quadrado - Cópia (2).jpg" file="area_do_quadrado___copia__2_.jpg" />
+  <media name="Área do Quadrado - Cópia.jpg" file="area_do_quadrado___copia.jpg" />
+  <media name="Área do Retângulo - Cópia (2).jpg" file="area_do_retangulo___copia__2_.jpg" />
+  <media name="Área do Retângulo - Cópia.jpg" file="area_do_retangulo___copia.jpg" />
+  <media name="Área do Trapézio - Cópia (2).jpg" file="area_do_trapezio___copia__2_.jpg" />
+  <media name="Área do Trapézio - Cópia.jpg" file="area_do_trapezio___copia.jpg" />
+  <media name="Área do Triângulo - Cópia (2).jpg" file="area_do_triangulo___copia__2_.jpg" />
+  <media name="Área do Triângulo - Cópia.jpg" file="area_do_triangulo___copia.jpg" />
+  <media name="imagem1.png" file="imagem1.png" />
+  <media name="imagem2.png" file="imagem2.png" />
+  <media name="poliedros e não poliedros.png" file="poliedros_e_nao_poliedros.png" />
+  <media name="poligonos e não poligonos.png" file="poligonos_e_nao_poligonos.png" />
+ </mediaBag>
+</JClicProject>
+

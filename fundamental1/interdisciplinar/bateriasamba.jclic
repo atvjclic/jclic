@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="bateriasamba" version="0.1.3">
+ <settings>
+  <title>BateriaSamba</title>
+  <revision description="created" date="2/11/15" />
+  <author name="Miguel Silva" />
+  <description>
+   <p>Conhecendo os principais instrumentos de uma bateria de samba</p>
+  </description>
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="telainicial" />
+  <item id="start" name="Conhecendo os Instrumentos" delay="1" />
+  <item name="Conhecendo os instrumentos - Sopa de Letras" delay="1" />
+  <item name="Conhecendo os Instrumentos_02" delay="1" />
+  <item name="Conhecendo os Instrumentos_03" delay="1" />
+  <item name="Conhecendo os Instrumentos_04-EscreverNomes" delay="1" />
+  <item name="Conhecendo os Instrumentos_05-EscreverNomes" delay="1" />
+  <item name="Conhecendo os Instrumentos_11-EscreverNomes" delay="1" />
+  <item name="Conhecendo os Instrumentos_10-EscreverNomes" delay="1" />
+  <item name="Conhecendo os Instrumentos_09-EscreverNomes" delay="1" />
+  <item name="Conhecendo os Instrumentos_08-EscreverNomes" delay="1" />
+  <item name="Conhecendo os Instrumentos_07-EscreverNomes" delay="1" />
+  <item name="Conhecendo os Instrumentos_06-EscreverNomes" delay="1" />
+  <item name="Conhecendo os Instrumentos_18-OuvirEscrever" delay="1" />
+  <item name="Conhecendo os Instrumentos_19-OuvirEscrever" delay="1" />
+  <item name="Conhecendo os Instrumentos_12-OuvirEscrever" delay="1" />
+  <item name="Conhecendo os Instrumentos_13-OuvirEscrever" delay="1" />
+  <item name="Conhecendo os Instrumentos_14-OuvirEscrever" delay="1" />
+  <item name="Conhecendo os Instrumentos_15-OuvirEscrever" delay="1" />
+  <item name="Conhecendo os Instrumentos_16-OuvirEscrever" delay="1" />
+  <item name="Conhecendo os Instrumentos_17-OuvirEscrever" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@panels.Explore" name="Conhecendo os Instrumentos">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Clique num instrumento para ouví-lo e ler sobre ele.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="2" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell id="0" image="agogo.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Faixa de Áudio-3.mp3" />
+    </cell>
+    <cell id="1" image="caixa.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/caixa.mp3" />
+    </cell>
+    <cell id="2" image="chocalopng.png">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/chocalho.mp3" />
+    </cell>
+    <cell id="3" image="cuica.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/cuica.mp3" />
+    </cell>
+    <cell id="4" image="ganza.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/chocalho.mp3" />
+    </cell>
+    <cell id="5" image="repique_99c.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/repique.mp3" />
+    </cell>
+    <cell id="6" image="surdo.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/surdo.mp3" />
+    </cell>
+    <cell id="7" image="tamborim.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/tamborim.mp3" />
+    </cell>
+   </cells>
+   <cells rows="4" cols="2" cellWidth="500.0" cellHeight="120.0" border="true" id="secondary">
+    <style>
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>AGOGÔ</p>
+     <p>A palavra "agogô" vem do iorubá agogô, que significa "sino".</p>
+    </cell>
+    <cell>
+     <p>CAIXA</p>
+     <p>Dá o suingue do samba, apoia o surdo.</p>
+    </cell>
+    <cell>
+     <p>CHOCALHO</p>
+     <p>Compoe a parte aguda da bateria.</p>
+    </cell>
+    <cell>
+     <p>CUICA</p>
+     <p>A cuíca ou puíta (em Angola pwita) é um instrumento musical, semelhante a um tambor, com uma haste de madeira presa no centro da membrana de couro, pelo lado interno.</p>
+    </cell>
+    <cell>
+     <p>GANZA</p>
+     <p>É um tipo de chocalho, consiste num recipiente oco que contém pequenos objectos no seu interior.</p>
+    </cell>
+    <cell>
+     <p>REPIQUE</p>
+     <p>O repique é um instrumento de som nítido para acompanhamento,</p>
+    </cell>
+    <cell>
+     <p>SURDO</p>
+     <p>Este tipo de tambor baixo é tradicionalmente usado em escolas de samba</p>
+    </cell>
+    <cell>
+     <p>TAMBORIM</p>
+     <p>É um instrumento de percussão, constituído de uma membrana esticada.</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Conhecendo os Instrumentos_02" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Associe os instrumentos aos seus nomes corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="2" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell id="0" image="agogo.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Faixa de Áudio-3.mp3" />
+    </cell>
+    <cell id="1" image="caixa.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/caixa.mp3" />
+    </cell>
+    <cell id="2" image="chocalopng.png">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/chocalho.mp3" />
+    </cell>
+    <cell id="3" image="cuica.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/cuica.mp3" />
+    </cell>
+    <cell id="4" image="ganza.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/chocalho.mp3" />
+    </cell>
+    <cell id="5" image="repique_99c.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/repique.mp3" />
+    </cell>
+    <cell id="6" image="surdo.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/surdo.mp3" />
+    </cell>
+    <cell id="7" image="tamborim.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/tamborim.mp3" />
+    </cell>
+   </cells>
+   <cells rows="4" cols="2" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>AGOGÔ</p>
+    </cell>
+    <cell>
+     <p>CAIXA</p>
+    </cell>
+    <cell>
+     <p>CHOCALHO</p>
+    </cell>
+    <cell>
+     <p>CUÍCA</p>
+    </cell>
+    <cell>
+     <p>GANZA</p>
+    </cell>
+    <cell>
+     <p>REPIQUE</p>
+    </cell>
+    <cell>
+     <p>SURDO</p>
+    </cell>
+    <cell>
+     <p>TAMBORIM</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Conhecendo os Instrumentos_03" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Arraste os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="agogo.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Faixa de Áudio-3.mp3" />
+    </cell>
+    <cell id="0" />
+    <cell image="chocalopng.png">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/chocalho.mp3" />
+    </cell>
+    <cell id="2" />
+    <cell image="ganza.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/chocalho.mp3" />
+    </cell>
+    <cell id="4" />
+    <cell image="surdo.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/surdo.mp3" />
+    </cell>
+    <cell id="6" />
+    <cell image="caixa.jpg" />
+    <cell id="1" />
+    <cell image="cuica.jpg" />
+    <cell id="3" />
+    <cell image="repique_99c.jpg" />
+    <cell id="5" />
+    <cell image="tamborim.jpg" />
+    <cell id="7" />
+   </cells>
+   <cells rows="4" cols="2" cellWidth="200.0" cellHeight="200.0" border="false" id="secondary">
+    <style transparent="true">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>AGOGÔ</p>
+    </cell>
+    <cell>
+     <p>CAIXA</p>
+    </cell>
+    <cell>
+     <p>CHOCALHO</p>
+    </cell>
+    <cell>
+     <p>CUÍCA</p>
+    </cell>
+    <cell>
+     <p>GANZA</p>
+    </cell>
+    <cell>
+     <p>REPIQUE</p>
+    </cell>
+    <cell>
+     <p>SURDO</p>
+    </cell>
+    <cell>
+     <p>TAMBORIM</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell />
+    <cell>
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+     <p>AGOGÔ</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>CHOCALHO</p>
+    </cell>
+    <cell />
+    <cell>
+     <style>
+      <font family="Arial" size="24" />
+     </style>
+     <p>GANZA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>SURDO</p>
+    </cell>
+    <cell />
+    <cell>
+     <style>
+      <font family="Arial" size="24" bold="true" />
+     </style>
+     <p>CAIXA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>CUÍCA</p>
+    </cell>
+    <cell />
+    <cell>
+     <style>
+      <font family="Arial" size="24" />
+     </style>
+     <p>REPIQUE</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>TAMBORIM</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_04-EscreverNomes" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="agogo.jpg">
+     <media type="PLAY_AUDIO" level="2" file="Faixa de Áudio-3.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>AGOGÔ</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_05-EscreverNomes" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="caixa.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/caixa.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>CAIXA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_06-EscreverNomes" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="chocalopng.png">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/chocalho.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>CHOCALHO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_07-EscreverNomes" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="cuica.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/cuica.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>CUÍCA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_08-EscreverNomes" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="ganza.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/chocalho.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>GANZA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_09-EscreverNomes" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="repique_99c.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/repique.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>REPIQUE</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_10-EscreverNomes" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="surdo.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/surdo.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>SURDO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_11-EscreverNomes" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="tamborim.jpg">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/tamborim.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>TAMBORIM</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_12-OuvirEscrever" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Ouça e escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="2" file="Faixa de Áudio-3.mp3" />
+     <p>?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>AGOGÔ</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="agogo.jpg" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_13-OuvirEscrever" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Ouça e escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/caixa.mp3" />
+     <p>?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>CAIXA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="caixa.jpg" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_14-OuvirEscrever" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Ouça e escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/chocalho.mp3" />
+     <p>?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>CHOCALHO</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="chocalopng.png" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_15-OuvirEscrever" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Ouça e escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/cuica.mp3" />
+     <p>?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>CUÍCA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="cuica.jpg" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_16-OuvirEscrever" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Ouça e escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/chocalho.mp3" />
+     <p>?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>GANZA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="ganza.jpg" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_17-OuvirEscrever" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Ouça e escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/repique.mp3" />
+     <p>?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>REPIQUE</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="repique_99c.jpg" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_18-OuvirEscrever" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Ouça e escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/surdo.mp3" />
+     <p>?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>SURDO</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="surdo.jpg" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Conhecendo os Instrumentos_19-OuvirEscrever" inverse="true">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Ouça e escreva os nomes dos instrumentos corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Desktop/InstrumentosBateriaSamba/tamborim.mp3" />
+     <p>?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>TAMBORIM</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="tamborim.jpg" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="Conhecendo os instrumentos - Sopa de Letras">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000BFF" background="0xFEFEFE" />
+     </style>
+     <p>Encontre os nomes dos seguintes instrumentos: AGOGÔ, CAIXA, REPIQUE, SURDO, TAMBORIM, CHOCALHO, GANZA, CUÍCA</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1815F5" background="0xFEFEFE" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <textGrid rows="9" columns="9" cellWidth="60.0" cellHeight="50.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>CHOCALHO*</row>
+     <row>*TAMBORIM</row>
+     <row>******G**</row>
+     <row>S*CUÍCA**</row>
+     <row>U*A***N**</row>
+     <row>R*I***Z**</row>
+     <row>D*X***A**</row>
+     <row>O*AGOGÔ**</row>
+     <row>*REPIQUE*</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">TAMBORIM</clue>
+    <clue id="1">CUÍCA</clue>
+    <clue id="2">GANZA</clue>
+    <clue id="3">SURDO</clue>
+    <clue id="4">AGOGÔ</clue>
+    <clue id="5">CAIXA</clue>
+    <clue id="6">REPIQUE</clue>
+    <clue id="7">CHOCALHO</clue>
+   </clues>
+   <cells rows="4" cols="2" cellWidth="156.0" cellHeight="136.0" border="true" id="secondary">
+    <style>
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell image="tamborim.jpg" />
+    <cell image="cuica.jpg" />
+    <cell image="ganza.jpg" />
+    <cell image="surdo.jpg" />
+    <cell image="agogo.jpg" />
+    <cell image="caixa.jpg" />
+    <cell image="repique_99c.jpg" />
+    <cell image="chocalopng.png" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="telainicial">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0D3CF8" background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFEFEFE">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="telaInicial.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.030273,0.536458,0.9375,0.416667</shape>
+     <shape comment="1">rectangle:0.374023,0.292969,0.240234,0.057292</shape>
+    </shaper>
+    <cell txtAlign="left,top" imgAlign="left,middle">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Times New Roman" size="24" bold="true" />
+      <color foreground="0x0044FF" />
+     </style>
+     <p>Professor e Articulador Miguel dos Santos Silva</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Conhecendo os Instrumentos" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="agogo.jpg" file="agogo.jpg" />
+  <media name="caixa.jpg" file="caixa.jpg" />
+  <media name="cuica.jpg" file="cuica.jpg" />
+  <media name="ganza.jpg" file="ganza.jpg" />
+  <media name="repique_99c.jpg" file="repique_99c.jpg" />
+  <media name="surdo.jpg" file="surdo.jpg" />
+  <media name="tamborim.jpg" file="tamborim.jpg" />
+  <media name="/home/professor/Desktop/InstrumentosBateriaSamba/caixa.mp3" file="_home_professor_desktop_instrumentosbateriasamba_caixa.mp3" />
+  <media name="/home/professor/Desktop/InstrumentosBateriaSamba/chocalho.mp3" file="_home_professor_desktop_instrumentosbateriasamba_chocalho.mp3" />
+  <media name="/home/professor/Desktop/InstrumentosBateriaSamba/cuica.mp3" file="_home_professor_desktop_instrumentosbateriasamba_cuica.mp3" />
+  <media name="/home/professor/Desktop/InstrumentosBateriaSamba/repique.mp3" file="_home_professor_desktop_instrumentosbateriasamba_repique.mp3" />
+  <media name="/home/professor/Desktop/InstrumentosBateriaSamba/surdo.mp3" file="_home_professor_desktop_instrumentosbateriasamba_surdo.mp3" />
+  <media name="/home/professor/Desktop/InstrumentosBateriaSamba/tamborim.mp3" file="_home_professor_desktop_instrumentosbateriasamba_tamborim.mp3" />
+  <media name="Faixa de Áudio-3.mp3" file="faixa_de_audio_3.mp3" />
+  <media name="chocalopng.png" file="chocalopng.png" />
+  <media name="telaInicial.png" file="i03_telainicial.png" />
+ </mediaBag>
+</JClicProject>
+

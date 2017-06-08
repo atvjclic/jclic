@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="portugues_figuranomes" version="0.1.3">
+ <settings>
+  <title>PortuguesFigurasLetras</title>
+  <revision description="created" date="5/23/13" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="TelaInicialMiguel" navButtons="none" />
+  <item id="start" name="FigurasNomes_1" delay="1" />
+  <item name="FigurasNomes_2" delay="1" />
+  <item name="FigurasNomes_3" delay="1" />
+  <item id="start" name="TelaInicialMiguel" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="FigurasNomes_1" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Associe os nomes às figuras.</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Parabéns!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="200.0" cellHeight="150.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF9900" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="urubu.jpg" />
+    <cell id="0" />
+    <cell image="bala.jpg" />
+    <cell id="1" />
+    <cell image="burro.jpg" />
+    <cell id="2" />
+    <cell border="true" image="carro.jpg" />
+    <cell id="3" />
+    <cell image="boca.jpg" />
+    <cell id="4" />
+    <cell image="casa.jpg" />
+    <cell id="5" />
+    <cell image="cama.jpg" />
+    <cell id="6" border="true" />
+    <cell image="cobra.jpg" />
+    <cell id="7" />
+   </cells>
+   <cells rows="4" cols="2" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFF9900" inactive="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>URUBU</p>
+    </cell>
+    <cell>
+     <p>BALA</p>
+    </cell>
+    <cell>
+     <p>BURRO</p>
+    </cell>
+    <cell>
+     <p>CARRO</p>
+    </cell>
+    <cell>
+     <p>BOCA</p>
+    </cell>
+    <cell>
+     <p>CASA</p>
+    </cell>
+    <cell>
+     <p>CAMA</p>
+    </cell>
+    <cell>
+     <p>COBRA</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="7" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+      <color background="0xFF9900" />
+     </style>
+     <p>URUBU</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+      <color background="0xFF9900" />
+     </style>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>BALA</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>BURRO</p>
+    </cell>
+    <cell border="false">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+    </cell>
+    <cell>
+     <p>CARRO</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>BOCA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>CASA</p>
+    </cell>
+    <cell />
+    <cell border="false">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>CAMA</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>COBRA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="FigurasNomes_2" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Associe os nomes às figuras.</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Parabéns!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="200.0" cellHeight="150.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF9900" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="coelho.jpg" />
+    <cell id="0" />
+    <cell image="fogo.jpg" />
+    <cell id="1" />
+    <cell image="copo.jpg" />
+    <cell id="2" />
+    <cell border="true" image="garfo.jpg" />
+    <cell id="3" />
+    <cell image="dado.jpg" />
+    <cell id="4" />
+    <cell image="gelo.jpg" />
+    <cell id="5" />
+    <cell image="flor.jpg" />
+    <cell id="6" border="true" />
+    <cell image="lapis.png" />
+    <cell id="7" />
+   </cells>
+   <cells rows="4" cols="2" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFF9900" inactive="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>COELHO</p>
+    </cell>
+    <cell>
+     <p>FOGO</p>
+    </cell>
+    <cell>
+     <p>COPO</p>
+    </cell>
+    <cell>
+     <p>GARFO</p>
+    </cell>
+    <cell>
+     <p>DADO</p>
+    </cell>
+    <cell>
+     <p>GELO</p>
+    </cell>
+    <cell>
+     <p>FLOR</p>
+    </cell>
+    <cell>
+     <p>LÁPIS</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="7" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" />
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+      <color background="0xFF9900" />
+     </style>
+     <p>COELHO</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+      <color background="0xFF9900" />
+     </style>
+    </cell>
+    <cell id="3">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>FOGO</p>
+    </cell>
+    <cell id="4">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+    </cell>
+    <cell id="5">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>COPO</p>
+    </cell>
+    <cell id="6" border="false">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+    </cell>
+    <cell id="7">
+     <p>GARFO</p>
+    </cell>
+    <cell id="8" />
+    <cell id="9">
+     <p>DADO</p>
+    </cell>
+    <cell id="10" />
+    <cell id="11">
+     <p>GELO</p>
+    </cell>
+    <cell id="12" />
+    <cell id="13" border="false">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>FLOR</p>
+    </cell>
+    <cell id="14" />
+    <cell id="15">
+     <p>LÁPIS</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="FigurasNomes_3" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Associe os nomes às figuras.</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Parabéns!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="200.0" cellHeight="150.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF9900" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="lata.jpg" />
+    <cell id="0" />
+    <cell image="rosa.png" />
+    <cell id="1" />
+    <cell image="leao.jpg" />
+    <cell id="2" />
+    <cell border="true" image="sol.jpg" />
+    <cell id="3" />
+    <cell image="lua.jpg" />
+    <cell id="4" />
+    <cell image="urso.jpg" />
+    <cell id="5" />
+    <cell image="pato.jpg" />
+    <cell id="6" border="true" />
+    <cell image="bola.jpg" />
+    <cell id="7" />
+   </cells>
+   <cells rows="4" cols="2" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFF9900" inactive="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>LATA</p>
+    </cell>
+    <cell>
+     <p>ROSA</p>
+    </cell>
+    <cell>
+     <p>LEÃO</p>
+    </cell>
+    <cell>
+     <p>SOL</p>
+    </cell>
+    <cell>
+     <p>LUA</p>
+    </cell>
+    <cell>
+     <p>URSO</p>
+    </cell>
+    <cell>
+     <p>PATO</p>
+    </cell>
+    <cell>
+     <p>BOLA</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="7" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" />
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+      <color background="0xFF9900" />
+     </style>
+     <p>LATA</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+      <color background="0xFF9900" />
+     </style>
+    </cell>
+    <cell id="3">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>ROSA</p>
+    </cell>
+    <cell id="4">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+    </cell>
+    <cell id="5">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>LEÃO</p>
+    </cell>
+    <cell id="6" border="false">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+    </cell>
+    <cell id="7">
+     <p>SOL</p>
+    </cell>
+    <cell id="8" />
+    <cell id="9">
+     <p>LUA</p>
+    </cell>
+    <cell id="10" />
+    <cell id="11">
+     <p>URSO</p>
+    </cell>
+    <cell id="12" />
+    <cell id="13" border="false">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" bold="true" />
+     </style>
+     <p>PATO</p>
+    </cell>
+    <cell id="14" />
+    <cell id="15">
+     <p>BOLA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="FigurasNomes_1" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="bala.jpg" file="bala.jpg" />
+  <media name="boca.jpg" file="boca.jpg" />
+  <media name="bola.jpg" file="bola.jpg" />
+  <media name="burro.jpg" file="burro.jpg" />
+  <media name="cama.jpg" file="cama.jpg" />
+  <media name="carro.jpg" file="carro.jpg" />
+  <media name="casa.jpg" file="casa.jpg" />
+  <media name="cobra.jpg" file="cobra.jpg" />
+  <media name="coelho.jpg" file="coelho.jpg" />
+  <media name="copo.jpg" file="copo.jpg" />
+  <media name="dado.jpg" file="dado.jpg" />
+  <media name="flor.jpg" file="flor.jpg" />
+  <media name="fogo.jpg" file="fogo.jpg" />
+  <media name="garfo.jpg" file="garfo.jpg" />
+  <media name="gelo.jpg" file="gelo.jpg" />
+  <media name="lata.jpg" file="lata.jpg" />
+  <media name="leao.jpg" file="leao.jpg" />
+  <media name="lua.jpg" file="lua.jpg" />
+  <media name="pato.jpg" file="pato.jpg" />
+  <media name="sol.jpg" file="sol.jpg" />
+  <media name="urso.jpg" file="urso.jpg" />
+  <media name="urubu.jpg" file="urubu.jpg" />
+  <media name="lapis.png" file="lapis.png" />
+  <media name="rosa.png" file="rosa.png" />
+  <media name="TelaJclic2.png" file="i025_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

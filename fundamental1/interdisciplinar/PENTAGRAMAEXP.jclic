@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="PENTAGRAMAEXP" version="0.1.3">
+ <settings>
+  <title>música</title>
+  <revision description="created" date="9/12/14" />
+  <description>
+   <p>IDENTIFICAR OS MODOS GREGOS ATRAVÉS DA ESCALA DIATÔNICA,NA PARTITURA.</p>
+  </description>
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="telainicial" navButtons="none" />
+  <item id="start" name="QuebraCabecaMusica" delay="1" />
+  <item id="start" name="ExplModoGrego" />
+  <item name="PentagramaExplo" />
+ </sequence>
+ <activities>
+  <activity class="@panels.Explore" name="ExplModoGrego" code="">
+   <description>
+    <p>Identificar os modos gregos na escala </p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0x990099" background="0x00CCFF" />
+     </style>
+     <p>CLIQUE E VEJA OS MODOS GREGOS</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0x33CC00" background="0xFFFFFF" />
+     </style>
+     <p>SOM</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Times New Roman" size="24" bold="true" italic="true" />
+      <color foreground="0xFF0033" background="0xFFFFFF" />
+     </style>
+     <p>ERRO</p>
+    </cell>
+   </messages>
+   <settings margin="1" report="false">
+    <container bgColor="0x9933FF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x0099FF" border="true" />
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="2" cols="3" border="true" image="Escala Musica.jpg" id="primary">
+    <style />
+    <shaper class="@Holes" cols="3" rows="2">
+     <shape comment="0">rectangle:0.135,0.16263,0.0625,0.470588</shape>
+     <shape comment="1">rectangle:0.23875,0.16263,0.065,0.474048</shape>
+     <shape comment="2">rectangle:0.33,0.16609,0.0625,0.460208</shape>
+     <shape comment="3">rectangle:0.4275,0.179931,0.06375,0.418685</shape>
+     <shape comment="4">rectangle:0.50875,0.16955,0.095,0.435986</shape>
+     <shape comment="5">rectangle:0.62125,0.16955,0.08,0.425606</shape>
+     <shape comment="6">rectangle:0.7175,0.183391,0.07125,0.401384</shape>
+    </shaper>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="DÓ SOM.mp3" />
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="RÉ SOM.mp3" />
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="MI.mp3" />
+    </cell>
+    <cell id="3">
+     <media type="PLAY_AUDIO" level="1" file="FA.mp3" />
+    </cell>
+    <cell id="4">
+     <media type="PLAY_AUDIO" level="1" file="SOL.mp3" />
+    </cell>
+    <cell id="5">
+     <media type="PLAY_AUDIO" level="1" file="LA.mp3" />
+    </cell>
+    <cell id="6">
+     <media type="PLAY_AUDIO" level="1" file="SI.mp3" />
+    </cell>
+   </cells>
+   <cells rows="7" cols="1" cellWidth="291.0" cellHeight="59.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="7" />
+    <cell>
+     <style>
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>DÓ: 1º GRAU DA ESCALA:MODO JÔNIO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>RÉ:2º GRAU DA ESCALA:MODO DÓRICO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>MI:3ºGRAU DA ESCALA:MODO FRÍGIO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>FÁ 4ºGRAU DA ESCALA:MODO LÍDIO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>SOL 5º GRAU DA ESCALA:MODO MIXOLÍDIO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>LÁ 6º GRAU DA ESCALA:MODO EÓLIO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>SI 7º GRAU DA ESCALA:MODO LÓCRIO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="PentagramaExplo" code="">
+   <description>
+    <p>AO CLICAR NAS PARTES DA IMAGEM A INFORMAÇÃO REFERENTE A ESTA PARTE APARECERÁ</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0x3333FF" />
+     </style>
+     <p>CLIQUE NO PENTAGRAMA E IDENTIFIQUE SUAS PARTES</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="24" bold="true" italic="true" />
+      <color foreground="0x0000CC" background="0xFFFFFF" />
+     </style>
+     <p>MUITO BOM</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Times New Roman" size="24" bold="true" italic="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>ERRO</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x00CC33">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0033FF" border="true" />
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="2" cols="3" border="true" image="Escala Musical - 2-resized.jpg" id="primary">
+    <style />
+    <shaper class="@Holes" cols="3" rows="2">
+     <shape comment="0">rectangle:0.19625,0.146104,0.14,0.097403</shape>
+     <shape comment="1">rectangle:0.03625,0.116883,0.0675,0.376623</shape>
+     <shape comment="2">rectangle:0.51,0.214286,0.08375,0.029221</shape>
+     <shape comment="3">rectangle:0.21125,0.37013,0.045,0.12987</shape>
+    </shaper>
+    <cell id="1">
+     <style>
+      <font family="Times New Roman" size="16" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0">
+     <style>
+      <font family="Times New Roman" size="16" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Times New Roman" size="16" bold="true" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="3" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="172.0" cellHeight="91.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="20" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <style>
+      <font family="Times New Roman" size="16" bold="true" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>CLÁVE</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Times New Roman" size="16" bold="true" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>LINHA</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Times New Roman" size="16" bold="true" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>ESPAÇO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Times New Roman" size="16" bold="true" italic="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>NOTAS</p>
+    </cell>
+   </cells>
+   <scramble times="1" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="QuebraCabecaMusica" code="">
+   <description>
+    <p>ORDENE AS NOTAS MUSICAIS</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0x0000FF" background="0x00CCCC" />
+     </style>
+     <p>ORDENE AS NOTAS MUSICAIS</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0x666600" background="0xFFFFFF" />
+     </style>
+     <p>BOA NOTA</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" italic="true" />
+      <color foreground="0xCC0000" background="0xFFFFFF" />
+     </style>
+     <p>TENTE NOVAMENTE</p>
+    </cell>
+   </messages>
+   <settings margin="1" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0x00CC99">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="1" cols="9" border="true" image="Escala Musica.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="14" />
+    </style>
+    <shaper class="@Rectangular" cols="9" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="telainicial" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0D3CF8" background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFEFEFE">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="telaInicial.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.030273,0.536458,0.9375,0.416667</shape>
+     <shape comment="1">rectangle:0.374023,0.292969,0.240234,0.057292</shape>
+    </shaper>
+    <cell txtAlign="left,top" imgAlign="left,middle">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Times New Roman" size="24" bold="true" />
+      <color foreground="0x0044FF" />
+     </style>
+     <p>Articuladores de Educação Tecnológica</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="QuebraCabecaMusica" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="Escala Musica.jpg" file="escala_musica.jpg" />
+  <media name="Escala Musical - 2-resized.jpg" file="escala_musical___2_resized.jpg" />
+  <media name="DÓ SOM.mp3" file="do_som.mp3" />
+  <media name="FA.mp3" file="fa.mp3" />
+  <media name="LA.mp3" file="la.mp3" />
+  <media name="MI.mp3" file="mi.mp3" />
+  <media name="RÉ SOM.mp3" file="re_som.mp3" />
+  <media name="SI.mp3" file="si.mp3" />
+  <media name="SOL.mp3" file="sol.mp3" />
+  <media name="telaInicial.png" file="telainicial.png" />
+ </mediaBag>
+</JClicProject>
+

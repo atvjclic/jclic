@@ -1,0 +1,4394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="portugues_cantigas" version="0.1.3">
+ <settings>
+  <title>Cantigas</title>
+  <revision description="created" date="5/31/13" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="TelaInicial" navButtons="none" />
+  <item id="start" name="Menu" navButtons="none" />
+  <item name="CantigasOrdenar" delay="1" />
+  <item name="CantigasOrdenar_2" delay="1" />
+  <item name="CantigasOrdenar_3" delay="1" />
+  <item name="CantigasOrdenar_4" delay="1" />
+  <item name="CantigasOrdenar_10" delay="1" />
+  <item name="CantigasOrdenar_9" delay="1" />
+  <item name="CantigasOrdenar_8" delay="1" />
+  <item name="CantigasOrdenar_7" delay="1" />
+  <item name="CantigasOrdenar_6" delay="1" />
+  <item name="CantigasOrdenar_5" delay="1" />
+  <item name="Menu_2" navButtons="none" />
+  <item name="CantigasEscrita" delay="1" />
+  <item name="CantigasEscrita_2" delay="1" />
+  <item name="CantigasEscrita_3" delay="1" />
+  <item name="CantigasEscrita_4" delay="1" />
+  <item name="CantigasEscrita_9" delay="1" />
+  <item name="CantigasEscrita_8" delay="1" />
+  <item name="CantigasEscrita_7" delay="1" />
+  <item name="CantigasEscrita_6" delay="1" />
+  <item name="CantigasEscrita_5" delay="1" />
+  <item name="Menu_3" navButtons="none" />
+  <item name="CantigasOrdenar_11" delay="1" />
+  <item name="CantigasEscrita_10" delay="1" />
+  <item name="CantigasOrdenar_13" delay="1" />
+  <item name="CantigasEscrita_11" delay="1" />
+  <item name="CantigasOrdenar_14" delay="1" />
+  <item name="CantigasEscrita_12" delay="1" />
+  <item name="CantigasOrdenar_15" delay="1" />
+  <item name="CantigasEscrita_13" delay="1" />
+  <item name="CantigasOrdenar_16" delay="1" />
+  <item name="CantigasEscrita_14" delay="1" />
+  <item name="CantigasOrdenar_17" delay="1" />
+  <item name="CantigasEscrita_15" delay="1" />
+  <item name="CantigasOrdenar_18" delay="1" />
+  <item name="CantigasEscrita_16" delay="1" />
+  <item name="CantigasOrdenar_19" delay="1" />
+  <item name="CantigasEscrita_17" delay="1" />
+  <item name="CantigasOrdenar_20" delay="1" />
+  <item name="CantigasEscrita_18" delay="1" />
+  <item name="CantigasOrdenar_12" delay="1" />
+  <item name="CantigasEscrita_19" delay="1" />
+  <item name="Menu_4" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>rosa, cravo, visitar, sacada, ferido, despedaçada </p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>O Cravo e a Rosa</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O </text>
+      <target>
+       <answer>Cravo</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40" />
+       </info>
+       <text>Cravo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> brigou com a Rosa</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Debaixo de uma </text>
+      <target>
+       <answer>sacada</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>sacada</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O Cravo ficou </text>
+      <target>
+       <answer>ferido</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>ferido</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">E a Rosa </text>
+      <target>
+       <answer>despedaçada</answer>
+       <response fill="_" length="11" maxLength="11" />
+       <text>despedaçada</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O Cravo ficou doente</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A Rosa foi </text>
+      <target>
+       <answer>visitar</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>visitar</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O Cravo teve um desmaio,</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A </text>
+      <target>
+       <answer>Rosa</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>Rosa</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> pos-se a chorar.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_10" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>rosa, cravo, visitar, sacada, ferido, despedaçada </p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>O Cravo e Rosa</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O </text>
+      <target>
+       <answer>Cravo</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40" />
+       </info>
+       <text>Cravo</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> brigou com a Rosa</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Debaixo de uma </text>
+      <target>
+       <answer>sacada</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>sacada</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">.</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O Cravo ficou </text>
+      <target>
+       <answer>ferido</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>ferido</text>
+      </target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E a Rosa </text>
+      <target>
+       <answer>despedaçada</answer>
+       <response fill="_" length="11" maxLength="11" />
+       <text>despedaçada</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">.</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O Cravo ficou doente</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A Rosa foi </text>
+      <target>
+       <answer>visitar</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>visitar</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">.</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O Cravo teve um desmaio,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>
+       <answer>Rosa</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>Rosa</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> pôs-se a chorar.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_11" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>raspado, barata, sete, uma, sapato, cama, capim, mentira, peludo, formatura, casca, cacheado</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>A barata diz que tem</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A </text>
+      <target>
+       <answer>Barata</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>Barata</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> diz que tem </text>
+      <target>
+       <answer>sete</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>sete</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> saias de filó</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">É </text>
+      <target>
+       <answer>mentira</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>mentira</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> da barata, ela tem é uma só</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Ah ra ra, iá ro ró, ela tem é </text>
+      <target>
+       <answer>uma</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>uma</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> só !</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A Barata diz que tem um </text>
+      <target>
+       <answer>sapato</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>sapato</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de veludo</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">É mentira da barata, o pé dela é </text>
+      <target>
+       <answer>peludo</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>peludo</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Ah ra ra, Iu ru ru, o pé dela é peludo !</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A Barata diz que tem uma </text>
+      <target>
+       <answer>cama</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>cama</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de marfim</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">É mentira da barata, ela tem é de </text>
+      <target>
+       <answer>capim</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>capim</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Ah ra ra, rim rim rim, ela tem é de capim</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A Barata diz que tem um anel de </text>
+      <target>
+       <answer>formatura</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>formatura</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">É mentira da barata, ela tem é </text>
+      <target>
+       <answer>casca</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>casca</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> dura</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Ah ra ra , iu ru ru, ela tem é casca dura</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A Barata diz que tem o cabelo </text>
+      <target>
+       <answer>cacheado</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>cacheado</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">É mentira da barata, ela tem coco raspado</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Ah ra ra, ia ro ró, ela tem coco </text>
+      <target>
+       <answer>raspado</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>raspado</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_12" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>canoa, virar, remar, peixinho, mar, bela, Maria</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>A canoa virou</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A </text>
+      <target>
+       <answer>canoa</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>canoa</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> virou</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Pois deixaram ela </text>
+      <target>
+       <answer>virar</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>virar</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Foi por causa de </text>
+      <target>
+       <answer>Maria</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>Maria</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Que não soube </text>
+      <target>
+       <answer>remar</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>remar</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Se eu fosse um </text>
+      <target>
+       <answer>peixinho</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>peixinho</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">E soubesse nadar</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Eu tirava Maria</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Do fundo do </text>
+      <target>
+       <answer>mar</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>mar</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Siri pra cá,</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Siri pra lá</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Maria é </text>
+      <target>
+       <answer>bela</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>bela</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">E quer casar.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_13" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>apanhar, balão, medo, mão, minha</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Cai, Cai, Balão</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Cai cai </text>
+      <target>
+       <answer>balão</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>balão</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">, cai cai balão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Na rua do sabão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Não Cai não, não cai não, não cai não</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Cai aqui na minha </text>
+      <target>
+       <answer>mão</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>mão</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> !</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Cai cai balão, cai cai balão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Aqui na </text>
+      <target>
+       <answer>minha</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>minha</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> mão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Não vou lá, não vou lá, não vou lá</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Tenho </text>
+      <target>
+       <answer>medo</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>medo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de </text>
+      <target>
+       <answer>apanhar</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>apanhar</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> !</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_14" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>rosa, capelinha, cravo, acorda, dormindo, acordai</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Capelinha de Melão</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <target>
+       <answer>Capelinha</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>Capelinha</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de Melão é de São João</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">É de </text>
+      <target>
+       <answer>Cravo</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>Cravo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> é de </text>
+      <target>
+       <answer>Rosa</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>Rosa</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> é de Manjericão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">São João está </text>
+      <target>
+       <answer>dormindo</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>dormindo</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Não </text>
+      <target>
+       <answer>acorda</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>acorda</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> não !</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Acordai, acordai, </text>
+      <target>
+       <answer>acordai</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>acordai</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">, João !</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_15" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>fundo, buraco, domingo, valente, bate, cachimbo</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Domingo</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">- Hoje é </text>
+      <target>
+       <answer>domingo</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>domingo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">,</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">pé de </text>
+      <target>
+       <answer>cachimbo</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>cachimbo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">...</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">o cachimbo é de ouro...</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <target>
+       <answer>bate</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>bate</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> no touro...</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">o touro é </text>
+      <target>
+       <answer>valente</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>valente</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">...</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">bate na gente</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">...a gente é fraco...</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">e cai no </text>
+      <target>
+       <answer>buraco</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>buraco</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">...</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">o buraco é </text>
+      <target>
+       <answer>fundo</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>fundo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">...</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">acabou-se o mundo!</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_16" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>nacional, soldado, acorda, fogo, preso, direito, cabeça</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Marcha Soldado</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Marcha </text>
+      <target>
+       <answer>Soldado</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>Soldado</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <target>
+       <answer>Cabeça</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>Cabeça</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de Papel</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Se não marchar </text>
+      <target>
+       <answer>direito</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>direito</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Vai </text>
+      <target>
+       <answer>preso</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>preso</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> pro quartel</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O quartel pegou </text>
+      <target>
+       <answer>fogo</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>fogo</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A polícia deu sinal</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <target>
+       <answer>Acorda</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>Acorda</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> acorda acorda</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A bandeira </text>
+      <target>
+       <answer>nacional</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>nacional</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_17" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>porque, lagoa, quer, lava, sapo</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>O sapo</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O </text>
+      <target>
+       <answer>sapo</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>sapo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> não </text>
+      <target>
+       <answer>lava</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>lava</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> o pé.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Não lava porque não </text>
+      <target>
+       <answer>quer</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>quer</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Ele mora lá na </text>
+      <target>
+       <answer>lagoa</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>lagoa</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">,</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">E não lava o pé</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <target>
+       <answer>Porque</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>Porque</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> não quer</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Mas, que chulé!</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_18" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>casamento, rendinha, dentro, mulher, frio, sapo, beira</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Sapo Cururu</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Sapo Cururu na </text>
+      <target>
+       <answer>beira</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>beira</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> do rio</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Quando o </text>
+      <target>
+       <answer>sapo</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>sapo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> grita, ó Maninha, diz que está com </text>
+      <target>
+       <answer>frio</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>frio</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A </text>
+      <target>
+       <answer>mulher</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>mulher</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> do sapo, é quem está lá </text>
+      <target>
+       <answer>dentro</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>dentro</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Fazendo </text>
+      <target>
+       <answer>rendinha</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>rendinha</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">, ó Maninha, pro seu </text>
+      <target>
+       <answer>casamento</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>casamento</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_19" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>queda, terezinha, menina, acodiram, primeiro, segundo, tereza, laranja, gomo, </p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Terezinha de Jesus</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <target>
+       <answer>Terezinha</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>Terezinha</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de Jesus de uma </text>
+      <target>
+       <answer>queda</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>queda</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Foi-se ao chão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <target>
+       <answer>Acodiram</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>Acodiram</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> três cavalheiros</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Todos de chapéu na mão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O </text>
+      <target>
+       <answer>primeiro</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>primeiro</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> era seu pai</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O </text>
+      <target>
+       <answer>segundo</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>segundo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> o seu irmão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O terceiro foi aquele</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A quem a </text>
+      <target>
+       <answer>Tereza</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>Tereza</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> deu a mão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Terezinha levantou-se</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Levantou-se lá do chão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">E sorrindo disse ao noivo</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Eu te dou meu coração</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Da </text>
+      <target>
+       <answer>laranja</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>laranja</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> eu quero um </text>
+      <target>
+       <answer>gomo</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>gomo</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Do limão quero um pedaço</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Da </text>
+      <target>
+       <answer>menina</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>menina</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> mais bonita</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Quero um beijo e um abraço</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>raspado, barata, sete, uma, sapato, cama, capim, mentira, peludo, formatura, casca, cacheado</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>A barata diz que tem</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>
+       <answer>Barata</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>Barata</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> diz que tem </text>
+      <target>
+       <answer>sete</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>sete</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> saias de filó</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É </text>
+      <target>
+       <answer>mentira</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>mentira</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> da barata, ela tem é uma só</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra, iá ro ró, ela tem é </text>
+      <target>
+       <answer>uma</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>uma</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> só !</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A Barata diz que tem um </text>
+      <target>
+       <answer>sapato</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>sapato</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> de veludo</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É mentira da barata, o pé dela é </text>
+      <target>
+       <answer>peludo</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>peludo</text>
+      </target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra, Iu ru ru, o pé dela é peludo !</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A Barata diz que tem uma </text>
+      <target>
+       <answer>cama</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>cama</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> de marfim</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É mentira da barata, ela tem é de </text>
+      <target>
+       <answer>capim</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>capim</text>
+      </target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra, rim rim rim, ela tem é de capim</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A Barata diz que tem um anel de </text>
+      <target>
+       <answer>formatura</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>formatura</text>
+      </target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É mentira da barata, ela tem é </text>
+      <target>
+       <answer>casca</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>casca</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> dura</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra , iu ru ru, ela tem é casca dura</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A Barata diz que tem o cabelo </text>
+      <target>
+       <answer>cacheado</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>cacheado</text>
+      </target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É mentira da barata, ela tem coco raspado</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra, ia ro ró, ela tem coco </text>
+      <target>
+       <answer>raspado</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>raspado</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>canoa, virar, remar, peixinho, mar, bela, Maria</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>A canoa virou</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A </text>
+      <target>
+       <answer>canoa</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>canoa</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> virou</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Pois deixaram ela </text>
+      <target>
+       <answer>virar</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>virar</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Foi por causa de </text>
+      <target>
+       <answer>Maria</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>Maria</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Que não soube </text>
+      <target>
+       <answer>remar</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>remar</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Se eu fosse um </text>
+      <target>
+       <answer>peixinho</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>peixinho</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">E soubesse nadar</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Eu tirava Maria</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Do fundo do </text>
+      <target>
+       <answer>mar</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>mar</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Siri pra cá,</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Siri pra lá</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Maria é </text>
+      <target>
+       <answer>bela</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>bela</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">E quer casar.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>apanhar, balão, medo, mão, minha</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Cai, Cai, Balão</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Cai cai </text>
+      <target>
+       <answer>balão</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>balão</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">, cai cai balão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Na rua do sabão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Não Cai não, não cai não, não cai não</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Cai aqui na minha </text>
+      <target>
+       <answer>mão</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>mão</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> !</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Cai cai balão, cai cai balão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Aqui na </text>
+      <target>
+       <answer>minha</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>minha</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> mão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Não vou lá, não vou lá, não vou lá</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Tenho </text>
+      <target>
+       <answer>medo</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>medo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de </text>
+      <target>
+       <answer>apanhar</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>apanhar</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> !</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>rosa, capelinha, cravo, acorda, dormindo, acordai</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Capelinha de Melão</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <target>
+       <answer>Capelinha</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>Capelinha</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de Melão é de São João</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">É de </text>
+      <target>
+       <answer>Cravo</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>Cravo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> é de </text>
+      <target>
+       <answer>Rosa</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>Rosa</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> é de Manjericão</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">São João está </text>
+      <target>
+       <answer>dormindo</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>dormindo</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Não </text>
+      <target>
+       <answer>acorda</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>acorda</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> não !</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Acordai, acordai, </text>
+      <target>
+       <answer>acordai</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>acordai</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">, João !</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>fundo, buraco, domingo, valente, bate, cachimbo</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Domingo</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">- Hoje é </text>
+      <target>
+       <answer>domingo</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>domingo</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">pé de </text>
+      <target>
+       <answer>cachimbo</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>cachimbo</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">o cachimbo é de ouro...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>
+       <answer>bate</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>bate</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> no touro...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">o touro é </text>
+      <target>
+       <answer>valente</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>valente</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">bate na gente</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">...a gente é fraco...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">e cai no </text>
+      <target>
+       <answer>buraco</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>buraco</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">o buraco é </text>
+      <target>
+       <answer>fundo</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>fundo</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">acabou-se o mundo!</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_7" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>nacional, soldado, acorda, fogo, preso, direito, cabeça</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Marcha Soldado</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Marcha </text>
+      <target>
+       <answer>Soldado</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>Soldado</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <target>
+       <answer>Cabeça</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>Cabeça</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de Papel</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Se não marchar </text>
+      <target>
+       <answer>direito</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>direito</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Vai </text>
+      <target>
+       <answer>preso</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>preso</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> pro quartel</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O quartel pegou </text>
+      <target>
+       <answer>fogo</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>fogo</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A polícia deu sinal</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <target>
+       <answer>Acorda</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>Acorda</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> acorda acorda</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A bandeira </text>
+      <target>
+       <answer>nacional</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>nacional</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_8" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>porque, lagoa, quer, lava, sapo</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>O sapo</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O </text>
+      <target>
+       <answer>sapo</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>sapo</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> não </text>
+      <target>
+       <answer>lava</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>lava</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> o pé.</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Não lava porque não </text>
+      <target>
+       <answer>quer</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>quer</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">.</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ele mora lá na </text>
+      <target>
+       <answer>lagoa</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>lagoa</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E não lava o pé</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>
+       <answer>Porque</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>Porque</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> não quer</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Mas, que chulé!</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="CantigasEscrita_9" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>casamento, rendinha, dentro, mulher, frio, sapo, beira</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Sapo Cururu</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Sapo Cururu na </text>
+      <target>
+       <answer>beira</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>beira</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> do rio</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Quando o </text>
+      <target>
+       <answer>sapo</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>sapo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> grita, ó Maninha, diz que está com </text>
+      <target>
+       <answer>frio</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>frio</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A </text>
+      <target>
+       <answer>mulher</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>mulher</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> do sapo, é quem está lá </text>
+      <target>
+       <answer>dentro</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>dentro</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Fazendo </text>
+      <target>
+       <answer>rendinha</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>rendinha</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">, ó Maninha, pro seu </text>
+      <target>
+       <answer>casamento</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>casamento</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>O Cravo e a Rosa</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O </text>
+      <target>Cravo</target>
+      <text background="0xFFFFFF" family="Arial"> brigou com a </text>
+      <target>Rosa</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">Debaixo de uma sacada.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O Cravo </text>
+      <target>ficou</target>
+      <text background="0xFFFFFF" family="Arial"> ferido</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">E a </text>
+      <target>Rosa</target>
+      <text background="0xFFFFFF" family="Arial"> despedaçada.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O </text>
+      <target>Cravo</target>
+      <text background="0xFFFFFF" family="Arial"> ficou doente</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A </text>
+      <target>Rosa</target>
+      <text background="0xFFFFFF" family="Arial"> foi </text>
+      <target>visitar.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">O Cravo teve um </text>
+      <target>desmaio,</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial">A Rosa pos-se a </text>
+      <target>chorar.</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_10" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Terezinha de Jesus</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Terezinha de </text>
+      <target>Jesus</target>
+      <text family="Arial" background="0xFFFFFF"> de uma queda</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Foi-se ao </text>
+      <target>chão</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Acodiram três </text>
+      <target>cavalheiros</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Todos de </text>
+      <target>chapéu</target>
+      <text family="Arial" background="0xFFFFFF"> na mão</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O primeiro era seu </text>
+      <target>pai</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O </text>
+      <target>segundo</target>
+      <text family="Arial" background="0xFFFFFF"> o seu irmão</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O </text>
+      <target>terceiro</target>
+      <text family="Arial" background="0xFFFFFF"> foi aquele</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A quem a Tereza deu a </text>
+      <target>mão</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Terezinha levantou-se</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Levantou-se lá do chão</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E sorrindo </text>
+      <target>disse</target>
+      <text family="Arial" background="0xFFFFFF"> ao noivo</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Eu te dou meu </text>
+      <target>coração</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Da </text>
+      <target>laranja</target>
+      <text family="Arial" background="0xFFFFFF"> eu quero um </text>
+      <target>gomo</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Do </text>
+      <target>limão</target>
+      <text family="Arial" background="0xFFFFFF"> quero um </text>
+      <target>pedaço</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Da menina mais </text>
+      <target>bonita</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Quero um </text>
+      <target>beijo</target>
+      <text family="Arial" background="0xFFFFFF"> e um abraço</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_11" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="743" height="500" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>O Cravo e a Rosa</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O </text>
+      <target>Cravo</target>
+      <text family="Arial" background="0xFFFFFF"> brigou com a </text>
+      <target>Rosa</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Debaixo de uma sacada.</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O Cravo </text>
+      <target>ficou</target>
+      <text family="Arial" background="0xFFFFFF"> ferido</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E a </text>
+      <target>Rosa</target>
+      <text family="Arial" background="0xFFFFFF"> despedaçada.</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O </text>
+      <target>Cravo</target>
+      <text family="Arial" background="0xFFFFFF"> ficou doente</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>Rosa</target>
+      <text family="Arial" background="0xFFFFFF"> foi </text>
+      <target>visitar.</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O Cravo teve um </text>
+      <target>desmaio,</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A Rosa pôs-se a </text>
+      <target>chorar.</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_12" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Terezinha de Jesus</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Terezinha de </text>
+      <target>Jesus</target>
+      <text family="Arial" background="0xFFFFFF"> de uma queda</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Foi-se ao </text>
+      <target>chão</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Acodiram três </text>
+      <target>cavalheiros</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Todos de </text>
+      <target>chapéu</target>
+      <text family="Arial" background="0xFFFFFF"> na mão</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O primeiro era seu </text>
+      <target>pai</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O </text>
+      <target>segundo</target>
+      <text family="Arial" background="0xFFFFFF"> o seu irmão</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O </text>
+      <target>terceiro</target>
+      <text family="Arial" background="0xFFFFFF"> foi aquele</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A quem a Tereza deu a </text>
+      <target>mão</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Terezinha levantou-se</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Levantou-se lá do chão</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E sorrindo </text>
+      <target>disse</target>
+      <text family="Arial" background="0xFFFFFF"> ao noivo</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Eu te dou meu </text>
+      <target>coração</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Da </text>
+      <target>laranja</target>
+      <text family="Arial" background="0xFFFFFF"> eu quero um </text>
+      <target>gomo</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Do </text>
+      <target>limão</target>
+      <text family="Arial" background="0xFFFFFF"> quero um </text>
+      <target>pedaço</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Da menina mais </text>
+      <target>bonita</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Quero um </text>
+      <target>beijo</target>
+      <text family="Arial" background="0xFFFFFF"> e um abraço</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_13" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>A Barata Diz Que Tem</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>Barata</target>
+      <text family="Arial" background="0xFFFFFF"> diz que tem sete saias de filó</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É </text>
+      <target>mentira</target>
+      <text family="Arial" background="0xFFFFFF"> da barata, ela tem é </text>
+      <target>uma</target>
+      <text family="Arial" background="0xFFFFFF"> só</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah </text>
+      <target>ra</target>
+      <text family="Arial" background="0xFFFFFF"> ra, iá ro </text>
+      <target>ró,</target>
+      <text family="Arial" background="0xFFFFFF"> ela tem é uma </text>
+      <target>só</target>
+      <text family="Arial" background="0xFFFFFF"> !</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>Barata</target>
+      <text family="Arial" background="0xFFFFFF"> diz que tem um </text>
+      <target>sapato</target>
+      <text family="Arial" background="0xFFFFFF"> de veludo</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É </text>
+      <target>mentira</target>
+      <text family="Arial" background="0xFFFFFF"> da barata, o pé dela é </text>
+      <target>peludo</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra, Iu ru ru, o </text>
+      <target>pé</target>
+      <text family="Arial" background="0xFFFFFF"> dela é </text>
+      <target>peludo</target>
+      <text family="Arial" background="0xFFFFFF"> !</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>Barata</target>
+      <text family="Arial" background="0xFFFFFF"> diz que tem uma </text>
+      <target>cama</target>
+      <text family="Arial" background="0xFFFFFF"> de marfim</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É </text>
+      <target>mentira</target>
+      <text family="Arial" background="0xFFFFFF"> da barata, ela </text>
+      <target>tem</target>
+      <text family="Arial" background="0xFFFFFF"> é de capim</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra, </text>
+      <target>rim</target>
+      <text family="Arial" background="0xFFFFFF"> rim rim, ela tem é de </text>
+      <target>capim</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>Barata</target>
+      <text family="Arial" background="0xFFFFFF"> diz que tem um </text>
+      <target>anel</target>
+      <text family="Arial" background="0xFFFFFF"> de </text>
+      <target>formatura</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É </text>
+      <target>mentira</target>
+      <text family="Arial" background="0xFFFFFF"> da barata, ela tem é casca </text>
+      <target>dura</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra , iu ru ru, ela </text>
+      <target>tem</target>
+      <text family="Arial" background="0xFFFFFF"> é casca dura</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>Barata</target>
+      <text family="Arial" background="0xFFFFFF"> </text>
+      <target>diz</target>
+      <text family="Arial" background="0xFFFFFF"> que tem o cabelo </text>
+      <target>cacheado</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É </text>
+      <target>mentira</target>
+      <text family="Arial" background="0xFFFFFF"> da barata, ela tem coco raspado</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra, ia ro ró, ela tem </text>
+      <target>coco</target>
+      <text family="Arial" background="0xFFFFFF"> raspado</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_14" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>A Conoa Virou</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A canoa </text>
+      <target>virou</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Pois </text>
+      <target>deixaram</target>
+      <text family="Arial" background="0xFFFFFF"> ela </text>
+      <target>virar</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Foi por causa de Maria</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Que não soube </text>
+      <target>remar</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Se eu fosse um </text>
+      <target>peixinho</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E soubesse nadar</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Eu </text>
+      <target>tirava</target>
+      <text family="Arial" background="0xFFFFFF"> Maria</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Do </text>
+      <target>fundo</target>
+      <text family="Arial" background="0xFFFFFF"> do mar</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>Siri</target>
+      <text family="Arial" background="0xFFFFFF"> pra cá,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Siri pra </text>
+      <target>lá</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Maria é bela</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E quer casar.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_15" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Cai, Cai, Balão</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Cai cai balão, cai cai </text>
+      <target>balão</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Na rua do sabão</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Não Cai não, não cai </text>
+      <target>não,</target>
+      <text family="Arial" background="0xFFFFFF"> não cai não</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Cai aqui na minha mão !</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Cai cai </text>
+      <target>balão,</target>
+      <text family="Arial" background="0xFFFFFF"> cai cai balão</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Aqui na minha </text>
+      <target>mão</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Não vou lá, não vou lá, não vou lá</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Tenho </text>
+      <target>medo</target>
+      <text family="Arial" background="0xFFFFFF"> de apanhar !</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_16" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Capelinha de Melão</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Capelinha de </text>
+      <target>Melão</target>
+      <text family="Arial" background="0xFFFFFF"> é de São João</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É de Cravo é de Rosa é de </text>
+      <target>Manjericão</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">São João está dormindo</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Não acorda não !</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Acordai, </text>
+      <target>acordai,</target>
+      <text family="Arial" background="0xFFFFFF"> acordai, João !</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_17" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Domingo</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">- Hoje é </text>
+      <target>domingo,</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">pé de </text>
+      <target>cachimbo...</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">o cachimbo é de ouro...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>bate</target>
+      <text family="Arial" background="0xFFFFFF"> no </text>
+      <target>touro...</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">o touro é valente...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">bate na gente</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">...a gente é fraco...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">e cai no </text>
+      <target>buraco</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">o </text>
+      <target>buraco</target>
+      <text family="Arial" background="0xFFFFFF"> é fundo...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">acabou-se o mundo!</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_18" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Marcha Soldado</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Marcha </text>
+      <target>Soldado</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Cabeça de </text>
+      <target>Papel</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Se não marchar direito</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Vai preso pro </text>
+      <target>quartel</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O quartel pegou </text>
+      <target>fogo</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A polícia deu sinal</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Acorda </text>
+      <target>acorda</target>
+      <text family="Arial" background="0xFFFFFF"> acorda</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A bandeira </text>
+      <target>nacional</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_19" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>O sapo</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O </text>
+      <target>sapo</target>
+      <text family="Arial" background="0xFFFFFF"> não lava o </text>
+      <target>pé.</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Não </text>
+      <target>lava</target>
+      <text family="Arial" background="0xFFFFFF"> porque não </text>
+      <target>quer.</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ele mora lá na </text>
+      <target>lagoa,</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E não lava o pé</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Porque não </text>
+      <target>quer</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Mas, que </text>
+      <target>chulé!</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_2" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>A Barata Diz Que Tem</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>Barata</target>
+      <text family="Arial" background="0xFFFFFF"> diz que tem sete saias de filó</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É </text>
+      <target>mentira</target>
+      <text family="Arial" background="0xFFFFFF"> da barata, ela tem é </text>
+      <target>uma</target>
+      <text family="Arial" background="0xFFFFFF"> só</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah </text>
+      <target>ra</target>
+      <text family="Arial" background="0xFFFFFF"> ra, iá ro </text>
+      <target>ró,</target>
+      <text family="Arial" background="0xFFFFFF"> ela tem é uma </text>
+      <target>só</target>
+      <text family="Arial" background="0xFFFFFF"> !</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>Barata</target>
+      <text family="Arial" background="0xFFFFFF"> diz que tem um </text>
+      <target>sapato</target>
+      <text family="Arial" background="0xFFFFFF"> de veludo</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É </text>
+      <target>mentira</target>
+      <text family="Arial" background="0xFFFFFF"> da barata, o pé dela é </text>
+      <target>peludo</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra, Iu ru ru, o </text>
+      <target>pé</target>
+      <text family="Arial" background="0xFFFFFF"> dela é </text>
+      <target>peludo</target>
+      <text family="Arial" background="0xFFFFFF"> !</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>Barata</target>
+      <text family="Arial" background="0xFFFFFF"> diz que tem uma </text>
+      <target>cama</target>
+      <text family="Arial" background="0xFFFFFF"> de marfim</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É </text>
+      <target>mentira</target>
+      <text family="Arial" background="0xFFFFFF"> da barata, ela </text>
+      <target>tem</target>
+      <text family="Arial" background="0xFFFFFF"> é de capim</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra, </text>
+      <target>rim</target>
+      <text family="Arial" background="0xFFFFFF"> rim rim, ela tem é de </text>
+      <target>capim</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>Barata</target>
+      <text family="Arial" background="0xFFFFFF"> diz que tem um </text>
+      <target>anel</target>
+      <text family="Arial" background="0xFFFFFF"> de </text>
+      <target>formatura</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É </text>
+      <target>mentira</target>
+      <text family="Arial" background="0xFFFFFF"> da barata, ela tem é casca </text>
+      <target>dura</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra , iu ru ru, ela </text>
+      <target>tem</target>
+      <text family="Arial" background="0xFFFFFF"> é casca dura</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A </text>
+      <target>Barata</target>
+      <text family="Arial" background="0xFFFFFF"> </text>
+      <target>diz</target>
+      <text family="Arial" background="0xFFFFFF"> que tem o cabelo </text>
+      <target>cacheado</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É </text>
+      <target>mentira</target>
+      <text family="Arial" background="0xFFFFFF"> da barata, ela tem coco raspado</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ah ra ra, ia ro ró, ela tem </text>
+      <target>coco</target>
+      <text family="Arial" background="0xFFFFFF"> raspado</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_20" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Sapo Cururu</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Sapo Cururu na </text>
+      <target>beira</target>
+      <text family="Arial" background="0xFFFFFF"> do rio</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Quando o </text>
+      <target>sapo</target>
+      <text family="Arial" background="0xFFFFFF"> grita, ó Maninha, diz que está com </text>
+      <target>frio</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A mulher do sapo, é </text>
+      <target>quem</target>
+      <text family="Arial" background="0xFFFFFF"> está lá dentro</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Fazendo rendinha, ó Maninha, pro seu </text>
+      <target>casamento</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_3" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>A Conoa Virou</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A canoa </text>
+      <target>virou</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Pois </text>
+      <target>deixaram</target>
+      <text family="Arial" background="0xFFFFFF"> ela </text>
+      <target>virar</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Foi por causa de Maria</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Que não soube </text>
+      <target>remar</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Se eu fosse um </text>
+      <target>peixinho</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E soubesse nadar</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Eu </text>
+      <target>tirava</target>
+      <text family="Arial" background="0xFFFFFF"> Maria</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Do </text>
+      <target>fundo</target>
+      <text family="Arial" background="0xFFFFFF"> do mar</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>Siri</target>
+      <text family="Arial" background="0xFFFFFF"> pra cá,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Siri pra </text>
+      <target>lá</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Maria é bela</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E quer casar.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_4" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Cai, Cai, Balão</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Cai cai balão, cai cai </text>
+      <target>balão</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Na rua do sabão</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Não Cai não, não cai </text>
+      <target>não,</target>
+      <text family="Arial" background="0xFFFFFF"> não cai não</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Cai aqui na minha mão !</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Cai cai </text>
+      <target>balão,</target>
+      <text family="Arial" background="0xFFFFFF"> cai cai balão</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Aqui na minha </text>
+      <target>mão</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Não vou lá, não vou lá, não vou lá</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Tenho </text>
+      <target>medo</target>
+      <text family="Arial" background="0xFFFFFF"> de apanhar !</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_5" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Capelinha de Melão</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Capelinha de </text>
+      <target>Melão</target>
+      <text family="Arial" background="0xFFFFFF"> é de São João</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">É de Cravo é de Rosa é de </text>
+      <target>Manjericão</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">São João está dormindo</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Não acorda não !</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Acordai, </text>
+      <target>acordai,</target>
+      <text family="Arial" background="0xFFFFFF"> acordai, João !</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_6" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Domingo</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">- Hoje é </text>
+      <target>domingo,</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">pé de </text>
+      <target>cachimbo...</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">o cachimbo é de ouro...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>bate</target>
+      <text family="Arial" background="0xFFFFFF"> no </text>
+      <target>touro...</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">o touro é valente...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">bate na gente</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">...a gente é fraco...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">e cai no </text>
+      <target>buraco</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">o </text>
+      <target>buraco</target>
+      <text family="Arial" background="0xFFFFFF"> é fundo...</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">acabou-se o mundo!</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_7" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Marcha Soldado</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Marcha </text>
+      <target>Soldado</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Cabeça de </text>
+      <target>Papel</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Se não marchar direito</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Vai preso pro </text>
+      <target>quartel</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O quartel pegou </text>
+      <target>fogo</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A polícia deu sinal</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Acorda </text>
+      <target>acorda</target>
+      <text family="Arial" background="0xFFFFFF"> acorda</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A bandeira </text>
+      <target>nacional</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_8" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>O sapo</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">O </text>
+      <target>sapo</target>
+      <text family="Arial" background="0xFFFFFF"> não lava o </text>
+      <target>pé.</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Não </text>
+      <target>lava</target>
+      <text family="Arial" background="0xFFFFFF"> porque não </text>
+      <target>quer.</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Ele mora lá na </text>
+      <target>lagoa,</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">E não lava o pé</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Porque não </text>
+      <target>quer</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Mas, que </text>
+      <target>chulé!</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="CantigasOrdenar_9" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organize as palavras da cantiga</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="22" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40" border="false">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0x99CCFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+        <font family="Times New Roman" size="28" bold="true" />
+        <color foreground="0xCC0000" background="0x99CCFF" />
+       </style>
+       <p>Sapo Cururu</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Sapo Cururu na </text>
+      <target>beira</target>
+      <text family="Arial" background="0xFFFFFF"> do rio</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Quando o </text>
+      <target>sapo</target>
+      <text family="Arial" background="0xFFFFFF"> grita, ó Maninha, diz que está com </text>
+      <target>frio</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A mulher do sapo, é </text>
+      <target>quem</target>
+      <text family="Arial" background="0xFFFFFF"> está lá dentro</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Fazendo rendinha, ó Maninha, pro seu </text>
+      <target>casamento</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Identify" name="Menu" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Escolha a Atividade</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="737" height="518" />
+    </window>
+   </settings>
+   <checkButton />
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="11" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+       <media type="RUN_CLIC_ACTIVITY" level="1" file="CantigasOrdenar" />
+       <p>Ordenar Palavras    &gt;&gt;&gt;</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+       <media type="RUN_CLIC_ACTIVITY" level="1" file="CantigasEscrita" />
+       <p>Escrever Palavras   &gt;&gt;&gt;</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+       <media type="RUN_CLIC_ACTIVITY" level="1" file="CantigasOrdenar_11" />
+       <p>Ordenar e Escrever Palavras   &gt;&gt;&gt;</p>
+      </cell>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Complete" name="Menu_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Escolha a Atividade</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="737" height="518" />
+    </window>
+   </settings>
+   <checkButton />
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="11" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+       <media type="RUN_CLIC_ACTIVITY" level="1" file="CantigasOrdenar" />
+       <p>Ordenar Palavras    &gt;&gt;&gt;</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+       <media type="RUN_CLIC_ACTIVITY" level="1" file="CantigasEscrita" />
+       <p>Escrever Palavras   &gt;&gt;&gt;</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+       <media type="RUN_CLIC_ACTIVITY" level="1" file="CantigasOrdenar_11" />
+       <p>Ordenar e Escrever Palavras  &gt;&gt;&gt;</p>
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Complete" name="Menu_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Escolha a Atividade</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="737" height="518" />
+    </window>
+   </settings>
+   <checkButton />
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="11" bold="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+       <media type="RUN_CLIC_ACTIVITY" level="1" file="CantigasOrdenar" />
+       <p>Ordenar Palavras    &gt;&gt;&gt;</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+       <media type="RUN_CLIC_ACTIVITY" level="1" file="CantigasEscrita" />
+       <p>Escrever Palavras   &gt;&gt;&gt;</p>
+      </cell>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+       <media type="RUN_CLIC_ACTIVITY" level="1" file="CantigasOrdenar_11" />
+       <p>Ordenar e Escrever Palavras  &gt;&gt;&gt;</p>
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Complete" name="Menu_4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Escolha a Atividade</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="737" height="518" />
+    </window>
+   </settings>
+   <checkButton />
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" italic="false" size="11" bold="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" />
+       </style>
+       <p>Cantigas Populares</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+       <media type="RUN_CLIC_ACTIVITY" level="1" file="CantigasOrdenar" />
+       <p>Ordenar Palavras    &gt;&gt;&gt;</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+       <media type="RUN_CLIC_ACTIVITY" level="1" file="CantigasEscrita" />
+       <p>Escrever Palavras   &gt;&gt;&gt;</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <cell width="700" height="40">
+       <style>
+        <font family="Times New Roman" size="36" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+       <media type="RUN_CLIC_ACTIVITY" level="1" file="CantigasOrdenar_11" />
+       <p>Ordenar e Escrever Palavras  &gt;&gt;&gt;</p>
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicial" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Menu" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="TelaJclic2.png" file="i04_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

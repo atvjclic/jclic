@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="portugues_vogais" version="0.1.3">
+ <settings>
+  <title>Vogais</title>
+  <revision description="created" date="2/19/13" />
+  <revision description="Inclusão de audio" date="4/20/13" />
+  <author name="Miguel dos Santos Silva" url="aetjblog.blogspot.com.br" rol="Articulador de Educação Tecnológica" />
+  <author name="Alexandre Gonçalves" rol="Articulador de Educação Tecnológica" />
+  <author name="Sofia Ferreira Vieira" rol="Profesora" />
+  <description>
+   <p>Atividades de associação entre as letras do alfabeto, vogais e palavras.</p>
+  </description>
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="tela" name="TelaInicialMiguel_Alexandre" navButtons="none" />
+  <item id="start" name="AEIOUAssociacao" delay="1" />
+  <item id="VOGAIS 2" name="AEIOUMemoria" delay="1" />
+  <item name="AEIOUAssociacao2" delay="1" />
+  <item name="AEIOUAssociacao3" delay="1" />
+  <item name="IdentificarVogaisEntreNumeros" delay="1" />
+  <item name="IdentificarLetraAemTexto" delay="1" />
+  <item name="IdentificarLetraEemTexto" delay="1" />
+  <item name="IdentificarLetraIemTexto" delay="1" />
+  <item name="IdentificarLetraOemTexto" delay="1" />
+  <item name="IdentificarLetraUemTexto" delay="1" />
+  <item name="SonsVogais" delay="1" />
+  <item name="AssociarInicialVogalemPalavras" delay="1" />
+  <item name="MontarLetraA" delay="1" />
+  <item name="MontarLetraE" delay="1" />
+  <item name="MontarLetraI" delay="1" />
+  <item name="MontarLetraO" delay="1" />
+  <item name="MontarLetraU" delay="1" />
+  <item id="tela" name="TelaInicialMiguel_Alexandre" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="AEIOUAssociacao">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>VOGAIS - Clique nas vogais iguais!</p>
+    </cell>
+    <cell avoidOverlapping="true" image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" />
+     <p>Parabéns!!! Você acertou!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" background="0xFFFFFF" />
+     </style>
+     <p>Tente outra vez </p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="147.0" cellHeight="154.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xFF9900" background="0xFFFFFF" inactive="0xFFCC33" border="0x999999" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" />
+     <p>A</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="E 1.mp3" />
+     <p>E</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+     <p>I</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="O 1.mp3" />
+     <p>O</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="U 1.mp3" />
+     <p>U</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="147.0" cellHeight="154.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0x009999" background="0xFFFFFF" inactive="0x00FFCC" border="0x999999" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AEIOUAssociacao2">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>VOGAIS - Clique nas vogais e nos desenhos!</p>
+    </cell>
+    <cell avoidOverlapping="true" image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Parabéns!!! Você acertou!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" background="0xFFFFFF" />
+     </style>
+     <p>Tente outra vez </p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="147.0" cellHeight="154.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xFF9900" background="0xFFFFFF" inactive="0xFFCC33" border="0x999999" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" />
+     <p>A</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="E 1.mp3" />
+     <p>E</p>
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+     <p>I</p>
+    </cell>
+    <cell id="3">
+     <media type="PLAY_AUDIO" level="1" file="O 1.mp3" />
+     <p>O</p>
+    </cell>
+    <cell id="4">
+     <media type="PLAY_AUDIO" level="1" file="U 1.mp3" />
+     <p>U</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="147.0" cellHeight="154.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0x009999" background="0xFFFFFF" inactive="0x00FFCC" border="0x999999" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell txtAlign="right,bottom" image="avião.jpg">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>A</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="elefante.jpg">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>E</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="indio.jpg">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>I</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="Olho.jpg">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>O</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="uva.jpg">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>U</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AEIOUAssociacao3">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>VOGAIS - Clique nas vogais e nos desenhos!</p>
+    </cell>
+    <cell avoidOverlapping="true" image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" />
+     <p>Parabéns!!! Você acertou!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" background="0xFFFFFF" />
+     </style>
+     <p>Tente outra vez </p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="147.0" cellHeight="154.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xFF9900" background="0xFFFFFF" inactive="0xFFCC33" border="0x999999" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" />
+     <p>A</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="E 1.mp3" />
+     <p>E</p>
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+     <p>I</p>
+    </cell>
+    <cell id="3">
+     <media type="PLAY_AUDIO" level="1" file="O 1.mp3" />
+     <p>O</p>
+    </cell>
+    <cell id="4">
+     <media type="PLAY_AUDIO" level="1" file="U 1.mp3" />
+     <p>U</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="147.0" cellHeight="206.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0x009999" background="0xFFFFFF" inactive="0x00FFCC" border="0x999999" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell txtAlign="middle,bottom" image="avião.jpg">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>Avião</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="elefante.jpg">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>Elefante</p>
+    </cell>
+    <cell txtAlign="middle,bottom" avoidOverlapping="true" image="indio.jpg">
+     <style>
+      <font family="Arial" size="72" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>Índio</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="Olho.jpg">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>Olho</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="uva.jpg">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>Uva</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="AEIOUMemoria" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style margin="8">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>VOGAIS - Encontre os pares iguais! </p>
+    </cell>
+    <cell avoidOverlapping="true" image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Parabéns!!! Você acertou!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" background="0xFFFFFF" />
+     </style>
+     <p>Tente novamente!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="149.0" cellHeight="135.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="78" bold="true" />
+     <color foreground="0xFFFFFF" background="0xFF6600" inactive="0xFFFFCC" border="0x999999" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="78" bold="true" />
+      <color foreground="0xFFFFFF" background="0x00CC00" inactive="0xFFFFCC" border="0x999999" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" />
+     <p>A</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="78" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0033" inactive="0xFFFFCC" border="0x999999" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="E 1.mp3" />
+     <p>E</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="78" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" inactive="0xFFFFCC" border="0x999999" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+     <p>I</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="78" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF9900" inactive="0xFFFFCC" border="0x999999" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="O 1.mp3" />
+     <p>O</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="78" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF3300" inactive="0xFFFFCC" border="0x999999" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="U 1.mp3" />
+     <p>U</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="AssociarInicialVogalemPalavras">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>VOGAIS - Ligue as palavras com sua letras iniciais!</p>
+    </cell>
+    <cell avoidOverlapping="true" image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Parabéns!!! Você acertou!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="3" cols="5" cellWidth="190.0" cellHeight="108.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="34" bold="true" />
+     <color foreground="0xFF6633" background="0xFFFFFF" inactive="0xFFCC33" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" />
+     <p>Avião</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="E 1.mp3" />
+     <p>Elefante</p>
+    </cell>
+    <cell id="4">
+     <media type="PLAY_AUDIO" level="1" file="U 1.mp3" />
+     <p>Uva</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="E 1.mp3" />
+     <p>Escola</p>
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+     <p>Índio</p>
+    </cell>
+    <cell id="4">
+     <media type="PLAY_AUDIO" level="1" file="U 1.mp3" />
+     <p>Urubu</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="E 1.mp3" />
+     <p>Elevador</p>
+    </cell>
+    <cell id="3">
+     <media type="PLAY_AUDIO" level="1" file="O 1.mp3" />
+     <p>Opera</p>
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+     <p>Imagem</p>
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+     <p>Inteligente</p>
+    </cell>
+    <cell id="3">
+     <media type="PLAY_AUDIO" level="1" file="O 1.mp3" />
+     <p>Obrigado</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" />
+     <p>Abacaxi</p>
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+     <p>Idade</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" />
+     <p>Aprender</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" />
+     <p>Abóbora</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="190.0" cellHeight="108.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="48" bold="true" />
+     <color foreground="0x66CC00" background="0xFFFFFF" inactive="0x9966FF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.Identify" name="IdentificarLetraAemTexto" type="identifyChars">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique nas vogais A</p>
+    </cell>
+    <cell image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x035EF8" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Muito                 Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="740" height="576" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <checkButton>A</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="true" size="50" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>A</target>
+      <text family="Arial" background="0xFFFFFF"> </text>
+      <target>A</target>
+      <text family="Arial" background="0xFFFFFF">BELH</text>
+      <target>A</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>A</target>
+      <text family="Arial" background="0xFFFFFF"> </text>
+      <target>A</target>
+      <text family="Arial" background="0xFFFFFF">BELH</text>
+      <target>A</target>
+      <text family="Arial" background="0xFFFFFF"> TR</text>
+      <target>A</target>
+      <text family="Arial" background="0xFFFFFF">B</text>
+      <target>A</target>
+      <text family="Arial" background="0xFFFFFF">LH</text>
+      <target>A</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">TODO DI</text>
+      <target>A</target>
+      <text family="Arial" background="0xFFFFFF"> F</text>
+      <target>A</target>
+      <text family="Arial" background="0xFFFFFF">Z MEL</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">VO</text>
+      <target>A</target>
+      <text family="Arial" background="0xFFFFFF"> LIVRE E LIGEIR</text>
+      <target>A</target>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">PELO </text>
+      <target>A</target>
+      <text family="Arial" background="0xFFFFFF">ZUL DO CÉU!</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">                                    </text>
+      <cell width="200" height="40">
+       <p>Waldirene Dias</p>
+      </cell>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Identify" name="IdentificarLetraEemTexto" type="identifyChars">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Clique nas vogais E</p>
+    </cell>
+    <cell image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0C50E8" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Muito                      Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="580" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <checkButton>E</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="true" size="50" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF">SCOVINHA</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF"> FAZ A </text>
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF">SCOVINHA,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF"> FAZ A </text>
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF">SCOVINHA,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF">LA VAI DAR ASAS PARA AB</text>
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF">LINHA,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF">LA VAI DAR ASAS PARA AB</text>
+      <target>E</target>
+      <text family="Arial" background="0xFFFFFF">LINHA.</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Identify" name="IdentificarLetraIemTexto" type="identifyChars">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Idenfique as vogais I</p>
+    </cell>
+    <cell image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Muito                      Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="569" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <checkButton>I</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="true" size="50" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF"> FAZ O </text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">ND</text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">OZ</text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">NHO,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF"> FAZ O </text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">ND</text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">OZ</text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">NHO,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">TÃO ENGRAÇAD</text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">NHO É O SEU P</text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">NGU</text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">NHO,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">TÃO ENGRAÇAD</text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">NHO É O SEU P</text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">NGU</text>
+      <target>I</target>
+      <text family="Arial" background="0xFFFFFF">NHO.</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Identify" name="IdentificarLetraOemTexto" type="identifyChars">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x2E48F1" background="0xFEFEFE" />
+     </style>
+     <p>Identifique as vogais O</p>
+    </cell>
+    <cell image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0865F2" background="0xFEFEFE" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Parabéns!!!                                Parabéns!!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="574" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <checkButton>O</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="true" size="50" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF"> FAZ </text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF"> </text>
+      <target>Ó</target>
+      <text family="Arial" background="0xFFFFFF">CUL</text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF">S DA V</text>
+      <target>Ó</target>
+      <text family="Arial" background="0xFFFFFF">V</text>
+      <target>Ó</target>
+      <text family="Arial" background="0xFFFFFF">,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF"> FAZ </text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF"> </text>
+      <target>Ó</target>
+      <text family="Arial" background="0xFFFFFF">CUL</text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF">S DA V</text>
+      <target>Ó</target>
+      <text family="Arial" background="0xFFFFFF">V</text>
+      <target>Ó</target>
+      <text family="Arial" background="0xFFFFFF">,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">T</text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF">D</text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF"> QUEBRADINH</text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF"> DE UM LAD</text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF"> S</text>
+      <target>Ó</target>
+      <text family="Arial" background="0xFFFFFF">,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">T</text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF">D</text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF"> QUEBRADINH</text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF"> DE UM LAD</text>
+      <target>O</target>
+      <text family="Arial" background="0xFFFFFF"> S</text>
+      <target>Ó</target>
+      <text family="Arial" background="0xFFFFFF">.</text>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Identify" name="IdentificarLetraUemTexto" type="identifyChars">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x1866C3" background="0xFEFEFE" />
+     </style>
+     <p>Identifique as vogais U</p>
+    </cell>
+    <cell image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x206EE3" background="0xFEFEFE" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Parabéns!!!                                Parabéns!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="741" height="467" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <checkButton>U</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="true" size="50" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF"> FAZ O </text>
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF"> DO </text>
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF">RSINHO,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF"> FAZ O </text>
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF"> DO </text>
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF">RSINHO,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">TÃO ENGRAÇADINHO É O SE</text>
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF"> P</text>
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF">LINHO,</text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">TÃO ENGRAÇADINHO É O SE</text>
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF"> P</text>
+      <target>U</target>
+      <text family="Arial" background="0xFFFFFF">LINHO.</text>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@panels.Identify" name="IdentificarVogaisEntreNumeros">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <p>VOGAIS - Clique nas vogais</p>
+    </cell>
+    <cell avoidOverlapping="true" image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x003399" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Parabéns!!! Você acertou!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" background="0xFFFFFF" />
+     </style>
+     <p>Tente outra vez </p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="3" cols="5" cellWidth="147.0" cellHeight="154.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0xFF9900" background="0xFFFFFF" inactive="0xFFCC33" border="0x999999" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" />
+     <p>A</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="E 1.mp3" />
+     <p>E</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+     <p>I</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="O 1.mp3" />
+     <p>O</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="U 1.mp3" />
+     <p>U</p>
+    </cell>
+    <cell id="0">
+     <p>0</p>
+    </cell>
+    <cell id="0">
+     <p>1</p>
+    </cell>
+    <cell id="0">
+     <p>2</p>
+    </cell>
+    <cell id="0">
+     <p>3</p>
+    </cell>
+    <cell id="0">
+     <p>4</p>
+    </cell>
+    <cell id="0">
+     <p>5</p>
+    </cell>
+    <cell id="0">
+     <p>6</p>
+    </cell>
+    <cell id="0">
+     <p>7</p>
+    </cell>
+    <cell id="0">
+     <p>8</p>
+    </cell>
+    <cell id="0">
+     <p>9</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="MontarLetraA">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>Monte a vogal A</p>
+    </cell>
+    <cell image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" autoStart="true" />
+     <p>Muito                 Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="imagens/LetraA.jpg">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="3" rows="3">
+     <shape comment="0">ellipse:0.145631,0.111597,0.398058,0.277899</shape>
+     <shape comment="1">rectangle:0.627832,0.56674,0.352751,0.271335</shape>
+     <shape comment="2">ellipse:0.045307,0.411379,0.394822,0.503282</shape>
+    </shaper>
+    <cell border="false">
+     <style transparent="true" />
+    </cell>
+    <cell border="false">
+     <style transparent="true" />
+    </cell>
+    <cell border="false">
+     <style transparent="true" />
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="MontarLetraE">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>Monte a vogal E</p>
+    </cell>
+    <cell image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="E 1.mp3" />
+     <p>Muito                 Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="2" cols="3" border="true" image="imagens/LetraE.jpg">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0" />
+    <shaper class="@Holes" cols="3" rows="2">
+     <shape comment="0">ellipse:0.091743,0.101338,0.428135,0.265774</shape>
+     <shape comment="1">rectangle:0.073394,0.523901,0.360856,0.195029</shape>
+     <shape comment="2">ellipse:0.574924,0.304015,0.302752,0.562141</shape>
+    </shaper>
+    <cell border="false" />
+    <cell border="false" />
+    <cell border="false" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="MontarLetraI">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>Monte a vogal I</p>
+    </cell>
+    <cell image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+     <p>Muito                 Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="3" cols="2" border="true" image="imagens/LetraI.jpg">
+    <style transparent="true" />
+    <shaper class="@Holes" cols="2" rows="3">
+     <shape comment="0">rectangle:0.073826,0.10325,0.798658,0.214149</shape>
+     <shape comment="1">ellipse:0.127517,0.386233,0.677852,0.198853</shape>
+     <shape comment="2">ellipse:0.053691,0.648184,0.946309,0.101338</shape>
+    </shaper>
+    <cell border="false" />
+    <cell border="false" />
+    <cell border="false" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="MontarLetraO">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>Monte a vogal O</p>
+    </cell>
+    <cell image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="O 1.mp3" />
+     <p>Muito                 Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="2" cols="3" border="true" image="imagens/LetraO.jpg">
+    <style transparent="true" />
+    <shaper class="@Holes" cols="3" rows="2">
+     <shape comment="0">rectangle:0.216931,0.105163,0.280423,0.231358</shape>
+     <shape comment="1">ellipse:0.656085,0.302103,0.330688,0.263862</shape>
+     <shape comment="2">ellipse:0.05291,0.49522,0.653439,0.369025</shape>
+    </shaper>
+    <cell border="false" />
+    <cell border="false" />
+    <cell border="false" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="MontarLetraU">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>Monte a vogal U</p>
+    </cell>
+    <cell image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="U 1.mp3" />
+     <p>Muito                 Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="2" cols="3" border="true" image="imagens/LetraU.jpg">
+    <style transparent="true" />
+    <shaper class="@Holes" cols="3" rows="2">
+     <shape comment="0">rectangle:0.053824,0.112811,0.883853,0.147228</shape>
+     <shape comment="1">ellipse:0.087819,0.388145,0.33711,0.217973</shape>
+     <shape comment="2">M:0.589235,0.562141|L:0.8017,0.560229|L:0.926346,0.65392|L:0.929178,0.776291|L:0.8017,0.85086|L:0.628895,0.856597|L:0.470255,0.770554|L:0.456091,0.65392|L:0.589235,0.562141</shape>
+    </shaper>
+    <cell border="false" />
+    <cell border="false" />
+    <cell border="false" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="SonsVogais">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>VOGAIS - Clique pra ouvir e ligue com a vogal correspondente!</p>
+    </cell>
+    <cell avoidOverlapping="true" image="pinguino_contento.gif" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-1.mp3" autoStart="true" />
+     <p>Parabéns!!! Você acertou!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFFF" dest="0x999999" angle="91" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="3" cols="5" cellWidth="190.0" cellHeight="108.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="34" bold="true" />
+     <color foreground="0xFF6633" background="0xFFFFFF" inactive="0xFFCC33" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" />
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" />
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="A 1.mp3" />
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="E 1.mp3" />
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="E 1.mp3" />
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="E 1.mp3" />
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="I 1.mp3" />
+    </cell>
+    <cell id="3">
+     <media type="PLAY_AUDIO" level="1" file="O 1.mp3" />
+    </cell>
+    <cell id="3">
+     <media type="PLAY_AUDIO" level="1" file="O 1.mp3" />
+    </cell>
+    <cell id="3">
+     <media type="PLAY_AUDIO" level="1" file="O 1.mp3" />
+    </cell>
+    <cell id="4">
+     <media type="PLAY_AUDIO" level="1" file="U 1.mp3" />
+    </cell>
+    <cell id="4">
+     <media type="PLAY_AUDIO" level="1" file="U 1.mp3" />
+    </cell>
+    <cell id="4">
+     <media type="PLAY_AUDIO" level="1" file="U 1.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="190.0" cellHeight="108.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="48" bold="true" />
+     <color foreground="0x66CC00" background="0xFFFFFF" inactive="0x9966FF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel_Alexandre">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="AEIOUAssociacao" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="pinguino_contento.gif" file="pinguino_contento.gif" animated="true" />
+  <media name="avião.jpg" file="aviao.jpg" />
+  <media name="elefante.jpg" file="elefante.jpg" />
+  <media name="imagens/LetraA.jpg" file="imagens_letraa.jpg" />
+  <media name="imagens/LetraE.jpg" file="imagens_letrae.jpg" />
+  <media name="imagens/LetraI.jpg" file="imagens_letrai.jpg" />
+  <media name="imagens/LetraO.jpg" file="imagens_letrao.jpg" />
+  <media name="imagens/LetraU.jpg" file="imagens_letrau.jpg" />
+  <media name="indio.jpg" file="indio.jpg" />
+  <media name="Olho.jpg" file="olho.jpg" />
+  <media name="uva.jpg" file="uva.jpg" />
+  <media name="A 1.mp3" file="a_1.mp3" />
+  <media name="applause-1.mp3" file="applause_1.mp3" />
+  <media name="E 1.mp3" file="e_1.mp3" />
+  <media name="I 1.mp3" file="i_1.mp3" />
+  <media name="O 1.mp3" file="o_1.mp3" />
+  <media name="U 1.mp3" file="u_1.mp3" />
+  <media name="TelaJclic.png" file="i04_telajclic.png" />
+ </mediaBag>
+</JClicProject>
+

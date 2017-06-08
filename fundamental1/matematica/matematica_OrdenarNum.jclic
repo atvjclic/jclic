@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="matematica_OrdenarNum" version="0.1.3">
+ <settings>
+  <title>Matematica</title>
+  <revision description="created" date="5/18/12" />
+  <author name="Miguel dos Santos Silva" rol="Articulador de Educação Tecnológica" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="TelaInicialMiguel" navButtons="none" />
+  <item name="Contagem0-9" delay="1" />
+  <item id="OrdenarNumeros" name="OrdenarNumeros0-9" delay="1" />
+  <item name="ORDENAR_NuMEROS1-20" delay="1" />
+  <item name="ORDENAR_NuMEROS20-1" delay="1" />
+  <item name="AssociarNumerosOrdinais" delay="1" />
+  <item name="OrdenarNumerosOrdinais" delay="1" />
+  <item name="TelaInicialMiguel" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="AssociarNumerosOrdinais" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Black" size="24" bold="true" />
+      <color foreground="0x321AE4" background="0xFEFEFE" />
+     </style>
+     <p>Ligue Corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="24" />
+      <color foreground="0x190EE8" background="0xFEFEFE" />
+     </style>
+     <p>Muito Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0x999900">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true">
+     <gradient source="0x625454" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="" />
+   </settings>
+   <cells rows="5" cols="5" cellWidth="69.0" cellHeight="93.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="20" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="5" />
+    <cell>
+     <p>1º</p>
+    </cell>
+    <cell>
+     <p>2º</p>
+    </cell>
+    <cell>
+     <p>3º</p>
+    </cell>
+    <cell>
+     <p>4º</p>
+    </cell>
+    <cell>
+     <p>5º</p>
+    </cell>
+    <cell>
+     <p>6º</p>
+    </cell>
+    <cell>
+     <p>7º</p>
+    </cell>
+    <cell>
+     <p>8º</p>
+    </cell>
+    <cell>
+     <p>9º</p>
+    </cell>
+    <cell>
+     <p>10º</p>
+    </cell>
+    <cell>
+     <p>11º</p>
+    </cell>
+    <cell>
+     <p>12º</p>
+    </cell>
+    <cell>
+     <p>13º</p>
+    </cell>
+    <cell>
+     <p>14º</p>
+    </cell>
+    <cell>
+     <p>15º</p>
+    </cell>
+    <cell>
+     <p>16º</p>
+    </cell>
+    <cell>
+     <p>17º</p>
+    </cell>
+    <cell>
+     <p>18º</p>
+    </cell>
+    <cell>
+     <p>19º</p>
+    </cell>
+    <cell>
+     <p>20º</p>
+    </cell>
+    <cell>
+     <p>30º</p>
+    </cell>
+    <cell>
+     <p>40º</p>
+    </cell>
+    <cell>
+     <p>50º</p>
+    </cell>
+    <cell>
+     <p>60º</p>
+    </cell>
+    <cell>
+     <p>70º</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="5" cellWidth="140.0" cellHeight="101.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="20" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="5" />
+    <cell>
+     <p>PRIMEIRO</p>
+    </cell>
+    <cell>
+     <p>SEGUNDO</p>
+    </cell>
+    <cell>
+     <p>TERCEIRO</p>
+    </cell>
+    <cell>
+     <p>QUARTO</p>
+    </cell>
+    <cell>
+     <p>QUINTO</p>
+    </cell>
+    <cell>
+     <p>SEXTO</p>
+    </cell>
+    <cell>
+     <p>SÉTIMO</p>
+    </cell>
+    <cell>
+     <p>OITAVO</p>
+    </cell>
+    <cell>
+     <p>NONO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO PRIMEIRO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO SEGUNDO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO TERCEIRO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO QUARTO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO QUINTO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO SEXTO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO SÉTIMO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO OITAVO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO NONO</p>
+    </cell>
+    <cell>
+     <p>VIGÉSIMO</p>
+    </cell>
+    <cell>
+     <p>TRIGÉSIMO</p>
+    </cell>
+    <cell>
+     <p>QUADRAGÉSIMO</p>
+    </cell>
+    <cell>
+     <p>QUINQUAGÉSIMO</p>
+    </cell>
+    <cell>
+     <p>SEXAGÉSIMO</p>
+    </cell>
+    <cell>
+     <p>SETUAGÉSIMO</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="5" />
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Contagem0-9" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial Black" size="24" bold="true" />
+      <color foreground="0x241AE8" background="0xFEFEFE" />
+     </style>
+     <p>Ligue Corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="24" bold="true" />
+      <color foreground="0x2B16D9" background="0xFEFEFE" />
+     </style>
+     <p>Parabéns!!!</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0x666600">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x948888" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="242.0" cellHeight="211.0" border="true" id="primary">
+    <style margin="20" borderStroke="3.5" markerStroke="2.7" />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="1.jpg" />
+    <cell image="2.jpg" />
+    <cell image="3.jpg" />
+    <cell image="4.jpg" />
+    <cell image="5.jpg" />
+    <cell image="6.jpg" />
+    <cell image="7.jpg" />
+    <cell image="8.jpg" />
+    <cell image="9.jpg" />
+   </cells>
+   <cells rows="3" cols="3" cellWidth="128.0" cellHeight="113.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="48" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ORDENAR_NuMEROS1-20" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x2A14DE" background="0xFFFFFF" />
+     </style>
+     <p>ORGANIZE OS NÚMEROS EM ORDEM CRESCENTE.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x151EE2" background="0xFFFFFF" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="15" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xCCCC00">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xA79999" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="2" cols="10" cellWidth="120.0" cellHeight="170.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="10" rows="2" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+    <cell>
+     <p>11</p>
+    </cell>
+    <cell>
+     <p>12</p>
+    </cell>
+    <cell>
+     <p>13</p>
+    </cell>
+    <cell>
+     <p>14</p>
+    </cell>
+    <cell>
+     <p>15</p>
+    </cell>
+    <cell>
+     <p>16</p>
+    </cell>
+    <cell>
+     <p>17</p>
+    </cell>
+    <cell>
+     <p>18</p>
+    </cell>
+    <cell>
+     <p>19</p>
+    </cell>
+    <cell>
+     <p>20</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ORDENAR_NuMEROS20-1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x361CEA" background="0xFFFFFF" />
+     </style>
+     <p>ORGANIZE OS NÚMEROS EM ORDEM DECRESCENTE.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x3720E8" background="0xFFFFFF" />
+     </style>
+     <p>PARABÉNS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="15" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xCCCC00">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xA79999" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="2" cols="10" cellWidth="120.0" cellHeight="170.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="10" rows="2" />
+    <cell>
+     <p>20</p>
+    </cell>
+    <cell>
+     <p>19</p>
+    </cell>
+    <cell>
+     <p>18</p>
+    </cell>
+    <cell>
+     <p>17</p>
+    </cell>
+    <cell>
+     <p>16</p>
+    </cell>
+    <cell>
+     <p>15</p>
+    </cell>
+    <cell>
+     <p>14</p>
+    </cell>
+    <cell>
+     <p>13</p>
+    </cell>
+    <cell>
+     <p>12</p>
+    </cell>
+    <cell>
+     <p>11</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="OrdenarNumeros0-9" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x4F3AF1" background="0xFEFEFE" />
+     </style>
+     <p>Ordene os Números.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x331EDF" background="0xFEFEFE" />
+     </style>
+     <p>Muito Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="15" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0x999900">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xA79999" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="10" cellWidth="120.0" cellHeight="195.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="72" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="10" rows="1" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="OrdenarNumerosOrdinais" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x221CD5" background="0xFEFEFE" />
+     </style>
+     <p>Coloque em ordem.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x1909EC" background="0xFEFEFE" />
+     </style>
+     <p>Parabéns!!!</p>
+    </cell>
+   </messages>
+   <settings margin="15" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xA79999" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="8" cols="2" cellWidth="226.0" cellHeight="93.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="20" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="8" />
+    <cell>
+     <p>PRIMEIRO</p>
+    </cell>
+    <cell>
+     <p>SEGUNDO</p>
+    </cell>
+    <cell>
+     <p>TERCEIRO</p>
+    </cell>
+    <cell>
+     <p>QUARTO</p>
+    </cell>
+    <cell>
+     <p>QUINTO</p>
+    </cell>
+    <cell>
+     <p>SEXTO</p>
+    </cell>
+    <cell>
+     <p>SÉTIMO</p>
+    </cell>
+    <cell>
+     <p>OITAVO</p>
+    </cell>
+    <cell>
+     <p>NONO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO PRIMEIRO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO SEGUNDO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO TERCEIRO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO QUARTO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO QUINTO</p>
+    </cell>
+    <cell>
+     <p>DÉCIMO SEXTO</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Contagem0-9" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="1.jpg" file="1.jpg" />
+  <media name="2.jpg" file="2.jpg" />
+  <media name="3.jpg" file="3.jpg" />
+  <media name="4.jpg" file="4.jpg" />
+  <media name="5.jpg" file="5.jpg" />
+  <media name="6.jpg" file="6.jpg" />
+  <media name="7.jpg" file="7.jpg" />
+  <media name="8.jpg" file="8.jpg" />
+  <media name="9.jpg" file="9.jpg" />
+  <media name="TelaJclic2.png" file="i013_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

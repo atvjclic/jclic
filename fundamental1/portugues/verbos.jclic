@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="verbos" version="0.1.3">
+ <settings>
+  <title>Verbos</title>
+  <revision description="created" date="3/13/14" />
+  <author name="Darlan Diego Pereira Gomes" mail="darlandiego2009@yahoo.com.br" rol="Mediador de Informática" organization="Prefeitura Municipal de Duque de Caxias" />
+  <language>português (pt)</language>
+  <descriptors area="Lingua Portuguesa" level="4º, 5º e 6º ano de escolaridade">Verbos</descriptors>
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="Apresentacao" navButtons="back" />
+  <item name="Definicao" />
+  <item name="Conjugacoes" />
+  <item name="Tempos verbais" />
+  <item name="IdentificacaoVerbos" delay="1" />
+  <item name="EscolhaEntreConjugacoes" delay="1" />
+  <item name="QuebraCabeca" delay="1" />
+  <item name="IndetificaçãoTempoVerbal" />
+  <item name="SelecionarConjug" delay="1" />
+  <item name="TempoVerbal" delay="1" />
+  <item name="PalavrasCruzadas" delay="1" />
+  <item name="Final" navButtons="back" />
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="Apresentacao" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0x00FFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="VERBOS2-resized.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="36" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.49125,0.866667,0.4175,0.066667</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Definicao" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.Explore" name="Conjugacoes" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Clique para descobrir quais são as conjugações dos verbos na Lingua Portuguesa!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x00FFFF">
+     <image name="verbos.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCCC" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="3" cols="1" cellWidth="150.0" cellHeight="150.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0">
+     <p>1ª Conjugação: </p>
+    </cell>
+    <cell id="1">
+     <p>2ª Conjugação:</p>
+    </cell>
+    <cell id="2">
+     <p>3ª Conjugação:</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="900.0" cellHeight="150.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <p>verbos terminados em AR</p>
+     <p>Ex: Cantar, falar, nadar, andar, saltar, dançar, exercitar, amar, lutar e etc.</p>
+    </cell>
+    <cell>
+     <p> verbos terminados em ER</p>
+     <p>Ex: Fazer, aprender, sofrer, chover, vender, ler, saber, entender, escrever e etc.</p>
+    </cell>
+    <cell>
+     <p>verbos terminados em IR</p>
+     <p>Ex: Sorrir, ir, mentir, sentir, construir, partir, destruir, sucumbir, ouvir, sacudir, aplaudir e etc.</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Definicao" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0x00FFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x660066" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="906.0" cellHeight="486.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="middle,top" avoidOverlapping="true" image="verbos.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="48" />
+     </style>
+     <p>Verbos são palavras que indicam ações, estados ou fenômenos da natureza, situando-os no tempo.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="EscolhaEntreConjugacoes" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Ligue os verbos corretamente!</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Parabéns, você venceu!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Opa! Tente novamente!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00FFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x660066" border="true" />
+   </settings>
+   <cells rows="6" cols="6" cellWidth="132.0" cellHeight="78.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="36" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="6" />
+    <cell id="0">
+     <p>casar</p>
+    </cell>
+    <cell id="2">
+     <p>caiu</p>
+    </cell>
+    <cell id="1">
+     <p>ver</p>
+    </cell>
+    <cell id="0">
+     <p>andei</p>
+    </cell>
+    <cell id="2">
+     <p>sorrir</p>
+    </cell>
+    <cell id="1">
+     <p>leio</p>
+    </cell>
+    <cell id="0">
+     <p>falar</p>
+    </cell>
+    <cell id="2">
+     <p>viu</p>
+    </cell>
+    <cell id="1">
+     <p>correr</p>
+    </cell>
+    <cell id="0">
+     <p>dancei</p>
+    </cell>
+    <cell id="2">
+     <p>cair</p>
+    </cell>
+    <cell id="1">
+     <p>sabia</p>
+    </cell>
+    <cell id="0">
+     <p>andar</p>
+    </cell>
+    <cell id="2">
+     <p>destruiu</p>
+    </cell>
+    <cell id="1">
+     <p>saber</p>
+    </cell>
+    <cell id="0">
+     <p>falou</p>
+    </cell>
+    <cell id="2">
+     <p>diminuir</p>
+    </cell>
+    <cell id="1">
+     <p>correu</p>
+    </cell>
+    <cell id="0">
+     <p>viajar</p>
+    </cell>
+    <cell id="2">
+     <p>construirá</p>
+    </cell>
+    <cell id="1">
+     <p>escrever</p>
+    </cell>
+    <cell id="0">
+     <p>cantará</p>
+    </cell>
+    <cell id="2">
+     <p>subtrair</p>
+    </cell>
+    <cell id="1">
+     <p>escrevia</p>
+    </cell>
+    <cell id="0">
+     <p>dançar</p>
+    </cell>
+    <cell id="2">
+     <p>ouviu</p>
+    </cell>
+    <cell id="1">
+     <p>manter</p>
+    </cell>
+    <cell id="0">
+     <p>achei</p>
+    </cell>
+    <cell id="2">
+     <p>conseguir</p>
+    </cell>
+    <cell id="1">
+     <p>sofreu</p>
+    </cell>
+    <cell id="0">
+     <p>cantar</p>
+    </cell>
+    <cell id="2">
+     <p>veio</p>
+    </cell>
+    <cell id="1">
+     <p>ler</p>
+    </cell>
+    <cell id="0">
+     <p>ventilou</p>
+    </cell>
+    <cell id="2">
+     <p>seguir</p>
+    </cell>
+    <cell id="1">
+     <p>choveu</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="262.0" cellHeight="129.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <p>1º Conjugação</p>
+     <p>AR</p>
+    </cell>
+    <cell>
+     <p>2º Conjugação</p>
+     <p>ER</p>
+    </cell>
+    <cell>
+     <p>3º Conjugação</p>
+     <p>IR</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Final" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Parabéns, você completou o jogo. Agora poderá retornar e refazer as atividades que mais gostou. Clique na imagem da atividade para retornar até ela.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFFF" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="1171.0" cellHeight="589.0" border="false">
+    <style transparent="true">
+     <color background="0xCCFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.333912,0.036207,0.324371,0.262069</shape>
+     <shape comment="1">rectangle:0.051171,0.110345,0.216826,0.22069</shape>
+     <shape comment="2">rectangle:0.718994,0.124138,0.216826,0.22069</shape>
+     <shape comment="3">rectangle:0.669558,0.42931,0.216826,0.22069</shape>
+     <shape comment="4">rectangle:0.742411,0.727586,0.216826,0.22069</shape>
+     <shape comment="5">rectangle:0.391154,0.537931,0.216826,0.22069</shape>
+     <shape comment="6">rectangle:0.112749,0.439655,0.215958,0.218966</shape>
+     <shape comment="7">rectangle:0.029488,0.736207,0.216826,0.22069</shape>
+    </shaper>
+    <cell border="true" image="Parabens-resized.jpg" />
+    <cell image="01-resized1.jpg">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Identificação dos verbos" />
+    </cell>
+    <cell image="02-resized1.jpg">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Escolha entre as conjugações" />
+    </cell>
+    <cell image="05-resized1.jpg">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Selecionar Conjugações" />
+    </cell>
+    <cell image="07-resized1.jpg">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Palavras cruzadas" />
+    </cell>
+    <cell image="04-resized1.jpg">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Identificação do tempo verbal" />
+    </cell>
+    <cell image="03-resized1.jpg">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Quebra cabeça" />
+    </cell>
+    <cell image="06-resized1.jpg">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Tempo Verbal" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.Identify" name="IdentificacaoVerbos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Clique apenas nos verbos para vencer. Você terá 75 tentativas para acertar os 50 verbos existentes, se não conseguir vai precisar reiniciar a atividade. E lembre-se que a partir de agora só vai conseguir avançar se terminar a atividade.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muito bem!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="75" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x00FFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x660066" border="true" />
+   </settings>
+   <cells rows="10" cols="10" cellWidth="104.0" cellHeight="56.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="36" />
+    </style>
+    <shaper class="@Rectangular" cols="10" rows="10" />
+    <cell id="1">
+     <p>casar</p>
+    </cell>
+    <cell id="0">
+     <p>casa</p>
+    </cell>
+    <cell id="1">
+     <p>falar</p>
+    </cell>
+    <cell id="0">
+     <p>mesa</p>
+    </cell>
+    <cell id="1">
+     <p>andar</p>
+    </cell>
+    <cell id="0">
+     <p>estrada</p>
+    </cell>
+    <cell id="1">
+     <p>viajar</p>
+    </cell>
+    <cell id="0">
+     <p>passarela</p>
+    </cell>
+    <cell id="1">
+     <p>dançar</p>
+    </cell>
+    <cell id="0">
+     <p>retrato</p>
+    </cell>
+    <cell id="0">
+     <p>verde</p>
+    </cell>
+    <cell id="1">
+     <p>soletrar</p>
+    </cell>
+    <cell id="0">
+     <p>azul</p>
+    </cell>
+    <cell id="1">
+     <p>acabar</p>
+    </cell>
+    <cell id="0">
+     <p>amarelo</p>
+    </cell>
+    <cell id="1">
+     <p>estudar</p>
+    </cell>
+    <cell id="0">
+     <p>vermelho</p>
+    </cell>
+    <cell id="1">
+     <p>escutar</p>
+    </cell>
+    <cell id="0">
+     <p>branco</p>
+    </cell>
+    <cell id="1">
+     <p>saltar</p>
+    </cell>
+    <cell id="1">
+     <p>escrever</p>
+    </cell>
+    <cell id="0">
+     <p>triste</p>
+    </cell>
+    <cell id="1">
+     <p>ver</p>
+    </cell>
+    <cell id="0">
+     <p>alegre</p>
+    </cell>
+    <cell id="1">
+     <p>ler</p>
+    </cell>
+    <cell id="0">
+     <p>feio</p>
+    </cell>
+    <cell id="1">
+     <p>sofrer</p>
+    </cell>
+    <cell id="0">
+     <p>bonito</p>
+    </cell>
+    <cell id="1">
+     <p>entender</p>
+    </cell>
+    <cell id="0">
+     <p>alto</p>
+    </cell>
+    <cell id="0">
+     <p>baixo</p>
+    </cell>
+    <cell id="1">
+     <p>acender</p>
+    </cell>
+    <cell id="0">
+     <p>gordo</p>
+    </cell>
+    <cell id="1">
+     <p>crer</p>
+    </cell>
+    <cell id="0">
+     <p>magro</p>
+    </cell>
+    <cell id="1">
+     <p>saber</p>
+    </cell>
+    <cell id="0">
+     <p>forte</p>
+    </cell>
+    <cell id="1">
+     <p>torcer</p>
+    </cell>
+    <cell id="0">
+     <p>fraco</p>
+    </cell>
+    <cell id="1">
+     <p>crescer</p>
+    </cell>
+    <cell id="1">
+     <p>sorrir</p>
+    </cell>
+    <cell id="0">
+     <p>preto</p>
+    </cell>
+    <cell id="1">
+     <p>partir</p>
+    </cell>
+    <cell id="0">
+     <p>roxo</p>
+    </cell>
+    <cell id="1">
+     <p>mentir</p>
+    </cell>
+    <cell id="0">
+     <p>laranja</p>
+    </cell>
+    <cell id="1">
+     <p>sair</p>
+    </cell>
+    <cell id="0">
+     <p>violeta</p>
+    </cell>
+    <cell id="1">
+     <p>destruir</p>
+    </cell>
+    <cell id="0">
+     <p>rosa</p>
+    </cell>
+    <cell id="0">
+     <p>Brasil</p>
+    </cell>
+    <cell id="1">
+     <p>construir</p>
+    </cell>
+    <cell id="0">
+     <p>Espanha</p>
+    </cell>
+    <cell id="1">
+     <p>ir</p>
+    </cell>
+    <cell id="0">
+     <p>América</p>
+    </cell>
+    <cell id="1">
+     <p>vir</p>
+    </cell>
+    <cell id="0">
+     <p>França</p>
+    </cell>
+    <cell id="1">
+     <p>cair</p>
+    </cell>
+    <cell id="0">
+     <p>África</p>
+    </cell>
+    <cell id="1">
+     <p>desistir</p>
+    </cell>
+    <cell id="1">
+     <p>andando</p>
+    </cell>
+    <cell id="0">
+     <p>alegria</p>
+    </cell>
+    <cell id="1">
+     <p>veio</p>
+    </cell>
+    <cell id="0">
+     <p>tristeza</p>
+    </cell>
+    <cell id="1">
+     <p>comeu</p>
+    </cell>
+    <cell id="0">
+     <p>felicidade</p>
+    </cell>
+    <cell id="1">
+     <p>saiu</p>
+    </cell>
+    <cell id="0">
+     <p>beleza</p>
+    </cell>
+    <cell id="1">
+     <p>viverá</p>
+    </cell>
+    <cell id="0">
+     <p>amizade</p>
+    </cell>
+    <cell id="0">
+     <p>chuva</p>
+    </cell>
+    <cell id="1">
+     <p>viajou</p>
+    </cell>
+    <cell id="0">
+     <p>noite</p>
+    </cell>
+    <cell id="1">
+     <p>choveu</p>
+    </cell>
+    <cell id="0">
+     <p>dia</p>
+    </cell>
+    <cell id="1">
+     <p>amanhecerá</p>
+    </cell>
+    <cell id="0">
+     <p>vento</p>
+    </cell>
+    <cell id="1">
+     <p>trovejou</p>
+    </cell>
+    <cell id="0">
+     <p>relampago</p>
+    </cell>
+    <cell id="1">
+     <p>pintou</p>
+    </cell>
+    <cell id="1">
+     <p>vejo</p>
+    </cell>
+    <cell id="0">
+     <p>trovão</p>
+    </cell>
+    <cell id="1">
+     <p>estou</p>
+    </cell>
+    <cell id="0">
+     <p>furacão</p>
+    </cell>
+    <cell id="1">
+     <p>quero</p>
+    </cell>
+    <cell id="0">
+     <p>Dinamarca</p>
+    </cell>
+    <cell id="1">
+     <p>chora</p>
+    </cell>
+    <cell id="0">
+     <p>panela</p>
+    </cell>
+    <cell id="1">
+     <p>vestiu</p>
+    </cell>
+    <cell id="0">
+     <p>sofá</p>
+    </cell>
+    <cell id="0">
+     <p>chão</p>
+    </cell>
+    <cell id="1">
+     <p>bebeu</p>
+    </cell>
+    <cell id="0">
+     <p>parede</p>
+    </cell>
+    <cell id="1">
+     <p>saberá</p>
+    </cell>
+    <cell id="0">
+     <p>copo</p>
+    </cell>
+    <cell id="1">
+     <p>estudei</p>
+    </cell>
+    <cell id="0">
+     <p>ventilador</p>
+    </cell>
+    <cell id="1">
+     <p>sambei</p>
+    </cell>
+    <cell id="0">
+     <p>calor</p>
+    </cell>
+    <cell id="1">
+     <p>sofremos</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="IndetificaçãoTempoVerbal" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Marque a resposta correta</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="/home/professor/Área de Trabalho/a evolucao do transporte.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.062674,0.586022,0.033426,0.02509</shape>
+     <shape comment="1">rectangle:0.061281,0.623656,0.032033,0.023297</shape>
+     <shape comment="2">rectangle:0.062674,0.663082,0.033426,0.02509</shape>
+     <shape comment="3">rectangle:0.062674,0.698925,0.033426,0.02509</shape>
+     <shape comment="4">rectangle:0.062674,0.824373,0.029248,0.02509</shape>
+     <shape comment="5">rectangle:0.061281,0.862007,0.033426,0.02509</shape>
+     <shape comment="6">rectangle:0.061281,0.901434,0.033426,0.02509</shape>
+     <shape comment="7">rectangle:0.062674,0.937276,0.033426,0.02509</shape>
+    </shaper>
+    <ids>0 0 0 1 0 1 0 0</ids>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="PalavrasCruzadas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Encontre todos os 30 verbos nessa sopa de letras.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Demais!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x33FFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFFF" border="true" />
+   </settings>
+   <textGrid rows="25" columns="25" cellWidth="20.0" cellHeight="20.0" border="false">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>COMER**PARTIR***VIVER****</row>
+     <row>*ANDAR***********C*V*****</row>
+     <row>****CONSEGUIR***BATIZAR**</row>
+     <row>*****************I*V*****</row>
+     <row>******FALAR******R*ED****</row>
+     <row>*APODRECER*********NE****</row>
+     <row>*******************CS****</row>
+     <row>S***ESCREVER*******IT****</row>
+     <row>A*************NAMORAR****</row>
+     <row>C******************RU****</row>
+     <row>RFUGIR**C***********I**A*</row>
+     <row>I******TORCER*******R**T*</row>
+     <row>F*******N**************R*</row>
+     <row>I**M****S**ESTUDAR*****A*</row>
+     <row>C**E****T***OR*********V*</row>
+     <row>A**N****R***FA*********E*</row>
+     <row>R**T****U***RI*********S*</row>
+     <row>***I****I***ER*********S*</row>
+     <row>SORRIR**R***R**********A*</row>
+     <row>*******DANÇAR***SENTIR*R*</row>
+     <row>*************************</row>
+     <row>*******ABORRECER*********</row>
+     <row>*************************</row>
+     <row>*******PARTICIPAR********</row>
+     <row>SER*****SABER*********LER</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">ANDAR</clue>
+    <clue id="1">FALAR</clue>
+    <clue id="2">ESTUDAR</clue>
+    <clue id="3">PARTICIPAR</clue>
+    <clue id="4">SACRIFICAR</clue>
+    <clue id="5">ATRAVESSAR</clue>
+    <clue id="6">BATIZAR</clue>
+    <clue id="7">VIVENCIAR</clue>
+    <clue id="8">DANÇAR</clue>
+    <clue id="9">NAMORAR</clue>
+    <clue id="10">SOFRER</clue>
+    <clue id="11">ESCREVER</clue>
+    <clue id="12">ABORRECER</clue>
+    <clue id="13">APODRECER</clue>
+    <clue id="14">LER</clue>
+    <clue id="15">SABER</clue>
+    <clue id="16">TORCER</clue>
+    <clue id="17">FUGIR</clue>
+    <clue id="18">COMER</clue>
+    <clue id="19">VIVER</clue>
+    <clue id="20">SER</clue>
+    <clue id="21">PARTIR</clue>
+    <clue id="22">MENTIR</clue>
+    <clue id="23">TRAIR</clue>
+    <clue id="24">CONSTRUIR</clue>
+    <clue id="25">DESTRUIR</clue>
+    <clue id="26">SENTIR</clue>
+    <clue id="27">CONSEGUIR</clue>
+    <clue id="28">CAIR</clue>
+    <clue id="29">SORRIR</clue>
+   </clues>
+   <cells rows="15" cols="2" cellWidth="169.0" cellHeight="31.0" border="false" id="secondary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="15" />
+    <cell>
+     <p>ANDAR</p>
+    </cell>
+    <cell>
+     <p>FALAR</p>
+    </cell>
+    <cell>
+     <p>ESTUDAR</p>
+    </cell>
+    <cell>
+     <p>PARTICIPAR</p>
+    </cell>
+    <cell>
+     <p>SACRIFICAR</p>
+    </cell>
+    <cell>
+     <p>ATRAVESSAR</p>
+    </cell>
+    <cell>
+     <p>BATIZAR</p>
+    </cell>
+    <cell>
+     <p>VIVENCIAR</p>
+    </cell>
+    <cell>
+     <p>DANÇAR</p>
+    </cell>
+    <cell>
+     <p>NAMORAR</p>
+    </cell>
+    <cell>
+     <p>SOFRER</p>
+    </cell>
+    <cell>
+     <p>ESCREVER</p>
+    </cell>
+    <cell>
+     <p>ABORRECER</p>
+    </cell>
+    <cell>
+     <p>APODRECER</p>
+    </cell>
+    <cell>
+     <p>LER</p>
+    </cell>
+    <cell>
+     <p>SABER</p>
+    </cell>
+    <cell>
+     <p>TORCER</p>
+    </cell>
+    <cell>
+     <p>FUGIR </p>
+    </cell>
+    <cell>
+     <p>COMER</p>
+    </cell>
+    <cell>
+     <p>VIVER</p>
+    </cell>
+    <cell>
+     <p>SER</p>
+    </cell>
+    <cell>
+     <p>PARTIR</p>
+    </cell>
+    <cell>
+     <p>MENTIR</p>
+    </cell>
+    <cell>
+     <p>TRAIR</p>
+    </cell>
+    <cell>
+     <p>CONSTRUIR</p>
+    </cell>
+    <cell>
+     <p>DESTRUIR</p>
+    </cell>
+    <cell>
+     <p>SENTIR</p>
+    </cell>
+    <cell>
+     <p>CONSEGUIR</p>
+    </cell>
+    <cell>
+     <p>CAIR</p>
+    </cell>
+    <cell>
+     <p>SORRIR</p>
+    </cell>
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="QuebraCabeca" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Antes de continuar vamos descontrair um pouco! Vai precisar se esforçar!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="7" cols="7" border="true" image="f698708775c136e6e8ba7f1ab78847e2.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="7" rows="7" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="SelecionarConjug" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Marque a resposta correta</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="/home/professor/Área de Trabalho/Identificar tempo verbal.png" id="primary">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.062674,0.094763,0.030641,0.037406</shape>
+     <shape comment="1">rectangle:0.061281,0.147132,0.030641,0.037406</shape>
+     <shape comment="2">rectangle:0.062674,0.197007,0.030641,0.037406</shape>
+     <shape comment="3">rectangle:0.061281,0.25187,0.030641,0.037406</shape>
+     <shape comment="4">rectangle:0.061281,0.426434,0.030641,0.037406</shape>
+     <shape comment="5">rectangle:0.062674,0.478803,0.030641,0.037406</shape>
+     <shape comment="6">rectangle:0.064067,0.531172,0.029248,0.037406</shape>
+     <shape comment="7">rectangle:0.062674,0.581047,0.030641,0.037406</shape>
+     <shape comment="8">rectangle:0.062674,0.753117,0.030641,0.037406</shape>
+     <shape comment="9">rectangle:0.061281,0.80798,0.030641,0.037406</shape>
+     <shape comment="10">rectangle:0.062674,0.857855,0.030641,0.037406</shape>
+     <shape comment="11">rectangle:0.062674,0.907731,0.030641,0.037406</shape>
+    </shaper>
+    <ids>0 0 0 1 0 0 0 1 1 0 0 0</ids>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="TempoVerbal" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escreva ao lado se a frase está no passado, presente ou futuro.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Parabéns, está indo muito bem!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Tente novamente!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFFF">
+     <image name="relogio-111.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFFF" border="true" />
+   </settings>
+   <cells rows="15" cols="1" cellWidth="753.0" cellHeight="30.0" border="false" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="15" />
+    <cell id="1">
+     <p>Galileu cantava no quintal.</p>
+    </cell>
+    <cell id="2">
+     <p>As mulheres vão desmarcarar o conquistador.</p>
+    </cell>
+    <cell id="1">
+     <p>O galo ficou de bico fechado.</p>
+    </cell>
+    <cell id="0">
+     <p>Estou com muito medo.</p>
+    </cell>
+    <cell id="0">
+     <p>O sol surgiu radiante.</p>
+    </cell>
+    <cell id="0">
+     <p>Fico feliz em saber que vai se casar.</p>
+    </cell>
+    <cell id="2">
+     <p>Você não será melhor do que ninguém.</p>
+    </cell>
+    <cell id="0">
+     <p>Eu gosto de beber refrigerante.</p>
+    </cell>
+    <cell id="2">
+     <p>Eles serão o vencedores da copa.</p>
+    </cell>
+    <cell id="1">
+     <p>Escrevi uma carta de amor.</p>
+    </cell>
+    <cell id="0">
+     <p>Não quero acordar cedo.</p>
+    </cell>
+    <cell id="2">
+     <p>Nós vamos contruir uma bela casa.</p>
+    </cell>
+    <cell id="1">
+     <p>Ligaram o ventilador no máximo.</p>
+    </cell>
+    <cell id="0">
+     <p>Ela dança muito bem.</p>
+    </cell>
+    <cell id="2">
+     <p>Irei comer a torta inteira.</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="392.0" cellHeight="32.0" border="false" id="answers">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <p>presente</p>
+    </cell>
+    <cell>
+     <p>passado</p>
+    </cell>
+    <cell>
+     <p>futuro</p>
+    </cell>
+   </cells>
+   <cells rows="15" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="15" />
+    <cell image="Smile 3.jpg" />
+    <cell image="Smile 4.jpg" />
+    <cell image="Smile 1.jpg" />
+    <cell image="Smile 4.jpg" />
+    <cell image="Smile 3.jpg" />
+    <cell image="Smile 1.jpg" />
+    <cell image="Smile 5.jpg" />
+    <cell image="Smile 5.jpg" />
+    <cell image="Smile 1.jpg" />
+    <cell image="Smile 3.jpg" />
+    <cell image="Smile 4.jpg" />
+    <cell image="Smile 5.jpg" />
+    <cell image="Smile 4.jpg" />
+    <cell image="Smile 3.jpg" />
+    <cell image="Smile 1.jpg" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="Tempos verbais" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>TEMPOS VERBAIS</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="verbos.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="500.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="1">
+     <p>Passado ou Pretérito</p>
+    </cell>
+    <cell id="0">
+     <p>Presente</p>
+    </cell>
+    <cell id="2">
+     <p>Futuro</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="500.0" cellHeight="200.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <p>Tem relação com um fato ou ação que ocorre no momento em que se fala.</p>
+     <p>Exemplo: A professora está muito bonita hoje.</p>
+    </cell>
+    <cell>
+     <p>Tem relação com um fato ou ação que ocorreu anterior à fala.</p>
+     <p>Exemplo: A professora estava muito bonita ontem.</p>
+    </cell>
+    <cell>
+     <p>Tem relação com um fato ou ação que irá ocorrer posterior à fala.</p>
+     <p>Exemplo: A professora estará mais bonita amanhã, pois é nossa formatura.</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="01-resized1.jpg" file="01_resized1.jpg" />
+  <media name="02-resized1.jpg" file="02_resized1.jpg" />
+  <media name="03-resized1.jpg" file="03_resized1.jpg" />
+  <media name="04-resized1.jpg" file="04_resized1.jpg" />
+  <media name="05-resized1.jpg" file="05_resized1.jpg" />
+  <media name="06-resized1.jpg" file="06_resized1.jpg" />
+  <media name="07-resized1.jpg" file="07_resized1.jpg" />
+  <media name="f698708775c136e6e8ba7f1ab78847e2.jpg" file="f698708775c136e6e8ba7f1ab78847e2.jpg" />
+  <media name="Parabens-resized.jpg" file="parabens_resized.jpg" />
+  <media name="relogio-111.jpg" file="relogio_111.jpg" />
+  <media name="Smile 1.jpg" file="smile_1.jpg" />
+  <media name="Smile 3.jpg" file="smile_3.jpg" />
+  <media name="Smile 4.jpg" file="smile_4.jpg" />
+  <media name="Smile 5.jpg" file="smile_5.jpg" />
+  <media name="verbos.jpg" file="verbos.jpg" />
+  <media name="VERBOS2-resized.jpg" file="verbos2_resized.jpg" />
+  <media name="/home/professor/Área de Trabalho/a evolucao do transporte.png" file="_home_professor_area_de_trabalho_a_evolucao_do_transporte.png" />
+  <media name="/home/professor/Área de Trabalho/Identificar tempo verbal.png" file="_home_professor_area_de_trabalho_identificar_tempo_verbal.png" />
+ </mediaBag>
+</JClicProject>
+

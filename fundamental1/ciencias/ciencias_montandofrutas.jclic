@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="ciencias_montandofrutas" version="0.1.3">
+ <settings>
+  <title>ConhecendoFrutas</title>
+  <revision description="created" date="6/17/13" />
+  <author name="Miguel dos Santos SIlva" />
+  <descriptors />
+  <eventSounds>
+   <sound id="start" enabled="false" />
+   <sound id="click" file="click.mp3" />
+   <sound id="actionError" file="action_error.mp3" />
+   <sound id="actionOk" file="action_ok.mp3" />
+   <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+   <sound id="finishedOk" file="finished_ok.mp3" />
+  </eventSounds>
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="tela" name="TelaInicialMiguel" navButtons="none" />
+  <item id="start" name="ConhecendoFrutas_1" delay="1" />
+  <item name="ConhecendoFrutas_2" delay="1" />
+  <item name="ConhecendoFrutas_3" delay="1" />
+  <item name="ConhecendoFrutas_4" delay="1" />
+  <item name="ConhecendoFrutas_5" delay="1" />
+  <item name="ConhecendoFrutas_6" delay="1" />
+  <item name="ConhecendoFrutas_7" delay="1" />
+  <item name="ConhecendoFrutas_8" delay="1" />
+  <item name="ConhecendoFrutas_9" delay="1" />
+  <item name="ConhecendoFrutas_10" delay="1" />
+  <item name="ConhecendoFrutas_11" delay="1" />
+  <item name="ConhecendoFrutas_12" delay="1" />
+  <item name="ConhecendoFrutas_13" delay="1" />
+  <item name="ConhecendoFrutas_14" delay="1" />
+  <item name="ConhecendoFrutas_15" delay="1" />
+  <item name="ConhecendoFrutas_16" delay="1" />
+  <item name="ConhecendoFrutas_17" delay="1" />
+  <item name="ConhecendoFrutas_18" delay="1" />
+  <item name="ConhecendoFrutas_19" delay="1" />
+  <item id="tela" name="TelaInicialMiguel" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="abacate.mp3" />
+     <p>Abacate</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="abacate.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_10" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="maracuja.mp3" />
+     <p>Maracujá</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="maracuja.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_11" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="manga.mp3" />
+     <p>Manga</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="20732-Manga-Tommy-Kg.png">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_12" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="mamao.mp3" />
+     <p>Mamão</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="mamao.png">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_13" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="limão.mp3" />
+     <p>Limão</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="limao.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_14" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="melancia.mp3" />
+     <p>Melancia</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="melancia.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_15" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="morango.mp3" />
+     <p>Morango</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="morango.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_16" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="pessego.mp3" />
+     <p>Pêssego</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="pessego.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_17" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="pera.mp3" />
+     <p>Pêra</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="pera.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_18" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="pinha.mp3" />
+     <p>Pinha</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="pinha2.png">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_19" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="uva.mp3" />
+     <p>Uva</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="uva.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="laranja.mp3" />
+     <p>Laranja</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="laranja.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="jaca.mp3" />
+     <p>Jaca</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="jaca.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="jabuticaba.mp3" />
+     <p>Jabuticaba</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="jabuticaba.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="goiaba.mp3" />
+     <p>Goiaba</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="goiaba.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="caju.mp3" />
+     <p>Caju</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="caju.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_7" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="banana.mp3" />
+     <p>Banana</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="banana.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_8" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="abacaxi.mp3" />
+     <p>Abacaxi</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="5" cols="1" border="true" image="abacaxi.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="5" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ConhecendoFrutas_9" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Monte a fruta arrastando suas partes</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="maça.mp3" />
+     <p>Maçã</p>
+    </cell>
+    <cell type="finalError" />
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" border="true" image="maça.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="ConhecendoFrutas_1" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="abacate.jpg" file="abacate.jpg" />
+  <media name="abacaxi.jpg" file="abacaxi.jpg" />
+  <media name="banana.jpg" file="banana.jpg" />
+  <media name="caju.jpg" file="caju.jpg" />
+  <media name="goiaba.jpg" file="goiaba.jpg" />
+  <media name="jabuticaba.jpg" file="jabuticaba.jpg" />
+  <media name="jaca.jpg" file="jaca.jpg" />
+  <media name="laranja.jpg" file="laranja.jpg" />
+  <media name="limao.jpg" file="limao.jpg" />
+  <media name="maracuja.jpg" file="maracuja.jpg" />
+  <media name="maça.jpg" file="maca.jpg" />
+  <media name="melancia.jpg" file="melancia.jpg" />
+  <media name="morango.jpg" file="morango.jpg" />
+  <media name="pera.jpg" file="pera.jpg" />
+  <media name="pessego.jpg" file="pessego.jpg" />
+  <media name="uva.jpg" file="uva.jpg" />
+  <media name="/media/dropbox/AETJ/JclicEscola/projects/sounds/finished_error.mp3" file="_media_dropbox_aetj_jclicescola_projects_sounds_finished_error.mp3" />
+  <media name="abacate.mp3" file="abacate.mp3" />
+  <media name="abacaxi.mp3" file="abacaxi.mp3" />
+  <media name="action_error.mp3" file="action_error.mp3" />
+  <media name="action_ok.mp3" file="action_ok.mp3" />
+  <media name="banana.mp3" file="banana.mp3" />
+  <media name="caju.mp3" file="caju.mp3" />
+  <media name="click.mp3" file="click.mp3" />
+  <media name="finished_ok.mp3" file="finished_ok.mp3" />
+  <media name="goiaba.mp3" file="goiaba.mp3" />
+  <media name="jabuticaba.mp3" file="jabuticaba.mp3" />
+  <media name="jaca.mp3" file="jaca.mp3" />
+  <media name="laranja.mp3" file="laranja.mp3" />
+  <media name="limão.mp3" file="limao.mp3" />
+  <media name="mamao.mp3" file="mamao.mp3" />
+  <media name="manga.mp3" file="manga.mp3" />
+  <media name="maracuja.mp3" file="maracuja.mp3" />
+  <media name="maça.mp3" file="maca.mp3" />
+  <media name="melancia.mp3" file="melancia.mp3" />
+  <media name="morango.mp3" file="morango.mp3" />
+  <media name="pera.mp3" file="pera.mp3" />
+  <media name="pessego.mp3" file="pessego.mp3" />
+  <media name="pinha.mp3" file="pinha.mp3" />
+  <media name="uva.mp3" file="uva.mp3" />
+  <media name="20732-Manga-Tommy-Kg.png" file="20732_manga_tommy_kg.png" />
+  <media name="mamao.png" file="mamao.png" />
+  <media name="pinha2.png" file="pinha2.png" />
+  <media name="TelaJclic2.png" file="i017_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

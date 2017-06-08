@@ -1,0 +1,1569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="m_n" version="0.1.3">
+ <settings>
+  <title>M-N</title>
+  <revision description="created" date="9/30/14" />
+  <author name="JOVENILSON DOS SANTOS SILVA" rol="Articulador de Educação Tecnológica" />
+  <language>português (pt)</language>
+  <descriptors area="PORTUGUÊS" level="FUNDAMENTAL I" />
+  <eventSounds>
+   <sound id="start" enabled="false" />
+  </eventSounds>
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="telainicial" navButtons="none" />
+  <item id="start" name="completarpalavras" delay="2" navButtons="none" />
+  <item name="001" delay="2" navButtons="none" />
+  <item name="002" delay="2" navButtons="none" />
+  <item name="003" delay="2" navButtons="none" />
+  <item name="004" delay="2" navButtons="none" />
+  <item name="005" delay="2" navButtons="none" />
+  <item name="006" delay="2" navButtons="none" />
+  <item name="007" delay="2" navButtons="none" />
+  <item name="008" delay="2" navButtons="none" />
+  <item name="009" delay="2" navButtons="none" />
+  <item name="010" delay="2" navButtons="none" />
+  <item name="011" delay="2" navButtons="none" />
+  <item name="012" delay="2" navButtons="none" />
+  <item name="013" delay="2" navButtons="none" />
+  <item name="014" delay="2" navButtons="none" />
+  <item name="015" delay="2" navButtons="none" />
+  <item name="016" delay="2" navButtons="none" />
+  <item name="017" delay="2" navButtons="none" />
+  <item name="018" delay="2" navButtons="none" />
+  <item name="019" delay="2" navButtons="none" />
+  <item name="020" delay="2" navButtons="none" />
+  <item name="021" delay="2" navButtons="none" />
+  <item name="022" delay="2" navButtons="none" />
+  <item name="023" delay="2" navButtons="none" />
+  <item name="024" delay="2" navButtons="none" />
+  <item name="025" delay="2" navButtons="none" />
+  <item name="026" delay="2" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@text.WrittenAnswer" name="001">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK 03.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>PARABÉNS!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color foreground="0xFF0000" />
+     </style>
+     <p>VOCÊ ERROU, TENTE NOVAMENTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="636.0" cellHeight="354.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" imgAlign="middle,top" avoidOverlapping="true" image="bombom.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="BOMBOM.mp3" />
+     <p>BO_BOM</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="544.0" cellHeight="236.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>BOMBOM</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="002">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK 04.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>MUITO BEM!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="545.0" cellHeight="240.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" imgAlign="middle,top" avoidOverlapping="true" image="LÂMPADA.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="LÂMPADA.mp3" />
+     <p>LÂ_PADA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="411.0" cellHeight="163.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>LÂMPADA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="003">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>PARABÉNS!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="730.0" cellHeight="374.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" imgAlign="middle,top" avoidOverlapping="true" image="SERPENTE.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="serpente.mp3" />
+     <p>SERPE_TE</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="560.0" cellHeight="156.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>SERPENTE</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="004">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK 03.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>PARABÉNS!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="625.0" cellHeight="338.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="CAMPO.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="campo.mp3" />
+     <p>CA_PO</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="485.0" cellHeight="144.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>CAMPO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="005">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK 2.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>ÓTIMO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="705.0" cellHeight="370.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="DENTE.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="DENTE.mp3" />
+     <p>DE_TE</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="361.0" cellHeight="147.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>DENTE</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="006">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK 3.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>QUE MARAVILHA!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="513.0" cellHeight="392.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="UMBIGO.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="UMBIGO.mp3" />
+     <p>U_BIGO</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="430.0" cellHeight="174.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>UMBIGO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="007">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK 2.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>CONTINUE ASSIM!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="570.0" cellHeight="402.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="UMBÚ.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="UMBÚ.mp3" />
+     <p>U_BÚ</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="428.0" cellHeight="176.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>UMBÚ</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="008">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK 3.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>ÓTIMO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="656.0" cellHeight="374.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="jumento.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="jumento.mp3" />
+     <p>JU_E_TO</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="419.0" cellHeight="125.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>JUMENTO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="009">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>PARABÉNS!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="687.0" cellHeight="450.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="onça.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="onça.mp3" />
+     <p>O_ÇA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="475.0" cellHeight="116.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>ONÇA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="010">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>ÓTIMO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="640.0" cellHeight="412.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="gambá.jpg">
+     <style>
+      <font family="Arial" size="26" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="GAMBÁ.mp3" />
+     <p>GA_BÁ</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="349.0" cellHeight="127.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>GAMBÁ</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="011">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>PARABÉNS!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="657.0" cellHeight="404.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="ema.jpg">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="EMA.mp3" />
+     <p>E_A</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="310.0" cellHeight="79.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>EMA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="012">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>ÓTIMO, CONTINUE ASSIM!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="596.0" cellHeight="346.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="cama.jpg">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="cama.mp3" />
+     <p>CA_A</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="485.0" cellHeight="83.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>CAMA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="013">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>EXCELENTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="606.0" cellHeight="367.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="mesa.jpg">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="mesa.mp3" />
+     <p>_ESA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="345.0" cellHeight="67.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>MESA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="014">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>PARABÉNS!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="552.0" cellHeight="373.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="computador.png">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="computador.mp3" />
+     <p>CO_PUTADOR</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="316.0" cellHeight="111.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>COMPUTADOR</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="015">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>CONTINUE ASSIM!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="579.0" cellHeight="355.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="MACACO.png">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="MACACO.mp3" />
+     <p>_ACACO</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="360.0" cellHeight="126.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>MACACO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="016">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>ÓTIMO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="318.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="morango.jpg">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="morango.mp3" />
+     <p>MORA_GO</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="399.0" cellHeight="128.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>MORANGO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="017">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>PARABÉNS!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="658.0" cellHeight="404.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="maçã.png">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="maçã.mp3" />
+     <p>_AÇÃ</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="408.0" cellHeight="105.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>MAÇÃ</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="018">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>PARABÉNS!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="535.0" cellHeight="357.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="LARANJA.jpg">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="LARANJA.mp3" />
+     <p>LARA_JA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="380.0" cellHeight="83.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>LARANJA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="019">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>MUITO BEM!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="597.0" cellHeight="383.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="MAMÃO.jpg">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="MAMÃO.mp3" />
+     <p>MA_ÃO</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="280.0" cellHeight="96.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>MAMÃO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="020">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>EXCELENTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="606.0" cellHeight="383.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="MALA.png">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="MALA.mp3" />
+     <p>_ALA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="325.0" cellHeight="85.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>MALA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="021">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>ÓTIMO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="563.0" cellHeight="364.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="CANETA.jpg">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="CANETA.mp3" />
+     <p>CA_ETA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="324.0" cellHeight="105.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>CANETA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="022">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>MUITO BEM!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="586.0" cellHeight="397.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="janela.jpg">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="janela.mp3" />
+     <p>JA_ELA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="393.0" cellHeight="99.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>JANELA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="023" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>PARABÉNS, VOCÊ ACERTOU!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="615.0" cellHeight="361.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="panela.jpg">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xCC0033" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="panela.mp3" />
+     <p>PA_ELA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="420.0" cellHeight="171.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xCC0033" />
+     </style>
+     <p>PANELA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="024">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK 04.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>PARABÉNS!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="598.0" cellHeight="367.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="BONECA.jpg">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="BONECA.mp3" />
+     <p>BO_ECA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="409.0" cellHeight="135.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF3300" />
+     </style>
+     <p>BONECA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="025">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>VOCÊ CONSEGUIU! PARABÉNS!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="596.0" cellHeight="347.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="GALINHA.png">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="GALINHA.mp3" />
+     <p>GALI_HA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="391.0" cellHeight="121.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xCC0000" />
+     </style>
+     <p>GALINHA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="026">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>ESCREVA A PALAVRA COM M OU N CORRETAMENTE!</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>PARABÉNS</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="566.0" cellHeight="369.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="middle,bottom" image="POMBO.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="POMBO.mp3" />
+     <p>PO_BO</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="400.0" cellHeight="110.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="right,middle">
+     <p>POMBO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="completarpalavras">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>completa as palavras com M ou N corretamente</p>
+    </cell>
+    <cell imgAlign="right,middle" image="OK.jpg" type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x6600FF" />
+     </style>
+     <p>ótimo!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color foreground="0xFF0000" />
+     </style>
+     <p>TENTE NOVAMENTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="false">
+     <size width="698" height="492" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="false" italic="false" size="18" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" size="18">Sandra escreveu um bilhete para André, mas não sabe se usa M ou N em algumas palavras. Ajude Sandra completando as palavras corretamente.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text foreground="0x0033FF" family="Serif" italic="true" size="24">André me e</text>
+      <target>
+       <answer>m</answer>
+       <optionList>
+        <option>m</option>
+        <option>n</option>
+       </optionList>
+       <text>m</text>
+      </target>
+      <text foreground="0x0033FF" family="Serif" italic="true" size="24">presta o seu </text>
+      <text foreground="0x0033FF" family="Serif" bold="false" italic="true" size="24">caderno</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text foreground="0x0033FF" family="Serif" italic="true" size="24">para eu copiar a lição de casa?</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text foreground="0x0033FF" family="Serif" italic="true" size="24">Precisei faltar o</text>
+      <target>
+       <answer>n</answer>
+       <optionList>
+        <option>m</option>
+        <option>n</option>
+       </optionList>
+       <text>n</text>
+      </target>
+      <text foreground="0x0033FF" family="Serif" italic="true" size="24">tém</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text foreground="0x0033FF" family="Serif" italic="true" size="24">porque fiquei gripada, depois de ter me</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text foreground="0x0033FF" family="Serif" italic="true" size="24">e</text>
+      <target>
+       <answer>n</answer>
+       <optionList>
+        <option>m</option>
+        <option>n</option>
+       </optionList>
+       <text>n</text>
+      </target>
+      <text foreground="0x0033FF" family="Serif" italic="true" size="24">sopado com o temporal.</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial Rounded MT Bold" size="18">Sandra</text>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial Rounded MT Bold">								10/05/2010</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="telainicial" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x3333FF" />
+     </style>
+     <p>CLIQUE EM INICIAR PARA COMEÇAR A ATIVIDADE</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x0066FF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x33FF33" border="false" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.224074,0.552156,0.155556</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="completarpalavras" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="bombom.jpg" file="bombom.jpg" />
+  <media name="BONECA.jpg" file="boneca.jpg" />
+  <media name="cama.jpg" file="cama.jpg" />
+  <media name="CAMPO.jpg" file="campo.jpg" />
+  <media name="CANETA.jpg" file="caneta.jpg" />
+  <media name="ema.jpg" file="ema.jpg" />
+  <media name="gambá.jpg" file="gamba.jpg" />
+  <media name="janela.jpg" file="janela.jpg" />
+  <media name="jumento.jpg" file="jumento.jpg" />
+  <media name="LARANJA.jpg" file="laranja.jpg" />
+  <media name="LÂMPADA.jpg" file="lampada.jpg" />
+  <media name="MAMÃO.jpg" file="mamao.jpg" />
+  <media name="mesa.jpg" file="mesa.jpg" />
+  <media name="morango.jpg" file="morango.jpg" />
+  <media name="OK 03.jpg" file="ok_03.jpg" />
+  <media name="OK 04.jpg" file="ok_04.jpg" />
+  <media name="OK 2.jpg" file="ok_2.jpg" />
+  <media name="OK 3.jpg" file="ok_3.jpg" />
+  <media name="OK.jpg" file="ok.jpg" />
+  <media name="onça.jpg" file="onca.jpg" />
+  <media name="panela.jpg" file="panela.jpg" />
+  <media name="POMBO.jpg" file="pombo.jpg" />
+  <media name="SERPENTE.jpg" file="serpente.jpg" />
+  <media name="UMBIGO.jpg" file="umbigo.jpg" />
+  <media name="UMBÚ.jpg" file="umbu.jpg" />
+  <media name="BOMBOM.mp3" file="bombom.mp3" />
+  <media name="BONECA.mp3" file="boneca.mp3" />
+  <media name="cama.mp3" file="cama.mp3" />
+  <media name="campo.mp3" file="campo.mp3" />
+  <media name="CANETA.mp3" file="caneta.mp3" />
+  <media name="computador.mp3" file="computador.mp3" />
+  <media name="DENTE.mp3" file="dente.mp3" />
+  <media name="EMA.mp3" file="ema.mp3" />
+  <media name="GALINHA.mp3" file="galinha.mp3" />
+  <media name="GAMBÁ.mp3" file="gamba.mp3" />
+  <media name="janela.mp3" file="janela.mp3" />
+  <media name="jumento.mp3" file="jumento.mp3" />
+  <media name="LARANJA.mp3" file="laranja.mp3" />
+  <media name="LÂMPADA.mp3" file="lampada.mp3" />
+  <media name="MACACO.mp3" file="macaco.mp3" />
+  <media name="MALA.mp3" file="mala.mp3" />
+  <media name="MAMÃO.mp3" file="mamao.mp3" />
+  <media name="maçã.mp3" file="maca.mp3" />
+  <media name="mesa.mp3" file="mesa.mp3" />
+  <media name="morango.mp3" file="morango.mp3" />
+  <media name="onça.mp3" file="onca.mp3" />
+  <media name="panela.mp3" file="panela.mp3" />
+  <media name="POMBO.mp3" file="pombo.mp3" />
+  <media name="serpente.mp3" file="serpente.mp3" />
+  <media name="UMBIGO.mp3" file="umbigo.mp3" />
+  <media name="UMBÚ.mp3" file="umbu.mp3" />
+  <media name="computador.png" file="computador.png" />
+  <media name="DENTE.png" file="dente.png" />
+  <media name="GALINHA.png" file="galinha.png" />
+  <media name="MACACO.png" file="macaco.png" />
+  <media name="MALA.png" file="mala.png" />
+  <media name="maçã.png" file="maca.png" />
+  <media name="TelaJclic2.png" file="telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

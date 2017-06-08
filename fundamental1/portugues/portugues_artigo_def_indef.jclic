@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="portugues_artigo_def_indef" version="0.1.3">
+ <settings>
+  <title>Atividades</title>
+  <revision description="atualizado" date="4/29/13" />
+  <revision description="created" date="8/4/12" />
+  <author name="Luzimar Rodrigues da Silva" rol="Professora" />
+  <author name="Silvânia Pereira A Araújo" rol="Professora" />
+  <author name="Miguel dos Santos Silva" rol="Articulador de Educação Tecnológica" />
+  <organization name="Escola dr. José de Araújo" />
+  <language>português (pt)</language>
+  <descriptors area="Português" level="Fundamental I" />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="TelaInicialMiguelSilvaniaLuzimar" navButtons="none" />
+  <item id="start" name="IdentificarArtigoDefinidoIndefinido" delay="1" />
+  <item name="associarTiposDeArtigos" delay="1" />
+  <item name="ArtigosDefinido" delay="1" />
+  <item name="ArtigosDefinidos" delay="1" />
+  <item name="ArtigosIndefinidos" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="ArtigosDefinido" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x1435F3" background="0xFEFEFE" />
+     </style>
+     <p>Complete com o artigo correto.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x1D22F5" background="0xFEFEFE" />
+     </style>
+     <p>Muito Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xE6E1E1" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="334" />
+    </window>
+   </settings>
+   <cells rows="3" cols="4" cellWidth="216.0" cellHeight="53.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0xF52A2E" background="0xE3E3E3" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="3" />
+    <cell id="2">
+     <p>__ gatos</p>
+    </cell>
+    <cell id="0">
+     <p>__ sapo</p>
+    </cell>
+    <cell id="1">
+     <p>__ sacola</p>
+    </cell>
+    <cell id="0">
+     <p>__ livro</p>
+    </cell>
+    <cell id="3">
+     <p>__ mesas</p>
+    </cell>
+    <cell id="1">
+     <p>__ flor</p>
+    </cell>
+    <cell id="1">
+     <p>__ laranja</p>
+    </cell>
+    <cell id="1">
+     <p>__ casa</p>
+    </cell>
+    <cell id="3">
+     <p>__ bolas</p>
+    </cell>
+    <cell id="2">
+     <p>__ garotos</p>
+    </cell>
+    <cell id="2">
+     <p>__ brinquedos</p>
+    </cell>
+    <cell id="1">
+     <p>__ bola</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="72.0" cellHeight="46.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1065F5" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>Os</p>
+    </cell>
+    <cell>
+     <p>As</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="3" />
+    <cell>
+     <p>Os gatos</p>
+    </cell>
+    <cell>
+     <p>O sapo</p>
+    </cell>
+    <cell>
+     <p>A sacola</p>
+    </cell>
+    <cell>
+     <p>O livro</p>
+    </cell>
+    <cell>
+     <p>As mesas</p>
+    </cell>
+    <cell>
+     <p>A flor</p>
+    </cell>
+    <cell>
+     <p>A laranja</p>
+    </cell>
+    <cell>
+     <p>A casa</p>
+    </cell>
+    <cell>
+     <p>As bolas</p>
+    </cell>
+    <cell>
+     <p>Os garotos</p>
+    </cell>
+    <cell>
+     <p>Os brinquedos</p>
+    </cell>
+    <cell>
+     <p>A bola</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ArtigosDefinidos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x302FF1" background="0xFEFEFE" />
+     </style>
+     <p>Complete com os artigos definidos (O, A, OS, AS).</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x1F21F0" background="0xFEFEFE" />
+     </style>
+     <p>Muito bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="329" height="523" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="false" size="36" italic="false" tabWidth="12" />
+    <section>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>
+       <answer>A</answer>
+       <response fill="_" length="1" maxLength="1" />
+       <text>A</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> bola	</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>
+       <answer>O</answer>
+       <response fill="_" length="1" maxLength="1" />
+       <text>O</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> livro</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>
+       <answer>A</answer>
+       <response fill="_" length="1" maxLength="1" />
+       <text>A</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> casa		</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>
+       <answer>O</answer>
+       <response fill="_" length="1" maxLength="1" />
+       <text>O</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> sapo</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>
+       <answer>As</answer>
+       <response fill="_" length="1" maxLength="2" />
+       <text>As</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> mesas	</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>
+       <answer>As</answer>
+       <response fill="_" length="1" maxLength="2" />
+       <text>As</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> bolas</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>
+       <answer>Os</answer>
+       <response fill="_" length="1" maxLength="2" />
+       <text>Os</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> gatos	</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>
+       <answer>A</answer>
+       <response fill="_" length="1" maxLength="1" />
+       <text>A</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> flor</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>
+       <answer>Os</answer>
+       <response fill="_" length="1" maxLength="2" />
+       <text>Os</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> garotos	</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>
+       <answer>As</answer>
+       <response fill="_" length="1" maxLength="2" />
+       <text>As</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> sacolas</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>
+       <answer>A</answer>
+       <response fill="_" length="1" maxLength="1" />
+       <text>A</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> laranja</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>
+       <answer>Os</answer>
+       <response fill="_" length="1" maxLength="2" />
+       <text>Os</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> brinquedos</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ArtigosIndefinidos" code="" autoJump="true" forceOkToAdvance="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x2827E1" background="0xFEFEFE" />
+     </style>
+     <p>Complete com os artigos indefinidos (um, uma).</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x140EED" background="0xFEFEFE" />
+     </style>
+     <p>Parabéns!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="241" />
+    </window>
+   </settings>
+   <checkButton>Verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="false" size="30" italic="false" tabWidth="12" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">a) Comprei </text>
+      <target>
+       <answer>um</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>um</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> casaco de lã.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">b) Comprei </text>
+      <target>
+       <answer>uma</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>uma</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> bola e </text>
+      <target>
+       <answer>um</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>um</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> baralho.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">c) Daniela é </text>
+      <target>
+       <answer>uma</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>uma</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> garota linda.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">d) Visitei </text>
+      <target>
+       <answer>uma</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>uma</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> biblioteca e </text>
+      <target>
+       <answer>um</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>um</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> teatro.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">e) Papai fez </text>
+      <target>
+       <answer>uma</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>uma</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> boa viagem.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Identify" name="IdentificarArtigoDefinidoIndefinido" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x1927EE" background="0xFEFEFE" />
+     </style>
+     <p>Clique  nos artigos definidos e indefinidos do poema, então clique em verificar.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x161CEB" background="0xFEFEFE" />
+     </style>
+     <p>Parabéns!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Tente novamente</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x605959" dest="0xFFFFFF" angle="299" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="334" />
+     <size width="567" height="457" />
+    </window>
+   </settings>
+   <checkButton>verificar</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="true" size="20" italic="false" tabWidth="12" />
+    <section>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <target>O</target>
+      <text bold="true" size="20"> bicho</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text bold="true" size="20">Vi ontem </text>
+      <target>um</target>
+      <text bold="true" size="20"> bicho Na imundice do pátio Catando comida entre </text>
+      <target>os</target>
+      <text bold="true" size="20"> detritos. Quando achava alguma coisa; Não examinava nem cheirava: Engolia com voracidade. </text>
+      <target>O</target>
+      <text bold="true" size="20"> bicho não era </text>
+      <target>um</target>
+      <text bold="true" size="20"> cão, Não era </text>
+      <target>um</target>
+      <text bold="true" size="20"> gato, Não era </text>
+      <target>um</target>
+      <text bold="true" size="20"> rato. </text>
+      <target>O</target>
+      <text bold="true" size="20"> bicho, meu Deus, era </text>
+      <target>um</target>
+      <text bold="true" size="20"> homem. </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text bold="true" size="14">*Manuel Bandeira. Rio, 27 de dezembro de 1947*</text>
+      <text size="14"> </text>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguelSilvaniaLuzimar" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic4.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="IdentificarArtigoDefinidoIndefinido" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="associarTiposDeArtigos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x111EE5" background="0xFEFEFE" />
+     </style>
+     <p>Classifique os artigos de forma correta.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x3A3DE4" background="0xFEFEFE" />
+     </style>
+     <p>Parabéns!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Tente novamente</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="334" />
+    </window>
+   </settings>
+   <cells rows="4" cols="2" cellWidth="135.0" cellHeight="97.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="28" bold="true" />
+     <color foreground="0x3936E9" background="0xFEFEFE" inactive="0x8831D6" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell id="1">
+     <p>um</p>
+    </cell>
+    <cell id="1">
+     <p>uns</p>
+    </cell>
+    <cell id="0">
+     <p>o</p>
+    </cell>
+    <cell id="1">
+     <p>uma</p>
+    </cell>
+    <cell id="1">
+     <p>umas</p>
+    </cell>
+    <cell id="0">
+     <p>as</p>
+    </cell>
+    <cell id="0">
+     <p>a</p>
+    </cell>
+    <cell id="0">
+     <p>os</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="225.0" cellHeight="44.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <p>DEFINIDO</p>
+    </cell>
+    <cell>
+     <p>INDEFINIDO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="TelaJclic4.png" file="telajclic4.png" />
+ </mediaBag>
+</JClicProject>
+

@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="portugues_Masculino_Feminino" version="0.1.3">
+ <settings>
+  <title>MasculinoFeminino</title>
+  <revision description="created" date="6/10/13" />
+  <author name="Miguel dos Santos Silva" mail="miguelsilva_25_@hotmail.com" url="www.aetjblog.blogspot.com.br" rol="Articulador de Educação Tecnológica" />
+  <author name="Silvãnia" rol="Professora" />
+  <language>português (pt)</language>
+  <descriptors />
+  <eventSounds>
+   <sound id="start" enabled="false" />
+   <sound id="click" file="click.mp3" />
+   <sound id="actionError" file="action_error.mp3" />
+   <sound id="actionOk" file="action_ok.mp3" />
+   <sound id="finishedError" file="finished_error.mp3" />
+   <sound id="finishedOk" file="finished_ok.mp3" />
+  </eventSounds>
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="tela" name="TelaInicialMiguelSilvania" />
+  <item id="start" name="AssociarMasculinofeminino" delay="1" />
+  <item name="ArtigoDefMasculinofeminino" delay="1" />
+  <item name="ArtigoDefMasculinofeminino" delay="1" />
+  <item name="ArtigoIndefMasculinoFeminino" delay="1" />
+  <item id="tela" name="TelaInicialMiguelSilvania" />
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="ArtigoDefMasculinofeminino" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Arraste os artigos definidos (o, a, os, as) para os nomes corretamente</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Muito Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0x666666">
+     <gradient source="0x333333" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="10" cols="4" cellWidth="300.0" cellHeight="50.0" border="true" id="primary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="17" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="10" />
+    <cell id="0">
+     <p>__ PATRÃO</p>
+    </cell>
+    <cell id="2">
+     <p>__ POETAS</p>
+    </cell>
+    <cell id="2">
+     <p>__ ELEFANTES</p>
+    </cell>
+    <cell id="0">
+     <p>__ ORFÃO</p>
+    </cell>
+    <cell id="2">
+     <p>__ CAVALOS</p>
+    </cell>
+    <cell id="0">
+     <p>__ COMPADRE</p>
+    </cell>
+    <cell id="0">
+     <p>__ PADRINHO</p>
+    </cell>
+    <cell id="0">
+     <p>__ CAMPONÊS</p>
+    </cell>
+    <cell id="2">
+     <p>__ GENROS</p>
+    </cell>
+    <cell id="0">
+     <p>__ ZANGÃO</p>
+    </cell>
+    <cell id="2">
+     <p>__ ATORES</p>
+    </cell>
+    <cell id="0">
+     <p>__ LEÃO</p>
+    </cell>
+    <cell id="0">
+     <p>__ RÉU</p>
+    </cell>
+    <cell id="0">
+     <p>__ PERDIGÃO</p>
+    </cell>
+    <cell id="0">
+     <p>__ HERÓI</p>
+    </cell>
+    <cell id="0">
+     <p>__ CARNEIRO</p>
+    </cell>
+    <cell id="0">
+     <p>__ ANCIÃO</p>
+    </cell>
+    <cell id="0">
+     <p>__ BODE</p>
+    </cell>
+    <cell id="0">
+     <p>__ REI</p>
+    </cell>
+    <cell id="0">
+     <p>__ CÃO</p>
+    </cell>
+    <cell id="3">
+     <p>__ PATROAS</p>
+    </cell>
+    <cell id="3">
+     <p>__ POETISAS</p>
+    </cell>
+    <cell id="3">
+     <p>__ ELEFANTAS</p>
+    </cell>
+    <cell id="1">
+     <p>__ ÓRFÃ</p>
+    </cell>
+    <cell id="3">
+     <p>__ ÉGUAS</p>
+    </cell>
+    <cell id="1">
+     <p>__ COMADRE</p>
+    </cell>
+    <cell id="1">
+     <p>__ MADRINHA</p>
+    </cell>
+    <cell id="3">
+     <p>__ CAMPONESAS</p>
+    </cell>
+    <cell id="1">
+     <p>__ NORA</p>
+    </cell>
+    <cell id="1">
+     <p>__ ABELHA</p>
+    </cell>
+    <cell id="1">
+     <p>__ ATRIZ</p>
+    </cell>
+    <cell id="1">
+     <p>__ LEOA</p>
+    </cell>
+    <cell id="1">
+     <p>__ RÉ</p>
+    </cell>
+    <cell id="1">
+     <p>__ PERDIZ</p>
+    </cell>
+    <cell id="1">
+     <p>__ HEROÍNA</p>
+    </cell>
+    <cell id="1">
+     <p>__ OVELHA</p>
+    </cell>
+    <cell id="1">
+     <p>__ ANCIÃ</p>
+    </cell>
+    <cell id="1">
+     <p>__ CABRA</p>
+    </cell>
+    <cell id="1">
+     <p>__ RAINHA</p>
+    </cell>
+    <cell id="1">
+     <p>__ CADELA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="150.0" cellHeight="50.0" border="false" id="secondary">
+    <style transparent="true">
+     <font family="Arial" size="20" bold="true" />
+     <color foreground="0xCC6600" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>OS</p>
+    </cell>
+    <cell>
+     <p>AS</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="10" />
+    <cell>
+     <p>O PATRÃO</p>
+    </cell>
+    <cell>
+     <p>OS POETAS</p>
+    </cell>
+    <cell>
+     <p>OS ELEFANTES</p>
+    </cell>
+    <cell>
+     <p>O ORFÃO</p>
+    </cell>
+    <cell>
+     <p>OS CAVALOS</p>
+    </cell>
+    <cell>
+     <p>O COMPADRE</p>
+    </cell>
+    <cell>
+     <p>O PADRINHO</p>
+    </cell>
+    <cell>
+     <p>O CAMPONÊS</p>
+    </cell>
+    <cell>
+     <p>OS GENROS</p>
+    </cell>
+    <cell>
+     <p>O ZANGÃO</p>
+    </cell>
+    <cell>
+     <p>O ATOR</p>
+    </cell>
+    <cell>
+     <p>O LEÃO</p>
+    </cell>
+    <cell>
+     <p>O RÉU</p>
+    </cell>
+    <cell>
+     <p>O PERDÍCIO</p>
+    </cell>
+    <cell>
+     <p>HERÓI</p>
+    </cell>
+    <cell>
+     <p>O CARNEIRO</p>
+    </cell>
+    <cell>
+     <p>O ANCIÃO</p>
+    </cell>
+    <cell>
+     <p>O BODE</p>
+    </cell>
+    <cell>
+     <p>O REI</p>
+    </cell>
+    <cell>
+     <p>O CÃO</p>
+    </cell>
+    <cell>
+     <p>AS PATROAS</p>
+    </cell>
+    <cell>
+     <p>AS POETISAS</p>
+    </cell>
+    <cell>
+     <p>AS ELEFANTAS</p>
+    </cell>
+    <cell>
+     <p>A ÓRFÃ</p>
+    </cell>
+    <cell>
+     <p>AS ÉGUAS</p>
+    </cell>
+    <cell>
+     <p>A COMADRE</p>
+    </cell>
+    <cell>
+     <p>A MADRINHA</p>
+    </cell>
+    <cell>
+     <p>AS CAMPONESAS</p>
+    </cell>
+    <cell>
+     <p>A NORA</p>
+    </cell>
+    <cell>
+     <p>A ABELHA</p>
+    </cell>
+    <cell>
+     <p>A ATRIZ</p>
+    </cell>
+    <cell>
+     <p>A LEOA</p>
+    </cell>
+    <cell>
+     <p>A RÉ</p>
+    </cell>
+    <cell>
+     <p>A PERDIZ</p>
+    </cell>
+    <cell>
+     <p>A HEROÍNA</p>
+    </cell>
+    <cell>
+     <p>A OVELHA</p>
+    </cell>
+    <cell>
+     <p>A ANCIÃ</p>
+    </cell>
+    <cell>
+     <p>A CABRA</p>
+    </cell>
+    <cell>
+     <p>A RAINHA</p>
+    </cell>
+    <cell>
+     <p>A CADELA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="ArtigoIndefMasculinoFeminino" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Arraste os artigos indefinidos (um, uma, uns, umas) para os nomes corretamente</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Muito Bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xCCCCCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="7" cols="2" cellWidth="330.0" cellHeight="40.0" border="true" id="primary">
+    <style transparent="true">
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0x0066FF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="7" />
+    <cell id="0">
+     <p>__ 	POETA</p>
+    </cell>
+    <cell id="2">
+     <p>__ HERÓIS</p>
+    </cell>
+    <cell id="2">
+     <p>__ ATORES</p>
+    </cell>
+    <cell id="0">
+     <p>__ GENRO</p>
+    </cell>
+    <cell id="0">
+     <p>__ LEÃO</p>
+    </cell>
+    <cell id="1">
+     <p>__ ÉGUA</p>
+    </cell>
+    <cell id="1">
+     <p>__ RAINHA</p>
+    </cell>
+    <cell id="3">
+     <p>__ OVELHAS</p>
+    </cell>
+    <cell id="0">
+     <p>__ CARNEIRO</p>
+    </cell>
+    <cell id="3">
+     <p>__ POETISAS</p>
+    </cell>
+    <cell id="0">
+     <p>__ CÃO</p>
+    </cell>
+    <cell id="3">
+     <p>__ ELEFANTAS</p>
+    </cell>
+    <cell id="0">
+     <p>__ PERDIGÃO</p>
+    </cell>
+    <cell id="0">
+     <p>__ RÉU</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="2" cellWidth="66.0" cellHeight="32.0" border="false" id="secondary">
+    <style transparent="true">
+     <font family="Arial" size="17" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell>
+     <p>UM</p>
+    </cell>
+    <cell>
+     <p>UMA</p>
+    </cell>
+    <cell>
+     <p>UNS</p>
+    </cell>
+    <cell>
+     <p>UMAS</p>
+    </cell>
+   </cells>
+   <cells rows="7" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="7" />
+    <cell>
+     <p>UM POETA</p>
+    </cell>
+    <cell>
+     <p>UNS HERÓIS</p>
+    </cell>
+    <cell>
+     <p>UNS ATORES</p>
+    </cell>
+    <cell>
+     <p>UM GENRO</p>
+    </cell>
+    <cell>
+     <p>UM LEÃO</p>
+    </cell>
+    <cell>
+     <p>UMA ÉGUA</p>
+    </cell>
+    <cell>
+     <p>UMA RAINHA</p>
+    </cell>
+    <cell>
+     <p>UMAS OVELHAS</p>
+    </cell>
+    <cell>
+     <p>UM CARNEIRO</p>
+    </cell>
+    <cell>
+     <p>UMAS POETISAS</p>
+    </cell>
+    <cell>
+     <p>UM CÃO</p>
+    </cell>
+    <cell>
+     <p>UMAS ELEFANTAS</p>
+    </cell>
+    <cell>
+     <p>UM PERDIGÃO</p>
+    </cell>
+    <cell>
+     <p>UM RÉU</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AssociarMasculinofeminino" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Associe o masculino e o feminino corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Muito Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0x666666">
+     <gradient source="0xCCCCCC" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xCCCCCC" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" enabled="false" />
+     <sound id="click" file="click.mp3" />
+     <sound id="actionError" file="action_error.mp3" />
+     <sound id="actionOk" file="action_ok.mp3" />
+     <sound id="finishedError" file="finished_error.mp3" />
+     <sound id="finishedOk" file="finished_ok.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="5" cols="4" cellWidth="300.0" cellHeight="50.0" border="true" id="primary">
+    <style transparent="true">
+     <font family="Arial" size="18" bold="true" />
+     <color inactive="0x006666" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="5" />
+    <cell>
+     <p>PATRÃO</p>
+    </cell>
+    <cell>
+     <p>POETA</p>
+    </cell>
+    <cell>
+     <p>ELEFANTE</p>
+    </cell>
+    <cell>
+     <p>ORFÃO</p>
+    </cell>
+    <cell>
+     <p>CAVALO</p>
+    </cell>
+    <cell>
+     <p>COMPADRE</p>
+    </cell>
+    <cell>
+     <p>PADRINHO</p>
+    </cell>
+    <cell>
+     <p>CAMPONÊS</p>
+    </cell>
+    <cell>
+     <p>GENRO</p>
+    </cell>
+    <cell>
+     <p>ZANGÃO</p>
+    </cell>
+    <cell>
+     <p>ATOR</p>
+    </cell>
+    <cell>
+     <p>LEÃO</p>
+    </cell>
+    <cell>
+     <p>RÉU</p>
+    </cell>
+    <cell>
+     <p>PERDIGÃO</p>
+    </cell>
+    <cell>
+     <p>HERÓI</p>
+    </cell>
+    <cell>
+     <p>CARNEIRO</p>
+    </cell>
+    <cell>
+     <p>ANCIÃO</p>
+    </cell>
+    <cell>
+     <p>BODE</p>
+    </cell>
+    <cell>
+     <p>REI</p>
+    </cell>
+    <cell>
+     <p>CÃO</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="4" cellWidth="300.0" cellHeight="50.0" border="true" id="secondary">
+    <style transparent="true">
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0xCC6600" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="5" />
+    <cell>
+     <p>PATROA</p>
+    </cell>
+    <cell>
+     <p>POETISA</p>
+    </cell>
+    <cell>
+     <p>ELEFANTA</p>
+    </cell>
+    <cell>
+     <p>ÓRFÃ</p>
+    </cell>
+    <cell>
+     <p>ÉGUA</p>
+    </cell>
+    <cell>
+     <p>COMADRE</p>
+    </cell>
+    <cell>
+     <p>MADRINHA</p>
+    </cell>
+    <cell>
+     <p>CAMPONESA</p>
+    </cell>
+    <cell>
+     <p>NORA</p>
+    </cell>
+    <cell>
+     <p>ABELHA</p>
+    </cell>
+    <cell>
+     <p>ATRIZ</p>
+    </cell>
+    <cell>
+     <p>LEOA</p>
+    </cell>
+    <cell>
+     <p>RÉ</p>
+    </cell>
+    <cell>
+     <p>PERDIZ</p>
+    </cell>
+    <cell>
+     <p>HEROÍNA</p>
+    </cell>
+    <cell>
+     <p>OVELHA</p>
+    </cell>
+    <cell>
+     <p>ANCIÃ</p>
+    </cell>
+    <cell>
+     <p>CABRA</p>
+    </cell>
+    <cell>
+     <p>RAINHA</p>
+    </cell>
+    <cell>
+     <p>CADELA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguelSilvania" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic3.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="AssociarMasculinofeminino" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="action_error.mp3" file="action_error.mp3" />
+  <media name="action_ok.mp3" file="action_ok.mp3" />
+  <media name="click.mp3" file="click.mp3" />
+  <media name="finished_error.mp3" file="finished_error.mp3" />
+  <media name="finished_ok.mp3" file="finished_ok.mp3" />
+  <media name="TelaJclic3.png" file="i01_telajclic3.png" />
+ </mediaBag>
+</JClicProject>
+

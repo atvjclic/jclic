@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="Portugues_pontuacao_PalavraCruzada" version="0.1.3">
+ <settings>
+  <title>Português_Pontuação_</title>
+  <revision description="created" date="5/10/12" />
+  <author name="Miguel dos Santos Silva" mail="miguelsilva_25_@hotmail.com" rol="Articulador de Educação Tecnológica" />
+  <author name="Marcos" rol="Professor" />
+  <language>português (pt)</language>
+  <description>
+   <p>Palavras Cruzadas. Uso das Pontuações</p>
+  </description>
+  <descriptors area="PortugUẽs" level="5º Ano do Fundamental I">Identificas as caracteristicas e usos das pontuações</descriptors>
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="TelaInicialMiguelMarcos" navButtons="none" />
+  <item name="PalavrasCruzadas" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@textGrid.CrossWord" name="PalavrasCruzadas" code="">
+   <description />
+   <messages>
+    <cell border="true" type="initial">
+     <style margin="10" borderStroke="1.0" markerStroke="5.0">
+      <font family="Arial Black" size="20" bold="true" />
+      <color foreground="0x195BE9" background="0xFFFFFF" />
+     </style>
+     <p>DOIS PONTOS - RETICÊNCIAS - VÍRGULA - EXCLAMAÇÃO - PONTO FINAL - TRAVESSÃO -   </p>
+     <p>INTERROGAÇÃO - PARÊNTESES</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x1A67E3" background="0xFFFFFF" />
+     </style>
+     <p>Parabéns!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Tente Novamente</p>
+    </cell>
+   </messages>
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <helpWindow>
+     <p>PARÊNTESES - VÍRGULA - RETICẼNCIAS - </p>
+     <p>DOIS PONTOS - PONTO FINAL - EXCLAMAÇÃO</p>
+     <p>TRAVESSÃO - INTERROGAÇÃO</p>
+    </helpWindow>
+    <container bgColor="0xCCCCCC">
+     <gradient source="0x3D3B3B" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCCC" border="false">
+     <gradient source="0x392F2F" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <textGrid rows="14" columns="9" cellWidth="50.0" cellHeight="50.0" border="true">
+    <style>
+     <color background="0xFFFFFF" border="0xCCCCCC" />
+    </style>
+    <text>
+     <row>**DOIS*PONTOS*</row>
+     <row>***PONTO*FINAL</row>
+     <row>*RETICÊNCIAS**</row>
+     <row>**PARÊNTESES**</row>
+     <row>***VÍRGULA****</row>
+     <row>***EXCLAMAÇÃO*</row>
+     <row>**************</row>
+     <row>TRAVESSÃO*****</row>
+     <row>*INTERROGAÇÃO*</row>
+    </text>
+   </textGrid>
+   <cells rows="1" cols="3" cellWidth="236.0" cellHeight="62.0" border="true" id="acrossClues">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="3" item="1" />
+    <cell id="8" item="1" />
+    <cell id="8" item="0">
+     <p>É usado para fazer perguntas</p>
+    </cell>
+    <cell id="7" item="1" />
+    <cell id="7" item="0">
+     <p>Indica que alguém vai falar em um diálogo</p>
+    </cell>
+    <cell id="6" item="0" />
+    <cell id="5" item="1" />
+    <cell id="5" item="0">
+     <p>Demonstra espanto, admiiração, ou medo</p>
+    </cell>
+    <cell id="4" item="1" />
+    <cell id="4" item="0">
+     <p>Indica uma pausa e separa nome do lugar e da data</p>
+    </cell>
+    <cell id="3" item="0">
+     <p>Separam palavras ou frases intercaladas na sentença</p>
+    </cell>
+    <cell id="3" item="0" />
+    <cell id="2" item="1" />
+    <cell id="2" item="0">
+     <p>Indica que o pensamento foi interrompido</p>
+    </cell>
+    <cell id="1" item="1">
+     <p>Indica o final de uma frase afirmativa ou negativa</p>
+    </cell>
+    <cell id="1" item="0">
+     <p>Indica o final de uma frase afirmativa ou negativa</p>
+    </cell>
+    <cell id="1" item="1" />
+    <cell id="0" item="1">
+     <p>São colocados antes de uma citação</p>
+    </cell>
+    <cell id="0" item="0">
+     <p>São colocados antes de uma citação</p>
+    </cell>
+    <cell id="0" item="1" />
+    <cell id="1" />
+    <cell id="3" />
+    <cell id="2" />
+    <cell id="5" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="236.0" cellHeight="62.0" border="true" id="downClues">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+    </style>
+    <cell id="11" item="0" border="false">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x001A67E3" background="0xFFFFFF" />
+      <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell id="10" item="0" />
+    <cell id="9" item="0" />
+    <cell id="8" item="1" />
+    <cell id="7" item="0" />
+    <cell id="6" item="0" />
+    <cell id="5" item="0" />
+    <cell id="4" item="0" />
+    <cell id="3" item="0" />
+    <cell id="2" item="1" />
+    <cell id="0" item="0" border="true">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x001A67E3" background="0xFFFFFF" />
+      <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell id="0" />
+    <cell id="0" />
+    <cell id="0" />
+    <cell id="13" />
+    <cell id="13" />
+    <cell id="12" />
+    <cell id="12" />
+    <cell id="12" />
+    <cell id="12" />
+    <cell id="12" />
+    <cell id="12" />
+    <cell id="11" />
+    <cell id="11" />
+    <cell id="11" />
+    <cell id="11" />
+    <cell id="10" />
+    <cell id="10" />
+    <cell id="10" />
+    <cell id="10" />
+    <cell id="9" />
+    <cell id="9" />
+    <cell id="9" />
+    <cell id="8" />
+    <cell id="8" />
+    <cell id="8" />
+    <cell id="8" />
+    <cell id="7" />
+    <cell id="7" />
+    <cell id="7" />
+    <cell id="6" />
+    <cell id="6" />
+    <cell id="6" />
+    <cell id="5" />
+    <cell id="5" />
+    <cell id="5" />
+    <cell id="4" />
+    <cell id="4" />
+    <cell id="4" />
+    <cell id="3" />
+    <cell id="3" />
+    <cell id="3" />
+    <cell id="2" />
+    <cell id="2" />
+    <cell id="2" />
+    <cell id="2" />
+    <cell id="1" />
+    <cell id="1" />
+    <cell id="1" />
+    <cell id="0" />
+    <cell id="0" />
+    <cell id="9" />
+    <cell id="3" />
+    <cell id="5" />
+    <cell id="0" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <layout position="AUB" wildTransparent="true" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguelMarcos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic5.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="PalavrasCruzadas" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="TelaJclic5.png" file="i02_telajclic5.png" />
+ </mediaBag>
+</JClicProject>
+

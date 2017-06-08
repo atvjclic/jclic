@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="matematica_poliedroscorposredondos" version="0.1.3">
+ <settings>
+  <title>PoliedrosCorposRedondos</title>
+  <revision description="created" date="3/19/13" />
+  <author name="Miguel dos Santos Silva" rol="Articulador de Educação Tecnológica" />
+  <author name="Luzimar Rodrigues da Silva" rol="Professora" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="TELA" name="TelaInicialMiguel" navButtons="none" />
+  <item id="start" name="InformPoliedros" />
+  <item id="start" name="PoliedrosCorposRedondos" />
+  <item name="PoliedrosCorposredondos2" delay="2" />
+  <item name="poliedrosCorposRedondos3" delay="2" />
+  <item name="FigurasPlanasNaoPlanas" delay="2" />
+  <item name="FigurasPlanasNaoPlanas_2" delay="1" />
+  <item name="FigurasPlanasNaoPlanas_3" delay="1" />
+  <item id="TELA" name="TelaInicialMiguel" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="FigurasPlanasNaoPlanas">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>Coloque as figuras dentro da caixa correta.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>Muito Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" cycles="3" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="6" cols="3" cellWidth="200.0" cellHeight="121.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="6" />
+    <cell id="1" image="1.png" />
+    <cell id="0" image="10.png" />
+    <cell id="0" image="11.png" />
+    <cell id="0" image="12.png" />
+    <cell id="0" image="13.png" />
+    <cell id="0" image="14.png" />
+    <cell id="0" image="15.png" />
+    <cell id="0" image="16.png" />
+    <cell id="0" image="17.png" />
+    <cell id="0" image="18.png" />
+    <cell id="0" image="19.png" />
+    <cell id="1" image="2.png" />
+    <cell id="0" image="20.png" />
+    <cell id="1" image="3.png" />
+    <cell id="0" image="23.png" />
+    <cell id="1" image="CIRCULO.png" />
+    <cell id="0" image="5.png" />
+    <cell id="0" image="7.png" />
+   </cells>
+   <cells rows="2" cols="1" cellWidth="218.0" cellHeight="191.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="21.png" />
+    <cell image="22.png" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="FigurasPlanasNaoPlanas_2">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>Coloque as figuras dentro da caixa correta.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>Muito Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" cycles="3" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="4" cols="3" cellWidth="200.0" cellHeight="121.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <cell id="0" image="1.png" />
+    <cell id="1" image="10.png" />
+    <cell id="2" image="11.png" />
+    <cell id="3" image="12.png" />
+    <cell id="4" image="17.png" />
+    <cell id="5" image="2.png" />
+    <cell id="6" image="23.png" />
+    <cell id="7" image="3.png" />
+    <cell id="8" image="CIRCULO.png" />
+    <cell id="9" image="5.png" />
+    <cell id="10" image="7.png" />
+    <cell id="11" image="8.png" />
+   </cells>
+   <cells rows="4" cols="3" cellWidth="200.0" cellHeight="70.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <cell>
+     <p>triângulo</p>
+    </cell>
+    <cell>
+     <p>Prisma</p>
+    </cell>
+    <cell>
+     <p>Cilindro</p>
+    </cell>
+    <cell>
+     <p>Esfera</p>
+    </cell>
+    <cell>
+     <p>Cubo</p>
+    </cell>
+    <cell>
+     <p>Quadrado</p>
+    </cell>
+    <cell>
+     <p>Cone</p>
+    </cell>
+    <cell>
+     <p>Retângulo</p>
+    </cell>
+    <cell>
+     <p>Círculo</p>
+    </cell>
+    <cell>
+     <p>Paralelepípedo</p>
+    </cell>
+    <cell>
+     <p>Pirâmide</p>
+    </cell>
+    <cell>
+     <p>Esfera</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="FigurasPlanasNaoPlanas_3">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>Coloque as figuras dentro da caixa correta.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>Muito Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" cycles="3" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="4" cols="3" cellWidth="200.0" cellHeight="137.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <cell id="0" image="1.png" />
+    <cell id="1" image="10.png" />
+    <cell id="2" image="11.png" />
+    <cell id="3" image="12.png" />
+    <cell id="4" image="17.png" />
+    <cell id="5" image="2.png" />
+    <cell id="6" image="23.png" />
+    <cell id="7" image="3.png" />
+    <cell id="8" image="CIRCULO.png" />
+    <cell id="9" image="5.png" />
+    <cell id="10" image="7.png" />
+    <cell id="11" image="8.png" />
+   </cells>
+   <cells rows="4" cols="3" cellWidth="170.0" cellHeight="51.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <cell>
+     <p>TRIÂNGULO</p>
+    </cell>
+    <cell>
+     <p>PRISMA</p>
+    </cell>
+    <cell>
+     <p>CILINDRO</p>
+    </cell>
+    <cell>
+     <p>ESFERA</p>
+    </cell>
+    <cell>
+     <p>CUBO</p>
+    </cell>
+    <cell>
+     <p>QUADRADO</p>
+    </cell>
+    <cell>
+     <p>CONE</p>
+    </cell>
+    <cell>
+     <p>RETÂNGULO</p>
+    </cell>
+    <cell>
+     <p>círculo</p>
+    </cell>
+    <cell>
+     <p>PARALELEPÍPEDO</p>
+    </cell>
+    <cell>
+     <p>PIRÂMIDE</p>
+    </cell>
+    <cell>
+     <p>ESFERA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="InformPoliedros">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>Figuras</p>
+    </cell>
+    <cell type="final">
+     <style />
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0x666666">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" cycles="3" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="true" image="/home/professor/Imagens/poliedros.png">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="PoliedrosCorposRedondos">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>Poliedros e Corpos Redondos</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" cycles="3" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" cellWidth="956.0" cellHeight="629.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="Poliedros e corpos redondos-resized.jpg" />
+   </cells>
+  </activity>
+  <activity class="@panels.Identify" name="PoliedrosCorposredondos2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>Qual destas figuras não faz parte do grupo?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>Muito Bem!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" cycles="3" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="257.0" cellHeight="345.0" border="false" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="0" image="23.png" />
+    <cell id="0" image="8.png" />
+    <cell id="0" image="13.png" />
+    <cell id="0" image="14.png" />
+    <cell id="1" image="15.png" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="InformPoliedros" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.Identify" name="poliedrosCorposRedondos3">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>Qual destas figuras não faz parte do grupo?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0066FF" background="0xFFFFFF" />
+     </style>
+     <p>Muito Bem!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" cycles="3" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="249.0" cellHeight="357.0" border="false" id="primary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="0" image="16.png" />
+    <cell id="0" image="17.png" />
+    <cell id="0" image="18.png" />
+    <cell id="1" image="19.png" />
+    <cell id="0" image="20.png" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="Poliedros e corpos redondos-resized.jpg" file="poliedros_e_corpos_redondos_resized.jpg" />
+  <media name="/home/professor/Imagens/poliedros.png" file="_home_professor_imagens_poliedros.png" />
+  <media name="1.png" file="1.png" />
+  <media name="10.png" file="10.png" />
+  <media name="11.png" file="11.png" />
+  <media name="12.png" file="12.png" />
+  <media name="13.png" file="13.png" />
+  <media name="14.png" file="14.png" />
+  <media name="15.png" file="15.png" />
+  <media name="16.png" file="16.png" />
+  <media name="17.png" file="17.png" />
+  <media name="18.png" file="18.png" />
+  <media name="19.png" file="19.png" />
+  <media name="2.png" file="2.png" />
+  <media name="20.png" file="20.png" />
+  <media name="21.png" file="21.png" />
+  <media name="22.png" file="22.png" />
+  <media name="23.png" file="23.png" />
+  <media name="3.png" file="3.png" />
+  <media name="5.png" file="5.png" />
+  <media name="7.png" file="7.png" />
+  <media name="8.png" file="8.png" />
+  <media name="CIRCULO.png" file="circulo.png" />
+  <media name="TelaJclic2.png" file="i014_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

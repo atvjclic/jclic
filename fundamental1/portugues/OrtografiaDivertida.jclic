@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="OrtografiaDivertida" version="0.1.3">
+ <settings>
+  <title>Ortografia com Sílabas complexas</title>
+  <revision description="created" date="10/7/13" />
+  <author name="Darlan Diego Pereira Gomes" mail="darlandiego2009@yahoo.com.br" rol="Mediador de informática" organization="Prefeitura Municpal de Duque de Caxias" />
+  <language>português (pt)</language>
+  <descriptors area="Lingua Portuguesa" level="3º, 4º e 5º ano" />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="Apresentação" navButtons="back" />
+  <item name="CHouX" delay="1" />
+  <item name="Ligue" delay="1" />
+  <item name="JogoMemoria" delay="1" />
+  <item name="FormeFrases" delay="1" />
+  <item name="FormeFrases_2" delay="1" />
+  <item name="FormeFrases_3" delay="1" />
+  <item name="QuebraCabeca" delay="1" />
+  <item name="EscrevaCorretamente" delay="1" />
+  <item name="PalavrasCruzadas" delay="1" />
+  <item name="Final" navButtons="back" />
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="Apresentação" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xCCFFFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="Ortografia Divertida-resized.jpg">
+    <style shadow="true">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.645,0.063333,0.2625,0.041667</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="CHouX" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="CHouX" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Ligue as letras que completam as palavras!</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>PARABÉNS!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>TENTE NOVAMENTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFFF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFF00" dest="0xFF9900" angle="0" />
+    </window>
+   </settings>
+   <cells rows="10" cols="2" cellWidth="223.0" cellHeight="63.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="10" />
+    <cell id="0" txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="21768_Ampliada-resized.jpg">
+     <p>__ÍCARA</p>
+    </cell>
+    <cell id="0" txtAlign="left,middle" imgAlign="right,middle" image="78_80_enxada.jpg">
+     <p>EN__ADA</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="Chave.gif">
+     <p>__AVE</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle" imgAlign="right,middle" image="chinelo.jpg">
+     <p>__INELO</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" border="false" image="chapeu7-resized.jpg">
+     <p>__APÉU</p>
+    </cell>
+    <cell id="0" txtAlign="left,middle" imgAlign="right,middle" image="xadrez.jpg">
+     <p>__ADREZ</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="filhote golden retriever-resized.jpg">
+     <p>CA__ORRO</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle" imgAlign="right,middle" image="MOCHILA-resized.jpg">
+     <p>MO__ILA</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle" imgAlign="right,middle" image="chaleira_de_ferro_fundido_tradicao_panela_de_ferro_fundido_panela_mineira_fumil_cacarola_rechaud_churrasqueira_fondue_800px-resized.jpg">
+     <p>__ALEIRA</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle" imgAlign="right,middle" image="chaminé-de-indústria-resized.jpg">
+     <p>__AMINÉ</p>
+    </cell>
+    <cell id="0" txtAlign="left,middle" imgAlign="right,middle" image="abacaxi-resized.jpg">
+     <p>ABACA__I</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle" imgAlign="right,middle" image="siltitocalcario.gif">
+     <p>RO___A</p>
+    </cell>
+    <cell id="0" txtAlign="left,middle" imgAlign="right,middle" image="bruxa_ma_gato1.gif">
+     <p>BRU___A</p>
+    </cell>
+    <cell id="0" txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="carapeba.gif">
+     <p>PEI___E</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="chocolate-em-barra.jpg">
+     <p>___OCOLATE</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle" imgAlign="right,middle" image="chuchu.jpg">
+     <p>___U____U</p>
+    </cell>
+    <cell id="0" txtAlign="left,middle" imgAlign="right,middle" image="caixa-de-papelao-loja-virtual-resized.jpg">
+     <p>CAI___A</p>
+    </cell>
+    <cell id="0" txtAlign="left,middle" imgAlign="right,middle" image="lixo-resized.jpg">
+     <p>LI__EIRA</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle" imgAlign="right,middle" image="chuveiro desenho.jpg">
+     <p>___UVEIRO</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle" imgAlign="right,middle" image="images.jpg">
+     <p>BORRA___A</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="266.0" cellHeight="100.0" border="true" id="secondary">
+    <style shadow="true">
+     <font family="Arial" size="48" />
+     <color background="0x66FFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+      <color background="0xCCFFFF" />
+     </style>
+     <p>X</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="48" bold="true" />
+      <color background="0xCCFFFF" />
+     </style>
+     <p>CH</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="EscrevaCorretamente">
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Vamos praticar! </p>
+     <p>Clique na imagem e depois escreva corretamente!</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Parabéns está cada vez melhor!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Tente novamente!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFFF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFF00" dest="0xFF9900" angle="0" />
+    </window>
+   </settings>
+   <cells rows="4" cols="5" cellWidth="208.0" cellHeight="121.0" border="true" id="primary">
+    <style>
+     <font family="Arial Black" size="36" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="4" />
+    <cell id="0" image="carapeba.gif" />
+    <cell id="1" image="Chave.gif" />
+    <cell id="2" image="bomba1.jpg" />
+    <cell id="3" image="chuchu.jpg" />
+    <cell id="4" image="cão.jpg" />
+    <cell id="5" image="chocolate-em-barra.jpg" />
+    <cell id="6" image="carro.jpg" />
+    <cell id="7" image="abacaxi-2.jpg" />
+    <cell id="8" image="osso.jpg" />
+    <cell id="9" image="gesso.jpg" />
+    <cell id="10" image="palhaço.jpg" />
+    <cell id="11" image="Cabeça-3d.gif" />
+    <cell id="12" image="asa.jpg" />
+    <cell id="13" image="macarrão.jpg" />
+    <cell id="14" image="coração.jpg" />
+    <cell id="15" image="MOCHILA-resized.jpg" />
+    <cell id="16" image="images.jpg" />
+    <cell id="17" image="chuveiro desenho.jpg" />
+    <cell id="18" image="lixo-resized.jpg" />
+    <cell id="19" image="siltitocalcario.gif" />
+   </cells>
+   <cells rows="4" cols="5" cellWidth="52.0" cellHeight="30.0" border="true" id="answers">
+    <style>
+     <font family="Arial Black" size="16" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="4" />
+    <cell>
+     <p>peixe</p>
+    </cell>
+    <cell>
+     <p>chave</p>
+    </cell>
+    <cell>
+     <p>bomba</p>
+    </cell>
+    <cell>
+     <p>chuchu</p>
+    </cell>
+    <cell>
+     <p>cachorro</p>
+    </cell>
+    <cell>
+     <p>chocolate</p>
+    </cell>
+    <cell>
+     <p>carro</p>
+    </cell>
+    <cell>
+     <p>abacaxi</p>
+    </cell>
+    <cell>
+     <p>osso</p>
+    </cell>
+    <cell>
+     <p>gesso</p>
+    </cell>
+    <cell>
+     <p>palhaço</p>
+    </cell>
+    <cell>
+     <p>cabeça</p>
+    </cell>
+    <cell>
+     <p>asa</p>
+    </cell>
+    <cell>
+     <p>macarrão</p>
+    </cell>
+    <cell>
+     <p>coração</p>
+    </cell>
+    <cell>
+     <p>mochila</p>
+    </cell>
+    <cell>
+     <p>borracha</p>
+    </cell>
+    <cell>
+     <p>chuveiro</p>
+    </cell>
+    <cell>
+     <p>lixeira</p>
+    </cell>
+    <cell>
+     <p>pedra</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Final" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Parabéns.-resized.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.0975,0.38,0.23625,0.178333</shape>
+     <shape comment="1">rectangle:0.3675,0.38,0.235,0.181667</shape>
+     <shape comment="2">rectangle:0.63375,0.383333,0.23875,0.178333</shape>
+     <shape comment="3">rectangle:0.1,0.58,0.23625,0.181667</shape>
+     <shape comment="4">rectangle:0.36625,0.583333,0.2375,0.178333</shape>
+     <shape comment="5">rectangle:0.63375,0.58,0.23875,0.181667</shape>
+     <shape comment="6">rectangle:0.09625,0.78,0.23875,0.178333</shape>
+     <shape comment="7">rectangle:0.36375,0.776667,0.23875,0.183333</shape>
+     <shape comment="8">rectangle:0.6325,0.781667,0.2375,0.176667</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="CHouX" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ligue" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="JogoMemoria" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="FormeFrases" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="FormeFrases_2" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="FormeFrases_3" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="QuebraCabeca" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="EscrevaCorretamente" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="PalavrasCruzadas" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="FormeFrases">
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Coloque as palavras em ordem para formar a frase.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Parabéns! Fez tudo certo!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Ainda não está certo, tente mais uma vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xCCFFFF">
+     <image name="carroça.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFF00" dest="0xFF9900" angle="0" />
+    </window>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="133.0" cellHeight="145.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>O cavalo</p>
+    </cell>
+    <cell>
+     <p>do senhor</p>
+    </cell>
+    <cell>
+     <p>Joaquim</p>
+    </cell>
+    <cell>
+     <p>puxa</p>
+    </cell>
+    <cell>
+     <p>a carroça</p>
+    </cell>
+    <cell>
+     <p>bem devagar.</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="FormeFrases_2">
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Coloque as palavras em ordem para formar a frase.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Parabéns! Fez tudo certo!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Ainda não está certo, tente mais uma vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xCCFFFF">
+     <image name="20100715-TURMA MONICA Desenho Animado 3.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFF00" dest="0xFF9900" angle="0" />
+    </window>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="133.0" cellHeight="145.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>O Cascão </p>
+    </cell>
+    <cell>
+     <p>se assustou </p>
+    </cell>
+    <cell>
+     <p>com a história </p>
+    </cell>
+    <cell>
+     <p>que leu </p>
+    </cell>
+    <cell>
+     <p>no livro</p>
+    </cell>
+    <cell>
+     <p>do Cebolinha.</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="FormeFrases_3">
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Coloque as palavras em ordem para formar a frase.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Parabéns! Fez tudo certo!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Ainda não está certo, tente mais uma vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xCCFFFF">
+     <image name="cachorro-lixo2.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFF00" dest="0xFF9900" angle="0" />
+    </window>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="133.0" cellHeight="145.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>O cachorro</p>
+    </cell>
+    <cell>
+     <p>derrubou</p>
+    </cell>
+    <cell>
+     <p>o lixo</p>
+    </cell>
+    <cell>
+     <p>que estava</p>
+    </cell>
+    <cell>
+     <p>dentro</p>
+    </cell>
+    <cell>
+     <p>da lixeira.</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="JogoMemoria">
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xCCFFFF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFF00" dest="0xFF9900" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="5" cellWidth="70.0" cellHeight="80.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="5" />
+    <cell txtAlign="middle,bottom" image="computador desenho.gif">
+     <p>computador</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="chocolate-em-barra.jpg">
+     <p>chinelo</p>
+    </cell>
+    <cell txtAlign="middle,bottom" avoidOverlapping="true" image="lixo-resized.jpg">
+     <p>lixeira</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="cão.jpg">
+     <p>cachorro</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" avoidOverlapping="true" image="palhaço.jpg">
+     <p>palhaço</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="gesso.jpg">
+     <p>gesso</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="images.jpg">
+     <p>borracha</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="osso.jpg">
+     <p>osso</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="macarrão.jpg">
+     <p>macarrão</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" avoidOverlapping="true" image="coração.jpg">
+     <p>coração</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="78_80_enxada.jpg">
+     <p>enxada</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="Cabeça-3d.gif">
+     <p>cabeça</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="carro.jpg">
+     <p>carro</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="Chave.gif">
+     <p>chave</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="chuchu.jpg">
+     <p>chuchu</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="asa.jpg">
+     <p>asa</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="bomba1.jpg">
+     <p>bomba</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="bruxa_ma_gato1.gif">
+     <p>bruxa</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="siltitocalcario.gif">
+     <p>pedra</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="aço.jpg">
+     <p>aço</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="carapeba.gif">
+     <p>peixe</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="chinelo.jpg">
+     <p>chinelo</p>
+    </cell>
+    <cell image="taça.jpg">
+     <p>taça</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="vassoura.png">
+     <p>vassoura</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="carroça.jpg">
+     <p>carroça</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Ligue">
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Complete as palavras com M ou N, mas lembre-se que antes de P e B devemos usar a letra M!</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muito Bem, continue assim!</p>
+    </cell>
+   </messages>
+   <settings margin="10" report="true" reportActions="false">
+    <container bgColor="0xCCFFFF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFF00" dest="0xFF9900" angle="0" />
+    </window>
+   </settings>
+   <cells rows="20" cols="1" cellWidth="223.0" cellHeight="27.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="20" />
+    <cell id="1">
+     <p>I_FORMÁTICA</p>
+    </cell>
+    <cell id="1">
+     <p>BA_DA</p>
+    </cell>
+    <cell id="0">
+     <p>BO_BA</p>
+    </cell>
+    <cell id="0">
+     <p>CO_PUTADOR</p>
+    </cell>
+    <cell id="0">
+     <p>SA_BA</p>
+    </cell>
+    <cell id="1">
+     <p>MELA_CIA</p>
+    </cell>
+    <cell id="1">
+     <p>CA_TOR</p>
+    </cell>
+    <cell id="0">
+     <p>RA_PA</p>
+    </cell>
+    <cell id="0">
+     <p>I_PRESSORA</p>
+    </cell>
+    <cell id="0">
+     <p>LÂ_PADA</p>
+    </cell>
+    <cell id="1">
+     <p>LEMBRA_ÇA</p>
+    </cell>
+    <cell id="1">
+     <p>SA_DÁLIA</p>
+    </cell>
+    <cell id="1">
+     <p>ME_TIRA</p>
+    </cell>
+    <cell id="1">
+     <p>ELEFA_TE</p>
+    </cell>
+    <cell id="1">
+     <p>CA_SAÇO</p>
+    </cell>
+    <cell id="0">
+     <p>BA_BOLÊ</p>
+    </cell>
+    <cell id="1">
+     <p>MA_TEIGA</p>
+    </cell>
+    <cell id="1">
+     <p>A_TENA</p>
+    </cell>
+    <cell id="0">
+     <p>CA_PONESA</p>
+    </cell>
+    <cell id="1">
+     <p>DA_ÇA</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="206.0" cellHeight="49.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial Black" size="36" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <p>M</p>
+    </cell>
+    <cell>
+     <p>N</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="PalavrasCruzadas">
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Encontre as palavras COMPUTADOR, CABEÇA, MOCHILA, ENXADA, BORRACHA, CHINELO, CHOCOLATE, OSSO, IMPRESSORA, PEIXE, ELEFANTE, VASSOURA, PÁSSARO, BOMBA, CARRO, TAÇA, CARROÇA, LÂMPADA, CHUVEIRO, INFORMÁTICA.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Parabéns você conseguiu!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Continue tentando!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFFF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFF00" dest="0xFF9900" angle="0" />
+    </window>
+   </settings>
+   <textGrid rows="20" columns="30" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>**COMPUTADOR********</row>
+     <row>**A*****************</row>
+     <row>**B*************C***</row>
+     <row>**E*******MOCHILA**E</row>
+     <row>TAÇA**********N*R**N</row>
+     <row>**A***********F*R**X</row>
+     <row>**************O*O**A</row>
+     <row>****BORRACHA**R****D</row>
+     <row>**************M****A</row>
+     <row>**************Á*****</row>
+     <row>*CHINELO******T*****</row>
+     <row>*H*****S******I*****</row>
+     <row>*O*****S******C**C**</row>
+     <row>*C***I*O******A**H**</row>
+     <row>*O***M***********U**</row>
+     <row>*L***P***P*******V**</row>
+     <row>*A***R***E*******E**</row>
+     <row>*T***E***I*******I**</row>
+     <row>*E***S***X*******R**</row>
+     <row>*****S*ELEFANTE**O**</row>
+     <row>*****O**************</row>
+     <row>*****R**************</row>
+     <row>*****A*******C******</row>
+     <row>************VASSOURA</row>
+     <row>*LÂMPADA*****R******</row>
+     <row>*************R******</row>
+     <row>***PÁSSARO***O******</row>
+     <row>*************Ç******</row>
+     <row>*************A******</row>
+     <row>********BOMBA*******</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">COMPUTADOR</clue>
+    <clue id="1">LÂMPADA</clue>
+    <clue id="2">PEIXE</clue>
+    <clue id="3">CARRO</clue>
+    <clue id="4">TAÇA</clue>
+    <clue id="5">CARROÇA</clue>
+    <clue id="6">CABEÇA</clue>
+    <clue id="7">BORRACHA</clue>
+    <clue id="8">BOMBA</clue>
+    <clue id="9">VASSOURA</clue>
+    <clue id="10">CHOCOLATE</clue>
+    <clue id="11">CHINELO</clue>
+    <clue id="12">CHUVEIRO</clue>
+    <clue id="13">ELEFANTE</clue>
+    <clue id="14">IMPRESSORA</clue>
+    <clue id="15">MOCHILA</clue>
+    <clue id="16">PÁSSARO</clue>
+    <clue id="17">OSSO</clue>
+    <clue id="18">ENXADA</clue>
+    <clue id="19">INFORMÁTICA</clue>
+   </clues>
+   <cells rows="20" cols="1" cellWidth="322.0" cellHeight="29.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="20" />
+    <cell>
+     <p>COMPUTADOR</p>
+    </cell>
+    <cell>
+     <p>LÂMPADA</p>
+    </cell>
+    <cell>
+     <p>PEIXE</p>
+    </cell>
+    <cell>
+     <p>CARRO</p>
+    </cell>
+    <cell>
+     <p>TAÇA</p>
+    </cell>
+    <cell>
+     <p>CARROÇA</p>
+    </cell>
+    <cell>
+     <p>CABEÇA</p>
+    </cell>
+    <cell>
+     <p>BORRACHA</p>
+    </cell>
+    <cell>
+     <p>BOMBA</p>
+    </cell>
+    <cell>
+     <p>VASSOURA</p>
+    </cell>
+    <cell>
+     <p>CHOCOLATE</p>
+    </cell>
+    <cell>
+     <p>CHINELO</p>
+    </cell>
+    <cell>
+     <p>CHUVEIRO</p>
+    </cell>
+    <cell>
+     <p>ELEFANTE</p>
+    </cell>
+    <cell>
+     <p>IMPRESSORA</p>
+    </cell>
+    <cell>
+     <p>MOCHILA</p>
+    </cell>
+    <cell>
+     <p>PÁSSARO</p>
+    </cell>
+    <cell>
+     <p>OSSO</p>
+    </cell>
+    <cell>
+     <p>ENXADA</p>
+    </cell>
+    <cell>
+     <p>INFORMÁTICA</p>
+    </cell>
+   </cells>
+   <layout position="AB" />
+   <scramble times="31" secondary="true" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="QuebraCabeca" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Monte a imagem das crianças no quadro ao lado!</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Excelente</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Não desista!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0xCCFFFF">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFF00" dest="0xFF9900" angle="0" />
+    </window>
+   </settings>
+   <cells rows="6" cols="4" border="true" image="criancas.gif">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="4" rows="6" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="bruxa_ma_gato1.gif" file="bruxa_ma_gato1.gif" />
+  <media name="Cabeça-3d.gif" file="cabeca_3d.gif" />
+  <media name="carapeba.gif" file="carapeba.gif" />
+  <media name="Chave.gif" file="chave.gif" />
+  <media name="computador desenho.gif" file="computador_desenho.gif" />
+  <media name="criancas.gif" file="criancas.gif" />
+  <media name="siltitocalcario.gif" file="siltitocalcario.gif" />
+  <media name="20100715-TURMA MONICA Desenho Animado 3.jpg" file="20100715_turma_monica_desenho_animado_3.jpg" />
+  <media name="21768_Ampliada-resized.jpg" file="21768_ampliada_resized.jpg" />
+  <media name="78_80_enxada.jpg" file="78_80_enxada.jpg" />
+  <media name="abacaxi-2.jpg" file="abacaxi_2.jpg" />
+  <media name="abacaxi-resized.jpg" file="abacaxi_resized.jpg" />
+  <media name="asa.jpg" file="asa.jpg" />
+  <media name="aço.jpg" file="aco.jpg" />
+  <media name="bomba1.jpg" file="bomba1.jpg" />
+  <media name="cachorro-lixo2.jpg" file="cachorro_lixo2.jpg" />
+  <media name="caixa-de-papelao-loja-virtual-resized.jpg" file="caixa_de_papelao_loja_virtual_resized.jpg" />
+  <media name="carro.jpg" file="carro.jpg" />
+  <media name="carroça.jpg" file="carroca.jpg" />
+  <media name="chaleira_de_ferro_fundido_tradicao_panela_de_ferro_fundido_panela_mineira_fumil_cacarola_rechaud_churrasqueira_fondue_800px-resized.jpg" file="chaleira_de_ferro_fundido_tradicao_panela_de_ferro_fundido_panela_mineira_fumil_cacarola_rechaud_churrasqueira_fondue_800px_resized.jpg" />
+  <media name="chaminé-de-indústria-resized.jpg" file="chamine_de_industria_resized.jpg" />
+  <media name="chapeu7-resized.jpg" file="chapeu7_resized.jpg" />
+  <media name="chinelo.jpg" file="chinelo.jpg" />
+  <media name="chocolate-em-barra.jpg" file="chocolate_em_barra.jpg" />
+  <media name="chuchu.jpg" file="chuchu.jpg" />
+  <media name="chuveiro desenho.jpg" file="chuveiro_desenho.jpg" />
+  <media name="coração.jpg" file="coracao.jpg" />
+  <media name="cão.jpg" file="cao.jpg" />
+  <media name="filhote golden retriever-resized.jpg" file="filhote_golden_retriever_resized.jpg" />
+  <media name="gesso.jpg" file="gesso.jpg" />
+  <media name="images.jpg" file="images.jpg" />
+  <media name="lixo-resized.jpg" file="lixo_resized.jpg" />
+  <media name="macarrão.jpg" file="macarrao.jpg" />
+  <media name="MOCHILA-resized.jpg" file="mochila_resized.jpg" />
+  <media name="Ortografia Divertida-resized.jpg" file="ortografia_divertida_resized.jpg" />
+  <media name="osso.jpg" file="osso.jpg" />
+  <media name="palhaço.jpg" file="palhaco.jpg" />
+  <media name="Parabéns.-resized.jpg" file="parabens._resized.jpg" />
+  <media name="taça.jpg" file="taca.jpg" />
+  <media name="xadrez.jpg" file="xadrez.jpg" />
+  <media name="vassoura.png" file="vassoura.png" />
+ </mediaBag>
+</JClicProject>
+

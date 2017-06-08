@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="ciencias_sentidos" version="0.1.3">
+ <settings>
+  <title>Os Sentidos - com audio</title>
+  <revision description="created" date="5/25/12" />
+  <author name="Miguel" mail="miguelsilva_25_@hotmail.com" rol="Articulador de Educação Tecnológica" />
+  <language>português (pt)</language>
+  <description>
+   <p>Atividade sobre os 5 sentidos</p>
+  </description>
+  <descriptors area="Natureza" level="Pré II" />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="TELA" name="TelaInicialMiguel" navButtons="none" />
+  <item id="start" name="Os Sentidos" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="Os Sentidos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x4126D9" background="0xFEFEFE" />
+     </style>
+     <p>Ouça a música e ligue com o desenho correto.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x101CEF" background="0xFEFEFE" />
+     </style>
+     <p>Parabéns!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="5-sentidosfundo.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x8C8383" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="142.0" cellHeight="142.0" border="true" id="primary">
+    <style>
+     <font family="Arial Black" size="17" bold="true" />
+     <color background="0xD2CDCD" inactive="0x0A8AEB" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="3">
+     <media type="PLAY_AUDIO" level="1" file="61_sentido_visao.mp3" />
+    </cell>
+    <cell id="4">
+     <media type="PLAY_AUDIO" level="1" file="62_sentido_audicao.mp3" />
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="63_sentido_paladar.mp3" />
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="64_sentido_olfato.mp3" />
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="65_sentido_tato.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="187.0" cellHeight="183.0" border="false" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell image="Boca.jpg" />
+    <cell image="Mãos.jpg" />
+    <cell image="Nariz.jpg" />
+    <cell image="Olho.jpg" />
+    <cell image="Olrelha.jpg" />
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x101CEF" background="0xB8B6B6" />
+     </style>
+     <p>VISÃO</p>
+    </cell>
+    <cell>
+     <p>AUDIÇÃO</p>
+    </cell>
+    <cell>
+     <p>PALADAR</p>
+    </cell>
+    <cell>
+     <p>OLFATO</p>
+    </cell>
+    <cell>
+     <p>TATO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="start" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="5-sentidosfundo.jpg" file="5_sentidosfundo.jpg" />
+  <media name="Boca.jpg" file="boca.jpg" />
+  <media name="Mãos.jpg" file="maos.jpg" />
+  <media name="Nariz.jpg" file="nariz.jpg" />
+  <media name="Olho.jpg" file="olho.jpg" />
+  <media name="Olrelha.jpg" file="olrelha.jpg" />
+  <media name="61_sentido_visao.mp3" file="61_sentido_visao.mp3" />
+  <media name="62_sentido_audicao.mp3" file="62_sentido_audicao.mp3" />
+  <media name="63_sentido_paladar.mp3" file="63_sentido_paladar.mp3" />
+  <media name="64_sentido_olfato.mp3" file="64_sentido_olfato.mp3" />
+  <media name="65_sentido_tato.mp3" file="65_sentido_tato.mp3" />
+  <media name="TelaJclic2.png" file="i06_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

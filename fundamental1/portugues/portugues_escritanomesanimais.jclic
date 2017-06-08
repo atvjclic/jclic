@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="portugues_escritanomesanimais" version="0.1.3">
+ <settings>
+  <title>EscritaNomesAnimais</title>
+  <revision description="created" date="5/30/13" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="TELA" name="TelaInicialMiguel" navButtons="none" />
+  <item id="start" name="EscritaNomesAnimais" delay="1" />
+  <item name="EscritaNomesAnimais_2" delay="1" />
+  <item name="EscritaNomesAnimais_8" delay="1" />
+  <item name="EscritaNomesAnimais_7" delay="1" />
+  <item name="EscritaNomesAnimais_6" delay="1" />
+  <item name="EscritaNomesAnimais_5" delay="1" />
+  <item name="EscritaNomesAnimais_4" delay="1" />
+  <item name="EscritaNomesAnimais_3" delay="1" />
+  <item id="TELA" name="TelaInicialMiguel" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@text.FillInBlanks" name="EscritaNomesAnimais" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos animais</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="647" height="500" />
+    </window>
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="false" italic="false" size="24" tabWidth="12" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="abelha.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="burro.jpg" />
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>ABELHA</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>ABELHA</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                            </text>
+      <target>
+       <answer>BURRO</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>BURRO</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="cachorro.png">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="camelo.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>CACHORRO</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>CACHORRO</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                         </text>
+      <target>
+       <answer>CAMELO</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>CAMELO</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="EscritaNomesAnimais_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos animais</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="647" height="500" />
+    </window>
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="false" italic="false" size="24" tabWidth="12" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="cavalo.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="cobra.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>CAVALO</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>CAVALO</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                            </text>
+      <target>
+       <answer>COBRA</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>COBRA</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="coelho.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="elefante.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>COELHO</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>COELHO</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                         </text>
+      <target>
+       <answer>ELEFANTE</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>ELEFANTE</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="EscritaNomesAnimais_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos animais</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="647" height="500" />
+    </window>
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="false" italic="false" size="24" tabWidth="12" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="ema.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="foca.gif" />
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>EMA</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>EMA</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                                  </text>
+      <target>
+       <answer>FOCA</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>FOCA</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="galinha.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="gato.jpg" />
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>GALINHA</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>GALINHA</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                                </text>
+      <target>
+       <answer>GATO</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>GATO</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="EscritaNomesAnimais_4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos animais</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="647" height="500" />
+    </window>
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="false" italic="false" size="24" tabWidth="12" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="girafa.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="jacare.jpg" />
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>GIRAFA</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>GIRAFA</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                            </text>
+      <target>
+       <answer>JACARÉ</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>JACARÉ</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="joaninha.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="leao.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>JOANINHA</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>JOANINHA</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                            </text>
+      <target>
+       <answer>LEÃO</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>LEÃO</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="EscritaNomesAnimais_5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos animais</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="647" height="500" />
+    </window>
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="false" italic="false" size="24" tabWidth="12" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="lobo.png">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="macaco.jpg" />
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>LOBO</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>LOBO</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                            </text>
+      <target>
+       <answer>MACACO</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>MACACO</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="minhoca.gif">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="ovelha.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>MINHOCA</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>MINHOCA</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                     </text>
+      <target>
+       <answer>OVELHA</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>OVELHA</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="EscritaNomesAnimais_6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos animais</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="647" height="500" />
+    </window>
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="false" italic="false" size="24" tabWidth="12" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="pato.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="porco.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>PATO</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>PATO</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                            </text>
+      <target>
+       <answer>PORCO</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>PORCO</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="rato.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                   </text>
+      <cell width="150" height="150" image="sapo.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>RATO</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>RATO</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                                   </text>
+      <target>
+       <answer>SAPO</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>SAPO</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="EscritaNomesAnimais_7" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos animais</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="647" height="500" />
+    </window>
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="false" italic="false" size="24" tabWidth="12" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="tartaruga.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                      </text>
+      <cell width="150" height="150" image="tatu.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>TARTARUGA</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>TARTARUGA</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                         </text>
+      <target>
+       <answer>TATU</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>TATU</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="urso.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="urubu.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>URSO</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>URSO</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                              </text>
+      <target>
+       <answer>URUBU</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>URUBU</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">              </text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="EscritaNomesAnimais_8" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Escreva os nomes dos animais</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="647" height="500" />
+    </window>
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" bold="false" italic="false" size="24" tabWidth="12" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="vaca.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell avoidOverlapping="true" width="150" height="150" image="vagalume.gif">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>VACA</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>VACA</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                                 </text>
+      <target>
+       <answer>VAGA</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>VAGA</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">-</text>
+      <target>
+       <answer>LUME</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>LUME</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <cell width="150" height="150" image="cachorro.png">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF">                    </text>
+      <cell width="150" height="150" image="Zebra.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>CACHORRO</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>CACHORRO</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">                         </text>
+      <target>
+       <answer>ZEBRA</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>ZEBRA</text>
+      </target>
+     </p>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="start" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="foca.gif" file="foca.gif" />
+  <media name="minhoca.gif" file="minhoca.gif" />
+  <media name="vagalume.gif" file="vagalume.gif" />
+  <media name="abelha.jpg" file="abelha.jpg" />
+  <media name="burro.jpg" file="burro.jpg" />
+  <media name="camelo.jpg" file="camelo.jpg" />
+  <media name="cavalo.jpg" file="cavalo.jpg" />
+  <media name="cobra.jpg" file="cobra.jpg" />
+  <media name="coelho.jpg" file="coelho.jpg" />
+  <media name="elefante.jpg" file="elefante.jpg" />
+  <media name="ema.jpg" file="ema.jpg" />
+  <media name="galinha.jpg" file="galinha.jpg" />
+  <media name="gato.jpg" file="gato.jpg" />
+  <media name="girafa.jpg" file="girafa.jpg" />
+  <media name="jacare.jpg" file="jacare.jpg" />
+  <media name="joaninha.jpg" file="joaninha.jpg" />
+  <media name="leao.jpg" file="leao.jpg" />
+  <media name="macaco.jpg" file="macaco.jpg" />
+  <media name="ovelha.jpg" file="ovelha.jpg" />
+  <media name="pato.jpg" file="pato.jpg" />
+  <media name="porco.jpg" file="porco.jpg" />
+  <media name="rato.jpg" file="rato.jpg" />
+  <media name="sapo.jpg" file="sapo.jpg" />
+  <media name="tartaruga.jpg" file="tartaruga.jpg" />
+  <media name="tatu.jpg" file="tatu.jpg" />
+  <media name="urso.jpg" file="urso.jpg" />
+  <media name="urubu.jpg" file="urubu.jpg" />
+  <media name="vaca.jpg" file="vaca.jpg" />
+  <media name="Zebra.jpg" file="zebra.jpg" />
+  <media name="cachorro.png" file="cachorro.png" />
+  <media name="lobo.png" file="lobo.png" />
+  <media name="TelaJclic2.png" file="i08_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

@@ -1,0 +1,3041 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="matematica_tabuada" version="0.1.3">
+ <settings>
+  <title>Tabuada</title>
+  <revision description="created" date="8/15/13" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="Miguel" />
+  <item id="start" name="TelaInicial" navButtons="none" />
+  <item name="tabuadamais_01" delay="1" />
+  <item name="tabuadamais_02" delay="1" />
+  <item name="tabuadamais_03" delay="1" />
+  <item name="tabuadamais_04" delay="1" />
+  <item name="tabuadamais_05" delay="1" />
+  <item name="tabuadamais_06" delay="1" />
+  <item name="tabuadamais_07" delay="1" />
+  <item name="tabuadamais_08" delay="1" />
+  <item name="tabuadamais_09" delay="1" />
+  <item name="tabuadamais_10" delay="1" />
+  <item id="start" name="TelaInicial" navButtons="none" />
+  <item name="tabuadaMenos_01" delay="1" />
+  <item name="tabuadaMenos_02" delay="1" />
+  <item name="tabuadaMenos_03" delay="1" />
+  <item name="tabuadaMenos_04" delay="1" />
+  <item name="tabuadaMenos_05" delay="1" />
+  <item name="tabuadaMenos_06" delay="1" />
+  <item name="tabuadaMenos_07" delay="1" />
+  <item name="tabuadaMenos_08" delay="1" />
+  <item name="tabuadaMenos_09" delay="1" />
+  <item name="tabuadaMenos_10" delay="1" />
+  <item id="capa" name="QuebraCabeça" delay="1" />
+  <item id="start" name="TelaInicial" navButtons="none" />
+  <item name="tabuadaX_001" delay="1" />
+  <item name="tabuadaX_002" delay="1" />
+  <item name="tabuadaX_003" delay="1" />
+  <item name="tabuadaX_004" delay="1" />
+  <item name="tabuadax_005" delay="1" />
+  <item name="tabuadax_006" delay="1" />
+  <item name="tabuadax_007" delay="1" />
+  <item name="tabuadax_008" delay="1" />
+  <item name="tabuadaX_009" delay="1" />
+  <item name="tabuadaX_010" delay="1" />
+  <item id="start" name="TelaInicial" navButtons="none" />
+  <item name="tabuadaDividir_01" delay="1" />
+  <item name="tabuadaDividir_02" delay="1" />
+  <item name="tabuadaDividir_03" delay="1" />
+  <item name="tabuadaDividir_04" delay="1" />
+  <item name="tabuadaDividir_05" delay="1" />
+  <item name="tabuadaDividir_06" delay="1" />
+  <item name="tabuadaDividir_07" delay="1" />
+  <item name="tabuadaDividir_08" delay="1" />
+  <item name="tabuadaDividir_09" delay="1" />
+  <item name="tabuadaDividir_10" delay="1" />
+  <item name="Miguel" />
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="Miguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="tela_jclick_iniciarMIGUEL.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.368567,0.281481,0.251739,0.075926</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="TelaInicial" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="QuebraCabeça" code="">
+   <description />
+   <messages />
+   <settings margin="8" dragCells="true" report="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="wallpaper_ben_10.jpg">
+    <style transparent="true">
+     <font family="Arial" size="17" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <ids>0 0 0 0 0 0 -1 -1 -1</ids>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicial" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="ben10telaTabuada.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.326803,0.283375,0.13179,0.151134</shape>
+     <shape comment="1">rectangle:0.543188,0.284635,0.13179,0.151134</shape>
+     <shape comment="2">rectangle:0.545859,0.476071,0.13179,0.151134</shape>
+     <shape comment="3">rectangle:0.327694,0.47733,0.130899,0.149874</shape>
+     <shape comment="4">rectangle:0.407836,0.715365,0.18878,0.070529</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="tabuadamais_01" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="tabuadaMenos_01" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="tabuadaDividir_01" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="tabuadaX_001" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="tabuada+_01" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaDividir_01" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="imagens-barbie-p-montagem-albuns-convites-lembrancinhas_MLB-F-3688260254_012013.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="x" to="10" id="A" />
+    <operand values="1" id="B" />
+    <operations plus="false" minus="false" multiply="false" divide="true" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" condition="firstBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <ids>0 1 2 3 4 5 6 7 8 9</ids>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaDividir_02" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="moldura barbie 3.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>2 : 2 =</p>
+    </cell>
+    <cell id="1">
+     <p>4 : 2 =</p>
+    </cell>
+    <cell id="2">
+     <p>6 : 2 =</p>
+    </cell>
+    <cell id="3">
+     <p>8 : 2 =</p>
+    </cell>
+    <cell id="4">
+     <p>10 : 2 =</p>
+    </cell>
+    <cell id="5">
+     <p>12 : 2 =</p>
+    </cell>
+    <cell id="6">
+     <p>14 : 2 =</p>
+    </cell>
+    <cell id="7">
+     <p>16 : 2 =</p>
+    </cell>
+    <cell id="8">
+     <p>18 : 2 =</p>
+    </cell>
+    <cell id="9">
+     <p>20 : 2 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaDividir_03" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="imagens-barbie-p-montagem-albuns-convites-lembrancinhas_MLB-F-3688260254_012013.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>3 : 3 =</p>
+    </cell>
+    <cell id="1">
+     <p>6 : 3 =</p>
+    </cell>
+    <cell id="2">
+     <p>9 : 3 =</p>
+    </cell>
+    <cell id="3">
+     <p>12 : 3 =</p>
+    </cell>
+    <cell id="4">
+     <p>15 : 3 =</p>
+    </cell>
+    <cell id="5">
+     <p>18 : 3 =</p>
+    </cell>
+    <cell id="6">
+     <p>21 : 3 =</p>
+    </cell>
+    <cell id="7">
+     <p>24 : 3 =</p>
+    </cell>
+    <cell id="8">
+     <p>27 : 3 =</p>
+    </cell>
+    <cell id="9">
+     <p>30 : 3 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaDividir_04" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="moldura barbie 3.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>4 : 4 =</p>
+    </cell>
+    <cell id="1">
+     <p>8 : 4 = </p>
+    </cell>
+    <cell id="2">
+     <p>12 : 4 = </p>
+    </cell>
+    <cell id="3">
+     <p>16 : 4 = </p>
+    </cell>
+    <cell id="4">
+     <p>20 : 4 = </p>
+    </cell>
+    <cell id="5">
+     <p>24 : 4 = </p>
+    </cell>
+    <cell id="6">
+     <p>28 : 4 = </p>
+    </cell>
+    <cell id="7">
+     <p>32 : 4 = </p>
+    </cell>
+    <cell id="8">
+     <p>36 : 4 =</p>
+    </cell>
+    <cell id="9">
+     <p>40 : 4 = </p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaDividir_05" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="imagens-barbie-p-montagem-albuns-convites-lembrancinhas_MLB-F-3688260254_012013.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p> 5 : 5 =</p>
+    </cell>
+    <cell id="1">
+     <p>10 : 5 =</p>
+    </cell>
+    <cell id="2">
+     <p>15 : 5 =</p>
+    </cell>
+    <cell id="3">
+     <p>20 : 5 =</p>
+    </cell>
+    <cell id="4">
+     <p>25 : 5 =</p>
+    </cell>
+    <cell id="5">
+     <p>30 : 5 =</p>
+    </cell>
+    <cell id="6">
+     <p>35 : 5 =</p>
+    </cell>
+    <cell id="7">
+     <p>40 : 5 =</p>
+    </cell>
+    <cell id="8">
+     <p>45 : 5 =</p>
+    </cell>
+    <cell id="9">
+     <p>50 : 5 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaDividir_06" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="moldura barbie 3.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>6 : 6 =</p>
+    </cell>
+    <cell id="1">
+     <p>12 : 6 =</p>
+    </cell>
+    <cell id="2">
+     <p>18 : 6 =</p>
+    </cell>
+    <cell id="3">
+     <p>24 : 6 =</p>
+    </cell>
+    <cell id="4">
+     <p>30 : 6 =</p>
+    </cell>
+    <cell id="5">
+     <p>36 : 6 =</p>
+    </cell>
+    <cell id="6">
+     <p>42 : 6 =</p>
+    </cell>
+    <cell id="7">
+     <p>48 : 6 =</p>
+    </cell>
+    <cell id="8">
+     <p>54 : 6 =</p>
+    </cell>
+    <cell id="9">
+     <p>60 : 6 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaDividir_07" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="imagens-barbie-p-montagem-albuns-convites-lembrancinhas_MLB-F-3688260254_012013.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>7 : 7 =</p>
+    </cell>
+    <cell id="1">
+     <p>14 : 7 =</p>
+    </cell>
+    <cell id="2">
+     <p>21 : 7 =</p>
+    </cell>
+    <cell id="3">
+     <p>28 : 7 =</p>
+    </cell>
+    <cell id="4">
+     <p>35 : 7 =</p>
+    </cell>
+    <cell id="5">
+     <p>42 : 7 =</p>
+    </cell>
+    <cell id="6">
+     <p>49 : 7 =</p>
+    </cell>
+    <cell id="7">
+     <p>56 : 7 =</p>
+    </cell>
+    <cell id="8">
+     <p>63 : 7 =</p>
+    </cell>
+    <cell id="9">
+     <p>70 : 7 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaDividir_08" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="moldura barbie 3.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>8 : 8 =</p>
+    </cell>
+    <cell id="1">
+     <p>16 : 8 =</p>
+    </cell>
+    <cell id="2">
+     <p>24 : 8 =</p>
+    </cell>
+    <cell id="3">
+     <p>32 : 8 =</p>
+    </cell>
+    <cell id="4">
+     <p>40 : 8 =</p>
+    </cell>
+    <cell id="5">
+     <p>48 : 8 =</p>
+    </cell>
+    <cell id="6">
+     <p>56 : 8 =</p>
+    </cell>
+    <cell id="7">
+     <p>64 : 8 =</p>
+    </cell>
+    <cell id="8">
+     <p>72 : 8 =</p>
+    </cell>
+    <cell id="9">
+     <p>80 : 8 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaDividir_09" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="imagens-barbie-p-montagem-albuns-convites-lembrancinhas_MLB-F-3688260254_012013.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>9 : 9 =</p>
+    </cell>
+    <cell id="1">
+     <p>18 : 9 =</p>
+    </cell>
+    <cell id="2">
+     <p>27 : 9 =</p>
+    </cell>
+    <cell id="3">
+     <p>36 : 9 =</p>
+    </cell>
+    <cell id="4">
+     <p>45 : 9 =</p>
+    </cell>
+    <cell id="5">
+     <p>54 : 9 =</p>
+    </cell>
+    <cell id="6">
+     <p>63 : 9 =</p>
+    </cell>
+    <cell id="7">
+     <p>72 : 9 =</p>
+    </cell>
+    <cell id="8">
+     <p>81 : 9 =</p>
+    </cell>
+    <cell id="9">
+     <p>90 : 9 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaDividir_10" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="moldura barbie 3.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>10 : 10 =</p>
+    </cell>
+    <cell id="1">
+     <p>20 : 10 =</p>
+    </cell>
+    <cell id="2">
+     <p>30 : 10 =</p>
+    </cell>
+    <cell id="3">
+     <p>40 : 10 =</p>
+    </cell>
+    <cell id="4">
+     <p>50 : 10 =</p>
+    </cell>
+    <cell id="5">
+     <p>60 : 10 =</p>
+    </cell>
+    <cell id="6">
+     <p>70 : 10 =</p>
+    </cell>
+    <cell id="7">
+     <p>80 : 10 =</p>
+    </cell>
+    <cell id="8">
+     <p>90 : 10 =</p>
+    </cell>
+    <cell id="9">
+     <p>100 : 10 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaMenos_01" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="1" id="B" />
+    <operations plus="false" minus="true" multiply="false" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaMenos_02" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>2 - 2 =</p>
+    </cell>
+    <cell id="1">
+     <p>3 - 2 =</p>
+    </cell>
+    <cell id="2">
+     <p>4 - 2 =</p>
+    </cell>
+    <cell id="3">
+     <p>5 - 2 =</p>
+    </cell>
+    <cell id="4">
+     <p>6 - 2 =</p>
+    </cell>
+    <cell id="5">
+     <p>7 - 2 =</p>
+    </cell>
+    <cell id="6">
+     <p>8 - 2 =</p>
+    </cell>
+    <cell id="7">
+     <p>9 - 2 =</p>
+    </cell>
+    <cell id="8">
+     <p>10 - 2 =</p>
+    </cell>
+    <cell id="9">
+     <p>11 - 2 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaMenos_03" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>12 - 3 =</p>
+    </cell>
+    <cell id="1">
+     <p>3 - 3 =</p>
+    </cell>
+    <cell id="2">
+     <p>4 - 3 =</p>
+    </cell>
+    <cell id="3">
+     <p>5 - 3 =</p>
+    </cell>
+    <cell id="4">
+     <p>6 - 3 =</p>
+    </cell>
+    <cell id="5">
+     <p>7 - 3 =</p>
+    </cell>
+    <cell id="6">
+     <p>8 - 3 =</p>
+    </cell>
+    <cell id="7">
+     <p>9 - 3 =</p>
+    </cell>
+    <cell id="8">
+     <p>10 - 3 =</p>
+    </cell>
+    <cell id="9">
+     <p>11 - 3 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaMenos_04" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>12 - 4 =</p>
+    </cell>
+    <cell id="1">
+     <p>13 - 4 =</p>
+    </cell>
+    <cell id="2">
+     <p>4 - 4 =</p>
+    </cell>
+    <cell id="3">
+     <p>5 - 4 =</p>
+    </cell>
+    <cell id="4">
+     <p>6 - 4 =</p>
+    </cell>
+    <cell id="5">
+     <p>7 - 4 =</p>
+    </cell>
+    <cell id="6">
+     <p>8 - 4 =</p>
+    </cell>
+    <cell id="7">
+     <p>9 - 4 =</p>
+    </cell>
+    <cell id="8">
+     <p>10 - 4 =</p>
+    </cell>
+    <cell id="9">
+     <p>11 - 4 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaMenos_05" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>12 - 5 =</p>
+    </cell>
+    <cell id="1">
+     <p>13 - 5 =</p>
+    </cell>
+    <cell id="2">
+     <p>14 - 5 =</p>
+    </cell>
+    <cell id="3">
+     <p>5 - 5 =</p>
+    </cell>
+    <cell id="4">
+     <p>6 - 5 =</p>
+    </cell>
+    <cell id="5">
+     <p>7 - 5 =</p>
+    </cell>
+    <cell id="6">
+     <p>8 - 5 =</p>
+    </cell>
+    <cell id="7">
+     <p>9 - 5 =</p>
+    </cell>
+    <cell id="8">
+     <p>10 - 5 =</p>
+    </cell>
+    <cell id="9">
+     <p>11 - 5 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaMenos_06" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>12 - 6 =</p>
+    </cell>
+    <cell id="1">
+     <p>13 - 6 =</p>
+    </cell>
+    <cell id="2">
+     <p>14 - 6 =</p>
+    </cell>
+    <cell id="3">
+     <p>15 - 6 =</p>
+    </cell>
+    <cell id="4">
+     <p>6 - 6 =</p>
+    </cell>
+    <cell id="5">
+     <p>7 - 6 =</p>
+    </cell>
+    <cell id="6">
+     <p>8 - 6 =</p>
+    </cell>
+    <cell id="7">
+     <p>9 - 6 =</p>
+    </cell>
+    <cell id="8">
+     <p>10 - 6 =</p>
+    </cell>
+    <cell id="9">
+     <p>11 - 6 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaMenos_07" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>12 - 7 =</p>
+    </cell>
+    <cell id="1">
+     <p>13 - 7 =</p>
+    </cell>
+    <cell id="2">
+     <p>14 - 7 =</p>
+    </cell>
+    <cell id="3">
+     <p>15 - 7 =</p>
+    </cell>
+    <cell id="4">
+     <p>16 - 7 =</p>
+    </cell>
+    <cell id="5">
+     <p>7 - 7 =</p>
+    </cell>
+    <cell id="6">
+     <p>8 - 7 =</p>
+    </cell>
+    <cell id="7">
+     <p>9 - 7 =</p>
+    </cell>
+    <cell id="8">
+     <p>10 - 7 =</p>
+    </cell>
+    <cell id="9">
+     <p>11 - 7 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaMenos_08" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>12 - 8 =</p>
+    </cell>
+    <cell id="1">
+     <p>13 - 8 =</p>
+    </cell>
+    <cell id="2">
+     <p>14 - 8 =</p>
+    </cell>
+    <cell id="3">
+     <p>15 - 8 =</p>
+    </cell>
+    <cell id="4">
+     <p>16 - 8 =</p>
+    </cell>
+    <cell id="5">
+     <p>17 - 8 =</p>
+    </cell>
+    <cell id="6">
+     <p>8 - 8 =</p>
+    </cell>
+    <cell id="7">
+     <p>9 - 8 =</p>
+    </cell>
+    <cell id="8">
+     <p>10 - 8 =</p>
+    </cell>
+    <cell id="9">
+     <p>11 - 8 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaMenos_09" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>12 - 9 =</p>
+    </cell>
+    <cell id="1">
+     <p>13 - 9 =</p>
+    </cell>
+    <cell id="2">
+     <p>14 - 9 =</p>
+    </cell>
+    <cell id="3">
+     <p>15 - 9 =</p>
+    </cell>
+    <cell id="4">
+     <p>16 - 9 =</p>
+    </cell>
+    <cell id="5">
+     <p>17 - 9 =</p>
+    </cell>
+    <cell id="6">
+     <p>18 - 9 =</p>
+    </cell>
+    <cell id="7">
+     <p>9 - 9 =</p>
+    </cell>
+    <cell id="8">
+     <p>10 - 9 =</p>
+    </cell>
+    <cell id="9">
+     <p>11 - 9 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="80.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaMenos_10" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="imagens-barbie-p-montagem-albuns-convites-lembrancinhas_MLB-F-3688260254_012013.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <p>12 - 10 =</p>
+    </cell>
+    <cell id="1">
+     <p>13 - 10 =</p>
+    </cell>
+    <cell id="2">
+     <p>14 - 10 =</p>
+    </cell>
+    <cell id="3">
+     <p>15 - 10 =</p>
+    </cell>
+    <cell id="4">
+     <p>16 - 10 =</p>
+    </cell>
+    <cell id="5">
+     <p>17 - 10 =</p>
+    </cell>
+    <cell id="6">
+     <p>18 - 10 =</p>
+    </cell>
+    <cell id="7">
+     <p>19 - 10 =</p>
+    </cell>
+    <cell id="8">
+     <p>10 - 10 =</p>
+    </cell>
+    <cell id="9">
+     <p>11 - 10 =</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>0</p>
+    </cell>
+    <cell>
+     <p>1</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaX_001" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0E4DF0" background="0xFEFEFE" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>Mostre que você é 10 na tabuada!!!</p>
+    </cell>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Muito           bem!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="1" id="B" />
+    <operations plus="false" minus="false" multiply="true" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" order="ascending" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaX_002" code="">
+   <description />
+   <messages />
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="/home/professor/Imagens/molduras/ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="2" id="B" />
+    <operations plus="false" minus="false" multiply="true" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" order="ascending" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaX_003" code="">
+   <description />
+   <messages />
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="3" id="B" />
+    <operations plus="false" minus="false" multiply="true" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" order="ascending" condition="firstBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaX_004" code="">
+   <description />
+   <messages />
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="/home/professor/Imagens/molduras/ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="4" id="B" />
+    <operations plus="false" minus="false" multiply="true" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" order="ascending" condition="firstBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaX_009" code="">
+   <description />
+   <messages />
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="9" id="B" />
+    <operations plus="false" minus="false" multiply="true" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" order="ascending" condition="firstBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadaX_010" code="">
+   <description />
+   <messages />
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="/home/professor/Imagens/molduras/ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="10" id="B" />
+    <operations plus="false" minus="false" multiply="true" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" order="ascending" condition="firstBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadamais_01" code="">
+   <description />
+   <messages>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="moldura ben 10.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="1" id="B" />
+    <operations plus="true" minus="false" multiply="false" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadamais_02" code="">
+   <description />
+   <messages>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="/home/professor/Imagens/molduras/moldura ben 10.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="2" id="B" />
+    <operations plus="true" minus="false" multiply="false" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadamais_03" code="">
+   <description />
+   <messages>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="moldura ben 10.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="3" id="B" />
+    <operations plus="true" minus="false" multiply="false" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadamais_04" code="">
+   <description />
+   <messages>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="/home/professor/Imagens/molduras/moldura ben 10.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="4" id="B" />
+    <operations plus="true" minus="false" multiply="false" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadamais_05" code="">
+   <description />
+   <messages>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="moldura ben 10.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="5" id="B" />
+    <operations plus="true" minus="false" multiply="false" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadamais_06" code="">
+   <description />
+   <messages>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="/home/professor/Imagens/molduras/moldura ben 10.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="6" id="B" />
+    <operations plus="true" minus="false" multiply="false" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadamais_07" code="">
+   <description />
+   <messages>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="moldura ben 10.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="7" id="B" />
+    <operations plus="true" minus="false" multiply="false" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadamais_08" code="">
+   <description />
+   <messages>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="/home/professor/Imagens/molduras/moldura ben 10.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="8" id="B" />
+    <operations plus="true" minus="false" multiply="false" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadamais_09" code="">
+   <description />
+   <messages>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="moldura ben 10.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="9" id="B" />
+    <operations plus="true" minus="false" multiply="false" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadamais_10" code="">
+   <description />
+   <messages>
+    <cell image="ben.gif" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="/home/professor/Imagens/molduras/moldura ben 10.png" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="10" id="B" />
+    <operations plus="true" minus="false" multiply="false" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" condition="lastBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadax_005" code="">
+   <description />
+   <messages />
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="5" id="B" />
+    <operations plus="false" minus="false" multiply="true" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" order="ascending" condition="firstBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadax_006" code="">
+   <description />
+   <messages />
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="/home/professor/Imagens/molduras/ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="6" id="B" />
+    <operations plus="false" minus="false" multiply="true" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" order="ascending" condition="firstBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadax_007" code="">
+   <description />
+   <messages />
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="7" id="B" />
+    <operations plus="false" minus="false" multiply="true" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" order="ascending" condition="firstBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="tabuadax_008" code="">
+   <description />
+   <messages />
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="/home/professor/Imagens/molduras/ben10 (2)-resized.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="1" to="10" id="A">
+     <include zero="true" one="false" minusOne="false" />
+    </operand>
+    <operand values="8" id="B" />
+    <operations plus="false" minus="false" multiply="true" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" order="ascending" condition="firstBig" />
+   </automation>
+   <cells rows="5" cols="2" cellWidth="135.0" cellHeight="81.0" border="true" id="primary">
+    <style margin="12" borderStroke="10.0" markerStroke="5.0">
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFEFEFE" inactive="0x0FCC35" border="0xA8A8A8" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="105.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color foreground="0x1024FD" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="ben.gif" file="ben.gif" animated="true" />
+  <media name="/home/professor/Imagens/molduras/ben10 (2)-resized.jpg" file="_home_professor_imagens_molduras_ben10__2__resized.jpg" />
+  <media name="ben10 (2)-resized.jpg" file="ben10__2__resized.jpg" />
+  <media name="ben10telaTabuada.jpg" file="ben10telatabuada.jpg" />
+  <media name="imagens-barbie-p-montagem-albuns-convites-lembrancinhas_MLB-F-3688260254_012013.jpg" file="imagens_barbie_p_montagem_albuns_convites_lembrancinhas_mlb_f_3688260254_012013.jpg" />
+  <media name="tela_jclick_iniciarMIGUEL.jpg" file="tela_jclick_iniciarmiguel.jpg" />
+  <media name="wallpaper_ben_10.jpg" file="wallpaper_ben_10.jpg" />
+  <media name="/home/professor/Imagens/molduras/moldura ben 10.png" file="_home_professor_imagens_molduras_moldura_ben_10.png" />
+  <media name="moldura barbie 3.png" file="moldura_barbie_3.png" />
+  <media name="moldura ben 10.png" file="moldura_ben_10.png" />
+ </mediaBag>
+</JClicProject>
+

@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="avaliacao_de_geofrafia___os_biomas_brasileiros" version="0.1.3">
+ <settings>
+  <title>Avaliação de Geografia - Os biomas Brasileiros - 5º Ano</title>
+  <revision description="created" date="11/1/14" />
+  <author name="Coraci Machado Araújo" mail="coragoiana_@hotmail.com" url="http://metodologiadaliberdade.blogspot.com" rol="Professora" organization="coragoiana">
+   <comments>
+    <p>Atividade da disciplina de Sistemas de Multimídias da Especialização em Informática na Educação da UFMT</p>
+   </comments>
+  </author>
+  <language>português (pt)</language>
+  <description>
+   <p>Avaliação de Geografia - Os biomas Brasileiros - 5º ano&#xD;</p>
+   <p>Objetivo: somar, incluir na pratica pedagógica, o desempenho dos alunos e a informática na educação.&#xD;</p>
+   <p>Justificativa  - utilizar recursos q estimule a concentração e provoque o interesse dos alunos na avaliação, de forma a aumentar as possibilidades de aprendizagem</p>
+  </description>
+  <descriptors area="Geografia, Língua Portuguesa e Informática na Educação" level="2º Ciclo">Leitura, interpretação e cartografia</descriptors>
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="telainicial" />
+  <item id="start" name="BiomasExploracao" />
+  <item name="BiomaQuebraCabeca" delay="1" />
+  <item name="BiomasQuebraCabeca" delay="1" />
+  <item name="BiomasQuebraCabeca2" delay="1" />
+  <item name="BiomasAssociar" delay="1" />
+  <item name="BiomasSopaLetras" delay="1" />
+  <item name="BiomasAssociar2" delay="1" />
+  <item name="BiomasMemoria" delay="1" />
+  <item name="BiomaFaunaMemoria" delay="1" />
+  <item name="BiomasTextoLacuna" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="BiomaFaunaMemoria">
+   <messages>
+    <cell txtAlign="left,top" type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Faça o jogo da memória da FLORA do BIOMA CERRADO</p>
+    </cell>
+    <cell txtAlign="left,top" imgAlign="left,top" avoidOverlapping="true" image="cbá 2011-resized.jpg" type="final">
+     <style>
+      <font family="Dialog" size="48" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>Parabéns!</p>
+    </cell>
+    <cell txtAlign="left,top" type="finalError">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x0000CC" background="0xFF9999" />
+     </style>
+     <p>Tente outra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF66">
+     <image name="a18.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF00" border="true" />
+    <eventSounds>
+     <sound id="start" file="Efeitos Sonoros - EFEITO BATERIA #2.mp3" />
+     <sound id="finishedError" file="Efeitos Sonoros - EFEITO LIGAÇÃO A COBRAR.mp3" />
+     <sound id="finishedOk" file="Efeitos Sonoros - APLAUSOS.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="5" cols="4" cellWidth="119.0" cellHeight="73.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="5" />
+    <cell image="a25.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="a2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="a.jpg" />
+    <cell image="a17.jpg" />
+    <cell image="a15.jpg" />
+    <cell image="a6.jpg" />
+    <cell image="a7.jpg" />
+    <cell image="a8.jpg" />
+    <cell image="a9.jpg" />
+    <cell image="a10.jpg" />
+    <cell image="a11.jpg" />
+    <cell image="a12.jpg" />
+    <cell image="a5.jpg" />
+    <cell image="a14.jpg" />
+    <cell image="a19.jpg" />
+    <cell image="a21.jpg" />
+    <cell image="a24.jpg" />
+    <cell image="a23.jpg" />
+    <cell image="a22.jpg" />
+    <cell image="a18.jpg" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="BiomaQuebraCabeca">
+   <messages>
+    <cell txtAlign="left,top" type="initial">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0x009900" />
+     </style>
+     <p>Faça o quebra-cabeças e descubra a ave símbolo do Bioma Pantanal </p>
+    </cell>
+    <cell txtAlign="left,top" type="final">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>Parabéns!</p>
+    </cell>
+    <cell txtAlign="left,top" type="finalError">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033CC" />
+     </style>
+     <p>Ôpa! Tente outra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="12" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <image name="a19.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="actionError" file="Efeitos Sonoros - ÁUDIO GATO.mp3" />
+     <sound id="actionOk" file="Efeitos Sonoros - APLAUSOS.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" border="true" image="quebraok.jpg">
+    <style />
+    <shaper class="@JigSaw" cols="3" rows="3" />
+    <cell>
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell>
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell>
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="BiomasAssociar">
+   <messages>
+    <cell txtAlign="left,top" type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>Considere seus conhecimentos sobre os biomas brasileiros e ligue.</p>
+    </cell>
+    <cell txtAlign="left,top" imgAlign="left,top" avoidOverlapping="true" image="CAM00473-resized.jpg" type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFF0033" background="0x00FFCC" />
+     </style>
+     <p>Parabéns! Vc é um sucesso!</p>
+    </cell>
+    <cell txtAlign="left,top" type="finalError">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x009933" background="0xFFFFFF" />
+     </style>
+     <p>Calma! Faça outra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFF00">
+     <image name="a6.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF99" border="true" />
+    <eventSounds>
+     <sound id="actionError" file="Efeitos Sonoros - EFEITO BATIDAS DO CORAÇÃO.mp3" />
+     <sound id="actionOk" file="Efeitos Sonoros - EFEITO LUTA.mp3" />
+     <sound id="finishedOk" file="Efeitos Sonoros - APLAUSOS.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="7" cellWidth="280.0" cellHeight="255.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="7" rows="1" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x009900" />
+     </style>
+     <p>É o maior bioma brasileiro, a maior floresta do mundo</p>
+    </cell>
+    <cell id="1">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0000CC" background="0xFFFF00" />
+     </style>
+     <p>Está nos estados do MA, PI, CE, RN e TO. Seu nome é em homenagem aos coqueiros</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color background="0x00FFCC" />
+     </style>
+     <p>Tem áreas planas, com gramíneas (capim) e poucas árvores. Fica na Região Sul</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0000CC" background="0xCCFFFF" />
+     </style>
+     <p>2º maior bioma, arvores baixas e retorcidas. Localiza-se no Centro-Oeste</p>
+    </cell>
+    <cell id="4">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color background="0xFF9999" />
+     </style>
+     <p>Bioma com a  maior parte alagada. Considerado Patrimônio Natural Mundial</p>
+    </cell>
+    <cell id="5">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>Bioma de clima seco. Pouca água. Vegetação baixa e rala com mandacaru e cactos.</p>
+    </cell>
+    <cell id="6">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Bioma do litoral, que sofreu com o desmatamento, na época da colonização do Brasil.</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="7" cellWidth="281.0" cellHeight="259.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="7" rows="1" />
+    <cell image="b.jpg" />
+    <cell image="images (15).jpg" />
+    <cell image="c.jpg" />
+    <cell image="cerrado.jpg" />
+    <cell image="download (2).jpg" />
+    <cell image="caatinga.jpg" />
+    <cell image="images (6).jpg" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="BiomasAssociar2">
+   <messages>
+    <cell txtAlign="left,top" type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFFFF00" background="0x0000CC" />
+     </style>
+     <p>Ligue,  considerando em quais Regiões Brasileiras predominam (mais tem) estes Biomas  </p>
+    </cell>
+    <cell txtAlign="left,top" avoidOverlapping="true" image="Foto0488-resized.jpg" type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>Pa-ra-béns!</p>
+    </cell>
+    <cell txtAlign="left,top" type="finalError">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color background="0x00CC00" />
+     </style>
+     <p>Não deu tempo? Vc pode recomeçar...</p>
+    </cell>
+   </messages>
+   <settings margin="9" report="true" reportActions="false">
+    <container bgColor="0x0000FF">
+     <image name="a22.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x3399FF" border="true" />
+    <eventSounds>
+     <sound id="actionError" file="Efeitos Sonoros - ÁUDIO GATO.mp3" />
+     <sound id="actionOk" file="Efeitos Sonoros - EFEITO BATERIA #2.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="4" cellWidth="350.0" cellHeight="250.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="4" image="caa (15).jpg" />
+    <cell id="5" image="mapac.jpg" />
+    <cell id="6" image="cerrado (19).jpg" />
+    <cell id="7" image="desmatamento-na-mata-atlantica-continua-critico2.jpg" />
+    <cell id="0" image="mapa.gif" />
+    <cell id="1" image="images (18).jpg" />
+    <cell id="2" image="florestamapa.jpg" />
+    <cell id="3" image="biomas.jpg" />
+   </cells>
+   <cells rows="2" cols="4" cellWidth="350.0" cellHeight="80.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color foreground="0xFFFF00" background="0x00CC00" />
+     </style>
+     <p>Mata dos Cocais</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color foreground="0x0000CC" background="0x00FFFF" />
+     </style>
+     <p>Pantanal</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0000CC" />
+     </style>
+     <p>Floresta Amazônica</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0x12FF00" />
+     </style>
+     <p>Todos os Biomas</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>Caatinga</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFF6666" />
+     </style>
+     <p>Campos</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFF9900" />
+     </style>
+     <p>Cerrado</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color foreground="0x0000CC" background="0xFFFF00" />
+     </style>
+     <p>Mata Atlântica</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="BiomasExploracao">
+   <messages>
+    <cell border="false" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0033" />
+     </style>
+     <p>Clic nas gifs e descubra as características dos biomas. ATENÇÃO, pois esta competência te ajudará nas próximas etapas.</p>
+    </cell>
+    <cell txtAlign="left,top" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFF33" />
+     </style>
+     <p>Muito Bem!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x00CCFF" dest="0x0033FF" angle="65" cycles="2" />
+     <image name="a12.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x00FFFF" dest="0xCCCCFF" angle="34" />
+    </window>
+    <eventSounds>
+     <sound id="start" file="Efeitos Sonoros - AMBIENTES DE PASSAROS.mp3" />
+     <sound id="actionOk" file="Efeitos Sonoros - APLAUSOS.mp3" />
+     <sound id="finishedOk" file="Efeitos Sonoros - EFEITO CARRO ARRANCADA.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="4" cols="2" cellWidth="257.0" cellHeight="161.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell id="0" image="CAATINGA.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="CAMPOS2.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="CERRADO.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="3" image="FLORESTA2.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="4" image="MATA ATLANTICA2.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="5" image="MATA DOS COCIAIS3gif.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="6" image="PANTANAL2.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell border="false">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Times New Roman" size="24" />
+      <color foreground="0x0044FF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="7" cols="1" cellWidth="431.0" cellHeight="66.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="7" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x990000" />
+     </style>
+     <p>Caatinga</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" bold="true" />
+      <color foreground="0xFF0000" background="0xFF9999" />
+     </style>
+     <p>Campos</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF33" />
+     </style>
+     <p>Cerrado</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x009900" />
+     </style>
+     <p>Floresta Amazônica</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" bold="true" />
+      <color foreground="0xFFFF33" background="0xFF0000" />
+     </style>
+     <p>Mata Atlântica</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0000CC" />
+     </style>
+     <p>Mata dos Cocais</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" bold="true" />
+      <color foreground="0x0099FF" background="0x66FF66" />
+     </style>
+     <p>Pantanal</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="BiomasMemoria">
+   <messages>
+    <cell txtAlign="left,top" type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Faça o jogo da memória da fauna do bioma cerrado </p>
+    </cell>
+    <cell txtAlign="left,top" imgAlign="left,top" avoidOverlapping="true" image="cbá 2011-resized.jpg" type="final">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>Ótimo!</p>
+    </cell>
+    <cell txtAlign="left,top" type="finalError">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0x000099" background="0x00CCCC" />
+     </style>
+     <p>Tente outra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x009900">
+     <image name="a22.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x009933" border="true" />
+    <eventSounds>
+     <sound id="actionError" file="Efeitos Sonoros - ÁUDIO GATO.mp3" />
+     <sound id="finishedOk" file="Efeitos Sonoros - EFEITO BATERIA #2.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="5" cols="3" cellWidth="600.0" cellHeight="400.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="5" />
+    <cell image="images (1).jpg" />
+    <cell image="download (7).jpg" />
+    <cell image="download.jpg" />
+    <cell image="images (3).jpg" />
+    <cell image="images (5).jpg" />
+    <cell image="images (7).jpg" />
+    <cell image="images (8).jpg" />
+    <cell image="images (13).jpg" />
+    <cell image="images (17).jpg" />
+    <cell image="images (20).jpg" />
+    <cell image="Sireima_2.JPG" />
+    <cell image="pica pau.jpg" />
+    <cell image="arara.jpg" />
+    <cell image="arara azul.jpg" />
+    <cell image="lobo-guará-2.jpg" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="BiomasQuebraCabeca">
+   <messages>
+    <cell txtAlign="left,top" type="initial">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0099" />
+     </style>
+     <p>Monte o quebra cabeças e descubra um artesanato da carnaúba, palmeira do Bioma MATA DOS COCAIS </p>
+    </cell>
+    <cell txtAlign="left,top" imgAlign="right,top" image="Foto0488-resized.jpg" type="final">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Excelente!</p>
+    </cell>
+    <cell txtAlign="left,top" type="finalError">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0xFF0000" background="0xFF99FF" />
+     </style>
+     <p>Vc pode fazer de novo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <image name="a11.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCFF" border="true" />
+    <eventSounds>
+     <sound id="actionError" file="Efeitos Sonoros - ÁUDIO GATO.mp3" />
+     <sound id="actionOk" file="Efeitos Sonoros - EFEITO LUTA.mp3" />
+     <sound id="finishedOk" file="Efeitos Sonoros - EFEITO CARRO ARRANCADA.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" border="true" image="quebra carnauba.jpg">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.HolePuzzle" name="BiomasQuebraCabeca2">
+   <messages>
+    <cell txtAlign="left,top" type="initial">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0x0000CC" background="0xFFFFFF" />
+     </style>
+     <p>Monte o quebra cabeças e descubra qual o 2º maior Bioma do Brasil</p>
+    </cell>
+    <cell txtAlign="left,top" imgAlign="right,top" image="Foto0488-resized.jpg" type="final">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFF33" />
+     </style>
+     <p>Parabéns!</p>
+    </cell>
+    <cell txtAlign="left,top" type="finalError">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0033" />
+     </style>
+     <p>Ôpa! Tente outra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9900">
+     <image name="a.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC33" border="true" />
+    <eventSounds>
+     <sound id="actionError" file="Efeitos Sonoros - AUDIO EFEITO CACHORRO.mp3" />
+     <sound id="actionOk" file="Efeitos Sonoros - EFEITO BATIDAS DO CORAÇÃO.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="4" border="true" image="cerrado.jpg">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="BiomasSopaLetras">
+   <messages>
+    <cell txtAlign="left,top" type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFF00CC" background="0xFFCCCC" />
+     </style>
+     <p>Encontre os nomes dos biomas Brasileiros PANTANAL, FLORESTA AMAZÔNICA, CERRADO, MATA DOS COCAIS,  MATA ATLÂNTICA , CAMPOS, CAATINGA</p>
+    </cell>
+    <cell txtAlign="left,top" avoidOverlapping="true" image="CAM00473-resized.jpg" type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFFFFFF" background="0x009900" />
+     </style>
+     <p>Nota 1000!</p>
+    </cell>
+    <cell txtAlign="left,top" type="finalError">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color background="0xCC00CC" />
+     </style>
+     <p>Êpa! Êpa! Vamos fazer de novo?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9999">
+     <image name="a8.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true" />
+    <eventSounds>
+     <sound id="actionError" file="Efeitos Sonoros - EFEITO LIGAÇÃO A COBRAR.mp3" />
+     <sound id="actionOk" file="Efeitos Sonoros - AUDIO INSTRUMENTAL COUNTRY.mp3" />
+    </eventSounds>
+   </settings>
+   <textGrid rows="20" columns="21" cellWidth="57.0" cellHeight="37.0" border="true">
+    <style>
+     <font family="Arial" size="20" bold="true" />
+     <color foreground="0xFFFFFF" background="0x009900" />
+    </style>
+    <text>
+     <row>***********M********</row>
+     <row>***********A*******A</row>
+     <row>***********T*******C</row>
+     <row>***********A*******I</row>
+     <row>***********D*******T</row>
+     <row>P**********O*******N</row>
+     <row>*A*********S*******Â</row>
+     <row>**N********CAMPOS**L</row>
+     <row>***T***A***O*******T</row>
+     <row>****A*G****C*******A</row>
+     <row>*****N*****A*******A</row>
+     <row>****I*A****I*******T</row>
+     <row>***T***L***S*******A</row>
+     <row>**A****************M</row>
+     <row>*A**********C*******</row>
+     <row>C***********E*******</row>
+     <row>************R*******</row>
+     <row>************R*******</row>
+     <row>***ACINÔZAMAATSEROLF</row>
+     <row>************D*******</row>
+     <row>************O*******</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">FLORESTAAMAZÔNICA</clue>
+    <clue id="1">CERRADO</clue>
+    <clue id="2">CAATINGA</clue>
+    <clue id="3">PANTANAL</clue>
+    <clue id="4">MATADOSCOCAIS</clue>
+    <clue id="5">CAMPOS</clue>
+    <clue id="6">MATAATLÂNTICA</clue>
+   </clues>
+  </activity>
+  <activity class="@text.FillInBlanks" name="BiomasTextoLacuna" code="" forceOkToAdvance="true">
+   <description />
+   <messages>
+    <cell txtAlign="left,top" imgAlign="left,top" avoidOverlapping="true" image="a25.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFF00" background="0x009933" />
+     </style>
+     <p>Clic no play</p>
+    </cell>
+    <cell txtAlign="left,top" imgAlign="left,middle" avoidOverlapping="true" image="Foto0488-resized.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>Vc é Nota 1000!</p>
+    </cell>
+    <cell txtAlign="left,top" type="finalError">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Fique calmo(a), vc pode fazer de novo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="a25.jpg" tiled="true" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC00" border="true">
+     <size width="600" height="400" />
+    </window>
+    <eventSounds>
+     <sound id="actionError" file="Efeitos Sonoros - EFEITO LIGAÇÃO A COBRAR.mp3" />
+     <sound id="actionOk" file="Efeitos Sonoros - EFEITO BATERIA #2.mp3" />
+     <sound id="finishedOk" file="Efeitos Sonoros - APLAUSOS.mp3" />
+    </eventSounds>
+   </settings>
+   <checkButton>Avaliação</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="14" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <cell avoidOverlapping="true" width="400" height="200" image="a19.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Arial" size="24" bold="true" />
+        <color foreground="0x0000CC" background="0xFFFFFF" />
+       </style>
+      </cell>
+      <cell width="50" height="30">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <font family="Arial" size="20" bold="true" />
+        <color foreground="0x0000CC" background="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="Narração 6 (07-11-14 13-51).mp3" />
+       <p>play</p>
+      </cell>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false" italic="false">a) O bioma </text>
+      <target>
+       <answer>Mata Atlântica</answer>
+       <optionList>
+        <option>Cerrado</option>
+        <option>Mata Atlântica</option>
+        <option>Caatinga</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>Mata Atlântica</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false" italic="false">, no passado, ocupou quase toda região litorânea brasileira, porém foi perdendo terreno com o desmatamento, especialmente, na época da </text>
+      <target>
+       <answer>colonização do Brasil</answer>
+       <optionList>
+        <option>colonização da Inglaterra</option>
+        <option>descobrimento da América</option>
+        <option>colonização do Brasil</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>colonização do Brasil</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">b) O bioma </text>
+      <target>
+       <answer>Pantanal</answer>
+       <optionList>
+        <option>Campos</option>
+        <option>Pantanal</option>
+        <option>Cerrado</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>Pantanal</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14"> está presente nos estados de Mato Grosso e Mato Grosso do Sul. Grande parte de sua área fica </text>
+      <target>
+       <answer>alagada</answer>
+       <optionList>
+        <option>seca</option>
+        <option>alagada</option>
+        <option>deserta</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>alagada</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14"> durante o período de chuvas. </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">c) As palmeiras (coqueiros) com folhas grandes e finas, como a carnaúba, o babaçu e o buriti marcam presença na </text>
+      <target>
+       <answer>Mata dos Cocais</answer>
+       <optionList>
+        <option>Floresta Amazônica</option>
+        <option>Mata dos Cocais</option>
+        <option>Pantanal</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>Mata dos Cocais</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14">, predominante na região </text>
+      <target>
+       <answer>Nordeste</answer>
+       <optionList>
+        <option>Centro-Oeste</option>
+        <option>Nordeste</option>
+        <option>Sul</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>Nordeste</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">d) A </text>
+      <target>
+       <answer>Floresta Amazônica</answer>
+       <optionList>
+        <option>Cerrado</option>
+        <option>Floresta Amazônica</option>
+        <option>Caatinga</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>Floresta Amazônica</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">, maior bioma brasileiro, com uma rica biodiversidade, caracteriza-se pela presença  de </text>
+      <target>
+       <answer>árvores de grandes de porte de até 65 m,</answer>
+       <optionList>
+        <option>gramíneas</option>
+        <option>arvores baixas e retorcidas</option>
+        <option>árvores de grandes de porte de até 65 m,</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>árvores de grandes de porte de até 65 m,</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> situadas bem próximas umas das outras, favorecendo clima quente e úmido</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">e) O </text>
+      <target>
+       <answer>Cerrado</answer>
+       <optionList>
+        <option>Mata dos Cocais</option>
+        <option>Floresta Amazônica</option>
+        <option>Cerrado</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>Cerrado</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> é o 2º maior do Brasil e é predominante na Região </text>
+      <target>
+       <answer>Centro-Oeste</answer>
+       <optionList>
+        <option>Sul</option>
+        <option>Centro-Oeste</option>
+        <option>Norte</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>Centro-Oeste</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">. Com uma rica biodiversidade, caracteriza-se pela presença de gramíneas,(capim) arbustos e </text>
+      <target>
+       <answer>árvores baixas e retorcidas</answer>
+       <optionList>
+        <option>Grandes árvores de até 65 m de altura</option>
+        <option>coqueirais</option>
+        <option>árvores baixas e retorcidas</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>árvores baixas e retorcidas</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">f) Os </text>
+      <target>
+       <answer>Campos</answer>
+       <optionList>
+        <option>Pantanal</option>
+        <option>Campos</option>
+        <option>Floresta</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>Campos</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14"> predominam (mais tem) no Rio Grande do Sul.  Ocorre em áreas planas e sua vegetação caracteriza-se por </text>
+      <target>
+       <answer>pequenos arbustos e gramíneas (capim)</answer>
+       <optionList>
+        <option>grandes árvores</option>
+        <option>cactos e mandacarus</option>
+        <option>pequenos arbustos e gramíneas (capim)</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>pequenos arbustos e gramíneas (capim)</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14">g) A </text>
+      <target>
+       <answer>Caatinga</answer>
+       <optionList>
+        <option>Mata Atlãntica</option>
+        <option>Caatinga</option>
+        <option>Cerrado</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>Caatinga</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14"> é predominante na região </text>
+      <target>
+       <answer>Nordeste</answer>
+       <optionList>
+        <option>Centro-Oeste</option>
+        <option>Nordeste</option>
+        <option>Sudeste</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>Nordeste</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14">, sua vegetação caracteriza-se por </text>
+      <target>
+       <answer>mandacaru e cactos</answer>
+       <optionList>
+        <option>Coqueiros</option>
+        <option>mandacaru e cactos</option>
+        <option>Grandes matas</option>
+       </optionList>
+       <info mode="onDemand">
+        <cell width="100" height="40" />
+       </info>
+       <text>mandacaru e cactos</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14">. Algumas de suas plantas armazenam água no caule, outras possuem raízes superficiais para captar o máximo de água da chuva.   </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="telainicial">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0D3CF8" background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFEFEFE">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="telaInicial.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.030273,0.536458,0.9375,0.416667</shape>
+     <shape comment="1">rectangle:0.374023,0.292969,0.240234,0.057292</shape>
+    </shaper>
+    <cell txtAlign="left,top" imgAlign="left,middle">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Times New Roman" size="24" bold="true" />
+      <color foreground="0x0044FF" />
+     </style>
+     <p>Professora Coraci Machado Araújo</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="BiomasExploracao" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="CAATINGA.gif" file="caatinga.gif" />
+  <media name="CAMPOS2.gif" file="campos2.gif" />
+  <media name="CERRADO.gif" file="cerrado.gif" />
+  <media name="FLORESTA2.gif" file="floresta2.gif" />
+  <media name="mapa.gif" file="mapa.gif" />
+  <media name="MATA ATLANTICA2.gif" file="mata_atlantica2.gif" />
+  <media name="MATA DOS COCIAIS3gif.gif" file="mata_dos_cociais3gif.gif" />
+  <media name="PANTANAL2.gif" file="pantanal2.gif" />
+  <media name="a.jpg" file="a.jpg" />
+  <media name="a10.jpg" file="a10.jpg" />
+  <media name="a11.jpg" file="a11.jpg" />
+  <media name="a12.jpg" file="a12.jpg" />
+  <media name="a14.jpg" file="a14.jpg" />
+  <media name="a15.jpg" file="a15.jpg" />
+  <media name="a17.jpg" file="a17.jpg" />
+  <media name="a18.jpg" file="a18.jpg" />
+  <media name="a19.jpg" file="a19.jpg" />
+  <media name="a2.jpg" file="a2.jpg" />
+  <media name="a21.jpg" file="a21.jpg" />
+  <media name="a22.jpg" file="a22.jpg" />
+  <media name="a23.jpg" file="a23.jpg" />
+  <media name="a24.jpg" file="a24.jpg" />
+  <media name="a25.jpg" file="a25.jpg" />
+  <media name="a5.jpg" file="a5.jpg" />
+  <media name="a6.jpg" file="a6.jpg" />
+  <media name="a7.jpg" file="a7.jpg" />
+  <media name="a8.jpg" file="a8.jpg" />
+  <media name="a9.jpg" file="a9.jpg" />
+  <media name="arara azul.jpg" file="arara_azul.jpg" />
+  <media name="arara.jpg" file="arara.jpg" />
+  <media name="b.jpg" file="b.jpg" />
+  <media name="biomas.jpg" file="biomas.jpg" />
+  <media name="c.jpg" file="c.jpg" />
+  <media name="caa (15).jpg" file="caa__15_.jpg" />
+  <media name="caatinga.jpg" file="caatinga.jpg" />
+  <media name="CAM00473-resized.jpg" file="cam00473_resized.jpg" />
+  <media name="cbá 2011-resized.jpg" file="cba_2011_resized.jpg" />
+  <media name="cerrado (19).jpg" file="cerrado__19_.jpg" />
+  <media name="cerrado.jpg" file="cerrado.jpg" />
+  <media name="desmatamento-na-mata-atlantica-continua-critico2.jpg" file="desmatamento_na_mata_atlantica_continua_critico2.jpg" />
+  <media name="download (2).jpg" file="download__2_.jpg" />
+  <media name="download (7).jpg" file="download__7_.jpg" />
+  <media name="download.jpg" file="download.jpg" />
+  <media name="florestamapa.jpg" file="florestamapa.jpg" />
+  <media name="Foto0488-resized.jpg" file="foto0488_resized.jpg" />
+  <media name="images (1).jpg" file="images__1_.jpg" />
+  <media name="images (13).jpg" file="images__13_.jpg" />
+  <media name="images (15).jpg" file="images__15_.jpg" />
+  <media name="images (17).jpg" file="images__17_.jpg" />
+  <media name="images (18).jpg" file="images__18_.jpg" />
+  <media name="images (20).jpg" file="images__20_.jpg" />
+  <media name="images (3).jpg" file="images__3_.jpg" />
+  <media name="images (5).jpg" file="images__5_.jpg" />
+  <media name="images (6).jpg" file="images__6_.jpg" />
+  <media name="images (7).jpg" file="images__7_.jpg" />
+  <media name="images (8).jpg" file="images__8_.jpg" />
+  <media name="lobo-guará-2.jpg" file="lobo_guara_2.jpg" />
+  <media name="mapac.jpg" file="mapac.jpg" />
+  <media name="pica pau.jpg" file="pica_pau.jpg" />
+  <media name="quebra carnauba.jpg" file="quebra_carnauba.jpg" />
+  <media name="quebraok.jpg" file="quebraok.jpg" />
+  <media name="Sireima_2.JPG" file="sireima_2.jpg" />
+  <media name="Efeitos Sonoros - AMBIENTES DE PASSAROS.mp3" file="efeitos_sonoros___ambientes_de_passaros.mp3" />
+  <media name="Efeitos Sonoros - APLAUSOS.mp3" file="efeitos_sonoros___aplausos.mp3" />
+  <media name="Efeitos Sonoros - AUDIO EFEITO CACHORRO.mp3" file="efeitos_sonoros___audio_efeito_cachorro.mp3" />
+  <media name="Efeitos Sonoros - AUDIO INSTRUMENTAL COUNTRY.mp3" file="efeitos_sonoros___audio_instrumental_country.mp3" />
+  <media name="Efeitos Sonoros - EFEITO BATERIA #2.mp3" file="efeitos_sonoros___efeito_bateria__2.mp3" />
+  <media name="Efeitos Sonoros - EFEITO BATIDAS DO CORAÇÃO.mp3" file="efeitos_sonoros___efeito_batidas_do_coracao.mp3" />
+  <media name="Efeitos Sonoros - EFEITO CARRO ARRANCADA.mp3" file="efeitos_sonoros___efeito_carro_arrancada.mp3" />
+  <media name="Efeitos Sonoros - EFEITO LIGAÇÃO A COBRAR.mp3" file="efeitos_sonoros___efeito_ligacao_a_cobrar.mp3" />
+  <media name="Efeitos Sonoros - EFEITO LUTA.mp3" file="efeitos_sonoros___efeito_luta.mp3" />
+  <media name="Efeitos Sonoros - ÁUDIO GATO.mp3" file="efeitos_sonoros___audio_gato.mp3" />
+  <media name="Narração 6 (07-11-14 13-51).mp3" file="narracao_6__07_11_14_13_51_.mp3" />
+  <media name="telaInicial.png" file="i02_telainicial.png" />
+ </mediaBag>
+</JClicProject>
+

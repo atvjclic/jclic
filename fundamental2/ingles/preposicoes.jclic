@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="preposicoes" version="0.1.3">
+ <settings>
+  <title>PREPOSIÇÕES</title>
+  <revision description="created" date="9/10/14" />
+  <author name="Jovenilson dos Santos Silva" rol="Articulador de Educ. Tecnológica" organization="Escola Municipal Profº Luiz Cursino Cardoso" />
+  <descriptors area="INGLÊS" level="ENSINO FUNDAMENTAL II" />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="START" name="TelaIncialJovenilson" navButtons="none" />
+  <item name="Asscomplexapreposicoes" delay="1" />
+  <item name="Asssimplespreposicoes" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="Asscomplexapreposicoes" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>ASSOCIE OS NOMES À PREPOSIÇÃO CORRETA.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Congratulations!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Sorry try again!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x59CF77">
+     <image name="images.jpg2.jpg" tiled="false" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x9BFF0073" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="9" cols="3" cellWidth="201.0" cellHeight="61.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="0.9">
+     <font family="Arial" size="20" bold="true" />
+     <color foreground="0x003333" background="0xB433FFFF" shadow="0x999900" inactive="0x999900" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="9" />
+    <cell id="2" border="false">
+     <p>1 o´clock</p>
+    </cell>
+    <cell id="0">
+     <p>June</p>
+    </cell>
+    <cell id="0">
+     <p>the evening</p>
+    </cell>
+    <cell id="2">
+     <p>noon</p>
+    </cell>
+    <cell id="0">
+     <p>July</p>
+    </cell>
+    <cell id="1">
+     <p>Mondays</p>
+    </cell>
+    <cell id="2">
+     <p>midnight</p>
+    </cell>
+    <cell id="0">
+     <p>August</p>
+    </cell>
+    <cell id="1">
+     <p>Tuesday</p>
+    </cell>
+    <cell id="2">
+     <p>10 o´clock</p>
+    </cell>
+    <cell id="0">
+     <p>September</p>
+    </cell>
+    <cell id="1">
+     <p>Wednesdays</p>
+    </cell>
+    <cell id="0">
+     <p>January</p>
+    </cell>
+    <cell id="0">
+     <p>October</p>
+    </cell>
+    <cell id="1">
+     <p>Friday</p>
+    </cell>
+    <cell id="0">
+     <p>March</p>
+    </cell>
+    <cell id="0">
+     <p>November</p>
+    </cell>
+    <cell id="1">
+     <p>Saturday</p>
+    </cell>
+    <cell id="0" border="false">
+     <p>February</p>
+    </cell>
+    <cell id="0">
+     <p>December</p>
+    </cell>
+    <cell id="1">
+     <p>Sunday</p>
+    </cell>
+    <cell id="0">
+     <p>April</p>
+    </cell>
+    <cell id="0">
+     <p>the morning</p>
+    </cell>
+    <cell id="1" border="true">
+     <p>Monday</p>
+    </cell>
+    <cell id="0">
+     <p>May</p>
+    </cell>
+    <cell id="0">
+     <p>the afternoon</p>
+    </cell>
+    <cell id="1" border="true">
+     <p>Sundays</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" border="false" image="images.jpg2.jpg" id="secondary">
+    <style borderStroke="2.6" markerStroke="0.9">
+     <font family="Arial" size="20" bold="true" />
+     <color foreground="0x33CC00" background="0x99FF99" inactive="0x82999900" alternative="0x339900" border="0x66FF00" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell avoidOverlapping="true">
+     <style borderStroke="1.0" markerStroke="1.9">
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0x33FF33" background="0x99FF99" alternative="0x33FF33" />
+     </style>
+     <p>IN</p>
+    </cell>
+    <cell avoidOverlapping="true">
+     <style borderStroke="2.0" markerStroke="0.9">
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0x33FF33" background="0x99FF99" alternative="0x33FF33" />
+     </style>
+     <p>ON</p>
+    </cell>
+    <cell avoidOverlapping="true">
+     <style borderStroke="1.0" markerStroke="1.9">
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0x00CC33" background="0x99FF99" alternative="0x00FF00" />
+     </style>
+     <p>AT</p>
+    </cell>
+   </cells>
+   <cells rows="9" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="9" />
+    <cell>
+     <p>AT 1 O´CLOCK</p>
+    </cell>
+    <cell>
+     <p>IN JUNE</p>
+    </cell>
+    <cell>
+     <p>IN THE EVENING</p>
+    </cell>
+    <cell>
+     <p>AT NOON</p>
+    </cell>
+    <cell>
+     <p>IN JULY</p>
+    </cell>
+    <cell>
+     <p>ON MONDAYS</p>
+    </cell>
+    <cell>
+     <p>AT MIDNIGHT</p>
+    </cell>
+    <cell>
+     <p>IN AUGUST</p>
+    </cell>
+    <cell>
+     <p>ON TUESDAYS</p>
+    </cell>
+    <cell>
+     <p>AT 10 O´CLOCK</p>
+    </cell>
+    <cell>
+     <p>IN SEPTEMBER</p>
+    </cell>
+    <cell>
+     <p>ON WEDNESDAYS</p>
+    </cell>
+    <cell>
+     <p>IN JANUARY</p>
+    </cell>
+    <cell>
+     <p>IN OCTOBER</p>
+    </cell>
+    <cell>
+     <p>ON FRIDAY</p>
+    </cell>
+    <cell>
+     <p>IN MARCH</p>
+    </cell>
+    <cell>
+     <p>IN NOVEMBER</p>
+    </cell>
+    <cell>
+     <p>ON SATURDAY</p>
+    </cell>
+    <cell>
+     <p>ON FEBRUERY</p>
+    </cell>
+    <cell>
+     <p>IN DECEMBER</p>
+    </cell>
+    <cell>
+     <p>ON SUNDAY</p>
+    </cell>
+    <cell>
+     <p>IN APRIL</p>
+    </cell>
+    <cell>
+     <p>IN THE MORNING</p>
+    </cell>
+    <cell>
+     <p>ON MONDAY</p>
+    </cell>
+    <cell>
+     <p>IN MAY</p>
+    </cell>
+    <cell>
+     <p>IN THE AFTERNOON</p>
+    </cell>
+    <cell>
+     <p>ON SUNDAYS</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Asssimplespreposicoes" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>ASSOCIE A FRASE À FIGURA!</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>VERY GOOD!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>TRY AGAIN!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x75FFCC00">
+     <gradient source="0x006699" dest="0xFFFFFF" angle="36" cycles="9" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x693366FF" border="false">
+     <gradient source="0x009999" dest="0xCDFFFFFF" angle="121" cycles="17" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="507.0" cellHeight="150.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="22" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <p>in the morning</p>
+    </cell>
+    <cell>
+     <p>in the afternoon</p>
+    </cell>
+    <cell>
+     <p>at midnight</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="372.0" cellHeight="150.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell image="images.jpg" />
+    <cell border="true" image="images.jpg 1.jpg" />
+    <cell image="images.jpg2.jpg" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaIncialJovenilson" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>CLIQUE EM INICIAR PARA COMEÇAR A ATIVIDADE</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="i020-TelaJclic2.png">
+    <style borderStroke="2.0" markerStroke="1.7">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0x00FFFF" inactive="0x00CCFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0,0,0.997561,0.410909</shape>
+    </shaper>
+    <cell border="false">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Asscomplexapreposicoes" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="images.jpg" file="images.jpg" />
+  <media name="images.jpg 1.jpg" file="images.jpg_1.jpg" />
+  <media name="images.jpg2.jpg" file="images.jpg2.jpg" />
+  <media name="i020-TelaJclic2.png" file="i020_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="ciencias_animais" version="0.1.3">
+ <settings>
+  <title>Ciências</title>
+  <revision description="created" date="11/9/12" />
+  <author name="Miguel dos Santos" mail="miguelsilva_25_@hotmail.com" rol="Articulador de Educação Tecnológica" />
+  <author name="Prof. Silvânia Pereira A. Araújo" rol="Professor" />
+  <descriptors />
+  <eventSounds>
+   <sound id="start" file="/home/professor/Área de Trabalho/soundsJclic/start.mp3" />
+   <sound id="click" file="/home/professor/Área de Trabalho/soundsJclic/click.mp3" />
+   <sound id="actionError" file="/home/professor/Área de Trabalho/soundsJclic/action_error.mp3" />
+   <sound id="actionOk" file="/home/professor/Área de Trabalho/soundsJclic/action_ok.mp3" />
+   <sound id="finishedError" file="/home/professor/Área de Trabalho/soundsJclic/finished_error.mp3" />
+   <sound id="finishedOk" file="/home/professor/Área de Trabalho/soundsJclic/finished_ok.mp3" />
+  </eventSounds>
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="TELA" name="TelaInicial" navButtons="none" />
+  <item id="start" name="animais" delay="1" />
+  <item name="animais2" delay="1" />
+  <item name="habitat" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="TelaInicial" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic3.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="start" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="animais" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0x211AF5" background="0xFEFEFE" />
+     </style>
+     <p>Relacione a 1ª coluna com a 2ª coluna.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0x2623E4" background="0xFEFEFE" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/soundsJclic/applause-1 1.mp3" autoStart="true" />
+     <p>Muito bem!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x403B3E" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x999900" border="true">
+     <gradient source="0x8A8585" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" file="/home/professor/Área de Trabalho/soundsJclic/start.mp3" />
+     <sound id="click" file="/home/professor/Área de Trabalho/soundsJclic/click.mp3" />
+     <sound id="actionError" file="/home/professor/Área de Trabalho/soundsJclic/action_error.mp3" />
+     <sound id="actionOk" file="/home/professor/Área de Trabalho/soundsJclic/action_ok.mp3" />
+     <sound id="finishedError" file="/home/professor/Área de Trabalho/soundsJclic/finished_error.mp3" />
+     <sound id="finishedOk" file="/home/professor/Área de Trabalho/soundsJclic/finished_ok.mp3" />
+    </eventSounds>
+    <skin file="" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="333.0" cellHeight="56.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0x0033CC" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>Domésticos</p>
+    </cell>
+    <cell>
+     <p>Silvestres</p>
+    </cell>
+    <cell>
+     <p>ùteis</p>
+    </cell>
+    <cell>
+     <p>Nocívos</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="499.0" cellHeight="55.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="26" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>cachorro, gato</p>
+    </cell>
+    <cell>
+     <p>lobo, onça</p>
+    </cell>
+    <cell>
+     <p>galinha, ovelha</p>
+    </cell>
+    <cell>
+     <p>escorpiões e cobras</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="animais2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0x5035F7" background="0xFEFEFE" />
+     </style>
+     <p>Classifique os animais em: vertebrados e invertebrados.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0x3128EE" background="0xF7F5F5" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/soundsJclic/applause-1 1.mp3" autoStart="true" />
+     <p>Muito bem!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x514848" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC7C7C7" border="true">
+     <gradient source="0x5D5858" dest="0xFFFFFF" angle="112" />
+     <size width="518" height="335" />
+    </window>
+   </settings>
+   <checkButton>Verificação</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="36" bold="true" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">a) vaca </text>
+      <target>
+       <answer>vertebrados</answer>
+       <response fill="_" length="13" maxLength="13" />
+       <text>vertebrados</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">b) mosca </text>
+      <target>
+       <answer>invertebrados</answer>
+       <response fill="_" length="13" maxLength="13" />
+       <text>invertebrados</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">c) pássaro </text>
+      <target>
+       <answer>vertebrados</answer>
+       <response fill="_" length="13" maxLength="13" />
+       <text>vertebrados</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">d) tubarão </text>
+      <target>
+       <answer>vertebrados</answer>
+       <response fill="_" length="13" maxLength="13" />
+       <text>vertebrados</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">e) escorpião </text>
+      <target>
+       <answer>invertebrados</answer>
+       <response fill="_" length="13" maxLength="13" />
+       <text>invertebrados</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">f) sapo </text>
+      <target>
+       <answer>vertebrados</answer>
+       <response fill="_" length="13" maxLength="13" />
+       <text>vertebrados</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="habitat" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0x382EE2" background="0xFDFBFB" />
+     </style>
+     <p>Ligue cada animal a seu habitat.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color foreground="0x006666" background="0xFEFEFE" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="/home/professor/Área de Trabalho/soundsJclic/applause-1 1.mp3" autoStart="true" />
+     <p>Parabéns! você conseguiu!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x6C6A6A" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xF5F3F3" border="true">
+     <gradient source="0x595959" dest="0xFFFFFF" angle="318" />
+    </window>
+   </settings>
+   <cells rows="4" cols="1" cellWidth="321.0" cellHeight="67.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="1">
+     <p>Cachorro</p>
+    </cell>
+    <cell id="1">
+     <p>Elefante</p>
+    </cell>
+    <cell id="0">
+     <p>Golfinho</p>
+    </cell>
+    <cell id="1">
+     <p>Macaco</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="516.0" cellHeight="102.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="36" bold="true" />
+     <color foreground="0xF3093A" background="0xFEFEFE" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <p>Animais aquáticos</p>
+    </cell>
+    <cell>
+     <p>Animais Terrestres</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="/home/professor/Área de Trabalho/soundsJclic/action_error.mp3" file="_home_professor_area_de_trabalho_soundsjclic_action_error.mp3" />
+  <media name="/home/professor/Área de Trabalho/soundsJclic/action_ok.mp3" file="_home_professor_area_de_trabalho_soundsjclic_action_ok.mp3" />
+  <media name="/home/professor/Área de Trabalho/soundsJclic/applause-1 1.mp3" file="_home_professor_area_de_trabalho_soundsjclic_applause_1_1.mp3" />
+  <media name="/home/professor/Área de Trabalho/soundsJclic/click.mp3" file="_home_professor_area_de_trabalho_soundsjclic_click.mp3" />
+  <media name="/home/professor/Área de Trabalho/soundsJclic/finished_error.mp3" file="_home_professor_area_de_trabalho_soundsjclic_finished_error.mp3" />
+  <media name="/home/professor/Área de Trabalho/soundsJclic/finished_ok.mp3" file="_home_professor_area_de_trabalho_soundsjclic_finished_ok.mp3" />
+  <media name="/home/professor/Área de Trabalho/soundsJclic/start.mp3" file="_home_professor_area_de_trabalho_soundsjclic_start.mp3" />
+  <media name="TelaJclic3.png" file="telajclic3.png" />
+ </mediaBag>
+</JClicProject>
+

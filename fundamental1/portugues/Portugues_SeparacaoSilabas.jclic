@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="Portugues_SeparacaoSilabas" version="0.1.3">
+ <settings>
+  <title>Português_Sílabas</title>
+  <revision description="created" date="5/11/12" />
+  <author name="Miguel dos Santos Silva" mail="miguelsilva_25_@hotmail.com" url="aetjblog.blogspot.com.br" rol="Articulador de Educação Tecnológica" organization="AETJ">
+   <comments>
+    <p>Vocẽ pode colaborar enviando sugestões de atividades para o e-mail ou deixando seu recado no blog, assuntos nas áreas de Português e Matemática preferêncialmente</p>
+   </comments>
+  </author>
+  <language>português (pt)</language>
+  <description>
+   <p>Classificação das palavras quanto ao número de Sílabas</p>
+  </description>
+  <descriptors area="Português">Classificar as palavras quanto ao número de sílabas</descriptors>
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="TelaInicialMiguel" navButtons="none" />
+  <item id="start" name="RespostaEscrita" delay="1" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@text.WrittenAnswer" name="RespostaEscrita" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x1E19F1" background="0xFFFFFF" />
+     </style>
+     <p>Digite as palavras. Separe as sílabas com um traço(-). ex: car-ros-sel.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x009999" background="0xFFFFFF" />
+     </style>
+     <p>Muito bem você conseguiu!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="48" bold="true" />
+      <color foreground="0xFF0000" background="0xFFFFFF" />
+     </style>
+     <p>Tente novamente!</p>
+    </cell>
+   </messages>
+   <settings margin="20" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0x6699FF">
+     <gradient source="0x444444" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="10" cols="3" cellWidth="192.0" cellHeight="28.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xF3EEE2" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="10" />
+    <cell id="0">
+     <p>macaco</p>
+    </cell>
+    <cell id="1">
+     <p>tesoura</p>
+    </cell>
+    <cell id="2">
+     <p>elefante</p>
+    </cell>
+    <cell id="3">
+     <p>chimpanzé</p>
+    </cell>
+    <cell id="4">
+     <p>mesa</p>
+    </cell>
+    <cell id="5">
+     <p>criar</p>
+    </cell>
+    <cell id="6">
+     <p>assalto </p>
+    </cell>
+    <cell id="7">
+     <p>dividir</p>
+    </cell>
+    <cell id="8">
+     <p>assentar</p>
+    </cell>
+    <cell id="9">
+     <p>associação</p>
+    </cell>
+    <cell id="10">
+     <p>aspecto</p>
+    </cell>
+    <cell id="11">
+     <p>carro</p>
+    </cell>
+    <cell id="12">
+     <p>ferrugem</p>
+    </cell>
+    <cell id="13">
+     <p>cinto</p>
+    </cell>
+    <cell id="14">
+     <p>cintura</p>
+    </cell>
+    <cell id="15">
+     <p>sopa</p>
+    </cell>
+    <cell id="16">
+     <p>paralelepípedo</p>
+    </cell>
+    <cell id="17">
+     <p>pobre</p>
+    </cell>
+    <cell id="18">
+     <p>pá</p>
+    </cell>
+    <cell id="19">
+     <p>mal </p>
+    </cell>
+    <cell id="20">
+     <p>ovo </p>
+    </cell>
+    <cell id="21">
+     <p>ovos </p>
+    </cell>
+    <cell id="22">
+     <p>saltitar </p>
+    </cell>
+    <cell id="23">
+     <p>dúzia </p>
+    </cell>
+    <cell id="24">
+     <p>treze </p>
+    </cell>
+    <cell id="25">
+     <p>folia </p>
+    </cell>
+    <cell id="26">
+     <p>enjoo </p>
+    </cell>
+    <cell id="27">
+     <p>saber </p>
+    </cell>
+    <cell id="28">
+     <p>enfermeiro </p>
+    </cell>
+    <cell id="29">
+     <p>assobiar </p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="3" cellWidth="200.0" cellHeight="30.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="10" />
+    <cell>
+     <p>ma-ca-co</p>
+    </cell>
+    <cell>
+     <p>te-sou-ra</p>
+    </cell>
+    <cell>
+     <p>e-le-fan-te</p>
+    </cell>
+    <cell>
+     <p>chim-pan-zé</p>
+    </cell>
+    <cell>
+     <p>me-sa</p>
+    </cell>
+    <cell>
+     <p>cri-ar</p>
+    </cell>
+    <cell>
+     <p>as-sal-to</p>
+    </cell>
+    <cell>
+     <p>di-vi-dir</p>
+    </cell>
+    <cell>
+     <p>as-sen-tar</p>
+    </cell>
+    <cell>
+     <p>as-so-ci-a-ção</p>
+    </cell>
+    <cell>
+     <p>as-pec-to</p>
+    </cell>
+    <cell>
+     <p>car-ro</p>
+    </cell>
+    <cell>
+     <p>fer-ru-gem</p>
+    </cell>
+    <cell>
+     <p>cin-to</p>
+    </cell>
+    <cell>
+     <p>cin-tu-ra</p>
+    </cell>
+    <cell>
+     <p>so-pa</p>
+    </cell>
+    <cell>
+     <p>pa-ra-le-le-pí-pe-do</p>
+    </cell>
+    <cell>
+     <p>po-bre</p>
+    </cell>
+    <cell>
+     <p>pá</p>
+    </cell>
+    <cell>
+     <p>mal</p>
+    </cell>
+    <cell>
+     <p>o-vo</p>
+    </cell>
+    <cell>
+     <p>o-vos</p>
+    </cell>
+    <cell>
+     <p>sal-ti-tar</p>
+    </cell>
+    <cell>
+     <p>dú-zia</p>
+    </cell>
+    <cell>
+     <p>tre-ze</p>
+    </cell>
+    <cell>
+     <p>fo-li-a</p>
+    </cell>
+    <cell>
+     <p>en-jo-o</p>
+    </cell>
+    <cell>
+     <p>sa-ber</p>
+    </cell>
+    <cell>
+     <p>en-fer-mei-ro</p>
+    </cell>
+    <cell>
+     <p>as-so-bi-ar</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="10" />
+    <cell>
+     <p>ma-ca-co</p>
+    </cell>
+    <cell>
+     <p>te-sou-ra</p>
+    </cell>
+    <cell>
+     <p>e-le-fan-te</p>
+    </cell>
+    <cell>
+     <p>chim-pan-zé</p>
+    </cell>
+    <cell>
+     <p>me-sa</p>
+    </cell>
+    <cell>
+     <p>cri-ar</p>
+    </cell>
+    <cell>
+     <p>as-sal-to</p>
+    </cell>
+    <cell>
+     <p>di-vi-dir</p>
+    </cell>
+    <cell>
+     <p>as-sen-tar</p>
+    </cell>
+    <cell>
+     <p>as-so-ci-a-ção</p>
+    </cell>
+    <cell>
+     <p>as-pec-to</p>
+    </cell>
+    <cell>
+     <p>car-ro</p>
+    </cell>
+    <cell>
+     <p>fer-ru-gem</p>
+    </cell>
+    <cell>
+     <p>cin-to</p>
+    </cell>
+    <cell>
+     <p>cin-tu-ra</p>
+    </cell>
+    <cell>
+     <p>so-pa</p>
+    </cell>
+    <cell>
+     <p>pa-ra-le-le-pí-pe-do</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0x003333" />
+     </style>
+     <p>po-bre</p>
+    </cell>
+    <cell>
+     <p>pá</p>
+    </cell>
+    <cell>
+     <p>mal</p>
+    </cell>
+    <cell>
+     <p>o-vo</p>
+    </cell>
+    <cell>
+     <p>o-vos</p>
+    </cell>
+    <cell>
+     <p>sal-ti-tar</p>
+    </cell>
+    <cell>
+     <p>dú-zia</p>
+    </cell>
+    <cell>
+     <p>tre-ze</p>
+    </cell>
+    <cell>
+     <p>fo-li-a</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0x003333" />
+     </style>
+     <p>en-jo-o</p>
+    </cell>
+    <cell>
+     <p>sa-ber</p>
+    </cell>
+    <cell>
+     <p>en-fer-mei-ro</p>
+    </cell>
+    <cell>
+     <p>as-so-bi-ar</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="RespostaEscrita" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="TelaJclic2.png" file="i022_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+

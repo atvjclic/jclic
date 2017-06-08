@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="portugues_letras_cursivas" version="0.1.3">
+ <settings>
+  <title>Letras Cursivas</title>
+  <revision description="created" date="4/11/13" />
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="tela" name="TelaInicialMiguel" navButtons="none" />
+  <item id="start" name="PortuguesAssociarLetras" delay="1" />
+  <item name="PortuguesAssociarPalavras" delay="1" />
+  <item name="PortuguesOmeninoQueViuUmaCoisa" delay="1" />
+  <item id="tela" name="TelaInicialMiguel" navButtons="none" />
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="PortuguesAssociarLetras" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0814F8" background="0xFEFEFE" />
+     </style>
+     <p>Associe as letras corretamente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x150AF7" background="0xFEFEFE" />
+     </style>
+     <p>Muito Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x766868" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="2" cols="13" cellWidth="99.0" cellHeight="94.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="MamaeQueNosFaz" size="72" bold="true" />
+     <color background="0xFDFBFB" />
+    </style>
+    <shaper class="@Rectangular" cols="13" rows="2" />
+    <cell id="0">
+     <p>a</p>
+    </cell>
+    <cell id="1">
+     <p>b</p>
+    </cell>
+    <cell id="2">
+     <p>c</p>
+    </cell>
+    <cell id="3">
+     <p>d</p>
+    </cell>
+    <cell id="4">
+     <p>e</p>
+    </cell>
+    <cell id="5">
+     <p>f</p>
+    </cell>
+    <cell id="6">
+     <p>g</p>
+    </cell>
+    <cell id="7">
+     <p>h</p>
+    </cell>
+    <cell id="8">
+     <p>i</p>
+    </cell>
+    <cell id="9">
+     <p>j</p>
+    </cell>
+    <cell id="10">
+     <p>k</p>
+    </cell>
+    <cell id="11">
+     <p>l</p>
+    </cell>
+    <cell id="12">
+     <p>m</p>
+    </cell>
+    <cell id="13">
+     <p>n</p>
+    </cell>
+    <cell id="14">
+     <p>o</p>
+    </cell>
+    <cell id="15">
+     <p>p</p>
+    </cell>
+    <cell id="16">
+     <p>q</p>
+    </cell>
+    <cell id="17">
+     <p>r</p>
+    </cell>
+    <cell id="18">
+     <p>s</p>
+    </cell>
+    <cell id="19">
+     <p>t</p>
+    </cell>
+    <cell id="20">
+     <p>u</p>
+    </cell>
+    <cell id="21">
+     <p>v</p>
+    </cell>
+    <cell id="22">
+     <p>w</p>
+    </cell>
+    <cell id="23">
+     <p>x</p>
+    </cell>
+    <cell id="24">
+     <p>y</p>
+    </cell>
+    <cell id="25">
+     <p>z</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="13" cellWidth="99.0" cellHeight="94.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="72" bold="true" />
+     <color foreground="0x0A0BE9" background="0xE0E0E0" inactive="0x915D5D" />
+    </style>
+    <shaper class="@Rectangular" cols="13" rows="2" />
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>B</p>
+    </cell>
+    <cell>
+     <p>C</p>
+    </cell>
+    <cell>
+     <p>D</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>F</p>
+    </cell>
+    <cell>
+     <p>G</p>
+    </cell>
+    <cell>
+     <p>H</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>J</p>
+    </cell>
+    <cell>
+     <p>K</p>
+    </cell>
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell>
+     <p>M</p>
+    </cell>
+    <cell>
+     <p>N</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>P</p>
+    </cell>
+    <cell>
+     <p>Q</p>
+    </cell>
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>S</p>
+    </cell>
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+    <cell>
+     <p>V</p>
+    </cell>
+    <cell>
+     <p>W</p>
+    </cell>
+    <cell>
+     <p>X</p>
+    </cell>
+    <cell>
+     <p>Y</p>
+    </cell>
+    <cell>
+     <p>Z</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="13" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="13" rows="2" />
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="PortuguesAssociarPalavras" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x1D12F0" background="0xFEFEFE" />
+     </style>
+     <p>Associe os pares das palavras.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x170EE8" background="0xFEFEFE" />
+     </style>
+     <p>Muito Bem!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x766868" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="5" cols="3" cellWidth="241.0" cellHeight="74.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="26" bold="true" />
+     <color background="0xFEFEFE" inactive="0xE8E8E8" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="5" />
+    <cell id="0">
+     <p>AMOR</p>
+    </cell>
+    <cell id="1">
+     <p>VERDADE</p>
+    </cell>
+    <cell id="2">
+     <p>ENSINO</p>
+    </cell>
+    <cell id="3">
+     <p>PAZ</p>
+    </cell>
+    <cell id="4">
+     <p>SABER</p>
+    </cell>
+    <cell id="5">
+     <p>APRENDER</p>
+    </cell>
+    <cell id="6">
+     <p>ALEGRIA</p>
+    </cell>
+    <cell id="7">
+     <p>LUZ</p>
+    </cell>
+    <cell id="8">
+     <p>REPARTIR</p>
+    </cell>
+    <cell id="9">
+     <p>CEDER</p>
+    </cell>
+    <cell id="10">
+     <p>ENTENDER</p>
+    </cell>
+    <cell id="11">
+     <p>ENSINAR</p>
+    </cell>
+    <cell id="12">
+     <p>COMPARTILHAR</p>
+    </cell>
+    <cell id="13">
+     <p>SENTIMENTO</p>
+    </cell>
+    <cell id="14">
+     <p>BONDADE</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="3" cellWidth="241.0" cellHeight="74.0" border="true" id="secondary">
+    <style>
+     <font family="MamaeQueNosFaz" size="36" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="5" />
+    <cell>
+     <p>amor</p>
+    </cell>
+    <cell>
+     <p>verdade</p>
+    </cell>
+    <cell>
+     <p>ensino</p>
+    </cell>
+    <cell>
+     <p>paz</p>
+    </cell>
+    <cell>
+     <p>saber</p>
+    </cell>
+    <cell>
+     <p>aprender</p>
+    </cell>
+    <cell>
+     <p>alegria</p>
+    </cell>
+    <cell>
+     <p>luz</p>
+    </cell>
+    <cell>
+     <p>repartir</p>
+    </cell>
+    <cell>
+     <p>ceder</p>
+    </cell>
+    <cell>
+     <p>entender</p>
+    </cell>
+    <cell>
+     <p>ensinar</p>
+    </cell>
+    <cell>
+     <p>compartilhar</p>
+    </cell>
+    <cell>
+     <p>sentimento</p>
+    </cell>
+    <cell>
+     <p>bondade</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.Identify" name="PortuguesOmeninoQueViuUmaCoisa" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="24" bold="true" />
+      <color foreground="0x1D1EE2" background="0xFEFEFE" />
+     </style>
+     <p>Clique apenas nas letras maiúsculas e depois em verificar.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Dialog" size="24" bold="true" />
+      <color foreground="0x2C29EB" background="0xFEFEFE" />
+     </style>
+     <p>Parabéns!!!</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x766868" dest="0xFFFFFF" angle="0" />
+     <size width="780" height="580" />
+    </window>
+   </settings>
+   <checkButton>verificar</checkButton>
+   <document>
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" bold="true" italic="false" tabWidth="12" size="28" background="0xFFFFFF" family="MamaeQueNosFaz" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <target>O</target>
+      <text bold="true" italic="true" size="28" family="MamaeQueNosFaz"> menino que viu uma coisa.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text bold="true" size="28" family="MamaeQueNosFaz">de: </text>
+      <target>A</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">lberto </text>
+      <target>F</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">ilho</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <target>E</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">ste </text>
+      <target>M</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">enino deixou de ir à </text>
+      <target>E</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">scola hoje...</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <target>E</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">le queria ir explorar uma casa abandonada que viu no caminho...</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <target>O</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz"> que será que ele vai achar lá dentro?</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <target>T</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">odo dia era a mesma coisa. </text>
+      <target>S</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">ua mãe entrava no quarto e dizia:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text bold="true" size="28" family="MamaeQueNosFaz">- </text>
+      <target>D</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">ormindo desse jeito você vai acabar chegando atrasado!</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <target>E</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz"> ele dizia: - </text>
+      <target>P</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">eraí que vou dormir só mais um pouquinho...</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <target>A</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">pesar de muito preguiçoso, ele sempre ia para a </text>
+      <target>E</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">scola. </text>
+      <target>P</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">elo menos era o que ele dizia.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <target>M</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">as muitas vezes ficava brincando pela rua e não pisava nem lá.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text bold="true" size="28" family="MamaeQueNosFaz">- </text>
+      <target>N</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">asci para explorar o </text>
+      <target>M</target>
+      <text bold="true" size="28" family="MamaeQueNosFaz">undo e não para estudar - vivia dizendo.</text>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@panels.InformationScreen" name="TelaInicialMiguel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFEFEFE" />
+     </style>
+     <p>Clique em iniciar para começar a atividade.</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="1" cols="1" border="false" image="TelaJclic2.png">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.21975,0.218519,0.547983,0.159259</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="PortuguesAssociarLetras" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="TelaJclic2.png" file="i019_telajclic2.png" />
+ </mediaBag>
+</JClicProject>
+
